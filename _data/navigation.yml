@@ -1,0 +1,27 @@
+# main links
+#main:
+#  - title: Документация
+#    url: /
+
+# documentation links
+docs:
+  - title: Введение
+    children:
+      - title: "Термины и определения"
+        url: /docs/definition/
+      - title: "Схема взаимодействия"
+        url: /docs/schema/
+      - title: "Работа с API"
+        url: /docs/api/
+  - title: Методы API
+    children:
+      - title: "Создание заказа"
+        url: /docs/order-create/
+      - title: "Редактирование заказа"
+        url: /docs/order-update/
+      - title: "Получение информации о изменении статуса заказа"
+        url: /docs/order-get/
+      - title: "Отмена заказа"
+        url: /docs/order-delete/
+      - title: "Возврат"
+        url: /docs/order-refund/
