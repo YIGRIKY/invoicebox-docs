@@ -20,7 +20,7 @@ InvoiceBox API представляет собой набор HTTP ресурс�
 
 Для проверки работы аутентификации можно выполнить тестовый метод:
 ```
-GET /a1/clientoffice/security/auth
+GET /a1/api/security/auth
 Accept: application/json
 Authorization: Bearer b37c4c689295904ed21eee5d9a48d42e
 ```
