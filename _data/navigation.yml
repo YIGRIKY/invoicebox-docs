@@ -19,7 +19,7 @@ docs:
         url: /docs/order-create/
       - title: "Редактирование заказа"
         url: /docs/order-update/
-      - title: "Получение информации о изменении статуса заказа"
+      - title: "Получение заказа"
         url: /docs/order-get/
       - title: "Отмена заказа"
         url: /docs/order-delete/

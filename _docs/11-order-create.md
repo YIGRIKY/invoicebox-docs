@@ -1,5 +1,5 @@
 ---
-title: "Configuration"
+title: Создание заказа
 permalink: /docs/order-create/
 excerpt: "How to create order by API"
 toc: true
@@ -84,20 +84,20 @@ Accept: application/json
 
 #### Order
 
-| Свойство        | Тип                                 | Описание                                        | Пример значения |
-| --------------- | ----------------------------------- | ----------------------------------------------- | ----------------|
-| merchantId      | string                              | Идентификатор магазина                          | `01771534-1a57-f184-dee3-ebeb91dded76`
-| merchantOrderId | string                              | Идентификатор заказа в учетной системе магазина | `01771534-1a57-f184-dee3-ebeb91dded76`
-| amount          | float                               | Сумма заказа                                    | `19658.45`
-| vatAmount       | float                               | Сумма НДС                                       | `156.56`
-| subtype         | string                              | Тип заказа                                      | `order`
-| expirationDate  | datetime                            | Срок действия заказа                            | `2020-12-22T00:00:00+00:00`
-| basketItems     | array of [BasketItem](#basketitem)  | Состав заказа                                   | 
-| metaData        | object                              |                                                 |
-| languageId         | string             | Язык интерфейса платежной странцы | `RU`
-| originalCurrencyId | string             | Валюта заказа                     | `RUB`
-| description        | string             | Описание заказа                   | `Оплата номера в отеле`
-| customer           | Customer           | Информация о заказчике            |
+| Свойство        | Обязательное | Тип                                 | Описание                                       | Пример значения |
+| --------------- | -------------|------------------------------------ | ---------------------------------------------- | ----------------|
+| merchantId      | да           | string                              | Идентификатор магазина                          | `01771534-1a57-f184-dee3-ebeb91dded76`
+| merchantOrderId | да           | string                              | Идентификатор заказа в учетной системе магазина | `01771534-1a57-f184-dee3-ebeb91dded76`
+| amount          | да           | float                               | Сумма заказа                                    | `19658.45`
+| vatAmount       | да           | float                               | Сумма НДС                                       | `156.56`
+| subtype         | нет          | string                              | Тип заказа                                      | `order`
+| expirationDate  | нет          | datetime                            | Срок действия заказа                            | `2020-12-22T00:00:00+00:00`
+| basketItems     | да           | array of [BasketItem](#basketitem)  | Состав заказа                                   | 
+| metaData        | нет          | object                              |                                                 |
+| languageId      | нет          | string                              | Язык интерфейса платежной странцы               | `RU`
+| currencyId      | да           | string                              | Валюта заказа                                   | `RUB`
+| description     | да           | string                              | Описание заказа                                 | `Оплата номера в отеле`
+| customer        | да           | Customer                            | Информация о заказчике                          |
 
 #### Customer - заказчик
 
