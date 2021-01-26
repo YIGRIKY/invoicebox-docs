@@ -8,7 +8,7 @@ toc: true
 - метод: `POST`
 - ресурс: `/a1/api/order/order`
 - тело запроса - объект [CreateOrderRequest](#createorderrequest)
-- тело ответа - объект [CreateOrderResponse](#createorderresponse)
+- тело ответа - объект [OrderResponse](#orderresponse)
 
 <details>
   <summary>Пример запроса</summary>
@@ -105,8 +105,8 @@ Accept: application/json
 | returnUrl       | нет          | string                              | Ссылка для возврата на сайт Магазина                          |
 
 
-#### CreateOrderResponse
-Повторяет свойства объекта [CreateOrderRequest](#CreateOrderRequest) с дополнительными: 
+#### OrderResponse
+Повторяет свойства объекта [CreateOrderRequest](#createorderrequest) с дополнительными свойствами: 
 
 | Свойство        | Обязательное | Тип     | Описание                                                | Пример значения
 | --------------- | -------------|-------- | ------------------------------------------------------- | ----------------
