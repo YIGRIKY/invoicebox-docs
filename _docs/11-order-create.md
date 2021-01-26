@@ -7,7 +7,8 @@ toc: true
 Создание заказа:
 - метод: `POST`
 - ресурс: `/a1/api/order/order`
-- тело запроса - объект [Order](#order)
+- тело запроса - объект [CreateOrderRequest](#CreateOrderRequest)
+- тело ответа - объект [CreateOrderResponse](#CreateOrderResponse)
 
 <details>
   <summary>Пример запроса</summary>
@@ -84,24 +85,33 @@ Accept: application/json
 </section>
 </details>
 
-#### Order
+#### CreateOrderRequest
 
-| Свойство        | Обязательное | Тип                                 | Описание                                        | Пример значения 
-| --------------- | -------------|------------------------------------ | ----------------------------------------------- | ----------------
-| description     | да           | string                              | Описание заказа                                 | `Оплата номера в отеле`
-| merchantId      | да           | string                              | Идентификатор магазина                          | `01771534-1a57-f184-dee3-ebeb91dded76`
-| merchantOrderId | да           | string                              | Идентификатор заказа в учетной системе магазина | `01771534-1a57-f184-dee3-ebeb91dded76`
-| amount          | да           | float                               | Сумма заказа                                    | `19658.45`
-| vatAmount       | да           | float                               | Сумма НДС                                       | `156.56`
-| currencyId      | да           | string enum                         | Валюта заказа                                   | `RUB`
-| languageId      | нет          | string enum                         | Язык интерфейса платежной страницы              | `RU`, `EN`
-| expirationDate  | да           | datetime                            | Срок действия заказа                            | `2020-12-22T00:00:00+00:00`
-| basketItems     | да           | array of [BasketItem](#basketitem)  | Состав заказа                                   |
-| metaData        | нет          | object                              |                                                 |
-| customer        | да           | [Customer](#customer)               | Информация о плательщике                        |
+| Свойство        | Обязательное | Тип                                 | Описание                                              | Пример значения 
+| --------------- | -------------|------------------------------------ | ----------------------------------------------------- | ----------------
+| description     | да           | string                              | Описание заказа                                       | `Оплата номера в отеле`
+| merchantId      | да           | string                              | Идентификатор магазина                                | `01771534-1a57-f184-dee3-ebeb91dded76`
+| merchantOrderId | да           | string                              | Идентификатор заказа в учетной системе магазина       | `O-12345`
+| amount          | да           | float                               | Сумма заказа                                          | `19658.45`
+| vatAmount       | да           | float                               | Сумма НДС                                             | `156.56`
+| currencyId      | да           | string enum                         | Валюта заказа                                         | `RUB`
+| languageId      | нет          | string enum                         | Язык интерфейса платежной страницы                    | `RU`, `EN`
+| expirationDate  | да           | datetime                            | Срок действия заказа                                  | `2020-12-22T00:00:00+00:00`
+| basketItems     | да           | array of [BasketItem](#basketitem)  | Состав заказа                                         |
+| metaData        | нет          | object                              | [Дополнительные данные заказа](/docs/order-metadata/) |
+| customer        | да           | [Customer](#customer)               | Информация о плательщике                              |
 | successUrl      | нет          | string                              | Ссылка для перехода на сайт Магазина в случае успешной оплаты |
 | failUrl         | нет          | string                              | Ссылка для перехода на сайт Магазина в случае ошибки оплаты   |
 | returnUrl       | нет          | string                              | Ссылка для возврата на сайт Магазина                          |
+
+
+#### CreateOrderResponse
+Повторяет свойства объекта [CreateOrderRequest](#CreateOrderRequest) с дополнительными: 
+
+| Свойство        | Обязательное | Тип     | Описание                                                | Пример значения
+| --------------- | -------------|-------- | ------------------------------------------------------- | ----------------
+| id              | да           | string  | Идентификатор заказа в системе InvoiceBox               | `01771534-1a57-f184-dee3-ebeb91dded75`
+| paymentUrl      | да           | string  | Ссылка для перехода на платежный шлюз для оплаты заказа |
 
 #### Customer
 

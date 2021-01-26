@@ -25,3 +25,5 @@ docs:
         url: /docs/order-delete/
       - title: "Возврат"
         url: /docs/order-refund/
+      - title: "Дополнительные данные заказа"
+        url: /docs/order-metadata/
