@@ -7,8 +7,8 @@ toc: true
 Создание заказа:
 - метод: `POST`
 - ресурс: `/a1/api/order/order`
-- тело запроса - объект [CreateOrderRequest](#CreateOrderRequest)
-- тело ответа - объект [CreateOrderResponse](#CreateOrderResponse)
+- тело запроса - объект [CreateOrderRequest](#createorderrequest)
+- тело ответа - объект [CreateOrderResponse](#createorderresponse)
 
 <details>
   <summary>Пример запроса</summary>
@@ -141,4 +141,3 @@ Accept: application/json
 | vatCode        | да            | enum    | Код процента НДС              | `RUS_VAT20`,`RUS_VAT10`
 | type           | да            | string  | Тип позиции                   | `service`
 | paymentType    | да            | string  | Тип оплаты                    | `full_prepayment`
-
