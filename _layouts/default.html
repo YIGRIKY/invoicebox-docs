@@ -10,6 +10,13 @@
 -->
 <html lang="{{ site.locale | slice: 0,2 | default: "ru" }}" class="no-js">
   <head>
+    <style>
+      @media (min-width: 80em) {
+        .page {
+          padding-right: 0;
+        }
+      }
+    </style>
     {% include head.html %}
     {% include head/custom.html %}
   </head>
