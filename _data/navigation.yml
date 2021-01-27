@@ -23,7 +23,9 @@ docs:
         url: /docs/order-get/
       - title: "Отмена заказа"
         url: /docs/order-delete/
-      - title: "Возврат"
-        url: /docs/order-refund/
+      - title: "Создание возвратного заказа"
+        url: /docs/refund-order-create/
+      - title: "Получение списка возвратных заказов"
+        url: /docs/refund-order-get/
       - title: "Дополнительные данные заказа"
         url: /docs/order-metadata/
