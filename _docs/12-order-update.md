@@ -8,7 +8,7 @@ excerpt: "Instructions on how to customize the theme's default set of layouts, i
 - метод: `PUT`
 - ресурс: `/a1/api/order/order/:uuid` - где `:uuid` это идентификатор заказа 
 - тело запроса - объект [UpdateOrderRequest](#updateorderrequest)
-- тело ответа - объект [OrderResponse](/docs/order-create/#OrderResponse)
+- тело ответа - объект [OrderResponse](/docs/order-create/#orderresponse)
 
 
 #### UpdateOrderRequest
