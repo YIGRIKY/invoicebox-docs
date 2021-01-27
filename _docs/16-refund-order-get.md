@@ -2,7 +2,6 @@
 title: "Получение списка возвратов"
 permalink: /docs/refund-order-get/
 excerpt: "Find refund orders"
-toc: true
 ---
 - метод: `GET`
 - ресурс: `/a1/api/filter/order/refund-order`
