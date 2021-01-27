@@ -1,5 +1,5 @@
 ---
-title: "Получение возвратного заказа"
+title: "Получение списка возвратов"
 permalink: /docs/refund-order-get/
 excerpt: "Find refund orders"
 toc: true
@@ -8,18 +8,22 @@ toc: true
 - ресурс: `/a1/api/filter/order/refund-order`
 - тело ответа - array of [RefundOrderResponse](/docs/refund-order-create/#refundorderresponse)
 
-Используя этот метод можно получить список возвратных заказов. Возможно применения фильтров и сортировок.
+Используя этот метод можно получить список возвратов. Возможно применения фильтров и сортировок.
 
 Пример запроса с фильтром по идентификатору заказа
+
 ```http request
 GET /a1/api/filter/order/refund-order?id=01771534-196a-1105-839a-82422289d6d9
 ```
+
 Пример запроса с фильтром по статусу
+
 ```http request
 GET /a1/api/filter/order/refund-order?status=completed
 ```
 
-Пример запроса с фильтром по дате 
+Пример запроса с фильтром по идентификатору заказа в учетной системе магазина 
+
 ```http request
 GET /a1/api/filter/order/refund-order?merchantOrderId=ORD123456
 ```

@@ -23,3 +23,10 @@ GET /a1/api/filter/order/order?status=completed
 ```http request
 GET /a1/api/filter/order/order?expirationDate[_ge]=2021-01-27T00:00:00
 ```
+
+Пример запроса с фильтром по идентификатору заказа в учетной системе магазина
+
+```http request
+GET /a1/api/filter/order/order?merchantOrderId=ORD123456
+```
+
