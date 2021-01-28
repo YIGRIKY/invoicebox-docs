@@ -6,7 +6,10 @@ has_children: true
 permalink: /docs/refund
 ---
 
-# UI Components
+# Работа с возвратом
 
-To make it as easy as possible to write documentation in plain Markdown, most UI components are styled using default Markdown elements with few additional CSS classes needed.
+Для осуществления возврата денежных средств плательщику, необходимо оформить возврат
+в системе &laquo;ИнвойсБокс&raquo;. Текущий раздел описывает возможные операции с 
+возвратами.
+
 {: .fs-6 .fw-300 }

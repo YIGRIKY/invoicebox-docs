@@ -139,7 +139,7 @@ layout: table_wrappers
 
         {% if page.has_children == true and page.has_toc != false %}
           <hr>
-          <h2 class="text-delta">Table of contents</h2>
+          <h2 class="text-delta">Содержание</h2>
           <ul>
             {%- assign children_list = pages_list | where: "parent", page.title | where: "grand_parent", page.parent -%}
             {% for child in children_list %}
@@ -166,7 +166,7 @@ layout: table_wrappers
               <div class="d-flex mt-2">
                 {% if site.last_edit_timestamp and site.last_edit_time_format and page.last_modified_date %}
                   <p class="text-small text-grey-dk-000 mb-0 mr-2">
-                    Page last modified: <span class="d-inline-block">{{ page.last_modified_date | date: site.last_edit_time_format }}</span>.
+                    Страница изменена: <span class="d-inline-block">{{ page.last_modified_date | date: site.last_edit_time_format }}</span>.
                   </p>
                 {% endif %}
                 {% if

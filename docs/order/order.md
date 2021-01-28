@@ -6,7 +6,9 @@ has_children: true
 permalink: /docs/order
 ---
 
-# UI Components
+# Работа с заказом
 
-To make it as easy as possible to write documentation in plain Markdown, most UI components are styled using default Markdown elements with few additional CSS classes needed.
+Заказ является основным объектом при работе Магазина с системой &laquo;ИнвойсБокс&raquo;.
+Текущий раздел описывает возможные манипуляции с заказом.
+
 {: .fs-6 .fw-300 }

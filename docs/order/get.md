@@ -7,7 +7,7 @@ parent: "Работа с заказом"
 
 - метод: `GET`
 - ресурс: `/a1/api/filter/order/order`
-- тело ответа - array of [OrderResponse](/docs/order-create/#orderresponse)
+- тело ответа - array of [OrderResponse](/docs/order/create/#orderresponse)
 
 Используя этот метод можно получить список заказов. Возможно применения фильтров и сортировок.
 
