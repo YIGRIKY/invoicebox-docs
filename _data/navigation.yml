@@ -27,7 +27,7 @@ docs:
         url: /docs/refund-order-create/
       - title: "Получение списка возвратов"
         url: /docs/refund-order-get/
-      - title: "Нотификация об изменении статуса заказа"
+      - title: "Изменение статуса заказа"
         url: /docs/order-status-notification/
       - title: "Дополнительные данные заказа"
         url: /docs/order-metadata/

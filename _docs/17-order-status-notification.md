@@ -1,5 +1,5 @@
 ---
-title: "Нотификация об оплате заказа"
+title: "Изменение статуса заказа"
 permalink: /docs/order-status-notification/
 excerpt: "Order status notification"
 toc: true
