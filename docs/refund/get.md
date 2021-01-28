@@ -1,7 +1,8 @@
 ---
 layout: default
-nav_order: 16
+nav_order: 2
 title: "Получение списка возвратов"
+parent: Работа с возвратом
 ---
 
 - метод: `GET`
