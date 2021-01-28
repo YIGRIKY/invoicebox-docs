@@ -2,7 +2,7 @@
 layout: default
 nav_order: 2
 title: "Получение заказа"
-parent: Работа с заказом
+parent: "Работа с заказом"
 ---
 
 - метод: `GET`

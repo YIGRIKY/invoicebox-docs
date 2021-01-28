@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Работа с заказом
+title: "Работа с заказом"
 nav_order: 3
 has_children: true
 permalink: /docs/order
