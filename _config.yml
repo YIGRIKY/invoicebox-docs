@@ -60,9 +60,9 @@ analytics:
 # Site Footer
 footer:
   links:
-    - label: "invoicebox.ru"
+    - label: "www.invoicebox.ru"
       icon: "fab fa-fw fa-link"
-      url: "https://invoicebox.ru"
+      url: "https://www.invoicebox.ru"
 
 # Reading Files
 include:
