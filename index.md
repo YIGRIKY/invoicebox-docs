@@ -25,7 +25,7 @@ permalink: /
 3. Получать информацию об оплате заказов;
 4. Осуществлять возвраты клиентам по оплаченным заказам;
 
-[Начало работы](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [Перейти на сайт ИнвойсБокс](https://www.invoicebox.ru){: .btn .fs-5 .mb-4 .mb-md-0 }
+[Начало работы](#начало-работы){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [Перейти на сайт ИнвойсБокс](https://www.invoicebox.ru){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
 
