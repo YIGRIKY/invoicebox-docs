@@ -1,7 +1,8 @@
 ---
 layout: default
-nav_order: 11
+nav_order: 1
 title: Создание заказа
+parent: Работа с заказом
 ---
 
 Создание заказа:
