@@ -1,6 +1,6 @@
 ---
 layout: default
-nav_order: 2
+nav_order: 3
 title: "Схема взаимодействия"
 ---
 
@@ -23,3 +23,5 @@ title: "Схема взаимодействия"
  - `completed` - Оплачен
  - `expired` - Просрочен (expirationDate больше чем текущее время)
  - `canceled` - Отменен магазином до оплаты
+
+[Читать далее](/docs/order){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }

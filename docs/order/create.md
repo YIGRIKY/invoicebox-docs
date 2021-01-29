@@ -5,7 +5,8 @@ title: Создание заказа
 parent: "Работа с заказом"
 ---
 
-Создание заказа:
+# Создание заказа
+
 - метод: `POST`
 - ресурс: `/a1/api/order/order`
 - тело запроса - объект [CreateOrderRequest](#createorderrequest)
@@ -144,3 +145,6 @@ Accept: application/json
 | vatCode        | да            | enum    | Код процента НДС              | `RUS_VAT20`,`RUS_VAT10`
 | type           | да            | string  | Тип позиции                   | `service`
 | paymentType    | да            | string  | Тип оплаты                    | `full_prepayment`
+
+
+[Читать далее](/docs/order/get){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }

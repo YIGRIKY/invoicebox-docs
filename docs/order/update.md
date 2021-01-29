@@ -24,3 +24,6 @@ parent: "Работа с заказом"
 | basketItems     | нет          | array of [BasketItem](/docs/order/create/#basketitem)  | Состав заказа                      |
 | metaData        | нет          | object                              | [Дополнительные данные заказа](/docs/order/metadata/) |
 | customer        | нет          | [Customer](/docs/order/create/#customer)               | Информация о плательщике           |
+
+
+[Читать далее](/docs/order/delete){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }

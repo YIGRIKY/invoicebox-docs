@@ -5,6 +5,8 @@ title: "Получение заказа"
 parent: "Работа с заказом"
 ---
 
+# Получение заказа
+
 - метод: `GET`
 - ресурс: `/a1/api/filter/order/order`
 - тело ответа - array of [OrderResponse](/docs/order/create/#orderresponse)
@@ -31,3 +33,4 @@ GET /a1/api/filter/order/order?expirationDate[_ge]=2021-01-27T00:00:00
 GET /a1/api/filter/order/order?merchantOrderId=ORD123456
 ```
 
+[Читать далее](/docs/order/update){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }

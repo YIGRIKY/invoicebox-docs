@@ -1,10 +1,10 @@
 ---
 layout: default
-nav_order: 3
+nav_order: 4
 title: "Подключение к API"
 ---
 
-# Подключение с API
+# Подключение к API
 
 API ИнвойсБокс представляет собой набор HTTP ресурсов, к которым можно обращаться следующими HTTP методами: `GET`, `POST`, `PUT`, `DELETE`.
 
@@ -104,3 +104,5 @@ Authorization: Bearer b37c4c689295904ed21eee5d9a48d42e
 ### Получение дополнительных данных в запросе
 
 Описание в разработке
+
+[Читать далее](/docs/api){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }

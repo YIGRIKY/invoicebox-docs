@@ -5,6 +5,8 @@ title: "Получение списка возвратов"
 parent: "Работа с возвратом"
 ---
 
+# Получение списка возвратов
+
 - метод: `GET`
 - ресурс: `/a1/api/filter/order/refund-order`
 - тело ответа - array of [RefundOrderResponse](/docs/refund-order-create/#refundorderresponse)
@@ -28,3 +30,5 @@ GET /a1/api/filter/order/refund-order?status=completed
 ```
 GET /a1/api/filter/order/refund-order?merchantOrderId=ORD123456
 ```
+
+
