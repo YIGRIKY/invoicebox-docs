@@ -7,6 +7,8 @@ parent: "Работа с заказом"
 
 # Создание заказа
 
+Для создания заказа, необходимо вызвать следующий метод API:
+
 - метод: `POST`
 - ресурс: `/a1/api/order/order`
 - тело запроса - объект [CreateOrderRequest](#createorderrequest)
@@ -87,7 +89,7 @@ Accept: application/json
 </section>
 </details>
 
-#### CreateOrderRequest
+## CreateOrderRequest
 
 | Свойство        | Обязательное | Тип                                 | Описание                                              | Пример значения 
 | --------------- | -------------|------------------------------------ | ----------------------------------------------------- | ----------------
@@ -100,14 +102,15 @@ Accept: application/json
 | languageId      | нет          | string enum                         | Язык интерфейса платежной страницы                    | `RU`, `EN`
 | expirationDate  | да           | datetime                            | Срок действия заказа                                  | `2020-12-22T00:00:00+00:00`
 | basketItems     | да           | array of [BasketItem](#basketitem)  | Состав заказа                                         |
-| metaData        | нет          | object                              | [Дополнительные данные заказа](/docs/order-metadata/) |
+| metaData        | нет          | object                              | [Дополнительные данные заказа](/docs/order/metadata/) |
 | customer        | да           | [Customer](#customer)               | Информация о плательщике                              |
 | successUrl      | нет          | string                              | Ссылка для перехода на сайт Магазина в случае успешной оплаты |
 | failUrl         | нет          | string                              | Ссылка для перехода на сайт Магазина в случае ошибки оплаты   |
 | returnUrl       | нет          | string                              | Ссылка для возврата на сайт Магазина                          |
 
 
-#### OrderResponse
+## OrderResponse
+
 Повторяет свойства объекта [CreateOrderRequest](#createorderrequest) с дополнительными свойствами: 
 
 | Свойство        | Обязательное | Тип         | Описание                                                | Пример значения
@@ -117,7 +120,7 @@ Accept: application/json
 | createdAt       | да           | datetime    | Дата создания заказа                                    | `2020-12-22T00:00:00+00:00`
 | status          | да           | string enum | Статус заказа                                           | `completed`
 
-#### Customer
+## Customer
 
 | Свойство            | Обязательное | Тип                | Описание          | Пример значения 
 | ------------------- | ------------ | ------------------ | ----------------- | --------------- 
@@ -128,7 +131,7 @@ Accept: application/json
 | vatNumber           | да           | string             | ИНН               | `7710044140`
 | registrationAddress | да           | string             | Юр. адресс        | `190000, Санкт-Петербург, Невский пр. 147, офис 321`
 
-#### BasketItem
+## BasketItem
 
 | Свойство       |  Обязательное |Тип      | Описание                      | Пример значения 
 | -------------- | ------------- | ------- | ----------------------------- | --------------- 

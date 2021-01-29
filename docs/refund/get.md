@@ -7,9 +7,11 @@ parent: "Работа с возвратом"
 
 # Получение списка возвратов
 
+Для получения списка возвратов, необходимо вызвать следующий метод API:
+
 - метод: `GET`
 - ресурс: `/a1/api/filter/order/refund-order`
-- тело ответа - array of [RefundOrderResponse](/docs/refund-order-create/#refundorderresponse)
+- тело ответа - array of [RefundOrderResponse](/docs/refund/create/#refundorderresponse)
 
 Используя этот метод можно получить список возвратов. Возможно применения фильтров и сортировок.
 
