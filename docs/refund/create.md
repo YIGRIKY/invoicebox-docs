@@ -15,13 +15,13 @@ parent: "Работа с возвратом"
 ## Получается список доступных для возврата позиций:
 
 - метод: `GET`
-- ресурс: `/a1/api/order/order/:uuid/refund-basket-item` - где `:uuid` это идентификатор заказа
+- ресурс: `/v3/api/order/order/:uuid/refund-basket-item` - где `:uuid` это идентификатор заказа
 - тело ответа - array of [BasketItem](/docs/order-create/#basketitem)
 
 ## Создание возвратного заказа
 
 - метод: `POST`
-- ресурс: `/a1/api/order/refund-order`
+- ресурс: `/v3/api/order/refund-order`
 - тело запроса - объект [CreateRefundOrderRequest](#createrefundorderrequest)
 - тело ответа - объект [RefundOrderResponse](#refundorderresponse)
 

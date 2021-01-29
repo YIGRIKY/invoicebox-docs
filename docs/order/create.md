@@ -10,7 +10,7 @@ parent: "Работа с заказом"
 Для создания заказа, необходимо вызвать следующий метод API:
 
 - метод: `POST`
-- ресурс: `/a1/api/order/order`
+- ресурс: `/v3/api/order/order`
 - тело запроса - объект [CreateOrderRequest](#createorderrequest)
 - тело ответа - объект [OrderResponse](#orderresponse)
 
@@ -18,7 +18,7 @@ parent: "Работа с заказом"
   <summary>Пример запроса</summary>
 <section markdown="1">
 ``` json
-POST https://api.stage.k8s.invbox.ru/a1/api/order/order
+POST https://api.stage.k8s.invbox.ru/v3/api/order/order
 Authorization: Bearer b37c4c689295904ed21eee5d9a48d42e
 Content-Type: application/json
 Accept: application/json

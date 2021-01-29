@@ -11,7 +11,7 @@ parent: "Работа с заказом"
 Для отмены заказа, необходимо вызвать следующий метод API:
 
 - метод: `DELETE`
-- ресурс: `/a1/api/order/order/:uuid` - где `:uuid` это идентификатор заказа
+- ресурс: `/v3/api/order/order/:uuid` - где `:uuid` это идентификатор заказа
 - тело запроса - отсутствует
 - тело ответа - объект [OrderResponse](/docs/order/create/#orderresponse) со статусом `canceled`
 
