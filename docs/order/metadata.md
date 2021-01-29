@@ -11,8 +11,14 @@ parent: "Работа с заказом"
 в запросе [создания заказа](/docs/order/create/). По-умолчанию свойство заполняется в формате [json-ld](https://json-ld.org/).
 Система поддерживат типы объектов, описанные на сайте [https://schema.org/](https://schema.org/).
 
+## Данные бронирования места проживания
+
 Для передачи данных бронирования места проживания (отель, хостел, апартаменты и пр.), в поле `metaData`
-необходимо передать объект [LodgingReservation](https://schema.org/LodgingReservation)
+необходимо передать объект [LodgingReservation](https://schema.org/LodgingReservation).
+
+<details>
+  <summary>Пример объекта LodgingReservation</summary>
+<section markdown="1">
 ``` json
 {
   "@type": "LodgingReservation",
@@ -39,5 +45,7 @@ parent: "Работа с заказом"
   "checkoutTime": "2017-04-13T11:00:00-08:00"
 }
 ```
+</section>
+</details>
 
 [Читать далее](/docs/refund){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
