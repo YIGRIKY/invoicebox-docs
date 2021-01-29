@@ -11,41 +11,54 @@ parent: "Работа с заказом"
 в запросе [создания заказа](/docs/order/create/). По-умолчанию свойство заполняется в формате [json-ld](https://json-ld.org/).
 Система поддерживат типы объектов, описанные на сайте [https://schema.org/](https://schema.org/).
 
+## Данные бронирования авиабилетов
+
+Для передачи данных бронирования авиаперелётов, в поле `metaData`
+необходимо передать объект [ReservationPackage](https://schema.org/ReservationPackage) с перечнем
+дочерних объектов [FlightReservation](https://schema.org/FlightReservation).
+
 ## Данные бронирования места проживания
 
 Для передачи данных бронирования места проживания (отель, хостел, апартаменты и пр.), в поле `metaData`
-необходимо передать объект [LodgingReservation](https://schema.org/LodgingReservation).
+необходимо передать объект [ReservationPackage](https://schema.org/ReservationPackage) с перечнем
+дочерних объектов [LodgingReservation](https://schema.org/LodgingReservation).
 
 <details>
-  <summary>Пример объекта LodgingReservation</summary>
+  <summary>Пример объекта ReservationPackage</summary>
 <section markdown="1">
 ``` json
 {
-  "@type": "LodgingReservation",
-  "reservationId": "abc456",
-  "reservationStatus": "https://schema.org/ReservationConfirmed",
-  "underName": {
-    "@type": "Person",
-    "name": "John Smith"
-  },
-  "reservationFor": {
-    "@type": "LodgingBusiness",
-    "name": "Hilton San Francisco Union Square",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "333 O'Farrell St",
-      "addressLocality": "San Francisco",
-      "addressRegion": "CA",
-      "postalCode": "94102",
-      "addressCountry": "US"
+  "@type": "ReservationPackage",
+  "subReservation": [
+  {
+    "@type": "LodgingReservation",
+    "reservationId": "YQVM18",
+    "reservationStatus": "https://schema.org/ReservationConfirmed",
+    "underName": {
+      "@type": "Person",
+      "name": "Андрей Макаров"
     },
-    "telephone": "415-771-1400"
-  },
-  "checkinTime": "2017-04-11T16:00:00-08:00",
-  "checkoutTime": "2017-04-13T11:00:00-08:00"
+    "reservationFor": {
+      "@type": "LodgingBusiness",
+      "name": "Гранд Отель Европа",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ул. Михайловская, д. 1/7",
+        "addressLocality": "Санкт-Петербург",
+        "addressRegion": "Санкт-Петербург",
+        "postalCode": "191186",
+        "addressCountry": "RU"
+      },
+      "telephone": "+7 (812) 329-6000"
+    },
+    "checkinTime": "2021-02-21T16:00:00-08:00",
+    "checkoutTime": "2021-02-23T11:00:00-08:00"
+  }]
 }
 ```
 </section>
 </details>
+
+---
 
 [Читать далее](/docs/refund){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
