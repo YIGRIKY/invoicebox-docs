@@ -32,7 +32,7 @@ parent: "Обработка уведомлений"
 
 # Формат ответа
 
-На запросы-уведомления веб-сервис Магазина должен вернуть объект [NotificationSuccess](#notificationsuccess). 
+В случае успешной обработки запроса-уведомления веб-сервис Магазина должен вернуть объект [NotificationSuccess](#notificationsuccess). 
 
 ## NotificationSuccess
 
