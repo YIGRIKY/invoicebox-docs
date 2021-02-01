@@ -1,6 +1,6 @@
 ---
 layout: default
-nav_order: 3
+nav_order: 10
 title: "Возможные ошибки"
 ---
 
@@ -17,5 +17,3 @@ title: "Возможные ошибки"
 | wrong_total_amount                 | 422       | Ошибка подсчета итоговой суммы заказа, проверьте правильность подсчета amount
 | wrong_total_vat_amount             | 422       | Ошибка подсчета итоговой суммы НДС заказа, проверьте правильность подсчета vatAmount
 | invoice_already_paid               | 422       | Ошибка изменения заказа, он уже оплачен
-
-[Читать далее](/docs/schema){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
