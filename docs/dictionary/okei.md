@@ -84,4 +84,4 @@ parent: "Справочники"
 | 185 | Грузоподъемность в метрических тоннах | т    |
 | 206 | Центнер (метрический)                 | ц    |q
 
-[Читать далее](/docs/dictionary/error){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Читать далее](/docs/dictionary/iso4217){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }

@@ -99,7 +99,7 @@ Accept: application/json
 | merchantOrderId | да           | string                              | Идентификатор заказа в учетной системе магазина       | `O-12345`
 | amount          | да           | float                               | Сумма заказа                                          | `19658.45`
 | vatAmount       | да           | float                               | Сумма НДС                                             | `156.56`
-| currencyId      | да           | string enum                         | Валюта заказа                                         | `RUB`
+| currencyId      | да           | string enum                         | Код валюты заказа в соответствии с [ISO 4217](/docs/dictionary/iso4217/) | `RUB`
 | languageId      | нет          | string enum                         | Язык интерфейса платежной страницы                    | `RU`, `EN`
 | expirationDate  | да           | datetime                            | Срок действия заказа                                  | `2020-12-22T00:00:00+00:00`
 | basketItems     | да           | array of [BasketItem](#basketitem)  | Корзина заказа                                        |
@@ -116,7 +116,7 @@ Accept: application/json
 
 | Свойство        | Обязательное | Тип         | Описание                                                | Пример значения
 | --------------- | -------------|------------ | ------------------------------------------------------- | ----------------
-| id              | да           | string      | Идентификатор заказа в системе InvoiceBox               | `01771534-1a57-f184-dee3-ebeb91dded75`
+| id              | да           | string      | Идентификатор заказа в системе ИнвойсБокс               | `01771534-1a57-f184-dee3-ebeb91dded75`
 | paymentUrl      | да           | string      | Ссылка для перехода на платежный шлюз для оплаты заказа |
 | createdAt       | да           | datetime    | Дата создания заказа                                    | `2020-12-22T00:00:00+00:00`
 | status          | да           | string enum | Статус заказа                                           | `completed`
