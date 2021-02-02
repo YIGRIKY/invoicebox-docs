@@ -23,11 +23,29 @@ title: "Схема взаимодействия"
 [](https://sequencediagram.org/index.html#initialData=C4S2BsFMAJEIQRREEKwggeEEAwg1BMIIdhBWA4QZgfCCAsIIoJwgggiCBCIBroPIg050gGCCC8IBgRYIggBgXCCMCCABQCS0AG4BmAFABDAK7AA9gDs5AWwBGkAE5TZAYyXbogfBBegYRBA-CCpKiQNwggGRApABxnbQ+kK+XBogHBBUQGYQVCxcFhc3Dy8ZH2Y2DnJuPmg9AF5UwDwQcnNASRBEKgw7RBZcRGgCSzsbQGkQdKkzHisbewcAWgA+AODQlgAuOAIsIlRESmgcHhCpLpCwjtZ2Ll5yfsAkEGqsAgxoZFHidHJB4ZL6CZDUKQWEpPIOmZ7+phIWSlxAERBcScoCQAEQcdRJjhoLgGORqnZJtAWOgKlVKOZpkFZiwOg0mrZHP0TIgfsVUJYfqhCsVSlD0JUbIBFEEAbCAscyAORAGJRCSVAGIgCLR1gxDgAPDzWh12lclnw1jh8MQyAVSYwKZQaSwOEyWbhWWQADTQSwEOzmQDiICSyuQ9ZTKBdOc1HPN4iKVtAMnKDiazZcbYllqiLFyWlicXiCUSiiUytrGt67PRoQxUKQxmhumELsL3Xw7kiHtBAMQgGEQRAIyCDpIIgEYQaDmciWRCACRBFaRynLEFJ0hk3r8C4bMIMMITvhg6hbuWmE317cXCTkRpRyKd0OwsN2bPmtQR-oCEfcwvzrYsU3azLqDcGGJZcORIdrQqzcHXtmcsI2NyihW6bmsNlsdnthuVWz92ydO3nHskxfD12gHH17WyPICkLMo5wXM1oGeRBaWqeAGFxIgCikIA)
 
 
-  <div class="mermaid">
-    graph TD
-    A[Client] --> B[Load Balancer]
-    B --> C[Server01]
-    B --> D[Server02]
-  </div>
+<div class="mermaid">
+sequenceDiagram
+  title Схема взаимодействия с ИнвойсБокс API v3
+  autonumber
+
+  participant Покупатель
+  participant Магазин
+  participant ИнвойсБокс 
+
+  ==Осуществление оплаты==
+  Покупатель->>Магазин: Создает заказ
+  Магазин->>ИнвойсБокс: Вызов метода создания заказа
+  ИнвойсБокс->>Магазин: Идентификатор заказа и ссылка на оплату
+  Магазин->>Покупатель: Перенаправление на платёжную страницу
+  Покупатель<<-->>ИнвойсБокс: Взаимодействие с платёжной страницей, получение счёта
+  Покупатель->>ИнвойсБокс: Оплата счёта
+  ИнвойсБокс->>Покупатель: Перенаправление покупателя на сайт магазина
+  ИнвойсБокс->>Магазин: Уведомление об успешной оплате
+  ==Оформление возвратов==
+  Покупатель->>Магазин: Обращается за возвратом по заказу
+  Магазин<-->ИнвойсБокс: Получение списка позиций в заказе
+  Магазин->>ИнвойсБокс: Вызов метода оформления возврата
+  ИнвойсБокс->>Покупатель: Осуществление возврата денежных средств
+</div>
 
 [Читать далее](/docs/order){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
