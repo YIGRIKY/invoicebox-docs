@@ -134,21 +134,21 @@ Accept: application/json
 
 ## BasketItem
 
-| Свойство       |  Обязательное |Тип      | Описание                      | Пример значения 
-| -------------- | ------------- | ------- | ----------------------------- | --------------- 
-| sku            | да            | string  | Артикул                       | `5fe0adcfa7fb4`
-| name           | да            | string  | Наименование                  | `Бронирование номера`
-| measure        | да            | string  | Единица измерения             | `шт.`
-| measureCode    | да            | int     | Код единицы измерения (для России - по [ОКЕИ](/docs/dictionary/okei/)) | `796`
-| grossWeight    | да            | float   | Вес брутто                    | `125.45`
-| netWeight      | да            | float   | Вес нетто                     | `125.45`
-| quantity       | да            | float   | Количество                    | `3`
-| amount         | да            | float   | Стоимость единицы             | `100.55`
-| totalAmount    | да            | float   | Стоимость всех единиц с НДС   | `123.55`
-| totalVatAmount | да            | float   | Сумма НДС всех позиций        | `23`
-| vatCode        | да            | enum    | Код процента НДС              | `RUS_VAT20`,`RUS_VAT10`
-| type           | да            | string  | Тип позиции                   | `service`
-| paymentType    | да            | string  | Тип оплаты                    | `full_prepayment`
+| Свойство       |  Обязательное |Тип          | Описание |
+| -------------- | ------------- | ----------- | -------- |
+| sku            | да            | string      | Артикул, например: `5fe0adcfa7fb4`
+| name           | да            | string      | Наименование, например `Бронирование номера`
+| measure        | да            | string      | Единица измерения (для России - по [ОКЕИ](/docs/dictionary/okei/)), например `шт.`
+| measureCode    | да            | int         | Код единицы измерения (для России - по [ОКЕИ](/docs/dictionary/okei/)), например `796`
+| grossWeight    | нет           | float       | Вес брутто, например `125.45`
+| netWeight      | нет           | float       | Вес нетто, например `125.45`
+| quantity       | да            | float       | Количество, например `3`
+| amount         | да            | float       | Стоимость единицы, например `100.55`
+| totalAmount    | да            | float       | Стоимость всех единиц с НДС, например`123.55`
+| totalVatAmount | да            | float       | Сумма НДС всех позиций, например `23`
+| vatCode        | да            | string enum | Код процента НДС, допустимые значения: `RUS_VAT20` - 20%,`RUS_VAT10` - 10%
+| type           | да            | string enum | Тип позиции, например `service` - сервис, `commodity` - товар
+| paymentType    | да            | string enum | Тип оплаты, допустимые значения: `full_prepayment`, `prepayment`, `advance`, `full_payment`
 
 ---
 
