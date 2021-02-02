@@ -13,7 +13,7 @@ parent: "Работа с заказом"
 - ресурс: `/v3/api/order/order`
 - тело запроса - объект [CreateOrderRequest](#createorderrequest)
 - тело ответа - объект [OrderResponse](#orderresponse)
-- Возможные [ошибки](/docs/error)
+- Возможные [ошибки](/docs/dictionary/error/)
 
 <details>
   <summary>Пример запроса</summary>
