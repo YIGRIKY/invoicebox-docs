@@ -105,4 +105,6 @@ Authorization: Bearer b37c4c689295904ed21eee5d9a48d42e
 
 Описание в разработке
 
+---
+
 [Читать далее](/docs/api){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }

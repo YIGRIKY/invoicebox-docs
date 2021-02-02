@@ -26,5 +26,6 @@ parent: "Работа с заказом"
 | metaData        | нет          | object                              | [Дополнительные данные заказа](/docs/order/metadata/) |
 | customer        | нет          | [Customer](/docs/order/create/#customer)               | Информация о заказчике             |
 
+---
 
 [Читать далее](/docs/order/delete){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }

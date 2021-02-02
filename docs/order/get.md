@@ -35,4 +35,6 @@ GET /v3/api/filter/order/order?expirationDate[_ge]=2021-01-27T00:00:00
 GET /v3/api/filter/order/order?merchantOrderId=ORD123456
 ```
 
+---
+
 [Читать далее](/docs/order/update){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }

@@ -52,6 +52,7 @@ parent: "Работа с возвратом"
 | createdAt       | да           | datetime                            | Дата создания заказа                                  | `2020-12-22T00:00:00+00:00`
 | status          | да           | string enum                         | Статус заказа                                         | `completed`
 
+---
 
 [Читать далее](/docs/refund/get){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 

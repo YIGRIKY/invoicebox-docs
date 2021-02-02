@@ -150,5 +150,6 @@ Accept: application/json
 | type           | да            | string  | Тип позиции                   | `service`
 | paymentType    | да            | string  | Тип оплаты                    | `full_prepayment`
 
+---
 
 [Читать далее](/docs/order/get){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }

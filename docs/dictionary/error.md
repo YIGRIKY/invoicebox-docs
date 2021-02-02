@@ -23,4 +23,6 @@ parent: "Справочники"
 | wrong_total_vat_amount             | 422       | Ошибка подсчёта итоговой суммы НДС заказа, проверьте правильность подсчёта vatAmount.
 | invoice_already_paid               | 422       | Ошибка изменения заказа, он уже оплачен.
 
+---
+
 [Читать далее](/docs/security){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }

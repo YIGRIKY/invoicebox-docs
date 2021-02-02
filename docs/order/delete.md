@@ -15,4 +15,6 @@ parent: "Работа с заказом"
 - тело запроса - отсутствует
 - тело ответа - объект [OrderResponse](/docs/order/create/#orderresponse) со статусом `canceled`
 
+---
+
 [Читать далее](/docs/order/metadata){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
