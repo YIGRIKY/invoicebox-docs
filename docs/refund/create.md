@@ -33,7 +33,7 @@ parent: "Работа с возвратом"
 | merchantOrderId | да           | string                                                | Идентификатор возвратного заказа в учетной системе магазина  | `O-12345`
 | amount          | да           | float                                                 | Сумма заказа                                          | `19658.45`
 | vatAmount       | да           | float                                                 | Сумма НДС                                             | `156.56`
-| basketItems     | да           | array of [BasketItem](/docs/order-create/#basketitem) | Состав заказа                                         |
+| basketItems     | да           | array of [BasketItem](/docs/order-create/#basketitem) | Корзина заказа                                        |
 | description     | да           | string                                                | Описание заказа                                       | `Оплата номера в отеле`
 
 ## RefundOrderResponse
@@ -48,7 +48,7 @@ parent: "Работа с возвратом"
 | amount          | да           | float                               | Сумма заказа                                          | `19658.45`
 | vatAmount       | да           | float                               | Сумма НДС                                             | `156.56`
 | currencyId      | да           | string enum                         | Валюта заказа                                         | `RUB`
-| basketItems     | да           | array of [BasketItem](#basketitem)  | Состав заказа                                         |
+| basketItems     | да           | array of [BasketItem](#basketitem)  | Корзина заказа                                        |
 | createdAt       | да           | datetime                            | Дата создания заказа                                  | `2020-12-22T00:00:00+00:00`
 | status          | да           | string enum                         | Статус заказа                                         | `completed`
 

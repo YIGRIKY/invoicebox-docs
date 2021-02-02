@@ -102,9 +102,9 @@ Accept: application/json
 | currencyId      | да           | string enum                         | Валюта заказа                                         | `RUB`
 | languageId      | нет          | string enum                         | Язык интерфейса платежной страницы                    | `RU`, `EN`
 | expirationDate  | да           | datetime                            | Срок действия заказа                                  | `2020-12-22T00:00:00+00:00`
-| basketItems     | да           | array of [BasketItem](#basketitem)  | Состав заказа                                         |
+| basketItems     | да           | array of [BasketItem](#basketitem)  | Корзина заказа                                        |
 | metaData        | нет          | object                              | [Дополнительные данные заказа](/docs/order/metadata/) |
-| customer        | да           | [Customer](#customer)               | Информация о плательщике                              |
+| customer        | да           | [Customer](#customer)               | Информация о заказчике                                |
 | successUrl      | нет          | string                              | Ссылка для перехода на сайт Магазина в случае успешной оплаты |
 | failUrl         | нет          | string                              | Ссылка для перехода на сайт Магазина в случае ошибки оплаты   |
 | returnUrl       | нет          | string                              | Ссылка для возврата на сайт Магазина                          |
@@ -125,7 +125,7 @@ Accept: application/json
 
 | Свойство            | Обязательное | Тип                | Описание          | Пример значения 
 | ------------------- | ------------ | ------------------ | ----------------- | --------------- 
-| type                | да           | string enum        | Тип плательщика   | `legal` - юр. лицо, `private` - физ лицо
+| type                | да           | string enum        | Тип заказчика     | `legal` - юр. лицо, `private` - физ лицо
 | name                | да           | string             | Имя               | `Peter`
 | phone               | да           | string             | Номер телефона    | `79001112233`
 | email               | да           | string             | Электронная почта | `peter@domain.com`
@@ -142,10 +142,10 @@ Accept: application/json
 | measureCode    | да            | int     | Код единицы измерения по ОКЕИ | `796`
 | grossWeight    | да            | float   | Вес брутто                    | `125.45`
 | netWeight      | да            | float   | Вес нетто                     | `125.45`
-| quantity       | да            | float   | Кол-во                        | `3`
+| quantity       | да            | float   | Количество                    | `3`
 | amount         | да            | float   | Стоимость единицы             | `100.55`
 | totalAmount    | да            | float   | Стоимость всех единиц с НДС   | `123.55`
-| totalVatAmount | да            | float   | Сумма ндс всех позиций        | `23`
+| totalVatAmount | да            | float   | Сумма НДС всех позиций        | `23`
 | vatCode        | да            | enum    | Код процента НДС              | `RUS_VAT20`,`RUS_VAT10`
 | type           | да            | string  | Тип позиции                   | `service`
 | paymentType    | да            | string  | Тип оплаты                    | `full_prepayment`
