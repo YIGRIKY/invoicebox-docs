@@ -13,8 +13,8 @@
 # you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "API ИнвойсБокс"
-description: "Техническая документация и описание API ИнвойсБокс"
+title: "ИнвойсБокс API v3"
+description: "Техническая документация и описание ИнвойсБокс API v3"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://docs.invoicebox.ru" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -101,8 +101,7 @@ gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into t
 color_scheme: nil
 
 # Google Analytics Tracking (optional)
-# e.g, UA-1234567-89
-ga_tracking: UA-2709176-10
+ga_tracking: G-61ZQB742J2
 ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true/nil by default)
 
 plugins:
