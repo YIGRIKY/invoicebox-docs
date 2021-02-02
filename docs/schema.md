@@ -22,17 +22,18 @@ title: "Схема взаимодействия"
 [](https://sequencediagram.org/index.html?presentationMode=readOnly#initialData=C4S2BsFMAJEIQRREEKwggeEEAwg1BMIIdhBWA4QZgfCCAsIIoJwgggiCBCIBroPIg050AggAoCS0bAdgG4D2IAMaQAQnwAeAKACGAV2B8usgLYAjSACdJMwQo3RA+CAFAXCCBhEED8IKkqJA3CCAZEEkAHaRtCCQzrsGiAcEFSBmEFQsXEBeECcXNw9pL05eAWExcWhtIzNLa3sAWgA+P0DgkIAuOAIsIlRESmgcYyDJPKDQnO5+IVEJYsAkEEBpECwCDGhkSuJ0clLykLpq1FqcSRb49vEchoLiwAwQEhDKXEAREFxaygJAARBp2fRcBnJum1roEPQCcxsrU3qAxpCc1IsrWztigZEMdEA9zMdUBgbKDcIh7uhnn9AGwgIVMgDkQBiUCGTQBiIG8ful-gAeImZHLZBZtRJdHD4YhkKg0OGMRHWFEEUjQXYnQikSQEv5ZClxKkdaCAPBBWah5iKEhJviZfhkAYZgaDUODIdDJnDzIrCTZ6A8GKhSFU0PlQtLKXLlrkPmtoIBiEAwiCIBGQ2th0AIgEYQaCmcjmRCACRAQhyfay4TUgtKgA)
 [](https://sequencediagram.org/index.html#initialData=C4S2BsFMAJEIQRREEKwggeEEAwg1BMIIdhBWA4QZgfCCAsIIoJwgggiCBCIBroPIg050gGCCC8IBgRYIggBgXCCMCCABQCS0AG4BmAFABDAK7AA9gDs5AWwBGkAE5TZAYyXbogfBBegYRBA-CCpKiQNwggGRApABxnbQ+kK+XBogHBBUQGYQVCxcFhc3Dy8ZH2Y2DnJuPmg9AF5UwDwQcnNASRBEKgw7RBZcRGgCSzsbQGkQdKkzHisbewcAWgA+AODQlgAuOAIsIlRESmgcHhCpLpCwjtZ2Ll5yfsAkEGqsAgxoZFHidHJB4ZL6CZDUKQWEpPIOmZ7+phIWSlxAERBcScoCQAEQcdRJjhoLgGORqnZJtAWOgKlVKOZpkFZiwOg0mrZHP0TIgfsVUJYfqhCsVSlD0JUbIBFEEAbCAscyAORAGJRCSVAGIgCLR1gxDgAPDzWh12lclnw1jh8MQyAVSYwKZQaSwOEyWbhWWQADTQSwEOzmQDiICSyuQ9ZTKBdOc1HPN4iKVtAMnKDiazZcbYllqiLFyWlicXiCUSiiUytrGt67PRoQxUKQxmhumELsL3Xw7kiHtBAMQgGEQRAIyCDpIIgEYQaDmciWRCACRBFaRynLEFJ0hk3r8C4bMIMMITvhg6hbuWmE317cXCTkRpRyKd0OwsN2bPmtQR-oCEfcwvzrYsU3azLqDcGGJZcORIdrQqzcHXtmcsI2NyihW6bmsNlsdnthuVWz92ydO3nHskxfD12gHH17WyPICkLMo5wXM1oGeRBaWqeAGFxIgCikIA)
 
+# title Схема взаимодействия с ИнвойсБокс API v3
+
+  ==Осуществление оплаты==
+  ==Оформление возвратов==
+
 
 <div class="mermaid">
 sequenceDiagram
-  title Схема взаимодействия с ИнвойсБокс API v3
   autonumber
-
   participant Покупатель
   participant Магазин
   participant ИнвойсБокс 
-
-  ==Осуществление оплаты==
   Покупатель->>Магазин: Создает заказ
   Магазин->>ИнвойсБокс: Вызов метода создания заказа
   ИнвойсБокс->>Магазин: Идентификатор заказа и ссылка на оплату
@@ -41,7 +42,6 @@ sequenceDiagram
   Покупатель->>ИнвойсБокс: Оплата счёта
   ИнвойсБокс->>Покупатель: Перенаправление покупателя на сайт магазина
   ИнвойсБокс->>Магазин: Уведомление об успешной оплате
-  ==Оформление возвратов==
   Покупатель->>Магазин: Обращается за возвратом по заказу
   Магазин<-->ИнвойсБокс: Получение списка позиций в заказе
   Магазин->>ИнвойсБокс: Вызов метода оформления возврата
