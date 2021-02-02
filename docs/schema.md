@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: nocompress
 nav_order: 2
 title: "Схема взаимодействия"
 ---
@@ -31,10 +31,7 @@ title: "Схема взаимодействия"
 <div class="mermaid">
 sequenceDiagram
     autonumber
-    participant Покупатель
-    participant Магазин
-    participant ИнвойсБокс 
-    Покупатель->>Магазин: Создает заказ
+    Buyer->>Merc: Создает заказ
 
 </div>
 
