@@ -32,4 +32,4 @@ title: "Термины и определения"
 
 ---
 
-[Читать далее](/docs/schema){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Читать далее &raquo;](/docs/schema){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
