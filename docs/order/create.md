@@ -139,7 +139,7 @@ Accept: application/json
 | sku            | да            | string  | Артикул                       | `5fe0adcfa7fb4`
 | name           | да            | string  | Наименование                  | `Бронирование номера`
 | measure        | да            | string  | Единица измерения             | `шт.`
-| measureCode    | да            | int     | Код единицы измерения по ОКЕИ | `796`
+| measureCode    | да            | int     | Код единицы измерения (для России - по [ОКЕИ](/docs/dictionary/okei/)) | `796`
 | grossWeight    | да            | float   | Вес брутто                    | `125.45`
 | netWeight      | да            | float   | Вес нетто                     | `125.45`
 | quantity       | да            | float   | Количество                    | `3`
