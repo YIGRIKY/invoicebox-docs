@@ -199,6 +199,16 @@ layout: table_wrappers_nc
     {% endif %}
   </div>
 <script src="/assets/js/mermaid.min.js"></script>
-<script>mermaid.initialize({startOnLoad:true});</script>
+<script>
+	mermaid.sequenceConfig = {
+	    diagramMarginX: 5,
+	    diagramMarginY: 5,
+	    boxTextMargin: 5,
+	    noteMargin: 5,
+	    messageMargin: 5,
+	    mirrorActors: true
+	};
+	mermaid.initialize({startOnLoad:true});
+</script>
 </body>
 </html>
