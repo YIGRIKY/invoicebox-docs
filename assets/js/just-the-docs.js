@@ -78,6 +78,7 @@ function initSearch() {
       lunr.tokenizer.separator = {{ site.search.tokenizer_separator | default: site.search_tokenizer_separator | default: "/[\s\-/]+/" }}
 
       var index = lunr(function(){
+        this.use(lunr.multiLanguage('en', 'ru'));
         this.ref('id');
         this.field('title', { boost: 200 });
         this.field('content', { boost: 2 });
@@ -175,7 +176,7 @@ function searchLoaded(index, docs) {
     if (results.length == 0) {
       var noResultsDiv = document.createElement('div');
       noResultsDiv.classList.add('search-no-result');
-      noResultsDiv.innerText = 'No results found';
+      noResultsDiv.innerText = 'Ничего не найдено';
       searchResults.appendChild(noResultsDiv);
 
     } else {
