@@ -100,7 +100,6 @@ sequenceDiagram
     participant Покупатель
     participant Магазин
     participant ИнвойсБокс 
-    participant Онлайн касса
     rect rgb(204, 245, 204)
       Покупатель->>Магазин: Создает заказ
       Магазин->>ИнвойсБокс: Вызов метода создания заказа
