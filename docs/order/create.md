@@ -105,6 +105,7 @@ Accept: application/json
 | basketItems     | да           | array of [BasketItem](#basketitem)  | Корзина заказа                                        |
 | metaData        | нет          | object                              | [Дополнительные данные заказа](/docs/order/metadata/) |
 | customer        | да           | [Customer](#customer)               | Информация о заказчике                                |
+| notificationUrl | нет          | string                              | URL для отправки [уведомлений](/docs/notification) об изменениях статуса заказа, по умолчанию используется URL из настроек магазина 
 | successUrl      | нет          | string                              | Ссылка для перехода на сайт Магазина в случае успешной оплаты |
 | failUrl         | нет          | string                              | Ссылка для перехода на сайт Магазина в случае ошибки оплаты   |
 | returnUrl       | нет          | string                              | Ссылка для возврата на сайт Магазина                          |
