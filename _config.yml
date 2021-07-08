@@ -13,8 +13,8 @@
 # you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "ИнвойсБокс API v3"
-description: "Техническая документация и описание ИнвойсБокс API v3"
+title: "Инвойсбокс API v3"
+description: "Техническая документация и описание Инвойсбокс API v3"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://docs.invoicebox.ru" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -64,7 +64,7 @@ heading_anchors: true
 
 # Aux links for the upper right navigation
 aux_links:
-  "Сайт ИнвойсБокс":
+  "Сайт Инвойсбокс":
     - "//www.invoicebox.ru"
 
 # Makes Aux links open in a new tab. Default is false
