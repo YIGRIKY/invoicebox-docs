@@ -17,6 +17,54 @@ parent: "Работа с заказом"
 необходимо передать объект [ReservationPackage](https://schema.org/ReservationPackage) с перечнем
 дочерних объектов [FlightReservation](https://schema.org/FlightReservation).
 
+## Данные бронирования железнодорожных билетов
+
+Для передачи данных бронирования авиаперелётов, в поле `metaData`
+необходимо передать объект [ReservationPackage](https://schema.org/ReservationPackage) с перечнем
+дочерних объектов [TrainReservation](https://schema.org/TrainReservation).
+
+<details>
+  <summary>Пример объекта ReservationPackage</summary>
+<section markdown="1">
+``` json
+{
+  "@type": "ReservationPackage",
+  "subReservation": [
+  {
+    "@type": "TrainReservation",
+    "bookingTime": "2021-05-15T12:22:01",
+    "reservationId": "123456",
+    "reservationStatus": "https://schema.org/ReservationConfirmed",
+    "reservationFor": {
+      "@type": "TrainTrip",
+      "departureStation": {
+        "@type": "TrainStation",
+        "name": "Moscow Kievskyi"
+      },
+      "departureTime": "2021-06-04T10:30:00+01:00",
+      "arrivalStation": {
+        "@type": "TrainStation",
+        "name": "St. Petersburg Central"
+      },
+      "arrivalTime": "2021-06-04T03:10:00+01:00"
+    },
+    "underName": {
+      "@type": "Person",
+      "name": "Сергей Иванов"
+    },
+    "provider": {
+      "@type": "Organization",
+      "name": "Sapsan"
+    },
+    "priceCurrency": "RUB",
+    "totalPrice": 10564.00	
+  }]
+}
+```
+</section>
+</details>
+
+
 ## Данные бронирования места проживания
 
 Для передачи данных бронирования места проживания (отель, хостел, апартаменты и пр.), в поле `metaData`
