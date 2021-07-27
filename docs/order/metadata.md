@@ -17,6 +17,7 @@ parent: "Работа с заказом"
 необходимо передать объект [ReservationPackage](https://schema.org/ReservationPackage) с перечнем
 дочерних объектов [FlightReservation](https://schema.org/FlightReservation).
 
+
 ## Данные бронирования железнодорожных билетов
 
 Для передачи данных бронирования авиаперелётов, в поле `metaData`
