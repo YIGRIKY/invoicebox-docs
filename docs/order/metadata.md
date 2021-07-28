@@ -32,7 +32,7 @@ parent: "Работа с заказом"
   "@type": "ReservationPackage",
   "subReservation": [
   {
-    "@type": "[TrainReservation](https://schema.org/TrainReservation)",
+    "@type": "TrainReservation",
     "bookingTime": "2021-05-15T12:22:01",
     "reservationId": "123456",
     "reservationStatus": "https://schema.org/ReservationConfirmed",
