@@ -36,7 +36,7 @@ Accept: application/json
       "sku": "5fe0adcfa7fb4",
       "name": "Бронирование номера",
       "measure": "шт.",
-      "measureCode": 796,
+      "measureCode": "796",
       "grossWeight": 0,
       "netWeight": 0,
       "quantity": 3,
@@ -142,7 +142,7 @@ Accept: application/json
 | sku            | да            | string      | Артикул, например: `5fe0adcfa7fb4`
 | name           | да            | string      | Наименование, например `Бронирование номера`
 | measure        | да            | string      | Единица измерения (для России - по [ОКЕИ](/docs/dictionary/okei/)), например `шт.`
-| measureCode    | да            | int         | Код единицы измерения (для России - по [ОКЕИ](/docs/dictionary/okei/)), например `796`
+| measureCode    | да            | string      | Код единицы измерения (для России - по [ОКЕИ](/docs/dictionary/okei/)), например `796`
 | grossWeight    | нет           | float       | Вес брутто, например `125.45`
 | netWeight      | нет           | float       | Вес нетто, например `125.45`
 | quantity       | да            | float       | Количество, например `3`
