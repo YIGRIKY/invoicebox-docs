@@ -36,7 +36,7 @@ Accept: application/json
       "sku": "5fe0adcfa7fb4",
       "name": "Бронирование номера",
       "measure": "шт.",
-      "measureCode": 796,
+      "measureCode": "796",
       "grossWeight": 0,
       "netWeight": 0,
       "quantity": 3,
@@ -105,6 +105,7 @@ Accept: application/json
 | basketItems     | да           | array of [BasketItem](#basketitem)  | Корзина заказа                                        |
 | metaData        | нет          | object                              | [Дополнительные данные заказа](/docs/order/metadata/) |
 | customer        | да           | [Customer](#customer)               | Информация о заказчике                                |
+| notificationUrl | нет          | string                              | URL для отправки [уведомлений](/docs/notification) об изменениях статуса заказа, по умолчанию используется URL из настроек магазина 
 | successUrl      | нет          | string                              | Ссылка для перехода на сайт Магазина в случае успешной оплаты |
 | failUrl         | нет          | string                              | Ссылка для перехода на сайт Магазина в случае ошибки оплаты   |
 | returnUrl       | нет          | string                              | Ссылка для возврата на сайт Магазина                          |
@@ -116,7 +117,7 @@ Accept: application/json
 
 | Свойство        | Обязательное | Тип         | Описание                                                | Пример значения
 | --------------- | -------------|------------ | ------------------------------------------------------- | ----------------
-| id              | да           | string      | Идентификатор заказа в системе ИнвойсБокс               | `01771534-1a57-f184-dee3-ebeb91dded75`
+| id              | да           | string      | Идентификатор заказа в системе Инвойсбокс               | `01771534-1a57-f184-dee3-ebeb91dded75`
 | paymentUrl      | да           | string      | Ссылка для перехода на платежный шлюз для оплаты заказа |
 | createdAt       | да           | datetime    | Дата создания заказа                                    | `2020-12-22T00:00:00+00:00`
 | status          | да           | string enum | Статус заказа                                           | `completed`
@@ -136,21 +137,24 @@ Accept: application/json
 
 Корзина заказа. Пожалуйста, внимательно ознакомьтесь с требованиями по [заполнению наименования номенклатуры](/docs/fz54).
 
-| Свойство       |  Обязательное |Тип          | Описание |
-| -------------- | ------------- | ----------- | -------- |
-| sku            | да            | string      | Артикул, например: `5fe0adcfa7fb4`
-| name           | да            | string      | Наименование, например `Бронирование номера`
-| measure        | да            | string      | Единица измерения (для России - по [ОКЕИ](/docs/dictionary/okei/)), например `шт.`
-| measureCode    | да            | int         | Код единицы измерения (для России - по [ОКЕИ](/docs/dictionary/okei/)), например `796`
-| grossWeight    | нет           | float       | Вес брутто, например `125.45`
-| netWeight      | нет           | float       | Вес нетто, например `125.45`
-| quantity       | да            | float       | Количество, например `3`
-| amount         | да            | float       | Стоимость единицы, например `100.55`
-| totalAmount    | да            | float       | Стоимость всех единиц с НДС, например`123.55`
-| totalVatAmount | да            | float       | Сумма НДС всех позиций, например `23`
-| vatCode        | да            | string enum | Код процента НДС, допустимые значения: `RUS_VAT20` - 20%,`RUS_VAT10` - 10%
-| type           | да            | string enum | Тип позиции, например `service` - сервис, `commodity` - товар
-| paymentType    | да            | string enum | Тип оплаты, допустимые значения: `full_prepayment`, `prepayment`, `advance`, `full_payment`
+| Свойство             |  Обязательное |Тип          | Описание |
+| -------------------- | ------------- | ----------- | -------- |
+| sku                  | да            | string      | Артикул, например: `5fe0adcfa7fb4`
+| name                 | да            | string      | Наименование, например `Бронирование номера`
+| measure              | да            | string      | Единица измерения (для России - по [ОКЕИ](/docs/dictionary/okei/)), например `шт.`
+| measureCode          | да            | string      | Код единицы измерения (для России - по [ОКЕИ](/docs/dictionary/okei/)), например `796`
+| originCountry        | нет           | string      | Страна происхождения товара, например, `Россия`
+| originCountryCode    | нет           | string      | Код страны происхождения, например, Россия `643`
+| grossWeight          | нет           | float       | Вес брутто, например `125.45`
+| netWeight            | нет           | float       | Вес нетто, например `125.45`
+| quantity             | да            | float       | Количество, например `3`
+| amount               | да            | float       | Стоимость единицы, например `100.55`
+| totalAmount          | да            | float       | Стоимость всех единиц с НДС, например`123.55`
+| totalVatAmount       | да            | float       | Сумма НДС всех позиций, например `23`
+| excise               | нет           | float       | Сумма акциза, например, `10.00`
+| vatCode              | да            | string enum | Код процента НДС, допустимые значения: `NONE` - не облагается, `RUS_VAT0` - 0%, `RUS_VAT10` - 10%, `RUS_VAT20` - 20%
+| type                 | да            | string enum | Тип позиции, например `service` - сервис, `commodity` - товар
+| paymentType          | да            | string enum | Тип оплаты, допустимые значения: `full_prepayment`, `prepayment`, `advance`, `full_payment`
 
 ---
 
