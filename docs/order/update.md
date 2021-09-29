@@ -9,7 +9,7 @@ parent: "Работа с заказом"
 Для изменения заказа, необходимо вызвать следующий метод API:
 
 - метод: `PUT`
-- ресурс: `/v3/api/order/order/:uuid` - где `:uuid` это идентификатор заказа 
+- ресурс: `/v3/billing/api/order/order/:uuid` - где `:uuid` это идентификатор заказа 
 - тело запроса - объект [UpdateOrderRequest](#updateorderrequest)
 - тело ответа - объект [OrderResponse](/docs/order/create/#orderresponse)
 
