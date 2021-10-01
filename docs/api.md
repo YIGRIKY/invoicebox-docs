@@ -37,9 +37,7 @@ API Инвойсбокс представляет собой набор HTTP р�
 
 Пример заголовка и идентификатора для CMS Битрикс:
 
-`
-User-Agent: Bitrix/21.0 (Invoicebox 3.0>)
-`
+`User-Agent: Bitrix/21.0 (Invoicebox 3.0)`
 
 
 ### Структура ответа
@@ -50,7 +48,11 @@ User-Agent: Bitrix/21.0 (Invoicebox 3.0>)
 Пример запроса получения единичной сущности:
 ```json
 {
-  "data": {"id": 1, "title": "New title"}
+  "data": {
+    "id": 1,
+    "title":
+    "New title"
+  }
 }
 ```
 
@@ -58,9 +60,20 @@ User-Agent: Bitrix/21.0 (Invoicebox 3.0>)
 ```json
 {
   "data": [
-      {"id": 1, "title": "Apple"},
-      {"id": 2, "title": "Orange"},
-      {"id": 3, "title": "Passion fruit"}
+      {
+        "id": 1,
+        "title": "Apple"
+      },
+      {
+        "id": 2,
+        "title":
+        "Orange"
+      },
+      {
+        "id": 3,
+        "title":
+        "Passion fruit"
+      }
     ]
 }
 ```
