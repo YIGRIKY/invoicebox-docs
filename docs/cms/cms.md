@@ -2,6 +2,8 @@
 layout: default
 nav_order: 15
 title: "Модули для CMS"
+has_children: true
+permalink: /cms/cms
 ---
 
 # Готовые модули для CMS
