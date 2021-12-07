@@ -74,7 +74,7 @@ Accept: application/json
     "checkoutTime": "2017-04-13T11:00:00-08:00"
   },
   "expirationDate": "2020-12-22T00:00:00+00:00",
-  "languageId": "RU",
+  "languageId": "ru",
   "currencyId": "RUB",
   "description": "Оплата номера в отеле",
   "customer": {
@@ -100,7 +100,7 @@ Accept: application/json
 | amount          | да           | float                               | Сумма заказа                                          | `19658.45`
 | vatAmount       | да           | float                               | Сумма НДС                                             | `156.56`
 | currencyId      | да           | string enum                         | Код валюты заказа в соответствии с [ISO 4217](/docs/dictionary/iso4217/) | `RUB`
-| languageId      | нет          | string enum                         | Язык интерфейса платежной страницы                    | `RU`, `EN`
+| languageId      | нет          | string enum                         | Язык интерфейса платежной страницы                    | `ru`, `en`
 | expirationDate  | да           | datetime                            | Срок действия заказа                                  | `2020-12-22T00:00:00+00:00`
 | basketItems     | да           | array of [BasketItem](#basketitem)  | Корзина заказа                                        |
 | metaData        | нет          | object                              | [Дополнительные данные заказа](/docs/order/metadata/) |
@@ -149,6 +149,7 @@ Accept: application/json
 | netWeight            | нет           | float       | Вес нетто, например `125.45`
 | quantity             | да            | float       | Количество, например `3`
 | amount               | да            | float       | Стоимость единицы, например `100.55`
+| amountWoVat          | да            | float       | Стоимость единицы без учета НДС
 | totalAmount          | да            | float       | Стоимость всех единиц с НДС, например`123.55`
 | totalVatAmount       | да            | float       | Сумма НДС всех позиций, например `23`
 | excise               | нет           | float       | Сумма акциза, например, `10.00`

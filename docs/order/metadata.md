@@ -96,7 +96,7 @@ parent: "Работа с заказом"
         "addressLocality": "Санкт-Петербург",
         "addressRegion": "Санкт-Петербург",
         "postalCode": "191186",
-        "addressCountry": "RU"
+        "addressCountry": "ru"
       },
       "telephone": "+7 (812) 329-6000"
     },
