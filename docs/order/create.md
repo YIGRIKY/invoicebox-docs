@@ -153,7 +153,7 @@ Accept: application/json
 | totalAmount          | да            | float       | Стоимость всех единиц с НДС, например`123.55`
 | totalVatAmount       | да            | float       | Сумма НДС всех позиций, например `23`
 | excise               | нет           | float       | Сумма акциза, например, `10.00`
-| vatCode              | да            | string enum | Код процента НДС, допустимые значения: `NONE` - не облагается, `RUS_VAT0` - 0%, `RUS_VAT10` - 10%, `RUS_VAT20` - 20%
+| vatCode              | да            | string enum | Код процента НДС, допустимые значения: `VATNONE` - не облагается,`VATNONE` - не облагается, `RUS_VAT0` - 0%, `RUS_VAT10` - 10%, `RUS_VAT20` - 20%
 | type                 | да            | string enum | Тип позиции, например `service` - сервис, `commodity` - товар
 | paymentType          | да            | string enum | Тип оплаты, допустимые значения: `full_prepayment`, `prepayment`, `advance`, `full_payment`
 
