@@ -1,7 +1,7 @@
 ﻿---
 layout: default
 title: "ФФД"
-nav_order: 1
+nav_order: 100
 has_children: true
 permalink: /docs/dictionary/ffd
 parent: "Справочники"
