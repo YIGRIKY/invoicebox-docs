@@ -104,8 +104,7 @@ parent: "Модули для CMS"
 
 ## Прочие сведения
 
-Логотип системы для использования в модуле:
-https://www.invoicebox.ru/ru/press.html
+Логотип системы для использования в модуле: [Логотипы системы «Инвойсбокс»](https://www.invoicebox.ru/ru/press.html)
 
 Комплект модуля
 
@@ -124,6 +123,7 @@ https://www.invoicebox.ru/ru/press.html
 Информация о модуле и инструкции должны быть размещены на ресурсах:
 - [Основной веб-сайт. Готовые модули для CMS](https://www.invoicebox.ru/ru/integration/cms/);
 - [Документаиця. Готовые модули для CMS](https://docs.invoicebox.ru/cms/cms).
+
 
 ## phpSDK
 
