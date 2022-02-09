@@ -118,11 +118,12 @@ https://www.invoicebox.ru/ru/press.html
 - Пошаговая инструкция по настройке модуля, необходимые для настройки модуля, изображения, сопровождающие описательную часть;
 - URL, которую следует указать в личном кабинете системы «Инвойсбокс» для передачи информации об оплате.
 
-Исходные коды модуля должны быть загружены на github: https://github.com/InvoiceBox
+Исходные коды модуля должны быть загружены на github:
+- [github.com/InvoiceBox](https://github.com/InvoiceBox).
 
 Информация о модуле и инструкции должны быть размещены на ресурсах:
-https://www.invoicebox.ru/ru/integration/cms/;
-https://docs.invoicebox.ru/cms/cms.
+- [Основной веб-сайт. Готовые модули для CMS](https://www.invoicebox.ru/ru/integration/cms/);
+- [Документаиця. Готовые модули для CMS](https://docs.invoicebox.ru/cms/cms).
 
 ## phpSDK
 
