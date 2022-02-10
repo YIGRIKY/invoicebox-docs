@@ -224,7 +224,7 @@ layout: table_wrappers_nc
             {
                var modified = commits[0]['commit']['committer']['date'].slice(0,10);
                if(modified != "{{ page.date | date: "%d.%m.%Y" }}") {
-                  modifiedText = обновлено: " + modified;
+                  modifiedText = "обновлено: " + modified;
                 }; //
             }; //
             document.getElementById('last-modified').textContent = "<a href='https://github.com/{{ site.github.owner_name }}/{{ site.github.repository_name }}/commits?path={{ page.path }}'>" + modifiedText + "</a>";
