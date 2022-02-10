@@ -15,7 +15,7 @@ function setModifiedDate(url,date)
               modifiedText = "обновлено: " + modified;
             }; //
         }; //
-        document.getElementById('last-modified').innerHTML = "<a href='https://github.com/"+url+"'>" + modifiedText + "</a>";
+        document.getElementById('last-modified').innerHTML = "<a target='_blank' href='https://github.com/"+url+"'>" + modifiedText + "</a>";
       });
   }
 };
