@@ -218,10 +218,15 @@ layout: table_wrappers
             return response.json();
           })
           .then((commits) => {
-            var modified = commits[0]['commit']['committer']['date'].slice(0,10);
-            if(modified != "{{ page.date | date: "%d.%m.%Y" }}") {
-              document.getElementById('last-modified').textContent = "<a href='https://github.com/{{ site.github.owner_name }}/{{ site.github.repository_name }}/commits?path={{ page.path }}'>обновлено: " + modified + "</a>";
-            }
+            var modifiedText = "история изменений";
+            if ( typeof commits != "undefined" )
+            {
+               var modified = commits[0]['commit']['committer']['date'].slice(0,10);
+               if(modified != "{{ page.date | date: "%d.%m.%Y" }}") {
+                  modifiedText = обновлено: " + modified;
+                }; //
+            }; //
+            document.getElementById('last-modified').textContent = "<a href='https://github.com/{{ site.github.owner_name }}/{{ site.github.repository_name }}/commits?path={{ page.path }}'>" + modifiedText + "</a>";
           });
       }
     };
