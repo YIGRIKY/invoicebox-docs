@@ -109,6 +109,7 @@ Accept: application/json
 | successUrl      | нет          | string(1000)                       | Ссылка для перехода на сайт Магазина в случае успешной оплаты                                                                       |                                        |
 | failUrl         | нет          | string(1000)                       | Ссылка для перехода на сайт Магазина в случае ошибки оплаты                                                                         |                                        |
 | returnUrl       | нет          | string(1000)                       | Ссылка для возврата на сайт Магазина                                                                                                |                                        |
+| invoiceSetting  | нет          | [InvoiceSetting](#invoiceSetting)  | Дополнительные настройки параметров оплаты                                                                                          |                                        |
 
 ## OrderResponse
 
@@ -158,5 +159,12 @@ Accept: application/json
 | paymentType       | да           | string(20) enum    | Тип оплаты, допустимые значения: `full_prepayment`, `prepayment`, `advance`, `full_payment`                                                       |
 
 ---
+
+## InvoiceSetting
+
+| Свойство              | Обязательное | Тип           | Описание                                                                                                        | Пример значения                                                         |
+|-----------------------|--------------|---------------|-----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
+| customerLocked        | нет          | bool          | Запретить изменение реквизитов плательщика (всех)                                                               | true - запретить изменения, по умолчанию false                          |
+| customerLockedFields  | нет          | array<string> | Набор полей из [Customer](#customer), которые требуется запретить для редактирования на платежной странице      | `['type', 'name', 'phone', 'email', 'vatNumber', registrationAddress']` |
 
 [Читать далее &raquo;](/docs/order/get){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
