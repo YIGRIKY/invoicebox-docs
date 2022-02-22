@@ -109,7 +109,7 @@ Accept: application/json
 | successUrl      | нет          | string(1000)                       | Ссылка для перехода на сайт Магазина в случае успешной оплаты                                                                       |                                        |
 | failUrl         | нет          | string(1000)                       | Ссылка для перехода на сайт Магазина в случае ошибки оплаты                                                                         |                                        |
 | returnUrl       | нет          | string(1000)                       | Ссылка для возврата на сайт Магазина                                                                                                |                                        |
-| invoiceSetting  | нет          | [InvoiceSetting](#invoiceSetting)  | Дополнительные настройки параметров оплаты                                                                                          |                                        |
+| invoiceSetting  | нет          | [InvoiceSetting](#invoicesetting)  | Дополнительные настройки параметров оплаты                                                                                          |                                        |
 
 ## OrderResponse
 
