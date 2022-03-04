@@ -20,7 +20,7 @@ parent: "Работа с заказом"
 
 ## Данные бронирования железнодорожных билетов
 
-Для передачи данных бронирования авиаперелётов, в поле заказа `metaData`
+Для передачи данных бронирования железнодорожных билетов, в поле заказа `metaData` и в полях элементов корзины `metaData`
 необходимо передать объект [ReservationPackage](https://schema.org/ReservationPackage) с перечнем
 дочерних объектов [TrainReservation](https://schema.org/TrainReservation).
 
