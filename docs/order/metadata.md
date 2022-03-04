@@ -21,133 +21,125 @@ parent: "Работа с заказом"
 ## Данные бронирования железнодорожных билетов
 
 Для передачи данных бронирования железнодорожных билетов, в полях элементов корзины `metaData`
-необходимо передать объект [ReservationPackage](https://schema.org/ReservationPackage) с перечнем
-дочерних объектов [TrainReservation](https://schema.org/TrainReservation).
+необходимо передать объект [TrainReservation](https://schema.org/TrainReservation) с перечнем
+дочерних объектов.
 
 <details>
   <summary>Пример объекта элемента корзины (билета) ReservationPackage</summary>
 <section markdown="1">
 ``` json
 {
-  "@type": "ReservationPackage",
-  "subReservation": [
-  {
-    "@type": "TrainReservation",
-    "bookingTime": "2021-05-15T12:22:01",
-    "reservationId": "74345932763286",
-    "reservationStatus": "https://schema.org/ReservationConfirmed",
-    "reservationFor": {
-      "@type": "TrainTrip",
-      "departureStation": {
-        "@type": "TrainStation",
-        "name": "Moscow Kievskyi"
-      },
-      "departureTime": "2021-06-04T10:30:00+01:00",
-      "arrivalStation": {
-        "@type": "TrainStation",
-        "name": "St. Petersburg Central"
-      },
-      "arrivalTime": "2021-06-04T03:10:00+01:00",
-      "trainNumber": "425*СА"
+  "@type": "TrainReservation",
+  "bookingTime": "2021-05-15T12:22:01",
+  "reservationId": "74345932763286",
+  "reservationStatus": "https://schema.org/ReservationConfirmed",
+  "reservationFor": {
+    "@type": "TrainTrip",
+    "departureStation": {
+      "@type": "TrainStation",
+      "name": "Moscow Kievskyi"
     },
-    "underName": {
-      "@type": "Person",
-      "name": "Иванов Сергей Иванович"
+    "departureTime": "2021-06-04T10:30:00+01:00",
+    "arrivalStation": {
+      "@type": "TrainStation",
+      "name": "St. Petersburg Central"
     },
-    "provider": {
-      "@type": "Organization",
-      "name": "Sapsan",
-      "taxID": "2323232323"
+    "arrivalTime": "2021-06-04T03:10:00+01:00",
+    "trainNumber": "425*СА"
+  },
+  "underName": {
+    "@type": "Person",
+    "name": "Иванов Сергей Иванович"
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "Sapsan",
+    "taxID": "2323232323"
+  },
+  "reservedItem": {
+    "@type": "trainTicket",
+    "underName": "Иванов С.И.",
+    "gender": "male",
+    "nationality": "RUS",
+    "idDocumentNumber": "***** 3456",
+    "idDocumentDate": "2015-01-01",
+    "seat": "038",
+    "coachNumber": "04",
+    "coachType": "Плацкартный",
+    "serviceClass": "3Э",
+    "ticketNumber": "74363372056286",
+    "ticketStatus": "Оформлен",
+    "ticketIssueTime": "2021-05-15T12:30:21+01:00",
+    "fareBase": 57.00,
+    "fareReservation": 66.40,
+    "vatValue": [{
+        "vatCode": "RUS_VAT0",
+        "totalVatAmount": 0.00
     },
-    "reservedTicket": {
-      "@type": "trainTicket",
-      "underName": "Иванов С.И.",
-      "gender": "male",
-      "nationality": "RUS",
-      "idDocumentNumber": "***** 3456",
-      "idDocumentDate": "2015-01-01",
-      "seat": "038",
-      "coachNumber": "04",
-      "coachType": "Плацкартный",
-      "serviceClass": "3Э",
-      "ticketNumber": "74363372056286",
-      "ticketStatus": "Оформлен",
-      "ticketIssueTime": "2021-05-15T12:30:21+01:00",
-      "fareBase": 57.00,
-      "fareReservation": 66.40,
-      "vatValue": [{
-          "vatCode": "RUS_VAT0",
-          "totalVatAmount": 0.00
-      },
-      {
-          "vatCode": "RUS_VAT20",
-          "totalVatAmount": 10.00
-      }],
-      "paymentType": "Безналичный расчёт"
-    }
-  }]
+    {
+        "vatCode": "RUS_VAT20",
+        "totalVatAmount": 10.00
+    }],
+    "paymentType": "Безналичный расчёт"
+  }
 }
 ```
 </section>
 </details>
 
 <details>
-  <summary>Пример объекта элемента корзины (услуги) ReservationPackage</summary>
+  <summary>Пример объекта элемента корзины (услуги) TrainReservation</summary>
 <section markdown="1">
 ``` json
 {
-  "@type": "ReservationPackage",
-  "subReservation": [
-  {
-    "@type": "TrainReservation",
-    "bookingTime": "2021-05-15T12:22:01",
-    "reservationId": "74345932763286",
-    "reservationStatus": "https://schema.org/ReservationConfirmed",
-    "reservationFor": {
-      "@type": "TrainTrip",
-      "departureStation": {
-        "@type": "TrainStation",
-        "name": "Moscow Kievskyi"
-      },
-      "departureTime": "2021-06-04T10:30:00+01:00",
-      "arrivalStation": {
-        "@type": "TrainStation",
-        "name": "St. Petersburg Central"
-      },
-      "arrivalTime": "2021-06-04T03:10:00+01:00",
-      "trainNumber": "425*СА"
+  "@type": "TrainReservation",
+  "bookingTime": "2021-05-15T12:22:01",
+  "reservationId": "74345932763286",
+  "reservationStatus": "https://schema.org/ReservationConfirmed",
+  "reservationFor": {
+    "@type": "TrainTrip",
+    "departureStation": {
+      "@type": "TrainStation",
+      "name": "Moscow Kievskyi"
     },
-    "underName": {
-      "@type": "Person",
-      "name": "Иванов Сергей Иванович"
+    "departureTime": "2021-06-04T10:30:00+01:00",
+    "arrivalStation": {
+      "@type": "TrainStation",
+      "name": "St. Petersburg Central"
     },
-    "provider": {
-      "@type": "Organization",
-      "name": "Sapsan",
-      "taxID": "2323232323"
+    "arrivalTime": "2021-06-04T03:10:00+01:00",
+    "trainNumber": "425*СА"
+  },
+  "underName": {
+    "@type": "Person",
+    "name": "Иванов Сергей Иванович"
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "Sapsan",
+    "taxID": "2323232323"
+  },
+  "reservedItem": {
+    "@type": "baggageCheck",
+    "underName": "Иванов С.И.",
+    "idDocumentNumber": "***** 3456",
+    "idDocumentDate": "2015-01-01",
+    "ticketNumber": "44363452345662",
+    "declaredName": "Велосипед",
+    "declaredValue": 100.00,
+    "note": "Малогабаритный багаж в специализированном купе",
+    "fare": 57.00,
+    "valueFee": 66.40,
+    "vatValue": [{
+        "vatCode": "RUS_VAT0",
+        "totalVatAmount": 0.00
     },
-    "reservationFor": {
-      "@type": "baggageCheck",
-      "underName": "Иванов С.И.",
-      "idDocumentNumber": "***** 3456",
-      "idDocumentDate": "2015-01-01",
-      "ticketNumber": "44363452345662",
-      "declaredName": "Велосипед",
-      "declaredValue": 100.00,
-      "note": "Малогабаритный багаж в специализированном купе",
-      "fare": 57.00,
-      "valueFee": 66.40,
-      "vatValue": [{
-          "vatCode": "RUS_VAT0",
-          "totalVatAmount": 0.00
-      },
-      {
-          "vatCode": "RUS_VAT20",
-          "totalVatAmount": 10.00
-      }],
-      "paymentType": "Безналичный расчёт"
-    }
-  }]
+    {
+        "vatCode": "RUS_VAT20",
+        "totalVatAmount": 10.00
+    }],
+    "paymentType": "Безналичный расчёт"
+  }
 }
 ```
 </section>
