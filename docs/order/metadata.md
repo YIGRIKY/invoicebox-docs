@@ -45,6 +45,7 @@ parent: "Работа с заказом"
       "name": "St. Petersburg Central"
     },
     "arrivalTime": "2021-06-04T03:10:00+01:00",
+    "trainName" : "ГСЭ",
     "trainNumber": "425*СА"
   },
   "underName": {
@@ -108,6 +109,7 @@ parent: "Работа с заказом"
       "name": "St. Petersburg Central"
     },
     "arrivalTime": "2021-06-04T03:10:00+01:00",
+    "trainName" : "ГСЭ",
     "trainNumber": "425*СА"
   },
   "underName": {
