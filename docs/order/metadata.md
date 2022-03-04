@@ -56,7 +56,7 @@ parent: "Работа с заказом"
     "name": "Sapsan",
     "taxID": "2323232323"
   },
-  "reservedItem": {
+  "reservedTicket": {
     "@type": "trainTicket",
     "underName": "Иванов С.И.",
     "gender": "male",
@@ -119,7 +119,7 @@ parent: "Работа с заказом"
     "name": "Sapsan",
     "taxID": "2323232323"
   },
-  "reservedItem": {
+  "reservedTicket": {
     "@type": "baggageCheck",
     "underName": "Иванов С.И.",
     "idDocumentNumber": "***** 3456",
