@@ -64,10 +64,13 @@ parent: "Работа с заказом"
     "nationality": "RUS",
     "idDocumentNumber": "***** 3456",
     "idDocumentDate": "2015-01-01",
-    "seat": "038",
     "coachNumber": "04",
     "coachType": "Плацкартный",
     "serviceClass": "3Э",
+    "ticketedSeat": {
+      "@type": "Seat",
+      "seatNumber": "038"
+    },
     "ticketNumber": "74363372056286",
     "ticketStatus": "Оформлен",
     "ticketIssueTime": "2021-05-15T12:30:21+01:00",
