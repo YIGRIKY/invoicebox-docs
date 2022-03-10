@@ -59,7 +59,10 @@ parent: "Работа с заказом"
   },
   "reservedTicket": {
     "@type": "trainTicket",
-    "underName": "Иванов С.И.",
+    "underName": {
+      "@type": "Person",
+      "name": "Иванов Сергей Иванович"
+    },
     "gender": "male",
     "nationality": "RUS",
     "idDocumentNumber": "***** 3456",
@@ -126,7 +129,10 @@ parent: "Работа с заказом"
   },
   "reservedTicket": {
     "@type": "baggageCheck",
-    "underName": "Иванов С.И.",
+    "underName": {
+      "@type": "Person",
+      "name": "Иванов Сергей Иванович"
+    },
     "idDocumentNumber": "***** 3456",
     "idDocumentDate": "2015-01-01",
     "ticketNumber": "44363452345662",
