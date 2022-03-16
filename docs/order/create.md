@@ -155,7 +155,7 @@ Accept: application/json
 | totalVatAmount    | да           | float           | Сумма НДС всех позиций, например `23`                                                                                                             |
 | excise            | нет          | float           | Сумма акциза, например, `10.00`                                                                                                                   |
 | vatCode           | да           | string(20) enum | Код процента НДС, допустимые значения: `VATNONE` - не облагается,`VATNONE` - не облагается, `RUS_VAT0` - 0%, `RUS_VAT10` - 10%, `RUS_VAT20` - 20% |
-| type              | да           | string(10) или int | Тип позиции, [в соответствии со справочником](/docs/dictionary/tag2108) или service - сервис, commodity - товар                                |
+| type              | да           | string(10) или int | Тип позиции, [в соответствии со справочником](/docs/dictionary/tag1212) или service - сервис, commodity - товар                                |
 | paymentType       | да           | string(20) enum | Тип оплаты, допустимые значения: `full_prepayment`, `prepayment`, `advance`, `full_payment`                                                       |
 | metaData          | нет          | object          | [Дополнительные данные элемента корзины](/docs/order/metadata/)                                                                                   |
 
