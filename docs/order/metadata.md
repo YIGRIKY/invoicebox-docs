@@ -25,7 +25,7 @@ parent: "Работа с заказом"
 дочерних объектов.
 
 <details>
-  <summary>Пример объекта элемента корзины (билета) ReservationPackage</summary>
+  <summary>Пример объекта элемента корзины (билета) TrainReservation</summary>
 <section markdown="1">
 ``` json
 {
