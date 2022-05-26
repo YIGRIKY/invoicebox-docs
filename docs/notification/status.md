@@ -11,7 +11,7 @@ parent: "Обработка уведомлений"
 статуса Заказа, то при поступлении оплаты в пользу Заказа, система &laquo;Инвойсбокс&raquo;
 осуществит запрос на специальный URL, который указан в настройках Магазина.
 
-На указанный URL будет осуществлен `POST` запрос в теле которого будет находиться объект [OrderNotification](#ordernotification).
+На указанный URL будет осуществлен `POST` запрос с `Content-Type: application/json` в теле которого будет находиться объект [OrderNotification](#ordernotification).
 
 ## OrderNotification
 
