@@ -1,6 +1,6 @@
 ---
 layout: default
-nav_order: 5
+nav_order: 100
 title: "Метаданные"
 parent: "Работа с заказом"
 ---
