@@ -7,7 +7,7 @@ parent: "Организация"
 
 # Получение данных об организации по ИНН
 
-Для получения списка заказа, необходимо вызвать следующий метод API:
+Для получения списка, необходимо вызвать следующий метод API:
 
 - метод: `GET`
 - ресурс: `/v3/filter/api/counterparty-detail`
@@ -36,9 +36,7 @@ GET /v3/filter/api/counterparty-detail?vatNumber=2323232323
 | registrationDate          | нет          | datetime        | Дата регистрации организации                                                                                                                    |
 | registrationAddress       | нет          | string(200)     | Адрес регистрации организации                                                                                                                      |
 | postAddress               | нет          | string(200)     | Почтовый адрес организации                                                                                                            |
-| postAddressZip            | нет          | string(6)       | Почтовый индекс организации                                                                                                                  |
-| legalEntityTypeId         | нет          | int             | ?                                                                                                  |
-| registered                | да           | bool            | ?                                                                                                              |
+| postAddressZip            | нет          | string(6)       | Почтовый индекс организации                                                                                                                  |                                                                                                           |
 
 
 ---
