@@ -36,7 +36,7 @@ GET /v3/filter/api/counterparty-detail?vatNumber=2323232323
 | registrationDate          | нет          | datetime        | Дата регистрации организации                                                                                                                    |
 | registrationAddress       | нет          | string(200)     | Адрес регистрации организации                                                                                                                      |
 | postAddress               | нет          | string(200)     | Почтовый адрес организации                                                                                                            |
-| postAddressZip            | нет          | string(6)       | Почтовый индекс организации                                                                                                                  |                                                                                                           |
+| postAddressZip            | нет          | string(6)       | Почтовый индекс организации                                                                                                                  |
 
 
 ---
