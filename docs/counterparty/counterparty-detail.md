@@ -40,5 +40,3 @@ GET /v3/filter/api/counterparty-detail?vatNumber=2323232323
 
 
 ---
-
-[Читать далее &raquo;](/docs/order/update){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
