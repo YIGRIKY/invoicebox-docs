@@ -1,8 +1,8 @@
 ---
 layout: default
-nav_order: 1
+nav_order: 5
 title: "Создание отгрузки"
-parent: "Работа с отгрузками"
+parent: "Работа с заказом"
 ---
 
 # Создание отгрузки
