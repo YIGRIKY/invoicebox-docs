@@ -91,7 +91,7 @@ API Инвойсбокс представляет собой набор HTTP р�
 
 Пример токена v3: `Authorization: Bearer b37c4c689295904ed21eee5d9a48d42e` 
 
-Пример токена l3: `Authorization: Bearer 29078:b37c4c689295904ed21eee5d9a48d42e` 
+Пример токена l3: `Authorization: Bearer 29078-API:b37c4c689295904ed21eee5d9a48d42e` 
 
 Тестовый Токен: `b37c4c689295904ed21eee5d9a48d42e`, тестовый Магазин: `ffffffff-ffff-ffff-ffff-ffffffffffff`
 
