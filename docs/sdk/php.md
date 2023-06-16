@@ -57,6 +57,71 @@ require __DIR__ . '/vendor/autoload.php';
 require __DIR__ . '/vendor/autoload.php';
 ```
 
+## Пример использования
+
+```
+$httpClient = new HttpClient();
+
+$ibClient = new InvoiceboxClient(
+    $httpClient,
+    'b37c4c689295904ed21eee5d9a48d42e', /* Токен */
+    'ffffffff-ffff-ffff-ffff-ffffffffffff' /* Идентификатор магазина */
+);
+
+$createOrderRequest = new CreateOrderRequest(
+    'Оплата заказа №123',
+    '123', /* Идентификатор заказа */
+    100.88, /* Стоимость заказа итого */
+    0.00, /* Сумма налога в заказе итого */
+    'RUB', /* Идентификатор валюты заказа */
+    (new DateTime())->modify('+1 day') /* Срок оплаты (жизни) заказа */
+);
+
+// $createOrderRequest->setReturnUrl($returnUrl); /* Ссылка возврата в магазин */
+// $createOrderRequest->setSuccessUrl($returnUrl); /* Ссылка возврата в магазин после успешной оплаты */
+// $createOrderRequest->setFailUrl($returnUrl);  /* Ссылка возврата в магазин при ошибке оплаты */
+// $createOrderRequest->setNotificationUrl('https://www.example.com/api/integration/invoicebox-v3');  /* Ссылка уведомления магазина об оплате через callback */
+
+$invoiceboxCartItem = new CartItem(
+    '0123456789',
+    'Black Edition',
+    'шт.',
+    '796',
+    1.0,
+    2790.67,
+    2790.67,
+    0.0,
+    VatCode::VATNONE,
+    BasketItemType::COMMODITY,
+    PaymentType::FULL_PREPAYMENT,
+    2790.67
+);
+$createOrderRequest->addCartItem($invoiceboxCartItem);
+
+/* Если плательщик - юридическое лицо */
+//    $customer = new LegalCustomer(
+//        'ООО "Ромашка"',
+//        '79111231212',
+//        'my@romashkacompany.dd',
+//        '2323232323', /* ИНН */
+//        'г. Ижевск, ул. Сверидова, д.1, оф. 323'
+//    );
+
+/* Если плательщик - физическое лицо */
+//    $customer = new PrivateCustomer(
+//        'Иванов Иван Иванович',
+//        '79111231212',
+//        'ivanov@ivanivanovich.dd'
+//    );
+
+$createOrderRequest->setCustomer($customer);
+
+$orderResponseData = $ibClient->createOrder($createOrderRequest);
+
+/* Redirect to: $orderResponseData->getPaymentUrl() */
+
+```
+
 
 ---
 
