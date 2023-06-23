@@ -21,7 +21,7 @@ GET /v3/business/api/invoice?id=01771534-196a-1105-839a-82422289d6d9
 ```
 Пример запроса с фильтром по статусу
 ```
-GET /v3/business/api/invoice?status=completed
+GET /v3/business/api/invoice?status=paid
 ```
 
 ## InvoiceResponse
