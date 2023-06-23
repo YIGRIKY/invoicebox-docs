@@ -24,6 +24,7 @@ Authorization: Bearer b37c4c689295904ed21eee5d9a48d42e
 Content-Type: application/json
 Accept: application/json
 {
+    "partnerOperationId" : "117a58b0-7dc9-424c-8f07-b8a865e8bcc7"
 }
 ```
 </section>
@@ -37,7 +38,9 @@ Accept: application/json
 
 ## CreateInvoicePaymentRequest
 
-Нет
+| Свойство           | Обязательное | Тип        | Описание             | Пример значения                        |
+|--------------------|--------------|------------|----------------------|----------------------------------------|
+| partnerOperationId | да           | string(36) | Id операции партнёра | `117a58b0-7dc9-424c-8f07-b8a865e8bcc7` |
 
 ## InvoicePaymentResponse
 
