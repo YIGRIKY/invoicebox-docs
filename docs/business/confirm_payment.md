@@ -1,7 +1,7 @@
 ---
 layout: default
 nav_order: 10
-title: "Подтверждение оплаты заказа"
+title: "Подтверждение оплаты счёта"
 parent: "Инвойсбокс.Бизнес"
 ---
 
@@ -10,7 +10,7 @@ parent: "Инвойсбокс.Бизнес"
 Для подтверждения оплаты счёта с использованием гарантийного фонда, необходимо вызвать следующий метод API:
 
 - метод: `POST`
-- ресурс: `/v3/business/api/fund/pay`
+- ресурс: `/v3/business/api/invoice/{invoiceId}/confirm`
 - тело запроса - объект [CreateInvoicePaymentRequest](#createinvoicepaymentrequest)
 - тело ответа - объект [InvoicePaymentResponse](#invoicepaymentresponse)
 - Возможные [ошибки](/docs/dictionary/error/)
@@ -19,22 +19,26 @@ parent: "Инвойсбокс.Бизнес"
   <summary>Пример запроса</summary>
 <section markdown="1">
 ``` json
-POST /v3/business/api/fund/pay
+POST /v3/business/api/invoice/{invoiceId}/confirm
 Authorization: Bearer b37c4c689295904ed21eee5d9a48d42e
 Content-Type: application/json
 Accept: application/json
 {
-    "invoiceId": "4757c6bb-1637-c1ca-bef7-f6706799c41e"
 }
 ```
 </section>
 </details>
 
-## CreateInvoicePaymentRequest
+## Параметры запроса
 
 | Свойство        | Обязательное | Тип        | Описание       | Пример значения                        |
 |-----------------|--------------|------------|----------------|----------------------------------------|
 | invoiceId       | да           | string(36) | Id счёта       | `01771534-1a57-f184-dee3-ebeb91dded75` |
+
+## CreateInvoicePaymentRequest
+
+| Свойство        | Обязательное | Тип        | Описание       | Пример значения                        |
+|-----------------|--------------|------------|----------------|----------------------------------------|
 
 ## InvoicePaymentResponse
 
