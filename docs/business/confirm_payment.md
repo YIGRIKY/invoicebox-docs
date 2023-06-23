@@ -24,8 +24,7 @@ Authorization: Bearer b37c4c689295904ed21eee5d9a48d42e
 Content-Type: application/json
 Accept: application/json
 {
-    "invoiceId": "4757c6bb-1637-c1ca-bef7-f6706799c41e",
-    "fundId": "6389f1fa-1344-4a94-b7ac-2e393373a401"
+    "invoiceId": "4757c6bb-1637-c1ca-bef7-f6706799c41e"
 }
 ```
 </section>
@@ -36,7 +35,6 @@ Accept: application/json
 | Свойство        | Обязательное | Тип        | Описание       | Пример значения                        |
 |-----------------|--------------|------------|----------------|----------------------------------------|
 | invoiceId       | да           | string(36) | Id счёта       | `01771534-1a57-f184-dee3-ebeb91dded75` |
-| fundId          | да           | string(36) | Id фонда       | `6389f1fa-1344-4a94-b7ac-2e393373a401` |
 
 ## InvoicePaymentResponse
 

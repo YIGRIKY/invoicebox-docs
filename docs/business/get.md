@@ -37,8 +37,8 @@ GET /v3/business/api/invoice?status=paid
 | vatAmount      | да           | float                     | Сумма НДС в счёте                                                       | `156.56`                               |
 | currencyId     | да           | string(3) enum            | Код валюты счёта в соответствии с [ISO 4217](/docs/dictionary/iso4217/) | `RUB`, `USD`,`EUR`, `GBP`              |
 | customer       | да           | [Customer](#customer)     | Информация о плательщике                                                |                                        |
-| status         | нет          | string(5) enum            | Статус оплаты счёта (paid, pending, canceled, partial)                  |                                        |
-| paymentUrl     | да           | string(1000)              | Ссылка для перехода на платёжный шлюз для оплаты счёта                  |                                        |
+| status         | нет          | string(50) enum           | Статус оплаты счёта (paid, pending, canceled, partial)                  | `paid`                                 |
+| paymentUrl     | да           | string(1000)              | Ссылка для перехода на платёжный шлюз на страницу счёта                 |                                        |
 
 ## Customer
 
