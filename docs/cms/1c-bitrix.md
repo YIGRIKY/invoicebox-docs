@@ -1,6 +1,6 @@
 ---
 layout: default
-nav_order: 10
+nav_order: 11
 title: "1С Битрикс"
 parent: "Модули для CMS"
 ---
