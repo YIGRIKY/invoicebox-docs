@@ -10,18 +10,18 @@ parent: "Инвойсбокс.Бизнес"
 Для получения списка счетов, необходимо вызвать следующий метод API:
 
 - метод: `GET`
-- ресурс: `/v3/business/api/invoice/invoice`
+- ресурс: `/v3/business/api/invoice`
 - тело ответа - array of [InvoiceResponse](/docs/business/get/#invoiceresponse)
 
 В запросе возможно применения фильтров и сортировок.
 
 Пример запроса с фильтром по идентификатору счёта
 ```
-GET /v3/business/api/invoice/invoice?id=01771534-196a-1105-839a-82422289d6d9
+GET /v3/business/api/invoice?id=01771534-196a-1105-839a-82422289d6d9
 ```
 Пример запроса с фильтром по статусу
 ```
-GET /v3/business/api/invoice/invoice?status=completed
+GET /v3/business/api/invoice?status=completed
 ```
 
 ## InvoiceResponse
