@@ -60,8 +60,8 @@ GET /v3/payment/api/invoice?status=paid
 | name                      | нет          | string(500)     | Наименование       | `ООО Ромашка`                                                  |
 | vatNumber                 | нет          | string(20)      | ИНН                | `7710044140`                                                   |
 | taxRegistrationReasonCode | нет          | string(9)       | КПП                | `770001001`                                                    |
-| settlementAccount         | нет          | string(20)      | Номер расчт. счёта | `770001001`                                                    |
-| correspondentAccount      | нет          | string(20)      | Номер корр. счёта  | `40702810800190000253`                                         |
+| settlementAccount         | нет          | string(20)      | Номер расчт. счёта | `40702810800190000253`                                         |
+| correspondentAccount      | нет          | string(20)      | Номер корр. счёта  | `30101810700000000187`                                         |
 | bankName                  | нет          | string(100)     | Наименование банка | `ПАО ВТБ`                                                      |
 | bic                       | нет          | string(9)       | БИК                | `044039142`                                                    |
 | kbk                       | нет          | string(20)      | Код бюджетной классификации (КБК) | `18210501011011000110`                          |

@@ -25,9 +25,20 @@ Content-Type: application/json
 Accept: application/json
 {
     "paymentOperationId" : "117a58b0-7dc9-424c-8f07-b8a865e8bcc7",
+    "paymentOrderNumber" : "1342",
+    "paymentOrderDate" : "2023-04-01",
+    "amount" : 19658.45,
+    "currencyId" : "RUB",
     "payer" : {
-
-    },
+      "type" : "legal",
+      "name" : "ООО Ромашка",
+      "vatNumber" : "7710044140",
+      "taxRegistrationReasonCode" : "770001001",
+      "settlementAccount" : "40702810800190000253",
+      "correspondentAccount" : "30101810700000000187",
+      "bankName" : "ПАО ВТБ",
+      "bic" : "044039142"
+    }
 }
 ```
 </section>
@@ -58,8 +69,8 @@ Accept: application/json
 | name                      | нет          | string(500)     | Имя                | `ООО Ромашка`                            |
 | vatNumber                 | нет          | string(20)      | ИНН                | `7710044140`                             |
 | taxRegistrationReasonCode | нет          | string(9)       | КПП                | `770001001`                              |
-| settlementAccount         | нет          | string(20)      | Номер расчт. счёта | `770001001`                              |
-| correspondentAccount      | нет          | string(20)      | Номер корр. счёта  | `40702810800190000253`                   |
+| settlementAccount         | нет          | string(20)      | Номер расчт. счёта | `40702810800190000253`                   |
+| correspondentAccount      | нет          | string(20)      | Номер корр. счёта  | `30101810700000000187`                   |
 | bankName                  | нет          | string(100)     | Наименование банка | `ПАО ВТБ`                                |
 | bic                       | нет          | string(9)       | БИК                | `044039142`                              |
 
