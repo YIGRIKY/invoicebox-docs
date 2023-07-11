@@ -25,10 +25,22 @@ GET /v3/payment/api/invoice/01771534-196a-1105-839a-82422289d6d9
 ```
 GET /v3/payment/api/invoice?id=01771534-196a-1105-839a-82422289d6d9
 ```
+
 Пример запроса с фильтром по статусу
 ```
 GET /v3/payment/api/invoice?status=paid
 ```
+
+Пример запроса с фильтром по ИНН
+```
+GET /v3/payment/api/invoice?customer[type][eq]=legal&customer[vatNumber][eq]=2323232323
+```
+
+Пример запроса с фильтром по номеру телефона
+```
+GET /v3/payment/api/invoice?customer[type][eq]=private&customer[phone][eq]=79001231212
+```
+
 
 ## InvoiceResponse
 
@@ -42,7 +54,7 @@ GET /v3/payment/api/invoice?status=paid
 | amount               | да           | float                         | Сумма счёта (к оплате)                                                  | `19658.45`                             |
 | vatAmount            | да           | float                         | Сумма НДС в счёте                                                       | `156.56`                               |
 | currencyId           | да           | string(3) enum                | Код валюты счёта в соответствии с [ISO 4217](/docs/dictionary/iso4217/) | `RUB`, `USD`,`EUR`, `GBP`              |
-| customer             | да           | [Customer](#customer)         | Информация о плательщике                                                |                                        |
+| customer             | нет          | [Customer](#customer)         | Информация о плательщике                                                |                                        |
 | paymentOrderTemplate | нет          | [paymentOrderTemplate](#paymentordertemplate) | Шаблон платёжного поручения (детали платежа)            |                                        |
 | status               | нет          | string(50) enum               | Статус оплаты счёта (paid, pending, canceled, partial)                  | `paid`                                 |
 | paymentUrl           | да           | string(1000)                  | Ссылка для перехода на платёжный шлюз на страницу счёта                 |                                        |
@@ -51,7 +63,7 @@ GET /v3/payment/api/invoice?status=paid
 
 | Свойство            | Обязательное | Тип             | Описание          | Пример значения                                      |
 |---------------------|--------------|-----------------|-------------------|------------------------------------------------------|
-| type                | нет          | string(10) enum | Тип заказчика     | `legal` - юр. лицо, `private` - физ лицо             |
+| type                | да           | string(10) enum | Тип заказчика     | `legal` - юр. лицо, `private` - физ лицо             |
 | name                | нет          | string(500)     | Имя               | `Peter`                                              |
 | phone               | нет          | string(100)     | Номер телефона    | `79001112233`                                        |
 | email               | нет          | string(100)     | Электронная почта | `peter@domain.com`                                   |
