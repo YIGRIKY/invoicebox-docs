@@ -43,7 +43,7 @@ GET /v3/payment/api/invoice?status=paid
 | vatAmount            | да           | float                         | Сумма НДС в счёте                                                       | `156.56`                               |
 | currencyId           | да           | string(3) enum                | Код валюты счёта в соответствии с [ISO 4217](/docs/dictionary/iso4217/) | `RUB`, `USD`,`EUR`, `GBP`              |
 | customer             | да           | [Customer](#customer)         | Информация о плательщике                                                |                                        |
-| paymentOrderTemplate | нет          | [paymentOrderTemplate](#paymentOrderTemplate) | Шаблон платёжного поручения (детали платежа)            |                                        |
+| paymentOrderTemplate | нет          | [paymentOrderTemplate](#paymentordertemplate) | Шаблон платёжного поручения (детали платежа)            |                                        |
 | status               | нет          | string(50) enum               | Статус оплаты счёта (paid, pending, canceled, partial)                  | `paid`                                 |
 | paymentUrl           | да           | string(1000)                  | Ссылка для перехода на платёжный шлюз на страницу счёта                 |                                        |
 
@@ -62,21 +62,20 @@ GET /v3/payment/api/invoice?status=paid
 
 | Свойство                  | Обязательное | Тип             | Описание           | Пример значения                                                |
 |---------------------------|--------------|-----------------|--------------------|----------------------------------------------------------------|
-| type                      | нет          | string(10) enum | Тип получателя     | `legal` - юр. лицо, `private` - физ лицо                       |
-| amount                    | нет          | float           | Сумма счёта (к оплате) | `19658.45`                                                 |
-| vatAmount                 | нет          | float           | Сумма НДС в счёте  | `156.56`                                                       |
-| currencyId                | нет          | string(3) enum  | Код валюты счёта в соответствии с [ISO 4217](/docs/dictionary/iso4217/) | `RUB`, `USD`,`EUR`, `GBP`              |
-| name                      | нет          | string(500)     | Наименование       | `ООО Ромашка`                                                  |
-| vatNumber                 | нет          | string(20)      | ИНН                | `7710044140`                                                   |
-| taxRegistrationReasonCode | нет          | string(9)       | КПП                | `770001001`                                                    |
-| settlementAccount         | нет          | string(20)      | Номер расчт. счёта | `40702810800190000253`                                         |
-| correspondentAccount      | нет          | string(20)      | Номер корр. счёта  | `30101810700000000187`                                         |
-| bankName                  | нет          | string(100)     | Наименование банка | `ПАО ВТБ`                                                      |
-| bic                       | нет          | string(9)       | БИК                | `044039142`                                                    |
-| kbk                       | нет          | string(20)      | Код бюджетной классификации (КБК) | `18210501011011000110`                          |
-| oktmo                     | нет          | string(7)       | ОКТМО              | `40000000`                                                     |
-| uin                       | нет          | string(25)      | УИН                | `34934876203474`                                               |
-| paymentPurpose            | нет          | string(210)     | Назначение платежа | `Оплата по счёту №10-2946153 за авиабилеты, НДС не выделяется` |
+| type                      | да           | string(10) enum | Тип получателя     | `legal` - юр. лицо, `private` - физ лицо                       |
+| amount                    | да           | float           | Сумма счёта (к оплате) | `19658.45`                                                 |
+| currencyId                | да           | string(3) enum  | Код валюты счёта в соответствии с [ISO 4217](/docs/dictionary/iso4217/) | `RUB`, `USD`,`EUR`, `GBP`              |
+| name                      | да           | string(500)     | Наименование       | `ООО Ромашка`                                                  |
+| vatNumber                 | да           | string(20)      | ИНН                | `7710044140`                                                   |
+| taxRegistrationReasonCode | да           | string(9)       | КПП                | `770001001`                                                    |
+| settlementAccount         | да           | string(20)      | Номер расчт. счёта | `40702810800190000253`                                         |
+| correspondentAccount      | да           | string(20)      | Номер корр. счёта  | `30101810700000000187`                                         |
+| bankName                  | да           | string(100)     | Наименование банка | `ПАО ВТБ`                                                      |
+| bic                       | да           | string(9)       | БИК                | `044039142`                                                    |
+| kbk                       | да           | string(20)      | Код бюджетной классификации (КБК) | `18210501011011000110`                          |
+| oktmo                     | да           | string(7)       | ОКТМО              | `40000000`                                                     |
+| uin                       | да           | string(25)      | УИН                | `34934876203474`                                               |
+| paymentPurpose            | да           | string(210)     | Назначение платежа | `Оплата по счёту №10-2946153 за авиабилеты, НДС не выделяется` |
 
 
 
