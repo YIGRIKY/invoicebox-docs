@@ -1,6 +1,6 @@
 ---
 layout: default
-nav_order: 16
+nav_order: 40
 title: "SDK"
 has_children: true
 permalink: /sdk/sdk

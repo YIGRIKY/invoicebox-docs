@@ -1,0 +1,79 @@
+---
+layout: default
+nav_order: 10
+title: "Подтверждение оплаты счёта"
+parent: "Регистрация платежей"
+---
+
+# Подтверждение оплаты заказа
+
+Для подтверждения оплаты счёта, необходимо вызвать следующий метод API:
+
+- метод: `POST`
+- ресурс: `/v3/payment/api/invoice/{invoiceId}/confirm`
+- тело запроса - объект [CreateInvoicePaymentRequest](#createinvoicepaymentrequest)
+- тело ответа - объект [InvoicePaymentResponse](#invoicepaymentresponse)
+- Возможные [ошибки](/docs/dictionary/error/)
+
+<details>
+  <summary>Пример запроса</summary>
+<section markdown="1">
+``` json
+POST /v3/payment/api/invoice/{invoiceId}/confirm
+Authorization: Bearer b37c4c689295904ed21eee5d9a48d42e
+Content-Type: application/json
+Accept: application/json
+{
+    "paymentOperationId" : "117a58b0-7dc9-424c-8f07-b8a865e8bcc7",
+    "payer" : {
+
+    },
+}
+```
+</section>
+</details>
+
+## Параметры запроса
+
+| Свойство        | Обязательное | Тип        | Описание       | Пример значения                        |
+|-----------------|--------------|------------|----------------|----------------------------------------|
+| invoiceId       | да           | string(36) | Id счёта       | `01771534-1a57-f184-dee3-ebeb91dded75` |
+
+## CreateInvoicePaymentRequest
+
+| Свойство           | Обязательное | Тип             | Описание                   | Пример значения                        |
+|--------------------|--------------|-----------------|----------------------------|----------------------------------------|
+| paymentOperationId | да           | string(36)      | Id операции                | `117a58b0-7dc9-424c-8f07-b8a865e8bcc7` |
+| paymentOrderNumber | нет          | string(36)      | Номер платёжного поручения | `1342`                                 |
+| paymentOrderDate   | нет          | string(36)      | Дата платёжного поручения  | `2023-04-01`                           |
+| amount             | да           | float           | Сумма платежа              | `19658.45`                             |
+| currencyId         | да           | string(3) enum  | Код валюты счёта в соответствии с [ISO 4217](/docs/dictionary/iso4217/) | `RUB`, `USD`,`EUR`, `GBP` |
+| payer              | нет          | [Payer](#payer) | Информация о плательщике   |                                        |
+
+## Payer
+
+| Свойство                  | Обязательное | Тип             | Описание           | Пример значения                          |
+|---------------------------|--------------|-----------------|--------------------|------------------------------------------|
+| type                      | нет          | string(10) enum | Тип плательщика    | `legal` - юр. лицо, `private` - физ лицо |
+| name                      | нет          | string(500)     | Имя                | `ООО Ромашка`                            |
+| vatNumber                 | нет          | string(20)      | ИНН                | `7710044140`                             |
+| taxRegistrationReasonCode | нет          | string(9)       | КПП                | `770001001`                              |
+| settlementAccount         | нет          | string(20)      | Номер расчт. счёта | `770001001`                              |
+| correspondentAccount      | нет          | string(20)      | Номер корр. счёта  | `40702810800190000253`                   |
+| bankName                  | нет          | string(100)     | Наименование банка | `ПАО ВТБ`                                |
+| bic                       | нет          | string(9)       | БИК                | `044039142`                              |
+
+
+## InvoicePaymentResponse
+
+Повторяет свойства объекта [CreateInvoicePaymentRequest](#createinvoicepaymentrequest) с дополнительными свойствами:
+
+| Свойство   | Обязательное | Тип        | Описание                                      | Пример значения                         |
+|------------|--------------|------------|-----------------------------------------------|-----------------------------------------|
+| id         | да           | string(36) | Идентификатор транзакции в системе Инвойсбокс | `8c0e116d-31a5-4210-b62e-6b6917851f69`  |
+
+
+---
+[Читать далее &raquo;](/payment/schema/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+
+{: .fs-6 .fw-300 }
