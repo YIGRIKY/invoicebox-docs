@@ -55,7 +55,7 @@ GET /v3/payment/api/invoice?customer[type][eq]=private&customer[phone][eq]=79001
 | vatAmount            | да           | float                         | Сумма НДС в счёте                                                       | `156.56`                               |
 | currencyId           | да           | string(3) enum                | Код валюты счёта в соответствии с [ISO 4217](/docs/dictionary/iso4217/) | `RUB`, `USD`,`EUR`, `GBP`              |
 | customer             | нет          | [Customer](#customer)         | Информация о плательщике                                                |                                        |
-| paymentOrderTemplate | нет          | [paymentOrderTemplate](#paymentordertemplate) | Шаблон платёжного поручения (детали платежа)            |                                        |
+| paymentOrderTemplate | нет          | [PaymentOrderTemplate](#paymentordertemplate) | Шаблон платёжного поручения (детали платежа)            |                                        |
 | status               | нет          | string(50) enum               | Статус оплаты счёта (paid, pending, canceled, partial)                  | `paid`                                 |
 | paymentUrl           | да           | string(1000)                  | Ссылка для перехода на платёжный шлюз на страницу счёта                 |                                        |
 
@@ -70,7 +70,7 @@ GET /v3/payment/api/invoice?customer[type][eq]=private&customer[phone][eq]=79001
 | vatNumber           | нет          | string(20)      | ИНН               | `7710044140`                                         |
 | registrationAddress | нет          | string(1000)    | Юр. адресс        | `190000, Санкт-Петербург, Невский пр. 147, офис 321` |
 
-## paymentOrderTemplate
+## PaymentOrderTemplate
 
 | Свойство                  | Обязательное | Тип             | Описание           | Пример значения                                                |
 |---------------------------|--------------|-----------------|--------------------|----------------------------------------------------------------|
