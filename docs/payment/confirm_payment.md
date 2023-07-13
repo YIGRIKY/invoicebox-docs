@@ -1,6 +1,6 @@
 ---
 layout: default
-nav_order: 10
+nav_order: 30
 title: "Подтверждение оплаты счёта"
 parent: "Регистрация платежей"
 ---
@@ -107,6 +107,6 @@ Accept: application/json
 
 
 ---
-[Читать далее &raquo;](/payment/schema/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Читать далее &raquo;](/docs/dictionary){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 
 {: .fs-6 .fw-300 }

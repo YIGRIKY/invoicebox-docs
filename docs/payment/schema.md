@@ -1,6 +1,6 @@
 ---
 layout: nocompress
-nav_order: 11
+nav_order: 10
 title: "Схема взаимодействия"
 parent: "Регистрация платежей"
 ---
@@ -30,5 +30,5 @@ sequenceDiagram
 
 ---
 
-[Читать далее &raquo;](/docs/dictionary/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Читать далее &raquo;](/docs/payment/get/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 
