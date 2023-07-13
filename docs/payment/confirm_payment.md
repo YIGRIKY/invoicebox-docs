@@ -10,7 +10,7 @@ parent: "Регистрация платежей"
 Для подтверждения оплаты счёта, необходимо вызвать следующий метод API:
 
 - метод: `POST`
-- ресурс: `/v3/payment/api/invoice/{invoiceId}/confirm`
+- ресурс: `/v3/payment/api/invoice/confirm`
 - тело запроса - объект [CreateInvoicePaymentRequest](#createinvoicepaymentrequest)
 - тело ответа - объект [InvoicePaymentResponse](#invoicepaymentresponse)
 - Возможные [ошибки](/docs/dictionary/error/)
@@ -19,7 +19,7 @@ parent: "Регистрация платежей"
   <summary>Пример запроса</summary>
 <section markdown="1">
 ``` json
-POST /v3/payment/api/invoice/{invoiceId}/confirm
+POST /v3/payment/api/invoice/confirm
 Authorization: Bearer b37c4c689295904ed21eee5d9a48d42e
 Content-Type: application/json
 Accept: application/json
@@ -44,16 +44,11 @@ Accept: application/json
 </section>
 </details>
 
-## Параметры запроса
-
-| Свойство        | Обязательное | Тип        | Описание       | Пример значения                        |
-|-----------------|--------------|------------|----------------|----------------------------------------|
-| invoiceId       | да           | string(36) | Id счёта       | `01771534-1a57-f184-dee3-ebeb91dded75` |
-
 ## CreateInvoicePaymentRequest
 
 | Свойство           | Обязательное | Тип             | Описание                   | Пример значения                        |
 |--------------------|--------------|-----------------|----------------------------|----------------------------------------|
+| invoiceId          | да           | string(36)      | Id счёта                   | `01771534-1a57-f184-dee3-ebeb91dded75` |
 | paymentOperationId | да           | string(36)      | Id операции                | `117a58b0-7dc9-424c-8f07-b8a865e8bcc7` |
 | amount             | да           | float           | Сумма платежа              | `19658.45`                             |
 | currencyId         | да           | string(3) enum  | Код валюты счёта в соответствии с [ISO 4217](/docs/dictionary/iso4217/) | `RUB`, `USD`,`EUR`, `GBP` |
