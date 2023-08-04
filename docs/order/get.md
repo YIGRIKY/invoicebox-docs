@@ -19,7 +19,7 @@ parent: "Работа с заказом"
 ```
 GET /v3/filter/api/order/order?id=01771534-196a-1105-839a-82422289d6d9
 ```
-Пример запроса с фильтром по статусу
+Пример запроса с фильтром по [статусу](/docs/order)
 ```
 GET /v3/filter/api/order/order?status=completed
 ```
