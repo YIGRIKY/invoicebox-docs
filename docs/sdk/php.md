@@ -22,17 +22,17 @@ PHP 7.4+ (или более поздняя версия)
 2. В консоле выполните следующую команду:
 
 ```
-composer require invoicebox/invoicebox-sdk-php
+composer require invoicebox/sdk-php
 ```
 
 Пропишите в файле composer.json вашего проекта:
 
-1. Добавьте строку "invoicebox/invoicebox-sdk-php": "^1.0" в список зависимостей вашего проекта в файле composer.json
+1. Добавьте строку "invoicebox/sdk-php": "^1.0" в список зависимостей вашего проекта в файле composer.json
 
 ```
    "require": {
         "php": ">=7.4",
-        "invoicebox/invoicebox-sdk-php": "^1.0"
+        "invoicebox/sdk-php": "^1.0"
 ```
 
 2. Обновите зависимости вашего проекта. В консоле, в папке с файлом composer.json выполните следующую команду:
@@ -49,7 +49,7 @@ require __DIR__ . '/vendor/autoload.php';
 
 ## Установка SDK вручную
 
-1. Скачайте архив [Инвойсбокс PHP SDK](https://github.com/InvoiceBox/invoicebox-sdk-php) и распакуйте его в необходимую папку вашего проекта.
+1. Скачайте архив [Инвойсбокс PHP SDK](https://github.com/invoicebox/sdk-php) и распакуйте его в необходимую папку вашего проекта.
 
 2. Подготовьте код своего проекта, чтобы активировать автоматическую загрузку зависимостей:
  
@@ -125,4 +125,4 @@ $orderResponseData = $ibClient->createOrder($createOrderRequest);
 
 ---
 
-[Проект на github](https://github.com/InvoiceBox/invoicebox-sdk-php)
+[Проект на github](https://github.com/invoicebox/sdk-php)
