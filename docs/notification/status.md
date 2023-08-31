@@ -99,9 +99,8 @@ HTTP код в обоих случаях должен быть равен 200. �
 ```php
 <?php
 
-$headers = apache_request_headers();
 $xSignature = false;
-foreach ($headers as $header => $value) {
+foreach (getallheaders() as $header => $value)
     if (strtolower($header) == "x-signature") {
         $xSignature = $value;
         break;
