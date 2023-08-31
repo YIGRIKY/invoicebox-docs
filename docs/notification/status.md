@@ -104,11 +104,13 @@ foreach (getallheaders() as $header => $value)
     if (strtolower($header) == "x-signature") {
         $xSignature = $value;
         break;
-    } //
-} //foreach
+    }
+}
 
 if (!$xSignature) {
     // Ошибка, подпись запроса не получена
+    header("Content-Type: application/json");
+    die('{"status":"error","code":"out_of_service"}');
 }
 
 $payload = file_get_contents("php://input");
@@ -116,7 +118,9 @@ $apiKey = ""; // Согласованный ключ для подписи
 $calcSignature = hash_hmac("sha1", $payload, $apiKey);
 
 if ($xSignature != $calcSignature) {
-   // Ошибка, подпись неверная
+    // Ошибка, подпись запроса неверная
+    header("Content-Type: application/json");
+    die('{"status":"error","code":"signature_error"}');
 }
 
 ```
