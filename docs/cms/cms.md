@@ -15,3 +15,4 @@ permalink: /cms/cms
 | Система управления сайтом (CMS)                 | Версия | Лицензия CMS/Модуля   | Детали
 | ----------------------------------------------- | -------| --------------------- | ---------------------------------
 | ![1С Битрикс](/assets/images/cms/1s_bitrix.svg) | > 16.x | Платная/Бесплатный    | [Смотреть &raquo;](/docs/cms/1c-bitrix)
+| ![Wordpress](/assets/images/cms/wodpress_logo.png) | > 6.1.x | Бесплатный    | [Смотреть &raquo;](/docs/cms/woocommerce)
