@@ -164,7 +164,7 @@ Accept: application/json
 | excise            | нет          | float              | Сумма акциза, например, `10.00`                                                                                                                   |
 | vatCode           | да           | string(20) enum    | Код процента НДС, допустимые значения: `VATNONE` - не облагается,`VATNONE` - не облагается, `RUS_VAT0` - 0%, `RUS_VAT10` - 10%, `RUS_VAT20` - 20% |
 | type              | да           | string(10) или int | Тип позиции, [в соответствии со справочником](/docs/dictionary/tag1212) или service - Услуга, commodity - Товар                                   |
-| serviceDate       | нет          | date               | Дата оказания услуги, если тип позиции = Услуга                                                                                                   |
+| serviceDate       | нет          | date               | Дата оказания услуги, если тип позиции = Услуга, например, 2023-11-16                                                                             |
 | paymentType       | да           | string(20) enum    | Тип оплаты, допустимые значения: `full_prepayment`, `prepayment`, `advance`, `full_payment`                                                       |
 | metaData          | нет          | object             | [Дополнительные данные элемента корзины](/docs/order/metadata/)                                                                                   |
 
