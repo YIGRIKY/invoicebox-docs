@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Регистрация платежей"
-nav_order: 8
+nav_order: 80
 has_children: true
 permalink: /docs/payment
 ---

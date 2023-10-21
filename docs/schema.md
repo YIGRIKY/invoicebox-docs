@@ -1,6 +1,6 @@
 ---
 layout: nocompress
-nav_order: 2
+nav_order: 30
 title: "Схема взаимодействия"
 ---
 

@@ -3,6 +3,7 @@ layout: default
 title: "Обработка уведомлений"
 nav_order: 7
 has_children: true
+parent: "Приём платежей"
 permalink: /docs/notification
 ---
 

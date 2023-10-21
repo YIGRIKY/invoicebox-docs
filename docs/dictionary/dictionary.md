@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Справочники"
-nav_order: 9
+nav_order: 90
 has_children: true
 permalink: /docs/dictionary
 ---

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Инвойсбокс.Бизнес"
-nav_order: 8
+nav_order: 70
 has_children: true
 permalink: /docs/business
 ---

@@ -3,6 +3,7 @@ layout: default
 nav_order: 1
 title: "По умолчанию"
 parent: "Обработка уведомлений"
+grand_parent: "Приём платежей"
 ---
 
 # Уведомление по умолчанию

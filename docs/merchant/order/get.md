@@ -3,6 +3,7 @@ layout: default
 nav_order: 2
 title: "Получение заказа"
 parent: "Работа с заказом"
+grand_parent: "Приём платежей"
 ---
 
 # Получение заказа

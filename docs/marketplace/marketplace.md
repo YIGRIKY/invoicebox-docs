@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Маркетплейс"
-nav_order: 9
+nav_order: 100
 has_children: true
 permalink: /docs/marketplace
 ---

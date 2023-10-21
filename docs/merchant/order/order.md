@@ -2,6 +2,7 @@
 layout: default
 title: "Работа с заказом"
 nav_order: 5
+parent: "Приём платежей"
 has_children: true
 permalink: /docs/order
 ---

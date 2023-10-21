@@ -2,6 +2,7 @@
 layout: default
 title: "Работа с возвратом"
 nav_order: 6
+parent: "Приём платежей"
 has_children: true
 permalink: /docs/refund
 ---
