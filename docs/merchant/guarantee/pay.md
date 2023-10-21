@@ -105,6 +105,8 @@ POST /v3/billing/api/order/{uuid}/payment-method-action/pay
 ```
 
 Возможные статусы:
+  - alreadyPaid - Оплата заказа уже подтверждена
+  - wrongCode - Передан неверный код, повторите попытку оплаты
   - limitReached - Превышено кол-во попыток оплаты
   - notEnoughMoney - Недостаточно средств на счету
   - error - Непредвиденная ошибка
