@@ -116,10 +116,10 @@ kramdown:
 
 callouts:
   warning:
-    title: :warning: Внимание
+    title: ":warning: Внимание"
     color: red
   important:
-    title: :warning: Важно
+    title: ":warning: Важно"
     color: blue
 
 compress_html:
