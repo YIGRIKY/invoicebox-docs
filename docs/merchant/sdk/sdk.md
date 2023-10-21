@@ -2,8 +2,9 @@
 layout: default
 nav_order: 40
 title: "SDK"
+parent: "Приём платежей"
 has_children: true
-permalink: /sdk/sdk
+permalink: /docs/merchant/sdk
 ---
 
 # Готовые модули для CMS
@@ -17,4 +18,4 @@ permalink: /sdk/sdk
 
 | Платформа/язык разработки          | Детали
 | -----------------------------------| ---------------------------------------
-| ![PHP](/assets/images/sdk/php.svg) | [Смотреть &raquo;](/docs/sdk/php)
+| ![PHP](/assets/images/sdk/php.svg) | [Смотреть &raquo;](/docs/merchant/sdk/php)

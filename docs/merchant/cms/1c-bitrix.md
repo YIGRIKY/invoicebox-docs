@@ -3,6 +3,7 @@ layout: default
 nav_order: 11
 title: "1С Битрикс"
 parent: "Модули для CMS"
+grand_parent: "Приём платежей"
 ---
 
 # Описание модуля

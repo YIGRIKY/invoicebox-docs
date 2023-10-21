@@ -3,6 +3,7 @@ layout: default
 nav_order: 10
 title: "PHP SDK"
 parent: "SDK"
+grand_parent: "Приём платежей"
 ---
 
 # Описание SDK

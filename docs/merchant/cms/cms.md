@@ -2,8 +2,9 @@
 layout: default
 nav_order: 30
 title: "Модули для CMS"
+parent: "Приём платежей"
 has_children: true
-permalink: /cms/cms
+permalink: /docs/merchant/cms
 ---
 
 # Готовые модули для CMS
@@ -14,5 +15,5 @@ permalink: /cms/cms
 
 | Система управления сайтом (CMS)                 | Версия | Лицензия CMS/Модуля   | Детали
 | ----------------------------------------------- | -------| --------------------- | ---------------------------------
-| ![1С Битрикс](/assets/images/cms/1s_bitrix.svg) | > 16.x | Платная/Бесплатный    | [Смотреть &raquo;](/docs/cms/1c-bitrix)
-| ![Wordpress](/assets/images/cms/wodpress_logo.png) | > 6.1.x | Бесплатный    | [Смотреть &raquo;](/docs/cms/woocommerce)
+| ![1С Битрикс](/assets/images/cms/1s_bitrix.svg) | > 16.x | Платная/Бесплатный    | [Смотреть &raquo;](/docs/merchant/cms/1c-bitrix)
+| ![Wordpress](/assets/images/cms/wodpress_logo.png) | > 6.1.x | Бесплатный    | [Смотреть &raquo;](/docs/merchant/cms/woocommerce)

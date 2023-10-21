@@ -1,7 +1,8 @@
 ---
 layout: nocompress
-nav_order: 30
+nav_order: 10
 title: "Схема взаимодействия"
+parent: "Приём платежей"
 ---
 
 # Схема взаимодействия с Инвойсбокс API v3

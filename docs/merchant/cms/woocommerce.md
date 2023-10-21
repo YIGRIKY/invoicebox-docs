@@ -1,8 +1,9 @@
 ---
 layout: default
 nav_order: 12
-title: "Wordpress"
+title: "WordPress"
 parent: "Модули для CMS"
+grand_parent: "Приём платежей"
 ---
 
 # Описание модуля

@@ -4,7 +4,7 @@ title: "Работа с заказом"
 nav_order: 5
 parent: "Приём платежей"
 has_children: true
-permalink: /docs/order
+permalink: /docs/merchant/order
 ---
 
 # Работа с заказом
