@@ -35,3 +35,15 @@
 ::-webkit-scrollbar-thumb:hover {
   background-color: #a8bbbf;
 }
+
+
+.site-logo {
+  width: 210px;
+}
+
+@media (min-width: 66.5rem)
+{
+  .site-nav, .site-header, .site-footer {
+    width: 100%;
+  }
+}
