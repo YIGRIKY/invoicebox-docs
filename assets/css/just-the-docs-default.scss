@@ -306,7 +306,7 @@ p.warning, blockquote.warning {
 }
 p.warning::before, blockquote.warning::before {
   color: #dd2e2e;
-  content: "Внимание";
+  content: "<img class='emoji' title=':warning:' alt=':warning:' src='https://github.githubassets.com/images/icons/emoji/unicode/26a0.png' height='20' width='20'> Внимание";
   display: block;
   font-weight: bold;
   text-transform: uppercase;
