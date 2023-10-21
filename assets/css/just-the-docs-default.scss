@@ -111,7 +111,7 @@ p.important, blockquote.important {
 }
 p.important::before, blockquote.important::before {
   color: #183385;
-  content: "Important";
+  content: "Обратите внимание";
   display: block;
   font-weight: bold;
   text-transform: uppercase;
@@ -176,7 +176,7 @@ p.new, blockquote.new {
 }
 p.new::before, blockquote.new::before {
   color: #026e57;
-  content: "New";
+  content: "Новое";
   display: block;
   font-weight: bold;
   text-transform: uppercase;
@@ -241,7 +241,7 @@ p.note, blockquote.note {
 }
 p.note::before, blockquote.note::before {
   color: #381885;
-  content: "Note";
+  content: "Заметка";
   display: block;
   font-weight: bold;
   text-transform: uppercase;
@@ -306,7 +306,7 @@ p.warning, blockquote.warning {
 }
 p.warning::before, blockquote.warning::before {
   color: #dd2e2e;
-  content: "Warning";
+  content: "Внимание";
   display: block;
   font-weight: bold;
   text-transform: uppercase;
