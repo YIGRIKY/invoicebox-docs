@@ -1,7 +1,7 @@
 ---
 layout: default
 nav_order: 20
-title: "По умолчанию"
+title: "Проверка возможности оплаты"
 parent: "Подтверждение оплаты"
 grand_parent: "Приём платежей"
 ---
@@ -15,13 +15,9 @@ grand_parent: "Приём платежей"
 - тело запроса - объект [ValidateRequest](#validaterequest)
 - тело ответа - объект [ValidateResponse](#validateresponse)
 - Возможные [ошибки](/docs/dictionary/error/)
-- Возможные статусы:
-  - notRegistered - Юр. лицо не зарегистрировано в системе
-  - notEnoughMoney - Недостаточно средств на счету
-  - available - Оплата доступна
 
 <details>
-  <summary>Пример запроса</summary>
+  <summary>Пример запроса и ответа</summary>
 <section markdown="1">
 ``` json
 POST /v3/billing/api/order/{uuid}/payment-method-action/validate
@@ -30,7 +26,7 @@ POST /v3/billing/api/order/{uuid}/payment-method-action/validate
   "languageId": "ru",
   "customer": {
     "name": "ООО Компания",
-    "email": "email@gmail.com"
+    "email": "email@gmail.com",
     "type": "legal",
     "phone": "79611234567",
     "vatNumber": "1233123",
@@ -57,6 +53,7 @@ POST /v3/billing/api/order/{uuid}/payment-method-action/validate
 </details>
 
 
+
 ## ValidateRequest
 
 
@@ -71,8 +68,20 @@ POST /v3/billing/api/order/{uuid}/payment-method-action/validate
 
 | Свойство | Обязательное | Тип        | Описание                             |
 |----------|--------------|------------|--------------------------------------|
-| data     | да           | [Customer](/docs/merchant/order/create/#customer) | Информация о плательщике  |
+| data     | да           | [PaymentResponse](/docs/merchant/guarantee/validate/#paymentresponse) | Информация об оплате  |
 
+## PaymentResponse
+
+| Свойство    | Обязательное | Тип        | Описание                    |
+|-------------|--------------|------------|-----------------------------|
+| result      | да           | enum       | Статус проверки (см. ниже)  |
+| resultNote  | нет          | string     | Комментарий                 |
+
+
+Возможные статусы:
+  - notRegistered - Организация или ИП не зарегистрировано в системе
+  - notEnoughMoney - Недостаточно средств для подтверждения оплаты заказа
+  - available - Подтверждение оплаты заказа доступно
 
 
 ---
