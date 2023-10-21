@@ -112,14 +112,14 @@ kramdown:
   input: GFM
   syntax_highlighter_opts:
     block:
-      line_numbers: true
+      line_numbers: false
 
 callouts:
   warning:
-    title: ":warning: Внимание"
+    title: "Внимание"
     color: red
   important:
-    title: ":warning: Важно"
+    title: "Важно"
     color: blue
 
 compress_html:
