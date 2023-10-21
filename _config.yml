@@ -114,13 +114,22 @@ kramdown:
     block:
       line_numbers: false
 
+callouts_level: quiet # or loud
 callouts:
+  highlight:
+    color: yellow
   warning:
     title: "Внимание"
     color: red
   important:
     title: "Важно"
     color: blue
+  new:
+    title: New
+    color: green
+  note:
+    title: Note
+    color: purple
 
 compress_html:
   clippings: all
