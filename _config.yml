@@ -112,7 +112,15 @@ kramdown:
   input: GFM
   syntax_highlighter_opts:
     block:
-      line_numbers: false
+      line_numbers: true
+
+callouts:
+  warning:
+    title: :warning: Внимание
+    color: red
+  important:
+    title: :warning: Важно
+    color: blue
 
 compress_html:
   clippings: all
