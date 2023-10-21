@@ -1,7 +1,7 @@
 ---
 layout: nocompress
-nav_order: 11
-title: "Партнёрская схема"
+nav_order: 10
+title: "Схема взаимодействия"
 parent: "Инвойсбокс.Бизнес"
 ---
 
