@@ -1,6 +1,6 @@
 ---
 layout: default
-nav_order: 12
+nav_order: 20
 title: "WordPress"
 parent: "Модули для CMS"
 grand_parent: "Приём платежей"

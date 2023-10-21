@@ -1,6 +1,6 @@
 ---
 layout: default
-nav_order: 40
+nav_order: 60
 title: "SDK"
 parent: "Приём платежей"
 has_children: true

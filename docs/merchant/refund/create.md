@@ -8,7 +8,7 @@ grand_parent: "Приём платежей"
 
 # Осуществление возврата
 
-Осуществить возврат средств возможно только по оплаченному заказу. Перед оплатой, пожалуйста, воспользуйтесь [методом удаления заказа](/order/delete).
+Осуществить возврат средств возможно только по оплаченному заказу. Перед оплатой, пожалуйста, воспользуйтесь [методом удаления заказа](/order/merchant/delete).
 Схема осуществления возврата по оплаченному заказу следующая:
 - Получить список доступных для возврата позиций
 - Создание возвратного заказа
@@ -18,7 +18,7 @@ grand_parent: "Приём платежей"
 
 - метод: `GET`
 - ресурс: `/v3/billing/api/order/order/:uuid/refund-basket-item` - где `:uuid` это идентификатор заказа
-- тело ответа - array of [BasketItem](/docs/order-create/#basketitem)
+- тело ответа - array of [BasketItem](/docs/merchant/order/create/#basketitem)
 
 ## Создание возвратного заказа
 
@@ -35,7 +35,7 @@ grand_parent: "Приём платежей"
 | merchantOrderId | да           | string(100)                                           | Идентификатор возвратного заказа в учётной системе магазина                                                                           | `O-12345`                              |
 | amount          | да           | float                                                 | Сумма заказа                                                                                                                          | `19658.45`                             |
 | vatAmount       | да           | float                                                 | Сумма НДС                                                                                                                             | `156.56`                               |
-| basketItems     | да           | array of [BasketItem](/docs/order-create/#basketitem) | Корзина заказа                                                                                                                        |                                        |
+| basketItems     | да           | array of [BasketItem](/docs/merchant/order/create/#basketitem) | Корзина заказа                                                                                                                        |                                        |
 | description     | да           | string(1000)                                          | Описание заказа                                                                                                                       | `Оплата номера в отеле`                |
 | status          | нет          | string(50) enum                                       | Статус заказа, по умолчанию `created`, так же возможен статус `draft` для создания [корректирующих заказов](/docs/refund/correction/) | `created`                              |
 
@@ -57,5 +57,5 @@ grand_parent: "Приём платежей"
 
 ---
 
-[Читать далее &raquo;](/docs/refund/get){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Читать далее &raquo;](/docs/merchant/refund/get){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 

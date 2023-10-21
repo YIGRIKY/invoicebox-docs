@@ -12,7 +12,7 @@ grand_parent: "Приём платежей"
 
 - метод: `GET`
 - ресурс: `/v3/filter/api/order/refund-order`
-- тело ответа - array of [RefundOrderResponse](/docs/refund/create/#refundorderresponse)
+- тело ответа - array of [RefundOrderResponse](/docs/merchant/refund/create/#refundorderresponse)
 
 Используя этот метод можно получить список возвратов. Возможно применения фильтров и сортировок.
 
@@ -28,7 +28,7 @@ GET /v3/filter/api/order/refund-order?id=01771534-196a-1105-839a-82422289d6d9
 GET /v3/filter/api/order/refund-order?parentId=d6f1ccb2-2e32-43c2-8a42-5a835dd88607
 ```
 
-Пример запроса возвратов с фильтром по [статусу](/docs/refund)
+Пример запроса возвратов с фильтром по [статусу](/docs/merchant/refund)
 
 ```
 GET /v3/filter/api/order/refund-order?status=completed

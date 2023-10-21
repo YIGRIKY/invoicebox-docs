@@ -12,7 +12,7 @@ grand_parent: "Приём платежей"
 
 - метод: `GET`
 - ресурс: `/v3/filter/api/order/shipment`
-- тело ответа - array of [ShipmentResponse](/docs/order/shipment_create/#shipmentresponse)
+- тело ответа - array of [ShipmentResponse](/docs/merchant/order/shipment_create/#shipmentresponse)
 
 В запросе возможно применения фильтров и сортировок.
 

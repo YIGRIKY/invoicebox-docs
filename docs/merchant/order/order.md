@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Работа с заказом"
-nav_order: 5
+nav_order: 30
 parent: "Приём платежей"
 has_children: true
 permalink: /docs/merchant/order

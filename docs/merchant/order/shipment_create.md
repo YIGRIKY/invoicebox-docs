@@ -69,7 +69,7 @@ Accept: application/json
 
 ## BasketItem
 
-Корзина заказа. Пожалуйста, внимательно ознакомьтесь с требованиями по [заполнению наименования номенклатуры](/docs/fz54).
+Корзина заказа. Пожалуйста, внимательно ознакомьтесь с требованиями по [заполнению наименования номенклатуры](/docs/merchant/fz54).
 
 | Свойство          | Обязательное | Тип                | Описание                                                                                                                                          |
 |-------------------|--------------|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -91,10 +91,10 @@ Accept: application/json
 | vatCode           | да           | string(20) enum    | Код процента НДС, допустимые значения: `VATNONE` - не облагается,`VATNONE` - не облагается, `RUS_VAT0` - 0%, `RUS_VAT10` - 10%, `RUS_VAT20` - 20% |
 | type              | да           | string(10) или int | Тип позиции, [в соответствии со справочником](/docs/dictionary/tag1212) или service - сервис, commodity - товар                                   |
 | paymentType       | да           | string(20) enum    | Тип оплаты, допустимые значения: `full_prepayment`, `prepayment`, `advance`, `full_payment`                                                       |
-| metaData          | нет          | object             | [Дополнительные данные элемента корзины](/docs/order/metadata/)                                                                                   |
+| metaData          | нет          | object             | [Дополнительные данные элемента корзины](/docs/merchant/order/metadata/)                                                                                   |
 
 
 ---
-[Читать далее &raquo;](/docs/order/shipment_get){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Читать далее &raquo;](/docs/merchant/order/shipment_get){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 
 {: .fs-6 .fw-300 }

@@ -16,7 +16,7 @@ grand_parent: "Приём платежей"
 
 ## OrderNotification
 
-Повторяет структуру [OrderResponse](/docs/notification/status/#orderresponse), основные поля:
+Повторяет структуру [OrderResponse](/docs/merchant/notification/status/#orderresponse), основные поля:
 
 | Свойство               | Обязательное | Тип                                      | Описание                                                                                                                            |
 |------------------------|--------------|------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
@@ -26,7 +26,7 @@ grand_parent: "Приём платежей"
 | merchantOrderId        | да           | string(36)                               | Идентификатор заказа в учётной системе магазина, например: `O-12345`                                                                |
 | merchantOrderIdVisible | нет          | string(100)                              | Номер заказа, отображаемый на платежной странице. Если не заполнено, показывается значение из merchantOrderId например `111TN22-33` |
 | amount                 | да           | float                                    | Сумма заказа, например: `19658.45`                                                                                                  |
-| customer               | да           | [Customer](/docs/order/create/#customer) | Информация о заказчике                                                                                                              |                                        
+| customer               | да           | [Customer](/docs/merchant/order/create/#customer) | Информация о заказчике                                                                                                              |                                        
 | currencyId             | да           | string(3) enum                           | Валюта заказа, например: `RUB`, `USD`,`EUR`, `GBP`                                                                                  |
 | createdAt              | да           | datetime                                 | Дата создания заказа, например: `2020-12-22T00:00:00+00:00`                                                                         |
 

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Работа с возвратом"
-nav_order: 6
+nav_order: 40
 parent: "Приём платежей"
 has_children: true
 permalink: /docs/merchant/refund

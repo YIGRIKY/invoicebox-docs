@@ -15,7 +15,7 @@ grand_parent: "Приём платежей"
 - метод: `PUT`
 - ресурс: `/v3/billing/api/order/order-merchant-move`
 - тело запроса - объект [UpdateOrderMerchantRequest](#updateorderrequest)
-- тело ответа - объект [OrderResponse](/docs/order/create/#orderresponse)
+- тело ответа - объект [OrderResponse](/docs/merchant/order/create/#orderresponse)
 
 
 ## UpdateOrderMerchantRequest
@@ -27,4 +27,4 @@ grand_parent: "Приём платежей"
 
 ---
 
-[Читать далее &raquo;](/docs/order/metadata){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Читать далее &raquo;](/docs/merchant/order/metadata){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }

@@ -1,6 +1,6 @@
 ---
 layout: default
-nav_order: 30
+nav_order: 70
 title: "Модули для CMS"
 parent: "Приём платежей"
 has_children: true
@@ -13,7 +13,7 @@ permalink: /docs/merchant/cms
 актуальные варианты модулей для платформ с открытым исходным кодом.
 
 
-| Система управления сайтом (CMS)                 | Версия | Лицензия CMS/Модуля   | Детали
-| ----------------------------------------------- | -------| --------------------- | ---------------------------------
-| ![1С Битрикс](/assets/images/cms/1s_bitrix.svg) | > 16.x | Платная/Бесплатный    | [Смотреть &raquo;](/docs/merchant/cms/1c-bitrix)
-| ![Wordpress](/assets/images/cms/wodpress_logo.png) | > 6.1.x | Бесплатный    | [Смотреть &raquo;](/docs/merchant/cms/woocommerce)
+| Система управления сайтом (CMS)                    | Версия  | Лицензия CMS/Модуля   | Детали
+| -------------------------------------------------- | --------| --------------------- | ---------------------------------
+| ![1С Битрикс](/assets/images/cms/1s_bitrix.svg)    | > 16.x  | Платная/Бесплатный    | [Смотреть &raquo;](/docs/merchant/cms/1c-bitrix/)
+| ![Wordpress](/assets/images/cms/wodpress_logo.png) | > 6.1.x | Бесплатный            | [Смотреть &raquo;](/docs/merchant/cms/woocommerce/)

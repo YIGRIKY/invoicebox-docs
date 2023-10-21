@@ -13,7 +13,7 @@ grand_parent: "Приём платежей"
 После чего произойдет перерасчет суммы возврата из п.1 на сумму корректировочного заказа и покупателю осуществится возврат на эту сумму.
 
 ### Создание возврата
-Создание возврата со специальным статусом **draft** и получение его **идентификатора** методом [создания возврата](/docs/refund/create/)
+Создание возврата со специальным статусом **draft** и получение его **идентификатора** методом [создания возврата](/docs/merchant/refund/create/)
 
 ### Создание корректировочного заказа
 Создание корректировочного заказа с указанием новых позиций(штрафов, комиссий, сервисных сборов) со ссылкой на возврат из пункта 1. через поле `parentId`
@@ -22,7 +22,7 @@ grand_parent: "Приём платежей"
 Для создания заказа, необходимо вызвать следующий метод API:
 - метод: `POST`
 - ресурс: `/v3/billing/api/order/correction-order`
-- тело запроса - объект [CreateOrderRequest](/docs/order/create/#createorderrequest)
-- тело ответа - объект [OrderResponse](/docs/order/create/#orderresponse)
+- тело запроса - объект [CreateOrderRequest](/docs/merchant/order/create/#createorderrequest)
+- тело ответа - объект [OrderResponse](/docs/merchant/order/create/#orderresponse)
 - Возможные [ошибки](/docs/dictionary/error/)
 
