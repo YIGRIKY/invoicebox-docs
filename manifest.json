@@ -1,6 +1,6 @@
 {
-  "short_name": "Инвойсбокс",
-  "name": "Инвойсбокс: оплата заказа",
+  "short_name": "Инвойсбокс API",
+  "name": "Инвойсбокс API v3",
   "icons": [
     {
       "src": "favicon.ico",

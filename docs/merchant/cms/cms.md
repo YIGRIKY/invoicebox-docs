@@ -12,8 +12,9 @@ permalink: /docs/merchant/cms
 Обращаем ваше внимание, что представленный перечень не является исчерпывающим и содержит только наиболее
 актуальные варианты модулей для платформ с открытым исходным кодом.
 
-
 | Система управления сайтом (CMS)                    | Версия  | Лицензия CMS/Модуля   | Детали
 | -------------------------------------------------- | --------| --------------------- | ---------------------------------
 | ![1С Битрикс](/assets/images/cms/1s_bitrix.svg)    | > 16.x  | Платная/Бесплатный    | [Смотреть &raquo;](/docs/merchant/cms/1c-bitrix/)
-| ![Wordpress](/assets/images/cms/wodpress_logo.png) | > 6.1.x | Бесплатный            | [Смотреть &raquo;](/docs/merchant/cms/woocommerce/)
+| ![Wordpress](/assets/images/cms/wordpress.svg)     | > 6.1.x | Бесплатный            | [Смотреть &raquo;](/docs/merchant/cms/woocommerce/)
+
+Если вы не нашли подходящий, [напишите нам](https://www.invoicebox.ru/ru/contacts/feedback.html) и мы поможем подобрать необходимый модуль.
