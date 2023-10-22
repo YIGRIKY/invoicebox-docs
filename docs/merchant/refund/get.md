@@ -1,6 +1,6 @@
 ---
 layout: default
-nav_order: 2
+nav_order: 20
 title: "Получение возвратов"
 parent: "Работа с возвратом"
 grand_parent: "Приём платежей"

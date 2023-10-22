@@ -1,6 +1,6 @@
 ---
 layout: nocompress
-nav_order: 1
+nav_order: 30
 title: "Возврат с комиссией/штрафом"
 parent: "Работа с возвратом"
 grand_parent: "Приём платежей"
