@@ -8,9 +8,9 @@ grand_parent: "Приём платежей"
 
 # Описание модуля
 
-![Wordpress](/assets/images/cms/wordpress_logo.png){: .img-right}
+![WordPress](/assets/images/cms/wordpress.svg){: .img-right}
 
-Плагин Wordpress для Woocommerce предоставляет простую возможность подключить ваш интернет-магазин к системе оплаты «Инвойсбокс».
+Плагин WordPress для Woocommerce предоставляет простую возможность подключить ваш интернет-магазин к системе оплаты «Инвойсбокс».
 Модуль поддерживает два режима работы - с системой «Инвойсбокс» версии 2, а также с обновлённой версией 3.
 Версию вашего подключения уточняйте у вашего персонального менеджера или в службе поддержки системы.
 
@@ -19,14 +19,14 @@ grand_parent: "Приём платежей"
 1. Зайдите в административную часть вашего сайта, перейдите на страницу «Плагины» → «Добавить новый»;
 2. В списке доступных решений найдите модуль «InvoiceBox: Payment module for WooCommerce» ([InvoiceBox, invoicebox payment](https://ru.wordpress.org/plugins/invoicebox-payment-gateway/)), установите и активируйте его.
 
-![Wordpress](/assets/images/cms/wordpress/1.jpg)
-![Wordpress](/assets/images/cms/wordpress/2.png)
+![WordPress](/assets/images/cms/wordpress/1.jpg)
+![WordPress](/assets/images/cms/wordpress/2.png)
 
 ## Настройка модуля
 
 В административном разделе сайта перейдите на страницу «Woocommerce» → «Настройки» → «Платежи» и нажмите на кнопку «Управление» у метода Invoicebox Payment для физ.лиц и Invoicebox Legal Payment для юр.лиц.
 
-![Wordpress](/assets/images/cms/wordpress/3.png)
+![WordPress](/assets/images/cms/wordpress/3.png)
 
 В настройках платёжной системы настройте следующие параметры:
 
@@ -40,7 +40,7 @@ grand_parent: "Приём платежей"
 8. В поле "Тип оплаты" выберите вариант full_prepayment (в случае, если он не выбран по умолчанию)
 9. Поле "Тип товара по умолчанию": выберите тип товара, который будет использоваться по умолчанию. Если на сайте присутствуют разные типы товаров, дополнительный вариант можно указать ниже в графе "Мета-поле, где задан тип для отдельного товара" (см. подробнее в пункте “Настройка мета-полей”)
 10. Поле “Единица измерения по умолчанию”": выберите единицу измерения, которая будет использоваться по умолчанию. Если на сайте используются разные единицы измерения, дополнительный вариант можно указать ниже в графе "Мета-поле, где задана единица измерения для отдельного товара" (см. подробнее в пункте “Настройка мета-полей”). Также дополнительно указывается код единицы измерения (если выбран русский язык - проверяется по справочнику ОКЕИ). **Примечание: для русского языка важно точное соответствие значению справочнику ОКЕИ (пример - в единице измерения “шт” не должно быть точки в конце)**.
-    ![Wordpress](/assets/images/cms/wordpress/4.png)
+    ![WordPress](/assets/images/cms/wordpress/4.png)
 11. Поле “Страна-производитель товара по умолчанию”: выберите страну-производителя, которая будет использоваться по умолчанию. Если на сайте присутствуют товары из нескольких стран, дополнительный вариант можно указать ниже в графе "Мета-поле, где задана страна-производитель товара" (см. подробнее в пункте “Настройка мета-полей”).
 12. Если выбрана третья версия API, есть возможность передавать дополнительные данные (например, бронирование билетов или мест проживания). Для этого нужно указать мета-поле заказа, из которого плагин будет брать информацию. Подробнее о формате передаваемых данных написано по ссылке https://docs.invoicebox.ru/docs/order/metadata/. Это поле должно создаваться и заполняться “на лету” из кода сразу после создания заказа перед оплатой, поэтому для его настройки может понадобиться помощь разработчика.
 13. Далее нужно заполнить данные для доступа к API:
@@ -59,21 +59,21 @@ grand_parent: "Приём платежей"
 
 ## Доступы для 2й версии API
 - Поле “Идентификатор магазина” - вписываем нужное значение или тестовое значение “207”, если включен тестовый режим
-  ![Wordpress](/assets/images/cms/wordpress/5.png)
+  ![WordPress](/assets/images/cms/wordpress/5.png)
 - Поле “Региональный код магазина” - вводим нужное значение в поле или тестовое значение “78054”, если включен тестовый режим
-  ![Wordpress](/assets/images/cms/wordpress/6.png)
+  ![WordPress](/assets/images/cms/wordpress/6.png)
 - Поля “Имя пользователя” и “Пароль API”. Данные для теста: логин “78054-API” и пароль “LM936s#3jz0“
-  ![Wordpress](/assets/images/cms/wordpress/7.png)
+  ![WordPress](/assets/images/cms/wordpress/7.png)
 - Поле “Ключ API”. Значение для теста: LdjmgMS1WMS0nAIklbDkvuKT7WxaJIoC
 - Нажимаем “Сохранить изменения”
-  ![Wordpress](/assets/images/cms/wordpress/8.png)
+  ![WordPress](/assets/images/cms/wordpress/8.png)
 
 ## Доступы для 3й версии API:
 - Поле “Идентификатор магазина”. Тестовое значение: ffffffff-ffff-ffff-ffff-ffffffffffff
 - Поля “Токен” и “Ключ API”.Тестовые значения “b37c4c689295904ed21eee5d9a48d42e” и “098f6bcd4621d373cade4e832627b4f6” соответственно
-  ![Wordpress](/assets/images/cms/wordpress/9.png)
+  ![WordPress](/assets/images/cms/wordpress/9.png)
 - Нажимаем “Сохранить изменения”
-  ![Wordpress](/assets/images/cms/wordpress/8.png)
+  ![WordPress](/assets/images/cms/wordpress/8.png)
 
 **Вы сможете отслеживать ошибки, включив функцию логирования. Данные об операциях и ошибках вносятся в логи WooCommerce (меню - WooCommerce - Статус - Журналы)**
 
@@ -92,25 +92,25 @@ grand_parent: "Приём платежей"
 Далее в инструкции показано, как настроить рекомендуемые к заполнению поля. Обо всех остальных возможностях плагина вы можете прочесть в документации по ссылке [advanced custom fields](https://www.advancedcustomfields.com/resources/)
 
 1. Установите и активируйте плагин Advanced Custom Fields [advanced custom fields](https://ru.wordpress.org/plugins/advanced-custom-fields/)
-   ![Wordpress](/assets/images/cms/wordpress/10.png)
+   ![WordPress](/assets/images/cms/wordpress/10.png)
 2. В меню выберите пункт “Добавить группу полей”
-   ![Wordpress](/assets/images/cms/wordpress/11.png)
+   ![WordPress](/assets/images/cms/wordpress/11.png)
 3. Добавьте новое поле
-   ![Wordpress](/assets/images/cms/wordpress/13.png)
+   ![WordPress](/assets/images/cms/wordpress/13.png)
 4. Произвольно назовите группу полей, а в условиях отображения выберите “Тип записи - равно - Товар”
-   ![Wordpress](/assets/images/cms/wordpress/12.png)
+   ![WordPress](/assets/images/cms/wordpress/12.png)
    В строке "Имя поля" - введите значение предыдущей строки латиницей (обязательно!). В строке "Тип поля" в выпадающем списке выберите "Текст"
 5. Чтобы создать мета-поле "Тип товара", добавьте новое поле, заполните ярлык и имя, а в типе поля выберите “Выбор (select)”..
-   ![Wordpress](/assets/images/cms/wordpress/14.png)
+   ![WordPress](/assets/images/cms/wordpress/14.png)
     - Далее скопируйте и вставьте в пункт “Варианты” следующий текст:
        - commodity : товар
        - service : услуга
 6. Сохраните группу полей.
-   ![Wordpress](/assets/images/cms/wordpress/15.png)
+   ![WordPress](/assets/images/cms/wordpress/15.png)
 7. Перейдите в любой товар в административной панели и убедитесь, что на странице товара появилась вкладка с новыми полями.
-   ![Wordpress](/assets/images/cms/wordpress/16.png)
+   ![WordPress](/assets/images/cms/wordpress/16.png)
 8. Впишите идентификаторы, которые вы задавали в “имени поля” на странице настроек плагина и сохраните настройки.
-   ![Wordpress](/assets/images/cms/wordpress/17.png)
+   ![WordPress](/assets/images/cms/wordpress/17.png)
 
 
 ## Частые вопросы
