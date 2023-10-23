@@ -40,7 +40,8 @@ Authorization: Bearer b37c4c689295904ed21eee5d9a48d42e
 {
   "data": {
     "userId": "01771533-8e75-3234-8e3d-9213ae2d7c52"
-  }
+  },
+  "extendedData": []
 }
 ```
 
@@ -49,7 +50,7 @@ Authorization: Bearer b37c4c689295904ed21eee5d9a48d42e
 {
   "error": {
     "message": "Unauthorized",
-    "code": 401
+    "code": "unauthorized"
   }
 }
 ```
