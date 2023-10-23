@@ -31,15 +31,38 @@ parent: "Подключение к API"
 ```
 GET /v3/security/api/auth/auth
 Accept: application/json
+User-Agent: MyApp 1.0
 Authorization: Bearer b37c4c689295904ed21eee5d9a48d42e
 ```
 
-Если данные верны, то ответ будет содержать HTTP код 200 и тело:
+Если передан корректный токен, то ответ будет содержать HTTP код `200 OK` и идентификатор пользователя:
 ```json
 {
   "data": {
     "userId": "01771533-8e75-3234-8e3d-9213ae2d7c52"
   }
+}
+```
+
+Если передан некорректный токен, то ответ будет содержать HTTP код `401 Unauthorized` и ошибку:
+```json
+{
+  "error": {
+    "message": "Unauthorized",
+    "code": 401
+  }
+}
+```
+
+Если токен не передан, то ответ будет содержать HTTP код `200 OK` и информацию об анонимном пользователе:
+```json
+{
+  "data": {
+    "userId": null,
+    "profile": null,
+    "accessToken": null,
+  },
+  "extendedData": []
 }
 ```
 
