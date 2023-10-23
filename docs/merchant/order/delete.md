@@ -13,7 +13,7 @@ grand_parent: "Приём платежей"
 - метод: `DELETE`
 - ресурс: `/v3/billing/api/order/order/:uuid` - где `:uuid` это идентификатор заказа
 - тело запроса - отсутствует
-- тело ответа - объект [OrderResponse](/docs/merchant/order/create/#orderresponse) со статусом `canceled`
+- тело ответа - объект [OrderResponse](/docs/merchant/order/create/#orderresponse) со статусом status = `canceled`
 
 Пример запроса:
 ```
