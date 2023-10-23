@@ -34,4 +34,4 @@ title: "Термины и определения"
 
 ---
 
-[Читать далее &raquo;](/docs/api/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Читать далее &raquo;](/docs/api/){: .btn .btn-primary .mb-4 .mb-md-0 .mr-2 }

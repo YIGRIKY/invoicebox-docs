@@ -61,7 +61,7 @@ parent: "Подключение к API"
 
 
 ---
-[Читать далее &raquo;](/docs/api/debug){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Читать далее &raquo;](/docs/api/debug){: .btn .btn-primary .mb-4 .mb-md-0 .mr-2 }
 
 
 {: .fs-6 .fw-300 }

@@ -371,6 +371,9 @@ blockquote.warning-title > p:last-child {
   padding: 18px 40px 18px 40px;
   border-radius: 10px;
   color: #353F47;
+  box-shadow: 0 0 0;
+  line-height: 1;
+  font-weight: 400;
 }
 
 .btn:hover {
@@ -379,4 +382,6 @@ blockquote.warning-title > p:last-child {
 
 .btn-primary {
   background: #FAD247;
+  box-shadow: 0 0 0;
+  font-weight: 500;
 }

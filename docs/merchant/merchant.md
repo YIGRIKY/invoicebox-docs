@@ -33,4 +33,4 @@ permalink: /docs/merchant
 
 ---
 
-[Читать далее &raquo;](/docs/merchant/schema/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [Обратиться в службу поддержки](https://www.invoicebox.ru/ru/contacts/feedback.html){: .btn .fs-5 .mb-4 .mb-md-0 }
+[Читать далее &raquo;](/docs/merchant/schema/){: .btn .btn-primary .mb-4 .mb-md-0 .mr-2 } [Обратиться в службу поддержки](https://www.invoicebox.ru/ru/contacts/feedback.html){: .btn .fs-5 .mb-4 .mb-md-0 }

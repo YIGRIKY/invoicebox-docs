@@ -86,4 +86,4 @@ POST /v3/billing/api/order/{uuid}/payment-method-action/validate
 
 ---
 
-[Читать далее &raquo;](/docs/merchant/guarantee/code/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Читать далее &raquo;](/docs/merchant/guarantee/code/){: .btn .btn-primary .mb-4 .mb-md-0 .mr-2 }
