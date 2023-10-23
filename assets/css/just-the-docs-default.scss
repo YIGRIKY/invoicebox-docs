@@ -361,3 +361,22 @@ blockquote.warning-title > p:nth-child(2) {
 blockquote.warning-title > p:last-child {
   margin-bottom: 0;
 }
+
+
+
+
+.btn {
+  background: #F1F2F6;
+  height: 56px;
+  padding: 18px, 40px, 18px, 40px
+  border-radius: 10px
+  color: #353F47;
+}
+
+.btn:hover {
+  background: #FAD247;
+}
+
+.btn-primary {
+  background: #FAD247;
+}
