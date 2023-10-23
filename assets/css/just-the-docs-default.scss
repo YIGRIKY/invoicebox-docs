@@ -365,22 +365,23 @@ blockquote.warning-title > p:last-child {
 
 
 
-.btn {
+.btn, .btn:active, .btn:visited, .btn:active {
   background: #F1F2F6;
   height: 56px;
   padding: 18px 40px 18px 40px;
   border-radius: 10px;
-  color: #353F47;
+  color: #495660;
   box-shadow: 0 0 0;
   line-height: 1;
   font-weight: 400;
 }
 
-.btn:hover {
+.btn:hover, .btn-primary:hover {
   background: #FAD247;
+  color: #353F47;
 }
 
-.btn-primary {
+.btn-primary, .btn-primary:active, .btn-primary:visited, .btn-primary:active {
   background: #FAD247;
   box-shadow: 0 0 0;
   font-weight: 500;
