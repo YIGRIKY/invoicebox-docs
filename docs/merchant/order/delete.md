@@ -21,6 +21,15 @@ grand_parent: "Приём платежей"
 - тело запроса - отсутствует
 - тело ответа - объект [OrderResponse](/docs/merchant/order/create/#orderresponse) со статусом `canceled`
 
+Пример запроса:
+```
+DELETE /v3/billing/api/order/order/c5041a79-24a6-42d1-b0ce-4abb94982cd9
+Accept: application/json
+User-Agent: MyApp 1.0
+Authorization: Bearer b37c4c689295904ed21eee5d9a48d42e
+```
+
+
 ---
 
 [Читать далее &raquo;](/docs/merchant/order/merchant-move){: .btn .btn-primary .mb-4 .mb-md-0 .mr-2 }
