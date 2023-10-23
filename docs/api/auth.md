@@ -39,7 +39,9 @@ Authorization: Bearer b37c4c689295904ed21eee5d9a48d42e
 ```json
 {
   "data": {
-    "userId": "01771533-8e75-3234-8e3d-9213ae2d7c52"
+    "userId": "01771533-8e75-3234-8e3d-9213ae2d7c52",
+    "profile": null,
+    "accessToken": null
   },
   "extendedData": []
 }
@@ -61,7 +63,7 @@ Authorization: Bearer b37c4c689295904ed21eee5d9a48d42e
   "data": {
     "userId": null,
     "profile": null,
-    "accessToken": null,
+    "accessToken": null
   },
   "extendedData": []
 }

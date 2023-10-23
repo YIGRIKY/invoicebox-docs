@@ -365,24 +365,27 @@ blockquote.warning-title > p:last-child {
 
 
 
-.btn, .btn:active, .btn:visited, .btn:active {
-  background: #F1F2F6;
-  height: 56px;
-  padding: 18px 40px 18px 40px;
+.btn, .btn:visited {
+  background: #f1f2f6;
+  padding: 0px 40px 0px 40px;
   border-radius: 10px;
   color: #6b7a86;
   box-shadow: 0 0 0;
-  line-height: 1;
+  line-height: 36px;
   font-weight: 400;
 }
 
 .btn:hover, .btn-primary:hover {
-  background: #FAD247;
+  background: #f2cc45;
   color: #353F47;
 }
 
-.btn-primary, .btn-primary:active, .btn-primary:visited, .btn-primary:active {
-  background: #ffe384;
+.btn:active, .btn-primary:active {
+  background: #e9c442;
+}
+
+.btn-primary, .btn-primary:active, .btn-primary:visited {
+  background: #f9d247;
   box-shadow: 0 0 0;
   font-weight: 500;
 }
