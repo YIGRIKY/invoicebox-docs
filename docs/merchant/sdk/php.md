@@ -126,4 +126,4 @@ $orderResponseData = $ibClient->createOrder($createOrderRequest);
 
 ---
 
-[Проект на github](https://github.com/invoicebox/sdk-php)
+[Проект на github](https://github.com/invoicebox/sdk-php) [Проект на packagist](https://packagist.org/packages/invoicebox/sdk-php)
