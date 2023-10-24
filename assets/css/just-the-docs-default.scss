@@ -422,3 +422,6 @@ a:hover {
   font-weight: 500;
 }
 
+.search-input:focus+.search-label .search-icon {
+    color: #FCD107;
+}
