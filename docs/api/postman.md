@@ -15,5 +15,5 @@ parent: "Подключение к API"
 [Скачать коллекцию Инвойсбокс API](https://)
 
 ---
-[Читать далее &raquo;](/docs/docs/merchant){: .btn .btn-primary .mb-4 .mb-md-0 .mr-2 }
+[Читать далее &raquo;](/docs/merchant){: .btn .btn-primary .mb-4 .mb-md-0 .mr-2 }
 

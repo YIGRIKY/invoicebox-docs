@@ -65,3 +65,7 @@ sequenceDiagram
 - тело ответа - объект [OrderResponse](/docs/merchant/order/create/#orderresponse)
 - Возможные [ошибки](/docs/dictionary/error/)
 
+---
+
+[Читать далее &raquo;](/docs/merchant/notification){: .btn .btn-primary .mb-4 .mb-md-0 .mr-2 }
+

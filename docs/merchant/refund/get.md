@@ -47,3 +47,7 @@ GET /v3/filter/api/order/refund-order?merchantOrderId=ORD123456
 ```
 
 
+---
+
+[Читать далее &raquo;](/docs/merchant/refund/correction/){: .btn .btn-primary .mb-4 .mb-md-0 .mr-2 }
+
