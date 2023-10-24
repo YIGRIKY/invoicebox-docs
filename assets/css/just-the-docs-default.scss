@@ -422,6 +422,9 @@ a:hover {
   font-weight: 500;
 }
 
-.search-input:focus+.search-label .search-icon {
+.search-input:focus+.search-label .search-icon,
+.main-content .anchor-heading svg {
     color: #FCD107;
 }
+
+.anchor-heading:hover {background-color:inherit}
