@@ -6,7 +6,7 @@ parent: "Модули для ERP"
 grand_parent: "Приём платежей"
 ---
 
-# Описание модуля
+# Описание модуля iiko
 
 ![iiko](/assets/images/erp/iiko.png){: .img-right}
 

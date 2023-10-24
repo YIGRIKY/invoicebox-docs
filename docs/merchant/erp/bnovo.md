@@ -6,7 +6,7 @@ parent: "Модули для ERP"
 grand_parent: "Приём платежей"
 ---
 
-# Описание модуля
+# Описание модуля Bnovo
 
 ![Bnovo](/assets/images/erp/bnovo.png){: .img-right}
 
