@@ -15,6 +15,7 @@ permalink: /docs/merchant/erp
 | ERP-система                          | Версия   | Лицензия ERP/Модуля                                     | Детали
 | -------------------------------------| ---------| ------------------------------------------------------- | ---------------------------------
 | ![iiko](/assets/images/erp/iiko.png) | >= 7.9.7 | Платная/Платный/Наличие лицензии api payment (21016318) | [Смотреть &raquo;](/docs/merchant/erp/iiko/)
+| ![Bnovo](/assets/images/erp/bnovo.png) | --- | Платная/Платный [Смотреть &raquo;](/docs/merchant/erp/bnovo/)
 
 
 Если вы не нашли подходящий, [напишите нам](https://www.invoicebox.ru/ru/contacts/feedback.html) и мы поможем подобрать необходимый модуль.
