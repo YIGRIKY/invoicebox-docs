@@ -105,10 +105,10 @@ Accept: application/json
 
 | Свойство | Обязательное | Тип               | Описание        | Пример значения                                                                                     |
 |----------|--------------|-------------------|-----------------|-----------------------------------------------------------------------------------------------------|
-| seller   | да           | [Saller](#saller) | Данные продавца | `{"type": "counterparty", "vatNumber":"232323232323", "taxRegistrationReasonCode": "232323232323"}` | 
+| seller   | да           | [Seller](#seller) | Данные продавца | `{"type": "counterparty", "vatNumber":"232323232323", "taxRegistrationReasonCode": "232323232323"}` | 
 
 
-## Saller
+## Seller
 
 Повторяет свойства объекта [CreateOrderRequest](#createorderrequest) с дополнительными свойствами:
 
