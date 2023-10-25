@@ -1,6 +1,6 @@
 ---
 layout: default
-nav_order: 10
+nav_order: 990
 title: "Коды ошибок"
 parent: "Справочники"
 ---
@@ -26,4 +26,4 @@ parent: "Справочники"
 
 ---
 
-[Читать далее &raquo;](/docs/dictionary/tag1212){: .btn .btn-primary .mb-4 .mb-md-0 .mr-2 }
+[Читать далее &raquo;](/docs/security/){: .btn .btn-primary .mb-4 .mb-md-0 .mr-2 }

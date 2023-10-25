@@ -1,6 +1,6 @@
 ---
 layout: default
-nav_order: 1
+nav_order: 10
 title: "Коды ОКЕИ"
 parent: "Справочники"
 ---
@@ -86,4 +86,4 @@ parent: "Справочники"
 
 ---
 
-[Читать далее &raquo;](/docs/dictionary/iso4217){: .btn .btn-primary .mb-4 .mb-md-0 .mr-2 }
+[Читать далее &raquo;](/docs/dictionary/counterparty-detail){: .btn .btn-primary .mb-4 .mb-md-0 .mr-2 }
