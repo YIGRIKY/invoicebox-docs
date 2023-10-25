@@ -1,4 +1,10 @@
-﻿Usage: pancompile DIRECTORY FILENAME [filemask] ["options"]
+﻿---
+nav_exclude: true
+search_exclude: true
+date: 2023-10-25 00:00:00 +0300
+---
+
+Usage: pancompile DIRECTORY FILENAME [filemask] ["options"]
 Uses pandoc to compile all documents in specified directory and subdirectories to a single output document
 
 DIRECTORY         the directory/folder to parse recursively (passed to pandoc -s);
