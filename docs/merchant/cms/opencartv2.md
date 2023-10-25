@@ -15,6 +15,11 @@ date: 2023-10-25 00:00:00 +0300
 
 ![Opencart 2](/assets/images/cms/opencart2v/1.png)
 
+{: .important }
+> В случае, если у вас возникнут сложности при самостоятельной установке модуля и его корректной настройке,
+пожалуйста, обратитесь к специалистам [службы поддержки](https://www.invoicebox.ru/ru/contacts/feedback.html).
+
+
 3. Скачайте архив с плагином.
 
 ![Opencart 2](/assets/images/cms/opencart2v/2.png)
