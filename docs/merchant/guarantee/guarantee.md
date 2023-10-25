@@ -5,6 +5,7 @@ nav_order: 55
 has_children: true
 parent: "Приём платежей"
 permalink: /docs/merchant/guarantee
+date: 2023-10-25 00:00:00 +0300
 ---
 
 # Подтверждение оплаты заказа

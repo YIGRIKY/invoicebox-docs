@@ -4,6 +4,7 @@ title: "Инвойсбокс.Бизнес"
 nav_order: 70
 has_children: true
 permalink: /docs/business
+date: 2023-10-25 00:00:00 +0300
 ---
 
 # Инвойсбокс.Бизнес

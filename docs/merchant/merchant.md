@@ -4,6 +4,7 @@ title: "Приём платежей"
 nav_order: 60
 has_children: true
 permalink: /docs/merchant
+date: 2023-10-25 00:00:00 +0300
 ---
 
 # Методы для организации приёма платежей

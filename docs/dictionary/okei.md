@@ -3,6 +3,7 @@ layout: default
 nav_order: 10
 title: "Коды ОКЕИ"
 parent: "Справочники"
+date: 2023-10-25 00:00:00 +0300
 ---
 
 # Коды ОКЕИ

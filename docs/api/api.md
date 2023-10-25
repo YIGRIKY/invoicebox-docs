@@ -4,6 +4,7 @@ nav_order: 50
 title: "Подключение к API"
 has_children: true
 permalink: /docs/api
+date: 2023-10-25 00:00:00 +0300
 ---
 
 # Подключение к API

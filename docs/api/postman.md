@@ -3,6 +3,7 @@ layout: default
 title: "Работа в Postman"
 nav_order: 100
 parent: "Подключение к API"
+date: 2023-10-25 00:00:00 +0300
 ---
 
 # Работа в Postman

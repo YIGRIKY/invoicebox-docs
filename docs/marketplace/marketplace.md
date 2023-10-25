@@ -4,6 +4,7 @@ title: "Маркетплейс"
 nav_order: 100
 has_children: true
 permalink: /docs/marketplace
+date: 2023-10-25 00:00:00 +0300
 ---
 
 # Интеграция магазина/точки продаж в маркетплейс
