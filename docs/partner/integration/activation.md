@@ -2,7 +2,8 @@
 layout: default
 nav_order: 20
 title: "Активация магазина по коду"
-parent: "Партнёрское API"
+parent: "Интеграция магазина"
+grand_parent: "Партнёрское API"
 date: 2023-10-26 00:00:00 +0300
 ---
 
