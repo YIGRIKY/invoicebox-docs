@@ -3,7 +3,6 @@ layout: default
 nav_order: 10
 title: "Управление средствами размещения (PMS)"
 parent: "Сценарии и бизнес-кейсы"
-has_children: true
 permalink: /docs/scenarios/pms
 date: 2023-10-25 00:00:00 +0300
 ---
