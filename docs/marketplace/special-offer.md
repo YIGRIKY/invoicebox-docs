@@ -83,8 +83,7 @@ Accept: application/json
 | id                        | да           | int   | Идентификатор спец-предложения в маркетплейсе    | `123`           |
 
 
-
 ---
 
-[Читать далее &raquo;](/docs/dictionary){: .btn .btn-primary .mb-4 .mb-md-0 .mr-2 }
+[Читать далее &raquo;](/docs/partner){: .btn .btn-primary .mb-4 .mb-md-0 .mr-2 }
 
