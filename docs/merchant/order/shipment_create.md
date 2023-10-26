@@ -24,6 +24,7 @@ date: 2023-10-25 00:00:00 +0300
 POST /v3/billing/api/order/shipment
 Authorization: Bearer b37c4c689295904ed21eee5d9a48d42e
 Content-Type: application/json
+User-Agent: MyApp 1.0
 Accept: application/json
 {
     "orderId": "0187c6db-1637-c1ca-bef7-f6706799c41e",

@@ -23,9 +23,10 @@ date: 2023-10-26 00:00:00 +0300
   <summary>Пример запроса и ответа</summary>
 <section markdown="1">
 ``` json
-POST /v3/notification/api/invite
+POST /v3/billing/api/merchant/merchant-integration-setting/activation
 Authorization: Bearer b37c4c689295904ed21eee5d9a48d42e
 Content-Type: application/json
+User-Agent: MyApp 1.0
 Accept: application/json
 {
    "activationCode":"111222333",

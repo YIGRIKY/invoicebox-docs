@@ -30,6 +30,7 @@ date: 2023-10-26 00:00:00 +0300
 POST /v3/notification/api/invite
 Authorization: Bearer b37c4c689295904ed21eee5d9a48d42e
 Content-Type: application/json
+User-Agent: MyApp 1.0
 Accept: application/json
 {
    "identifier": "shop@shop.com",

@@ -22,6 +22,10 @@ date: 2023-10-25 00:00:00 +0300
 <section markdown="1">
 ``` json
 POST /v3/billing/api/order/{uuid}/payment-method-action/send-code
+Authorization: Bearer b37c4c689295904ed21eee5d9a48d42e
+Content-Type: application/json
+User-Agent: MyApp 1.0
+Accept: application/json
 {
   "paymentMethodId": "39363265",
   "languageId": "ru",
