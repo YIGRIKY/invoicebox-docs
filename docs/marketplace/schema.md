@@ -40,5 +40,5 @@ sequenceDiagram
 
 ---
 
-[Читать далее &raquo;](/docs/dictionary){: .btn .btn-primary .mb-4 .mb-md-0 .mr-2 }
+[Читать далее &raquo;](/docs/marketplace/special-offer/){: .btn .btn-primary .mb-4 .mb-md-0 .mr-2 }
 
