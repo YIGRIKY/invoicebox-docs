@@ -15,7 +15,7 @@ date: 2023-10-25 00:00:00 +0300
 
 Имеется как десктопное приложение, так и [веб версия](https://www.postman.com)
 
-[Скачать коллекцию Инвойсбокс API](https://)
+[Скачать коллекцию Инвойсбокс API](https://www.postman.com/bold-space-873341/workspace/invoicebox-api-v3/collection/25303565-616ade6c-e654-4199-b80a-354e0592d5e2?action=share&creator=25303565)
 
 1. Для отправки запросов в начале необходимо зарегистрироваться в сервисе
 ![Postman](/assets/images/api/postman/1.jpg)
@@ -31,7 +31,6 @@ date: 2023-10-25 00:00:00 +0300
    ![Postman](/assets/images/api/postman/5.jpg)
    ![Postman](/assets/images/api/postman/6.jpg)
 
-[![Просмотреть коллекцию](https://run.pstmn.io/button.svg)](https://god.gw.postman.com/run-collection/25303565-616ade6c-e654-4199-b80a-354e0592d5e2?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D25303565-616ade6c-e654-4199-b80a-354e0592d5e2%26entityType%3Dcollection%26workspaceId%3D3aade9f7-cf22-48a2-927b-2aa757a7715c)
 ---
 [Читать далее &raquo;](/docs/merchant){: .btn .btn-primary .mb-4 .mb-md-0 .mr-2 }
 
