@@ -19,19 +19,21 @@ date: 2023-10-25 00:00:00 +0300
 
 1. Для начала работы с Postman, необходимо зарегистрироваться в сервисе. Для работы с API
 достаточно бесплатной учётной записи — на ней будет ограничение до 1000 запросов в месяц.
-![Postman](/assets/images/api/postman/1.jpg){: .img}
+   ![Postman](/assets/images/api/postman/1.jpg){: .img}
 
 2. Далее, необходимо перейти в рабочее пространство и создать новую коллекцию
-![Postman](/assets/images/api/postman/2.jpg){: .img}
+   ![Postman](/assets/images/api/postman/2.jpg){: .img}
 
 3. Выберите blank collection
-![Postman](/assets/images/api/postman/3.jpg){: .img}
+   ![Postman](/assets/images/api/postman/3.jpg){: .img}
 
 4. Далее, для удобства нужно указать токен идентификации (магазина) для всей коллекции, чтобы не указывать его отдельно для каждого запроса
    ![Postman](/assets/images/api/postman/4.jpg){: .img}
 
-5. Теперь возможно создать новый запрос, указав куда он будет уходить. Укажите метод, заполните заголовки и тело запроса
+5. Теперь возможно создать новый запрос
    ![Postman](/assets/images/api/postman/5.jpg){: .img}
+
+6. Укажите метод, URL запроса, заполните заголовки и тело запроса
    ![Postman](/assets/images/api/postman/6.jpg){: .img}
 
 ---
