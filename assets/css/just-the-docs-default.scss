@@ -180,12 +180,22 @@ blockquote.important-title > p:last-child {
   margin-bottom: 0;
 }
 
+p.immediately, blockquote.immediately,
 p.new, blockquote.new {
   background: rgba(65, 214, 147, 0.2);
   border-left: 4px solid #026e57;
   border-radius: 4px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 3px 10px rgba(0, 0, 0, 0.08);
   padding: 0.8rem;
+}
+p.immediately::before, blockquote.immediately::before {
+  color: #026e57;
+  content: "Не медлите";
+  display: block;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  padding-bottom: 0.125rem;
 }
 p.new::before, blockquote.new::before {
   color: #026e57;
@@ -196,6 +206,8 @@ p.new::before, blockquote.new::before {
   font-size: 0.75em;
   padding-bottom: 0.125rem;
 }
+
+p.immediately > .immediately-title, blockquote.immediately > .immediately-title,
 p.new > .new-title, blockquote.new > .new-title {
   color: #026e57;
   display: block;
@@ -205,6 +217,7 @@ p.new > .new-title, blockquote.new > .new-title {
   padding-bottom: 0.125rem;
 }
 
+p.immediately-title, blockquote.immediately-title,
 p.new-title, blockquote.new-title {
   background: rgba(65, 214, 147, 0.2);
   border-left: 4px solid #026e57;
@@ -212,6 +225,8 @@ p.new-title, blockquote.new-title {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 3px 10px rgba(0, 0, 0, 0.08);
   padding: 0.8rem;
 }
+
+p.immediately-title > p:first-child, blockquote.immediately-title > p:first-child,
 p.new-title > p:first-child, blockquote.new-title > p:first-child {
   margin-top: 0;
   margin-bottom: 0;
@@ -223,24 +238,31 @@ p.new-title > p:first-child, blockquote.new-title > p:first-child {
   padding-bottom: 0.125rem;
 }
 
+blockquote.immediately,
 blockquote.new {
   margin-left: 0;
   margin-right: 0;
 }
+blockquote.immediately > p:first-child,
 blockquote.new > p:first-child {
   margin-top: 0;
 }
+blockquote.immediately > p:last-child,
 blockquote.new > p:last-child {
   margin-bottom: 0;
 }
 
+blockquote.immediately-title,
 blockquote.new-title {
   margin-left: 0;
   margin-right: 0;
 }
+
+blockquote.immediately-title > p:nth-child(2),
 blockquote.new-title > p:nth-child(2) {
   margin-top: 0;
 }
+blockquote.immediately-title > p:last-child,
 blockquote.new-title > p:last-child {
   margin-bottom: 0;
 }
