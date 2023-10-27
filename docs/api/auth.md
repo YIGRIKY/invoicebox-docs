@@ -49,18 +49,6 @@ curl -L -X GET '{baseUrl}/v3/security/api/auth/auth' \
 **{baseUrl}**{: .badge .badge-primary} - [базовый URL](/docs/api)
 
 
-{::options parse_block_html="true" /}
-<ul class="tab">
-  <li class="active"><a href="#http" data-tab="http">HTTP</a></li>
-  <li><a href="#curl" data-tab="curl">CURL</a></li>
-</ul>
-<ul class="tab-content">
-  <li id="http" class="active"><pre></pre></li>
-  <li id="curl"><pre></pre></li>
-</ul>
-{::options parse_block_html="false" /}
-
-
 Если передан корректный токен, то ответ будет содержать HTTP код `200 OK` и идентификатор пользователя:
 ```json
 {
