@@ -33,4 +33,4 @@ date: 2023-10-25 00:00:00 +0300
 
 ---
 
-[Читать далее &raquo;](/docs/scenarios/){: .btn .btn-primary .mb-4 .mb-md-0 .mr-2 } [Обратиться в службу поддержки](https://www.invoicebox.ru/ru/contacts/feedback.html){: .btn .mb-4 .mb-md-0 }
+[Читать далее &raquo;](/docs/scenarios){: .btn .btn-primary .mb-4 .mb-md-0 .mr-2 } [Обратиться в службу поддержки](https://www.invoicebox.ru/ru/contacts/feedback.html){: .btn .mb-4 .mb-md-0 }

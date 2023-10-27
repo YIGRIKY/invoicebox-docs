@@ -8,6 +8,13 @@
 {% include css/just-the-docs.scss.liquid color_scheme=color_scheme %}
 
 
+.img {
+    background-color: #efefef;
+    padding: 8px 10px;
+    border-radius: 10px;
+    margin: 0px 0px 0px 10px;
+}
+
 .img-right {
     float: right;
     background-color: #efefef;
