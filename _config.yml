@@ -108,6 +108,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-github-metadata
   - jemoji
+  - jekyll-tabs
 
 markdown: kramdown
 kramdown:

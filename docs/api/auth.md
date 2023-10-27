@@ -29,12 +29,26 @@ date: 2023-10-25 00:00:00 +0300
 вы должны незамедлительно изменить его в личном кабинете или сообщить об этом в [службу поддержки](https://www.invoicebox.ru/ru/contacts/feedback.html). 
 
 Для проверки работы аутентификации и корректности токена необходимо выполнить метод:
+
+{% tabs auth %}
+{% tab auth http %}
 ```
 GET /v3/security/api/auth/auth
 Accept: application/json
 User-Agent: MyApp 1.0
 Authorization: Bearer b37c4c689295904ed21eee5d9a48d42e
 ```
+{% endtab %}
+{% tab auth curl %}
+```
+curl -L -X GET '{URL}/v3/security/api/auth/auth' \
+  -H 'Accept: application/json' \
+  -H 'User-Agent: MyApp 1.0' \
+  -H 'Authorization: Bearer b37c4c689295904ed21eee5d9a48d42e'
+```
+{% endtab %}
+{% endtabs %}
+
 
 Если передан корректный токен, то ответ будет содержать HTTP код `200 OK` и идентификатор пользователя:
 ```json
