@@ -1,8 +1,9 @@
 ---
 layout: default
-nav_order: 1
-title: Обновление точки продаж
+nav_order: 30
+title: "Обновление точки продаж"
 parent: "Маркетплейс"
+date: 2023-10-27 00:00:00 +0300
 ---
 
 # Обновление точки продаж
@@ -22,6 +23,7 @@ parent: "Маркетплейс"
 POST /v3/marketplace/api/shop
 Authorization: Bearer b37c4c689295904ed21eee5d9a48d42e
 Content-Type: application/json
+User-Agent: MyApp 1.0
 Accept: application/json
 {
   "description": "Это наш тестовый магазин",
@@ -72,3 +74,4 @@ Accept: application/json
 
 Повторяет свойства объекта [CreateShopRequest](#createshoprequest):
 
+[Читать далее &raquo;](/docs/marketplace/special-offer/){: .btn .btn-primary .mb-4 .mb-md-0 .mr-2 }

@@ -1,19 +1,21 @@
 ---
 layout: default
-nav_order: 1
-title: Создание точки продаж
+nav_order: 20
+title: "Добавление точки продаж"
 parent: "Маркетплейс"
+date: 2023-10-27 00:00:00 +0300
 ---
 
-# Создание точки продаж
+# Добавление точки продаж в маркетплейс
 
-Для создания точки продаж, необходимо вызвать следующий метод API:
+Для добавления магазина и точки продаж в маркетплейс, необходимо вызвать следующий метод API:
 
 - метод: `POST`
 - ресурс: `/v3/marketplace/api/shop`
 - тело запроса - объект [CreateShopRequest](#createshoprequest)
 - тело ответа - объект [ShopResponse](#shopresponse)
 - Возможные [ошибки](/docs/dictionary/error/)
+
 
 <details>
   <summary>Пример запроса</summary>
@@ -22,6 +24,7 @@ parent: "Маркетплейс"
 POST /v3/marketplace/api/shop
 Authorization: Bearer b37c4c689295904ed21eee5d9a48d42e
 Content-Type: application/json
+User-Agent: MyApp 1.0
 Accept: application/json
 {
   "title": "Тестовый магазин",
@@ -58,4 +61,4 @@ Accept: application/json
 | alias          | да           | string(20)      | Алиас магазина         | `1694158899`                          |
 | shopUrl        | да           | string(64)      | Ссылка на магазин      | `https://1694158899.expressclient.ru` |
 
-[Читать далее &raquo;](/docs/marketplace/update){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Читать далее &raquo;](/docs/marketplace/update/){: .btn .btn-primary .mb-4 .mb-md-0 .mr-2 }

@@ -1,6 +1,6 @@
 ---
 layout: default
-nav_order: 20
+nav_order: 90
 title: "Акции и спецпредложения"
 parent: "Маркетплейс"
 date: 2023-10-26 00:00:00 +0300
@@ -87,4 +87,3 @@ Accept: application/json
 ---
 
 [Читать далее &raquo;](/docs/partner){: .btn .btn-primary .mb-4 .mb-md-0 .mr-2 }
-
