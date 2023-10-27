@@ -3,7 +3,7 @@ layout: default
 nav_order: 20
 title: "Системы автоматизации ресторанов"
 parent: "Сценарии и бизнес-кейсы"
-permalink: /docs/scenarios/erp
+permalink: /docs/scenarios/ras
 date: 2023-10-25 00:00:00 +0300
 ---
 
