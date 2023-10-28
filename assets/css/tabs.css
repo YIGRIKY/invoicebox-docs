@@ -58,6 +58,11 @@ ul.tab-content, ul.tab {
 
 .tab-content > li {
     display: none;
+    margin-top: none;
+}
+
+.tab-content > li .highlight {
+    margin-top: none;
 }
 
 .tab-content > li.active {
