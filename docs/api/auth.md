@@ -30,10 +30,10 @@ date: 2023-10-25 00:00:00 +0300
 
 Для проверки работы аутентификации и корректности токена необходимо выполнить метод:
 
-{: .tab-title .tabgroup-auth }
-HTTP
+{: .tab-title .tabgroup-auth .tab-hide }
+🌐 HTTP
 
-{: .tab-content .tabgroup-auth }
+{: .tab-content .tabgroup-auth .tab-hide }
 ```
 GET /v3/security/api/auth/auth
 Accept: application/json
@@ -41,10 +41,10 @@ User-Agent: MyApp 1.0
 Authorization: Bearer b37c4c689295904ed21eee5d9a48d42e
 ```
 
-{: .tab-title .tabgroup-auth }
+{: .tab-title .tabgroup-auth .tab-hide }
 CURL
 
-{: .tab-content .tabgroup-auth }
+{: .tab-content .tabgroup-auth .tab-hide }
 ```
 curl -L -X GET '{baseUrl}/v3/security/api/auth/auth' \
   -H 'Accept: application/json' \
