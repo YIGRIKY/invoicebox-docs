@@ -3,8 +3,8 @@
  */
 const jekyllTabsConfiguration = {
     syncTabsWithSameLabels: false,
-    addCopyToClipboardButton: false,
-    copyToClipboardButtonHtml: '<button>Copy</button>',
+    addCopyToClipboardButton:  true,
+    copyToClipboardButtonHtml: '<button class="btn btn-primary" style="cursor:pointer;">📋</button>',
 };
 
 const jekyllTabsModule = (function() {
@@ -138,6 +138,74 @@ const jekyllTabsModule = (function() {
 })();
 
 window.addEventListener('load', function () {
+    const tabVanilla = document.querySelectorAll('p.tab-title');
+    const tabGroups = [];
+    for(let i = 0; i < tabVanilla.length; i++) {
+        var tabElement = tabVanilla[i];
+        var cList = tabElement.classList;
+
+        cList.forEach(function(value, key, listObj) {
+           var tmp = value.split("-");
+           if (tmp[0] == "tabgroup" && tmp.length > 1 && tabGroups.indexOf(tmp[1]) === -1) {
+               tabGroups.push(tmp[1]);
+           }
+        }, "arg");
+    }
+
+    for(let i = 0; i < tabGroups.length; i++) {
+        var id = tabGroups[i];
+        var nodes = document.querySelectorAll('p.tab-title.tabgroup-'+id);
+        var first = nodes[0];
+
+        var tabGroup = document.createElement("div");
+        tabGroup.id = 'tab-block-' + id;
+
+        var tabContentId = 'tab-content-' + id;
+        var tabTitlesUl = document.createElement("ul");
+        tabTitlesUl.classList.add('tab');
+        tabTitlesUl.setAttribute('data-tab', tabContentId);
+
+        for(let j = 0; j < nodes.length; j++) {
+            var titleElement = nodes[j];
+            var tabTitlesLi = document.createElement("li");
+            if (j == 0) {
+                tabTitlesLi.classList.add('active');
+            }
+            tabTitlesLi.setHTML('<a href="#">' + titleElement.innerHTML + '</a>');
+            tabTitlesUl.append(tabTitlesLi);
+        }
+        tabGroup.append(tabTitlesUl);
+
+        var nodes = document.querySelectorAll('div.tab-content.tabgroup-'+id);
+        var tabContentUl = document.createElement("ul");
+        tabContentUl.classList.add('tab-content');
+        tabContentUl.id = tabContentId;
+        for(let j = 0; j < nodes.length; j++) {
+            var contentElement = nodes[j];
+            var contentTitlesLi = document.createElement("li");
+            if (j == 0) {
+                contentTitlesLi.classList.add('active');
+            }
+            contentTitlesLi.setHTML('<pre>' + contentElement.innerHTML + '</pre>');
+            tabContentUl.append(contentTitlesLi);
+        }
+        tabGroup.append(tabContentUl);
+
+        first.parentNode.insertBefore(tabGroup, first);
+    } //
+
+    for(let i = 0; i < tabGroups.length; i++) {
+        var nodes = document.querySelectorAll('p.tab-title.tabgroup-'+id);
+        for(let j = 0; j < nodes.length; j++) {
+            nodes[j].remove();
+        }
+
+        var nodes = document.querySelectorAll('div.tab-content.tabgroup-'+id);
+        for(let j = 0; j < nodes.length; j++) {
+            nodes[j].remove();
+        }
+    }
+
     const tabLinks = document.querySelectorAll('ul.tab > li > a');
 
     Array.prototype.forEach.call(tabLinks, function(link) {

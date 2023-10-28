@@ -28,10 +28,12 @@ date: 2023-10-25 00:00:00 +0300
 Токен не следует хранить в общедоступных местах или передавать третьим лицам. При возможной компрометации значения токена (если вы считаете, что токен мог быть получен третьими лицами),
 вы должны незамедлительно изменить его в личном кабинете или сообщить об этом в [службу поддержки](https://www.invoicebox.ru/ru/contacts/feedback.html). 
 
-{: .tabs-title }
 Для проверки работы аутентификации и корректности токена необходимо выполнить метод:
 
-{: .tabs }
+{: .tab-title .tabgroup-auth }
+HTTP
+
+{: .tab-content .tabgroup-auth }
 ```
 GET /v3/security/api/auth/auth
 Accept: application/json
@@ -39,8 +41,10 @@ User-Agent: MyApp 1.0
 Authorization: Bearer b37c4c689295904ed21eee5d9a48d42e
 ```
 
-Пример CURL:
+{: .tab-title .tabgroup-auth }
+CURL
 
+{: .tab-content .tabgroup-auth }
 ```
 curl -L -X GET '{baseUrl}/v3/security/api/auth/auth' \
   -H 'Accept: application/json' \

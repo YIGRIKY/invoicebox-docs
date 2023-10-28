@@ -1,7 +1,7 @@
 ﻿.tab {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -20px;
+    margin: 0px 0px 0px -20px;
     padding: 0;
     list-style: none;
     position: relative;
@@ -9,14 +9,17 @@
 
 .tab > * {
     flex: none;
-    padding-left: 20px;
     position: relative;
+}
+
+.tab :first-child {
+    padding-left: 20px;
 }
 
 .tab > * > a {
     display: block;
     text-align: center;
-    padding: 9px 20px;
+    padding: 9px 25px;
     color: #999;
     border-bottom: 2px solid transparent;
     border-bottom-color: transparent;
@@ -24,11 +27,15 @@
     text-transform: uppercase;
     transition: color .1s ease-in-out;
     line-height: 20px;
+    background-color: #efefef;
 }
 
 .tab > .active > a {
-    color:#222;
-    border-color: #1e87f0;
+    color: #222;
+    border-color: #ffdd2d;
+    background-color:#f2cc45;
+    font-weight: bold;
+    border-radius: 4px 4px 0px 0px;
 }
 
 .tab > li > a {
@@ -37,7 +44,9 @@
 }
 
 .tab-content {
-    padding: 0;
+    padding: 0px;
+    margin: 0px;
+    background-color: #f5f6fa;
 }
 
 .tab-content > li {
@@ -45,4 +54,16 @@
 }
 .tab-content > li.active {
     display: initial;
+}
+
+ul.tab-content > li pre {
+   margin: 0px;
+   padding: 15px 10px 15px 10px;
+   background-color: #292d3e;
+   color: #CCC;
+   border-radius: 0px 0px 4px 4px;
+}
+
+.tab-block {
+  width:100%;
 }
