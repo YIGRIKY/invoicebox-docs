@@ -22,10 +22,10 @@
     display: block;
     text-align: center;
     padding: 9px 25px;
-    color: #999;
+    color: #555;
     border-bottom: 2px solid transparent;
     border-bottom-color: transparent;
-    font-size: 12px;
+    font-size: 80%;
     text-transform: uppercase;
     transition: color .1s ease-in-out;
     line-height: 20px;
@@ -45,11 +45,10 @@
     cursor: pointer;
 }
 
-.tab-content ul {
+ul.tab-content {
     padding-left: 0px;
     margin-top: 0px;
 }
-
 
 .tab-content {
     padding: 0px;
@@ -60,6 +59,7 @@
 .tab-content > li {
     display: none;
 }
+
 .tab-content > li.active {
     display: initial;
 }
@@ -80,6 +80,7 @@ ul.tab-content > li pre {
 
 .tab-content code {
   background-color: #292d3e;
+  border: 0px;
 } 
 
 .tab-block {
