@@ -3,14 +3,13 @@ layout: default
 nav_order: 70
 title: "Платёжные виджеты на сайт"
 parent: "Приём платежей"
-has_children: true
 permalink: /docs/merchant/widget
 date: 2023-10-28 00:00:00 +0300
 ---
 
 # Платёжные виджеты на сайт
 
-Платёжные виджеты - наиболее простой способ интеграции платёжной системы на ваш сайт. Он не требует
+Платёжные виджеты - наиболее простой способ организации приёма платежей на вашем сайте. Он не требует
 значительных знаний веб-технологий или настройки CMS. Всё что нужно - заранее заполнить сведения о
 продаваемых товарах и услугах, скопировать получившийся код и вставить на ваш сайт. Виджеты могут
 быть использованы на любых сайтах.
@@ -97,31 +96,34 @@ date: 2023-10-28 00:00:00 +0300
 
 Выделите сформированный код виджета и вставьте его на страницу вашего сайта.
 
+{: .important }
+> В случае, если у вас возникнут сложности при самостоятельной настройке виджета,
+пожалуйста, обратитесь к специалистам [службы поддержки](https://www.invoicebox.ru/ru/contacts/feedback.html).
+
 
 ### Примеры реализации виджетов
 
 **Простейший вариант виджета**
 
 {::options parse_block_html="true" /}
-<!— // Invoicebox Widget v3 Start // —><div id="InvoiceboxWidgetDiv-2304191633515" data-version="20230419"></div><script type="text/javascript"> var s = document.createElement("script"); s.setAttribute("type", "text/javascript" ); s.setAttribute("src", "https://widget.invoicebox.ru/js/widget/widget.min.js?_=" + Math.floor(Math.random() * 100000000) ); s.onload = function() { InvoiceBoxWidget2304191633515 = {}; InvoiceBoxWidget(InvoiceBoxWidget2304191633515); InvoiceBoxWidget2304191633515.init({ "widget_id" : "2304191633515", "widget_version" : "3", "widget_button_type" : "1", "widget_order_type" : "1", "widget_payment_type" : "1", "widget_addfields" : "participant_order_id,person_email", "widget_goods" : "eNqLrlYqqSxIVbJSKk4tKstMTlXSUcpLzAUJXJh4YceF3Re2XmxSuLD3wgaFiy0X9l1suNh8YQ9QTW5qYnFpEUjZxY6LTUCBwtLEvJLMkkqgiCGQW1AEMstKydTAAMgrSywBso2VamMBs2ssjg==", "widget_person_type" : "1", "widget_target_blank" : "1", "itransfer_language_id" : "1", "itransfer_participant_id" : "131", "itransfer_order_id" : "", "itransfer_participant_ident" : "78043", "itransfer_url_return" : "123", }, 600, "auto", "InvoiceboxWidgetDiv-2304191633515"); }; (document.getElementsByTagName("head")[0] || document.documentElement).appendChild(s);</script><!— // Invoicebox Widget End // —>
+<div id="InvoiceboxWidgetDiv-2304191633515" data-version="20230419"></div><script type="text/javascript"> var s = document.createElement("script"); s.setAttribute("type", "text/javascript" ); s.setAttribute("src", "https://widget.invoicebox.ru/js/widget/widget.min.js?_=" + Math.floor(Math.random() * 100000000) ); s.onload = function() { InvoiceBoxWidget2304191633515 = {}; InvoiceBoxWidget(InvoiceBoxWidget2304191633515); InvoiceBoxWidget2304191633515.init({ "widget_id" : "2304191633515", "widget_version" : "3", "widget_button_type" : "1", "widget_order_type" : "1", "widget_payment_type" : "1", "widget_addfields" : "participant_order_id,person_email", "widget_goods" : "eNqLrlYqqSxIVbJSKk4tKstMTlXSUcpLzAUJXJh4YceF3Re2XmxSuLD3wgaFiy0X9l1suNh8YQ9QTW5qYnFpEUjZxY6LTUCBwtLEvJLMkkqgiCGQW1AEMstKydTAAMgrSywBso2VamMBs2ssjg==", "widget_person_type" : "1", "widget_target_blank" : "1", "itransfer_language_id" : "1", "itransfer_participant_id" : "131", "itransfer_order_id" : "", "itransfer_participant_ident" : "78043", "itransfer_url_return" : "123", }, 600, "auto", "InvoiceboxWidgetDiv-2304191633515"); }; (document.getElementsByTagName("head")[0] || document.documentElement).appendChild(s);</script>
 {::options parse_block_html="false" /}
 
 **Виджет с количеством товара**
+
 {::options parse_block_html="true" /}
-<!— // Invoicebox Widget v3 Start // —><div id="InvoiceboxWidgetDiv-2304191648438" data-version="20230419"></div><script type="text/javascript"> var s = document.createElement("script"); s.setAttribute("type", "text/javascript" ); s.setAttribute("src", "https://widget.invoicebox.ru/js/widget/widget.min.js?_=" + Math.floor(Math.random() * 100000000) ); s.onload = function() { InvoiceBoxWidget2304191648438 = {}; InvoiceBoxWidget(InvoiceBoxWidget2304191648438); InvoiceBoxWidget2304191648438.init({ "widget_id" : "2304191648438", "widget_version" : "3", "widget_button_type" : "1", "widget_order_type" : "1", "widget_payment_type" : "1", "widget_addfields" : "participant_order_id,quantity,person_email", "widget_goods" : "eNqLrlYqqSxIVbJSKk4tKstMTlXSUcpLzAUJXJh4YceF3Re2XmxSuLD3wgaFiy0X9l1suNh8YQ9QTW5qYnFpEUjZxY6LTUCBwtLEvJLMkkolq7zSnBwdpYIikGFWSqYGBkDZssQSINtYqTYWAP01LdQ=", "widget_person_type" : "1", "widget_target_blank" : "1", "itransfer_language_id" : "1", "itransfer_participant_id" : "131", "itransfer_order_id" : "", "itransfer_participant_ident" : "78043", "itransfer_url_return" : "123", }, 600, "auto", "InvoiceboxWidgetDiv-2304191648438"); }; (document.getElementsByTagName("head")[0] || document.documentElement).appendChild(s);</script><!— // Invoicebox Widget End // —>
+<div id="InvoiceboxWidgetDiv-2304191648438" data-version="20230419"></div><script type="text/javascript"> var s = document.createElement("script"); s.setAttribute("type", "text/javascript" ); s.setAttribute("src", "https://widget.invoicebox.ru/js/widget/widget.min.js?_=" + Math.floor(Math.random() * 100000000) ); s.onload = function() { InvoiceBoxWidget2304191648438 = {}; InvoiceBoxWidget(InvoiceBoxWidget2304191648438); InvoiceBoxWidget2304191648438.init({ "widget_id" : "2304191648438", "widget_version" : "3", "widget_button_type" : "1", "widget_order_type" : "1", "widget_payment_type" : "1", "widget_addfields" : "participant_order_id,quantity,person_email", "widget_goods" : "eNqLrlYqqSxIVbJSKk4tKstMTlXSUcpLzAUJXJh4YceF3Re2XmxSuLD3wgaFiy0X9l1suNh8YQ9QTW5qYnFpEUjZxY6LTUCBwtLEvJLMkkolq7zSnBwdpYIikGFWSqYGBkDZssQSINtYqTYWAP01LdQ=", "widget_person_type" : "1", "widget_target_blank" : "1", "itransfer_language_id" : "1", "itransfer_participant_id" : "131", "itransfer_order_id" : "", "itransfer_participant_ident" : "78043", "itransfer_url_return" : "123", }, 600, "auto", "InvoiceboxWidgetDiv-2304191648438"); }; (document.getElementsByTagName("head")[0] || document.documentElement).appendChild(s);</script>
 {::options parse_block_html="false" /}
 
 **Виджет с выбором товара**
+
 {::options parse_block_html="true" /}
-<!— // Invoicebox Widget v3 Start // —><div id="InvoiceboxWidgetDiv-2304191652341" data-version="20230419"></div><script type="text/javascript"> var s = document.createElement("script"); s.setAttribute("type", "text/javascript" ); s.setAttribute("src", "https://widget.invoicebox.ru/js/widget/widget.min.js?_=" + Math.floor(Math.random() * 100000000) ); s.onload = function() { InvoiceBoxWidget2304191652341 = {}; InvoiceBoxWidget(InvoiceBoxWidget2304191652341); InvoiceBoxWidget2304191652341.init({ "widget_id" : "2304191652341", "widget_version" : "3", "widget_button_type" : "1", "widget_order_type" : "1", "widget_payment_type" : "1", "widget_addfields" : "quantity,person_email", "widget_goods" : "eNqLrlYqqSxIVbJSKk4tKstMTlXSUcpLzAUJXJh4YceF3Re2XmxSuLD3wgaFiy0X9l1suNh8YY/ChX0XNl7svth+Ye/F7gs7gVpyUxOLS4tAui52XGwCChSWJuaVZJZUKlnllebk6CgVFIHMtlIy0DMwAEqXJZYAOcZKtTpk2R/mGaBwYfuFDRd2U2J3LABGTmuD", "widget_person_type" : "1", "widget_goods_select" : "1", "widget_target_blank" : "1", "itransfer_language_id" : "1", "itransfer_participant_id" : "131", "itransfer_order_id" : "123", "itransfer_participant_ident" : "78043", }, 600, "auto", "InvoiceboxWidgetDiv-2304191652341"); }; (document.getElementsByTagName("head")[0] || document.documentElement).appendChild(s);</script><!— // Invoicebox Widget End // —>
+<div id="InvoiceboxWidgetDiv-2304191652341" data-version="20230419"></div><script type="text/javascript"> var s = document.createElement("script"); s.setAttribute("type", "text/javascript" ); s.setAttribute("src", "https://widget.invoicebox.ru/js/widget/widget.min.js?_=" + Math.floor(Math.random() * 100000000) ); s.onload = function() { InvoiceBoxWidget2304191652341 = {}; InvoiceBoxWidget(InvoiceBoxWidget2304191652341); InvoiceBoxWidget2304191652341.init({ "widget_id" : "2304191652341", "widget_version" : "3", "widget_button_type" : "1", "widget_order_type" : "1", "widget_payment_type" : "1", "widget_addfields" : "quantity,person_email", "widget_goods" : "eNqLrlYqqSxIVbJSKk4tKstMTlXSUcpLzAUJXJh4YceF3Re2XmxSuLD3wgaFiy0X9l1suNh8YY/ChX0XNl7svth+Ye/F7gs7gVpyUxOLS4tAui52XGwCChSWJuaVZJZUKlnllebk6CgVFIHMtlIy0DMwAEqXJZYAOcZKtTpk2R/mGaBwYfuFDRd2U2J3LABGTmuD", "widget_person_type" : "1", "widget_goods_select" : "1", "widget_target_blank" : "1", "itransfer_language_id" : "1", "itransfer_participant_id" : "131", "itransfer_order_id" : "123", "itransfer_participant_ident" : "78043", }, 600, "auto", "InvoiceboxWidgetDiv-2304191652341"); }; (document.getElementsByTagName("head")[0] || document.documentElement).appendChild(s);</script>
 {::options parse_block_html="false" /}
 
 **Виджет пополнения баланса**
+
 {::options parse_block_html="true" /}
-<!— // Invoicebox Widget v3 Start // —><div id="InvoiceboxWidgetDiv-2304191654150" data-version="20230419"></div><script type="text/javascript"> var s = document.createElement("script"); s.setAttribute("type", "text/javascript" ); s.setAttribute("src", "https://widget.invoicebox.ru/js/widget/widget.min.js?_=" + Math.floor(Math.random() * 100000000) ); s.onload = function() { InvoiceBoxWidget2304191654150 = {}; InvoiceBoxWidget(InvoiceBoxWidget2304191654150); InvoiceBoxWidget2304191654150.init({ "widget_id" : "2304191654150", "widget_version" : "3", "widget_button_type" : "3", "widget_order_type" : "1", "widget_payment_type" : "2", "widget_addfields" : "person_email", "widget_goods" : "eNqLrlYqqSxIVbJSKk4tKstMTlXSUcpLzAUJXJh/Yd+F/UC8+8LeC1uBeMeFrQoXNl7YABTYcGHvxcYLGxQubFIA0jsuNl5sAirZc2ErUHtuamJxaRHIhIsdF5uAAoWliXklmSWVQBFDILegCGSNVV5pTo6OUlliCVDYWKk2FgAsY0F2", "widget_person_type" : "1", "widget_target_blank" : "1", "itransfer_language_id" : "1", "itransfer_participant_id" : "131", "itransfer_order_id" : "123", "itransfer_participant_ident" : "78043", }, 600, "auto", "InvoiceboxWidgetDiv-2304191654150"); }; (document.getElementsByTagName("head")[0] || document.documentElement).appendChild(s);</script><!— // Invoicebox Widget End // —>
+<div id="InvoiceboxWidgetDiv-2304191654150" data-version="20230419"></div><script type="text/javascript"> var s = document.createElement("script"); s.setAttribute("type", "text/javascript" ); s.setAttribute("src", "https://widget.invoicebox.ru/js/widget/widget.min.js?_=" + Math.floor(Math.random() * 100000000) ); s.onload = function() { InvoiceBoxWidget2304191654150 = {}; InvoiceBoxWidget(InvoiceBoxWidget2304191654150); InvoiceBoxWidget2304191654150.init({ "widget_id" : "2304191654150", "widget_version" : "3", "widget_button_type" : "3", "widget_order_type" : "1", "widget_payment_type" : "2", "widget_addfields" : "person_email", "widget_goods" : "eNqLrlYqqSxIVbJSKk4tKstMTlXSUcpLzAUJXJh/Yd+F/UC8+8LeC1uBeMeFrQoXNl7YABTYcGHvxcYLGxQubFIA0jsuNl5sAirZc2ErUHtuamJxaRHIhIsdF5uAAoWliXklmSWVQBFDILegCGSNVV5pTo6OUlliCVDYWKk2FgAsY0F2", "widget_person_type" : "1", "widget_target_blank" : "1", "itransfer_language_id" : "1", "itransfer_participant_id" : "131", "itransfer_order_id" : "123", "itransfer_participant_ident" : "78043", }, 600, "auto", "InvoiceboxWidgetDiv-2304191654150"); }; (document.getElementsByTagName("head")[0] || document.documentElement).appendChild(s);</script>
 {::options parse_block_html="false" /}
  
-
-{: .important }
-> В случае, если у вас возникнут сложности при самостоятельной настройке виджета,
-пожалуйста, обратитесь к специалистам [службы поддержки](https://www.invoicebox.ru/ru/contacts/feedback.html).
