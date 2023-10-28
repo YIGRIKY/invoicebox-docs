@@ -186,7 +186,7 @@ window.addEventListener('load', function () {
             if (j == 0) {
                 contentTitlesLi.classList.add('active');
             }
-            contentTitlesLi.setHTML('<pre>' + contentElement.innerHTML + '</pre>');
+            contentTitlesLi.setHTML(contentElement.innerHTML);
             tabContentUl.append(contentTitlesLi);
         }
         tabGroup.append(tabContentUl);
