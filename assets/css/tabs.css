@@ -12,7 +12,7 @@
     position: relative;
 }
 
-.tab li{margin:0px}
+.tab > li{margin:0px}
 
 .tab :first-child {
     padding-left: 20px;
@@ -64,7 +64,8 @@
     display: initial;
 }
 
-ul.tab-content > li::before {
+ul.tab-content > li::before,
+ul.tab > li::before {
     content: "";
     margin-left: 0px;
 }

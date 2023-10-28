@@ -443,6 +443,12 @@ a:hover {
   font-weight: 400;
 }
 
+.btn-small {
+  line-height: 26px;
+  padding: 0px 10px 0px 10px;
+  margin: 10px;
+}
+
 .btn:hover, .btn-primary:hover {
   background: #f2cc45;
   color: #353F47;
