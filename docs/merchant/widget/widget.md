@@ -20,8 +20,8 @@ date: 2023-10-28 00:00:00 +0300
 ### Конструктор виджетов
 
 Для того, чтобы получить код виджета для его размещения на вашем сайте, воспользуйтесь специальным
-[конструктором](https://widget.invoicebox.ru/). Конструктор позволяет простыми действиями произвести
-детальную настройку виджета под ваши нужды.
+[конструктором](https://widget.invoicebox.ru/?utm_source=docs). Конструктор позволяет простыми действиями
+произвести детальную настройку виджета под ваши нужды.
 
 Для начала работы, укажите Идентификатор магазина и Региональный код магазина. Указанные параметры
 вы сможете найти в письме, которое было направлено вам по факту регистрации в системе «Инвойсбокс».
@@ -127,3 +127,6 @@ date: 2023-10-28 00:00:00 +0300
 <div id="InvoiceboxWidgetDiv-2304191654150" data-version="20230419"></div><script type="text/javascript"> var s = document.createElement("script"); s.setAttribute("type", "text/javascript" ); s.setAttribute("src", "https://widget.invoicebox.ru/js/widget/widget.min.js?_=" + Math.floor(Math.random() * 100000000) ); s.onload = function() { InvoiceBoxWidget2304191654150 = {}; InvoiceBoxWidget(InvoiceBoxWidget2304191654150); InvoiceBoxWidget2304191654150.init({ "widget_id" : "2304191654150", "widget_version" : "3", "widget_button_type" : "3", "widget_order_type" : "1", "widget_payment_type" : "2", "widget_addfields" : "person_email", "widget_goods" : "eNqLrlYqqSxIVbJSKk4tKstMTlXSUcpLzAUJXJh/Yd+F/UC8+8LeC1uBeMeFrQoXNl7YABTYcGHvxcYLGxQubFIA0jsuNl5sAirZc2ErUHtuamJxaRHIhIsdF5uAAoWliXklmSWVQBFDILegCGSNVV5pTo6OUlliCVDYWKk2FgAsY0F2", "widget_person_type" : "1", "widget_target_blank" : "1", "itransfer_language_id" : "1", "itransfer_participant_id" : "131", "itransfer_order_id" : "123", "itransfer_participant_ident" : "78043", }, 600, "auto", "InvoiceboxWidgetDiv-2304191654150"); }; (document.getElementsByTagName("head")[0] || document.documentElement).appendChild(s);</script>
 {::options parse_block_html="false" /}
  
+---
+
+[Настроить свой виджет &raquo;](https://widget.invoicebox.ru/?utm_source=docs){: .btn .btn-primary .mb-4 .mb-md-0 .mr-2 } [Читать далее &raquo;](/docs/merchant/cms){: .btn .mb-4 .mb-md-0 }
