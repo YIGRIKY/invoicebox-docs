@@ -54,6 +54,7 @@ ul.tab-content, ul.tab {
     padding: 0px;
     margin: 0px;
     background-color: #f5f6fa;
+    overflow-y: auto;
 }
 
 .tab-content > li {
