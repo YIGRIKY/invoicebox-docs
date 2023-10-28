@@ -58,11 +58,11 @@ ul.tab-content, ul.tab {
 
 .tab-content > li {
     display: none;
-    margin-top: none;
+    margin-top: 0px;
 }
 
 .tab-content > li .highlight {
-    margin-top: none;
+    margin-top: 0px;
 }
 
 .tab-content > li.active {
@@ -77,14 +77,12 @@ ul.tab > li::before {
 
 ul.tab-content > li pre {
    margin: 0px;
-   padding: 15px 10px 15px 10px;
-   background-color: #292d3e;
-   color: #CCC;
+   padding: 15px;
    border-radius: 0px 0px 4px 4px;
+   border: 1px solid #f2cc45;
 }
 
 .tab-content code {
-  background-color: #292d3e;
   border: 0px;
 } 
 
