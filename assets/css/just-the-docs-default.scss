@@ -12,7 +12,7 @@
     background-color: #efefef;
     padding: 8px 10px;
     border-radius: 10px;
-    margin: 0px 0px 0px 10px;
+    margin: 0px auto;
 }
 
 .img-right {
@@ -21,6 +21,13 @@
     padding: 8px 10px;
     border-radius: 10px;
     margin: 0px 0px 0px 10px;
+}
+
+@media only screen and (max-width: 792px) {
+  .img-right {
+    margin: 0px auto;
+    float: none;
+  }
 }
 
 /* custom scrollbar */
