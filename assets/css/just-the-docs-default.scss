@@ -414,11 +414,19 @@ a:not([class]):hover {
     background-image: none;
 }
 
-a, a:link, a:hover, a:visited {
+.site-footer > a,
+.site-footer > a:link,
+.site-footer > a:hover,
+.site-footer > a:visited,
+.main-content > a,
+.main-content > a:link,
+.main-content > a:hover,
+.main-content > a:visited {
   color: #28A1E4
 }
 
-a:hover {
+.site-footer > a:hover,
+.main-content > a:hover {
   background-color: #B0D2F0;
 }
 
