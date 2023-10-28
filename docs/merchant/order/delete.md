@@ -17,12 +17,30 @@ date: 2023-10-25 00:00:00 +0300
 - тело ответа - объект [OrderResponse](/docs/merchant/order/create/#orderresponse) со статусом status = `canceled`
 
 Пример запроса:
+
+{: .tab-title .tabgroup-auth .tab-hide }
+🌐 HTTP
+
+{: .tab-content .tabgroup-auth .tab-hide }
 ```
 DELETE /v3/billing/api/order/order/c5041a79-24a6-42d1-b0ce-4abb94982cd9
 Accept: application/json
 User-Agent: MyApp 1.0
 Authorization: Bearer b37c4c689295904ed21eee5d9a48d42e
 ```
+
+{: .tab-title .tabgroup-auth .tab-hide }
+🧊 CURL
+
+{: .tab-content .tabgroup-auth .tab-hide }
+```
+curl -L -X DELETE '{baseUrl}/v3/billing/api/order/order/c5041a79-24a6-42d1-b0ce-4abb94982cd9' \
+  -H 'Accept: application/json' \
+  -H 'User-Agent: MyApp 1.0' \
+  -H 'Authorization: Bearer b37c4c689295904ed21eee5d9a48d42e'
+```
+
+**{baseUrl}**{: .badge .badge-primary} - [базовый URL](/docs/api)
 
 В зависимости от сценария использования и настроек магазина, может быть применена разная логика при вызове метода.
 По умолчанию, отменить заказ возможно только до момента получения системой Инвойсбокс
