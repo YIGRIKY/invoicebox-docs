@@ -4,7 +4,7 @@
 const jekyllTabsConfiguration = {
     syncTabsWithSameLabels: false,
     addCopyToClipboardButton:  true,
-    copyToClipboardButtonHtml: '<button class="btn btn-primary btn-small" style="cursor:pointer;">📋</button>',
+    copyToClipboardButtonHtml: '<button class="btn btn-primary btn-small" style="cursor:pointer;" title="Копировать">📋</button>',
 };
 
 const jekyllTabsModule = (function() {
@@ -171,7 +171,7 @@ window.addEventListener('load', function () {
             if (j == 0) {
                 tabTitlesLi.classList.add('active');
             }
-            tabTitlesLi.setHTML('<a href="#">' + titleElement.innerHTML + '</a>');
+            tabTitlesLi.setHTML('<a href="#" title="' + titleElement.innerHTML + '">' + titleElement.innerHTML + '</a>');
             tabTitlesUl.append(tabTitlesLi);
         }
         tabGroup.append(tabTitlesUl);

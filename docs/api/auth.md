@@ -42,7 +42,7 @@ Authorization: Bearer b37c4c689295904ed21eee5d9a48d42e
 ```
 
 {: .tab-title .tabgroup-auth .tab-hide }
-CURL
+🧊 CURL
 
 {: .tab-content .tabgroup-auth .tab-hide }
 ```

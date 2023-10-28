@@ -17,8 +17,27 @@ date: 2023-10-25 00:00:00 +0300
 В запросе есть обязательный параметр `vatNumber` - ИНН.
 
 Пример запроса
+
+{: .tab-title .tabgroup-auth .tab-hide }
+🌐 HTTP
+
+{: .tab-content .tabgroup-auth .tab-hide }
 ```
 GET /v3/filter/api/counterparty-detail?vatNumber=2323232323
+Accept: application/json
+User-Agent: MyApp 1.0
+Authorization: Bearer b37c4c689295904ed21eee5d9a48d42e
+```
+
+{: .tab-title .tabgroup-auth .tab-hide }
+🧊 CURL
+
+{: .tab-content .tabgroup-auth .tab-hide }
+```
+curl -L -X GET '{baseUrl}/v3/filter/api/counterparty-detail?vatNumber=2323232323' \
+  -H 'Accept: application/json' \
+  -H 'User-Agent: MyApp 1.0' \
+  -H 'Authorization: Bearer b37c4c689295904ed21eee5d9a48d42e'
 ```
 
 ## Counterparty
