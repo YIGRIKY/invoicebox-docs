@@ -12,6 +12,8 @@
     position: relative;
 }
 
+.tab li{margin:0px}
+
 .tab :first-child {
     padding-left: 20px;
 }
@@ -43,6 +45,12 @@
     cursor: pointer;
 }
 
+.tab-content ul {
+    padding-left: 0px;
+    margin-top: 0px;
+}
+
+
 .tab-content {
     padding: 0px;
     margin: 0px;
@@ -56,6 +64,11 @@
     display: initial;
 }
 
+ul.tab-content > li::before {
+    content: "";
+    margin-left: 0px;
+}
+
 ul.tab-content > li pre {
    margin: 0px;
    padding: 15px 10px 15px 10px;
@@ -63,6 +76,10 @@ ul.tab-content > li pre {
    color: #CCC;
    border-radius: 0px 0px 4px 4px;
 }
+
+.tab-content code {
+  background-color: #292d3e;
+} 
 
 .tab-block {
   width:100%;
