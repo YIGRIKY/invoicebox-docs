@@ -1,6 +1,6 @@
 ---
 layout: default
-nav_order: 80
+nav_order: 90
 title: "Модули для ERP"
 parent: "Приём платежей"
 has_children: true

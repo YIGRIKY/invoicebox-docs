@@ -1,6 +1,6 @@
 ---
 layout: default
-nav_order: 70
+nav_order: 80
 title: "Модули для CMS"
 parent: "Приём платежей"
 has_children: true
