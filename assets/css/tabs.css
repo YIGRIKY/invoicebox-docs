@@ -12,7 +12,7 @@
     position: relative;
 }
 
-.tab > li{margin:0px}
+.tab > li{margin:0px;margin-left:-4px}
 
 .tab :first-child {
     padding-left: 20px;
@@ -32,6 +32,7 @@
     transition: color .1s ease-in-out;
     line-height: 20px;
     background-color: #efefef;
+    border-radius: 4px 4px 0px 0px;
 }
 
 .tab > * > a:hover {
