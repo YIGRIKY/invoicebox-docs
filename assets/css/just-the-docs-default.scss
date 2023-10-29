@@ -414,6 +414,10 @@ a:not([class]):hover {
     background-image: none;
 }
 
+.breadcrumb-nav a,
+.breadcrumb-nav a:link,
+.breadcrumb-nav a:hover,
+.breadcrumb-nav a:visited,
 .site-footer a,
 .site-footer a:link,
 .site-footer a:hover,
@@ -429,10 +433,15 @@ a:not([class]):hover {
   color: #28A1E4
 }
 
+.breadcrumb-nav a:hover,
 .main-header a:hover,
 .site-footer a:hover,
 .main-content a:hover {
   background-color: #B0D2F0;
+}
+
+.site-title a:hover {
+  background-color: transparent;
 }
 
 .nav-list-item,

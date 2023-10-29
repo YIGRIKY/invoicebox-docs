@@ -18,7 +18,9 @@
     padding-left: 20px;
 }
 
-.tab > * > a {
+.tab > * > a,
+.tab > * > a:link,
+.tab > * > a:visited {
     display: block;
     text-align: center;
     padding: 9px 25px;
@@ -30,6 +32,10 @@
     transition: color .1s ease-in-out;
     line-height: 20px;
     background-color: #efefef;
+}
+
+.tab > * > a:hover {
+    background-color: #ccc;
 }
 
 .tab > .active > a {
