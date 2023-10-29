@@ -12,7 +12,11 @@
     position: relative;
 }
 
-.tab > li{margin:0px;margin-left:-4px}
+.tab > li{margin:0px;}
+
+.tab li:not(:first-child) {
+margin-left:-4px
+}
 
 .tab :first-child {
     padding-left: 20px;
