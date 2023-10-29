@@ -138,6 +138,13 @@ const jekyllTabsModule = (function() {
 })();
 
 window.addEventListener('load', function () {
+    /**
+     * Vanilize our tabs to get them work with GitHub pages 
+     * All you need is to make 2 paragraphs with classes:
+     * 1. Tabs: {: .tab-title .tabgroup-groupname .tab-hide }
+     * 2. Content: {: .tab-content .tabgroup-groupname .tab-hide }
+     * User different identifiers instead of "groupname" to group tabs on a page
+     */
     const tabVanilla = document.querySelectorAll('p.tab-title');
     const tabGroups = [];
     for(let i = 0; i < tabVanilla.length; i++) {
