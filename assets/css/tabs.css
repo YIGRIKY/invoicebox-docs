@@ -10,6 +10,7 @@
 .tab > * {
     flex: none;
     position: relative;
+    z-index: 100;
 }
 
 .tab > li{margin:0px;}
@@ -49,6 +50,7 @@ margin-left:-4px
     background-color:#f2cc45;
     font-weight: bold;
     border-radius: 4px 4px 0px 0px;
+    z-index: 200;
 }
 
 .tab > li > a {
@@ -56,12 +58,17 @@ margin-left:-4px
     cursor: pointer;
 }
 
-ul.tab-content, ul.tab {
+ul.tab {
     padding-left: 0px;
     margin-top: 0px;
 }
 
-.tab-content {
+ul.tab-content {
+    padding-left: 15px;
+    margin-top: 0px;
+}
+
+ul.tab-content {
    margin: 0px;
    background-color: #f5f6fa;
    overflow-y: auto;
