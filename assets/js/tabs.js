@@ -236,8 +236,8 @@ window.addEventListener('load', function () {
 
             preParentNode.style.position = 'relative';
             button.style.position = 'absolute';
-            button.style.top = '0px';
-            button.style.right = '0px';
+            button.style.top = '-15px';
+            button.style.right = '-15px';
 
             preParentNode.appendChild(button);
 
