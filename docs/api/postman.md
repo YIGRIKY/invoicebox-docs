@@ -15,7 +15,8 @@ date: 2023-10-25 00:00:00 +0300
 
 Имеется как [десктопное приложение](https://www.postman.com/downloads/), так и [веб версия](https://www.postman.com)
 
-[Скачать коллекцию Инвойсбокс API](https://www.postman.com/bold-space-873341/workspace/invoicebox-api-v3/collection/25303565-616ade6c-e654-4199-b80a-354e0592d5e2?action=share&creator=25303565)
+Вы можете [скачать готовую коллекцию](https://www.postman.com/bold-space-873341/workspace/invoicebox-api-v3/collection/25303565-616ade6c-e654-4199-b80a-354e0592d5e2?action=share&creator=25303565)
+(набор запросов) Инвойсбокс API или создать собственную.
 
 1. Для начала работы с Postman, необходимо зарегистрироваться в сервисе. Для работы с API
 достаточно бесплатной учётной записи — на ней будет ограничение до 1000 запросов в месяц.
