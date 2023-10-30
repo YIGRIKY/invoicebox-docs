@@ -15,24 +15,28 @@
     border-radius: 10px;
 }
 
-.img {
+.imgt, .imgt-right, .imgt-left { 
+    padding: 8px 10px;
+}
+
+.img, .imgt {
     margin: 5px auto;
 }
 
-.img-right {
+.img-right, .imgt-right {
     float: right;
     margin: 10px 0px 10px 15px;
     max-width: 300px;
 }
 
-.img-left {
+.img-left, .imgt-left {
     float: left;
     margin: 10px 15px 10px 10px;
     max-width: 300px;
 }
 
 @media only screen and (max-width: 792px) {
-  .img-right, .img-left {
+  .img-right, .img-left, .imgt-right, .imgt-left {
     margin: 0px auto;
     float: none;
     max-width: 790px;
