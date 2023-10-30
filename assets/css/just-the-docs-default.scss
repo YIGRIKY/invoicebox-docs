@@ -216,7 +216,7 @@ p.new, blockquote.new {
 }
 p.immediately::before, blockquote.immediately::before {
   color: #026e57;
-  content: "Не медлите";
+  content: "Не медлите!";
   display: block;
   font-weight: bold;
   text-transform: uppercase;
