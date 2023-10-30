@@ -45,7 +45,7 @@
   .img-right, .img-left, .imgt-right, .imgt-left, .img, .imgt {
     margin: 0px auto;
     float: none;
-    max-width: 100vw;
+    max-width: calc(100vw - 20px);
   }
 }
 
