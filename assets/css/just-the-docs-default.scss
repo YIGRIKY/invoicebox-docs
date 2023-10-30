@@ -42,12 +42,29 @@
 }
 
 @media only screen and (max-width: 792px) {
-  .img-right, .img-left, .imgt-right, .imgt-left {
+  .img-right, .img-left, .imgt-right, .imgt-left, .img, .imgt {
     margin: 0px auto;
     float: none;
     max-width: 790px;
   }
 }
+
+@media only screen and (max-width: 480px) {
+  .img-right, .img-left, .imgt-right, .imgt-left, .img, .imgt {
+    margin: 0px auto;
+    float: none;
+    max-width: 480px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .img-right, .img-left, .imgt-right, .imgt-left, .img, .imgt {
+    margin: 0px auto;
+    float: none;
+    max-width: 320px;
+  }
+}
+
 
 /* custom scrollbar */
 ::-webkit-scrollbar {
