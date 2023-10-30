@@ -75,6 +75,7 @@
   height: 60px;
   padding: 14px 0px;
   line-height: 60px;
+  background-image: none;
 }
 
 .site-title {
@@ -87,15 +88,9 @@
 }
 
 .site-header {
-    width: 100%;
-}
-	
-.site-nav, .site-header, .site-footer {
-
-}
-
-.site-header {
     background-color: #fff;
+    width: 100%;
+    display: inline;
 }
 
 .side-bar {
