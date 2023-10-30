@@ -28,8 +28,12 @@
 .img-left, .imgt-left {
     float: left;
     padding: 8px 10px 8px 0px;
-    margin: 10px 15px 10px 10px;
+    margin: 10px 15px 10px 0px;
     max-width: 300px;
+}
+
+.imgt-left, .imgt-right {
+    padding: 8px 10px 8px 10px;
 }
 
 @media only screen and (max-width: 792px) {
