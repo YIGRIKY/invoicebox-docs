@@ -73,7 +73,7 @@
 .site-logo {
   width: 314px;
   height: 60px;
-  padding: 14px 0px;
+  padding: 14px 0px 0px 10px;
   line-height: 60px;
   background-image: none;
   float:right;
@@ -88,6 +88,16 @@
   padding-right: 0px;
 }
 
+.nav-list .nav-list-item .nav-list-link {
+  padding-left: 10px;
+}
+
+.nav-list .nav-list-item .nav-list-link:hover,
+.nav-list .nav-list-item .nav-list-link.active {
+  border-radius: 8px;
+  background-color: #ebedf5;
+}
+
 .site-header {
     background-color: #fff;
     width: 100%;
@@ -99,7 +109,7 @@
 }
 
 .site-footer {
-  padding-left: 0px;
+  padding-left: 10px;
   float:right;
   width: 314px;
   position: initial;
