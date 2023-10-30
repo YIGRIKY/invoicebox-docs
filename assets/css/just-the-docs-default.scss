@@ -76,6 +76,7 @@
   padding: 14px 0px;
   line-height: 60px;
   background-image: none;
+  float:right;
 }
 
 .site-title {
@@ -95,6 +96,13 @@
 
 .side-bar {
     border-right: 0px;
+}
+
+.site-footer {
+  padding-left: 0px;
+  float:right;
+  width: 314px;
+  position: initial;
 }
 
 p.highlight, blockquote.highlight {
