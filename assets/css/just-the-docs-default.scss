@@ -8,29 +8,26 @@
 {% include css/just-the-docs.scss.liquid color_scheme=color_scheme %}
 
 
-
 .img, .img-right, .img-left { 
     background-color: #efefef;
-    padding: 8px 10px;
     border-radius: 10px;
-}
-
-.imgt, .imgt-right, .imgt-left { 
-    padding: 8px 10px;
 }
 
 .img, .imgt {
     margin: 5px auto;
+    padding: 8px 10px;
 }
 
 .img-right, .imgt-right {
     float: right;
+    padding: 8px 0px 8px 10px;
     margin: 10px 0px 10px 15px;
     max-width: 300px;
 }
 
 .img-left, .imgt-left {
     float: left;
+    padding: 8px 10px 8px 0px;
     margin: 10px 15px 10px 10px;
     max-width: 300px;
 }
