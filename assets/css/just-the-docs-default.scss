@@ -47,6 +47,9 @@
     float: none;
     max-width: calc(100vw - 30px);
   }
+  .imgt-right, .imgt-left, .img, .imgt {
+    padding: 0px;
+  }
 }
 
 /* custom scrollbar */
