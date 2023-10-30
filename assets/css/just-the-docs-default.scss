@@ -71,12 +71,29 @@
 
 
 .site-logo {
-  width: 180px;
+  width: 314px;
+  height: 60px;
+  padding: 14px 0px;
+  line-height: 60px;
 }
 
-.site-nav, .site-header, .site-footer {
+.site-title {
+  display: inline;
+}
+
+.nav-list .nav-list-item .nav-list-link {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.site-header {
     width: 100%;
 }
+	
+.site-nav, .site-header, .site-footer {
+
+}
+
 .site-header {
     background-color: #fff;
 }
