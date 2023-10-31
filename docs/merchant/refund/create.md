@@ -38,7 +38,7 @@ date: 2023-10-25 00:00:00 +0300
 | vatAmount       | да           | float                                                 | Сумма НДС                                                                                                                             | `156.56`                               |
 | basketItems     | да           | array of [BasketItem](/docs/merchant/order/create/#basketitem) | Корзина заказа                                                                                                                        |                                        |
 | description     | да           | string(1000)                                          | Описание заказа                                                                                                                       | `Оплата номера в отеле`                |
-| status          | нет          | string(50) enum                                       | Статус заказа, по умолчанию `created`, так же возможен статус `draft` для создания [корректирующих заказов](/docs/refund/correction/) | `created`                              |
+| status          | нет          | string(50) enum                                       | Статус заказа, по умолчанию `created`, так же возможен статус `draft` для создания [корректирующих заказов](/docs/merchant/refund/correction/) | `created`                              |
 
 {: .important }
 > * При формировании нескольких возвратов в рамках одного заказа, необходимо передавать уникальный идентификатор возвратного заказа (возврата) для каждого возврата.
@@ -56,7 +56,7 @@ date: 2023-10-25 00:00:00 +0300
 | amount          | да           | float                              | Сумма заказа                                    | `19658.45`                             |
 | vatAmount       | да           | float                              | Сумма НДС                                       | `156.56`                               |
 | currencyId      | да           | string(3)  enum                    | Валюта заказа                                   | `RUB`                                  |
-| basketItems     | да           | array of [BasketItem](#basketitem) | Корзина заказа                                  |                                        |
+| basketItems     | да           | array of [BasketItem](/docs/merchant/order/create/#basketitem) | Корзина заказа      |                                        |
 | createdAt       | да           | datetime                           | Дата создания заказа                            | `2020-12-22T00:00:00+00:00`            |
 | status          | да           | string(50) enum                    | Статус заказа                                   | `completed`                            |
 
