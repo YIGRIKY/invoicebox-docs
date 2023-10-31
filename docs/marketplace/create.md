@@ -1,6 +1,6 @@
 ---
 layout: default
-nav_order: 20
+nav_order: 30
 title: "Добавление точки продаж"
 parent: "Маркетплейс"
 date: 2023-10-27 00:00:00 +0300
