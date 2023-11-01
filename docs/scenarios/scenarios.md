@@ -5,6 +5,7 @@ title: "Сценарии и бизнес-кейсы"
 description: "Готовые сценарии реализации функций и использование для них методов API для продукт- и проджект-менеджеров"
 has_children: true
 tile: true
+ribbon: "Новое"
 permalink: /docs/scenarios
 date: 2023-11-01 00:00:00 +0300
 ---

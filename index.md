@@ -18,9 +18,11 @@ date: 2023-11-01 00:00:00 +0300
     {% for page in sorted_pages %}
       {% if page.tile %}
         <article class="box-item post-{{page.main-class}}" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+            {% if page.ribbon %}
             <span class="ribbon">
-                <a href="{{site.url}}{{site.baseurl}}/category/{{page.main-class}}"><span>{{post.main-class}}</span></a>
+                <a href="{{ page.url | prepend: site.baseurl }}"><span>{{page.ribbon}}</span></a>
             </span>
+            {% endif %}
             <div class="box-body">
                 <meta itemprop="datePublished" content="{{page.date | date_to_xmlschema }}">
                 <!-- time itemprop="datePublished" datetime="{{ page.date }}" class="date">{{ page.date | date_to_string }}</time -->
