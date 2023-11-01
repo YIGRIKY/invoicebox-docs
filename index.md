@@ -22,14 +22,17 @@ date: 2023-11-01 00:00:00 +0300
             </span>
             <div class="box-body">
                 <meta itemprop="datePublished" content="{{page.date | date_to_xmlschema }}">
-                <time itemprop="datePublished" datetime="{{ page.date }}" class="date">{{ page.date | date_to_string }}</time>
+                <!-- time itemprop="datePublished" datetime="{{ page.date }}" class="date">{{ page.date | date_to_string }}</time -->
                 <a class="post-link" href="{{ page.url | prepend: site.baseurl }}">
                     <h2 class="post-title" itemprop="name">
                         {{ page.title }}
                     </h2>
                 </a>
                 <a class="post-link" href="{{ page.url | prepend: site.baseurl }}">
-                    <p class="description">{{ page.title }}</p>
+                    <p class="description">{{ page.description }}</p>
+                </a>
+                <a class="btn btn-primary" href="{{ page.url | prepend: site.baseurl }}" title="{{ page.title }}">
+                    Читать  &raquo;
                 </a>
             </div>
         </article>

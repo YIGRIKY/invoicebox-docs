@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Маркетплейс"
+description: "Размещайте и управляйте данными своего магазина в маркетплейсе"
 nav_order: 100
 has_children: true
 tile: true

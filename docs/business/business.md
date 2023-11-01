@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Инвойсбокс.Бизнес"
+description: "Управление вашей организации в системе Инвойсбокс.Бизнес с помощью API"
 nav_order: 70
 has_children: true
 tile: true

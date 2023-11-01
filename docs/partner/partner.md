@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Партнёрское API"
+description: "Реализация функционала для партнёров и интеграторов Инвойсбокс"
 nav_order: 110
 has_children: true
 tile: true

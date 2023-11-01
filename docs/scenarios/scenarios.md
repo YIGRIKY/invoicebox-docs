@@ -2,6 +2,7 @@
 layout: default
 nav_order: 15
 title: "Сценарии и бизнес-кейсы"
+description: "Готовые сценарии реализации функций и использования API"
 has_children: true
 tile: true
 permalink: /docs/scenarios
