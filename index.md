@@ -7,29 +7,37 @@ permalink: /
 date: 2023-11-01 00:00:00 +0300
 ---
 
-# Инвойсбокс API v3
+# Документация Инвойсбокс API v3
 {: .fs-9 }
-
-Настоящее руководство по работе с API предназначено для разработчиков подключающих
-систему «Инвойсбокс» версии 3.0 и выше. В руководстве рассматривается техническая сторона подключения
-(«Инвойсбокс» API).
+Вся информация для интеграции Инвойсбокс с вашими сервисами — в одном месте.
 {: .fs-6 .fw-300 }
 
+<main class="home" id="page" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
+    <div id="grid" class="row flex-grid">
+    {% for page in site.pages %}
+      {% if page.tile %}
+        <article class="box-item post-{{page.main-class}}" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+            <span class="ribbon">
+                <a href="{{site.url}}{{site.baseurl}}/category/{{page.main-class}}"><span>{{post.main-class}}</span></a>
+            </span>
+            <div class="box-body">
+                <meta itemprop="datePublished" content="{{page.date | date_to_xmlschema }}">
+                <time itemprop="datePublished" datetime="{{ page.date }}" class="date">{{ page.date | date_to_string }}</time>
+                <a class="post-link" href="{{ page.url | prepend: site.baseurl }}">
+                    <h2 class="post-title" itemprop="name">
+                        {{ page.title }}
+                    </h2>
+                </a>
+                <a class="post-link" href="{{ page.url | prepend: site.baseurl }}">
+                    <p class="description">{{ page.title }}</p>
+                </a>
+            </div>
+        </article>
+      {% endif %}
+    {% endfor %}
+    </div>
+</main>
 
----
-
-### Перед началом работы с методами
-
-Перед началом работы с методами API, проверьте наличие необходимых сведений, в случае
-необходимости получите необходимые настройки. Для работы с протоколом вам потребуются:
-
-- Токен. Как правило, токен формируется в момент регистрации организации в системе «Инвойсбокс». В случае, если вы не получили токен,
-вы можете сформировать и получить его самостоятельно в личном кабинете (в разделе Настройки).
-
-{: .warning }
-> Авторизационный токен должен храниться в защищённом виде и месте. Используя токен, возможно получить доступ к методам API и данным от имени организации.
-Токен не следует хранить в общедоступных местах или передавать третьим лицам. При возможной компрометации значения токена (если вы считаете, что токен мог быть получен третьими лицами),
-вы должны незамедлительно изменить его в личном кабинете или сообщить об этом в [службу поддержки](https://www.invoicebox.ru/ru/contacts/feedback.html). 
 
 ---
 

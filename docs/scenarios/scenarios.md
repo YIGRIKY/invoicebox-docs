@@ -3,6 +3,7 @@ layout: default
 nav_order: 15
 title: "Сценарии и бизнес-кейсы"
 has_children: true
+tile: true
 permalink: /docs/scenarios
 date: 2023-11-01 00:00:00 +0300
 ---

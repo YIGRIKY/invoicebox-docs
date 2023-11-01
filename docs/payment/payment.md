@@ -3,6 +3,7 @@ layout: default
 title: "Платёжные инструменты"
 nav_order: 80
 has_children: true
+tile: true
 permalink: /docs/payment
 date: 2023-10-25 00:00:00 +0300
 ---

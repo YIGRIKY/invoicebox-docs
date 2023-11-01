@@ -3,6 +3,7 @@ layout: default
 title: "Маркетплейс"
 nav_order: 100
 has_children: true
+tile: true
 permalink: /docs/marketplace
 date: 2023-10-25 00:00:00 +0300
 ---
