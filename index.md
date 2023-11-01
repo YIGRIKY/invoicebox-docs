@@ -14,7 +14,8 @@ date: 2023-11-01 00:00:00 +0300
 
 <main class="home" id="page" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
     <div id="grid" class="row flex-grid">
-    {% for page in site.pages %}
+    {% assign sorted_pages = site.pages | sort:"order" %}
+    {% for page in sorted_pages %}
       {% if page.tile %}
         <article class="box-item post-{{page.main-class}}" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
             <span class="ribbon">
@@ -41,7 +42,5 @@ date: 2023-11-01 00:00:00 +0300
     </div>
 </main>
 
-
----
 
 [Обратиться в службу поддержки](https://www.invoicebox.ru/ru/contacts/feedback.html){: .btn .mb-4 .mb-md-0 }
