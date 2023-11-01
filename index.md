@@ -33,7 +33,7 @@ date: 2023-11-01 00:00:00 +0300
                     <p class="description">{{ page.description }}</p>
                 </a>
                 <a class="btn btn-primary" href="{{ page.url | prepend: site.baseurl }}" title="{{ page.title }}">
-                    Читать  &raquo;
+                    Читать
                 </a>
             </div>
         </article>

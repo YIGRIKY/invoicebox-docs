@@ -519,7 +519,7 @@ a.site-title:hover {
   background: #f1f2f6;
   padding: 0px 40px 0px 40px;
   border-radius: 50px;
-  color: #6b7a86;
+  color: #353F47;
   box-shadow: 0 0 0;
   line-height: 46px;
   font-weight: 400;
@@ -591,7 +591,14 @@ a.site-title:hover {
 .row:after{clear:both}
 .flex-grid{display:-ms-flexbox;display:flex;-ms-flex-flow:row wrap;flex-flow:row wrap}
 
-.box-item{-ms-flex:1 0 300px;flex:1 0 300px;margin:0 .938rem 3.125rem;background-color:#F7F7F8;display:inline-block;border:0p;border-radius:30px;max-width:300px;min-height:17.813rem;transition:all .3s;position:relative;cursor:pointer;}
+.box-item {-ms-flex:1 0 300px;flex:1 0 300px;margin:0 .938rem 3.125rem;background-color:#F7F7F8;display:inline-block;border:0p;border-radius:30px;min-height:17.813rem;transition:all .3s;position:relative;cursor:pointer;}
+
+@media only screen and (min-width: 792px) {
+  .box-item {
+     max-width:300px;
+  }
+}
+
 .box-item:hover{box-shadow:1px 2px 10px #eee}
 
 .box-item a{text-decoration:none;}
