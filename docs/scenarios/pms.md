@@ -7,9 +7,8 @@ permalink: /docs/scenarios/pms
 date: 2023-11-01 00:00:00 +0300
 ---
 
+{: .tile-hotel }
 # Cистемы управления гостиницами, отелями и хостелами (PMS)
-
-![Отель](/assets/images/scenarios/pms-hotel.jpg){: .img-right}
 
 Решения Инвойсбокс API позволяют интегрировать наиболее востребованные способы оплаты
 в системы PMS (property management system) - оплата банковскими картами, СБП, а также оплата
