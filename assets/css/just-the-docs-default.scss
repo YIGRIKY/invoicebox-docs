@@ -619,10 +619,8 @@ a.site-title:hover {
 .box-item a{text-decoration:none;}
 .box-item a:hover .box-item{box-shadow:10px 10px 10px #eee}
 .box-item .box-body{padding:1.563rem;}
-.box-item .box-body time{font-size:.875rem;color:#b2bac2}
 .box-item .box-body h2{margin:.313rem 0 .938rem;font-size:1.25rem;font-weight:600;font-style:normal;color:#353F47;}
 .box-item .box-body p{margin:0 0 1.25rem;color:#576366;line-height:1.375rem}
-.box-item .box-body .tags a{color:#005f97;padding:.313rem .625rem;border-radius:3px;display:inline-block;margin:0 0 .313rem;z-index:50}
 
 .box-item .box-body a.post-link {white-space: normal}
 .box-item .box-body a.btn{margin-bottom: 20px;
@@ -648,10 +646,148 @@ a.site-title:hover {
 .post-content p,.post-content h1,.post-content h2,.post-content h3,.post-content h4,.post-content ul,.post-content ol,
 .post-content .tags,.post-content iframe,.post-content .button-post{*zoom:1;width:auto;max-width:50rem;float:none;display:block;margin-right:auto;margin-left:auto;padding-left:0;padding-right:0;padding:0 1.25rem;margin:0 auto 1.875rem;font-family:'Open Sans',sans-serif;font-weight:300;font-style:normal;font-size:1.125rem;line-height:2;letter-spacing:.01rem;}
 .post-content p:before,.post-content h1:before,.post-content h2:before,.post-content h3:before,.post-content h4:before,.post-content ul:before,.post-content ol:before,.post-content .tags:before,.post-content iframe:before,.post-content .button-post:before,.post-content p:after,.post-content h1:after,.post-content h2:after,.post-content h3:after,.post-content h4:after,.post-content ul:after,.post-content ol:after,.post-content .tags:after,.post-content iframe:after,.post-content .button-post:after{content:'';display:table}
-.post-content p:after,.post-content h1:after,.post-content h2:after,.post-content h3:after,.post-content h4:after,.post-content ul:after,.post-content ol:after,.post-content .tags:after,.post-content iframe:after,.post-content .button-post:after{clear:both}@media only screen and (min-width:37.5rem){.post-content p,.post-content h1,.post-content h2,.post-content h3,.post-content h4,.post-content ul,.post-content ol,.post-content .tags,.post-content iframe,.post-content .button-post{font-size:1.25rem}}
+.post-content p:after,.post-content h1:after,.post-content h2:after,.post-content h3:after,.post-content h4:after,.post-content ul:after,.post-content ol:after,.post-content .tags:after,.post-content iframe:after,.post-content .button-post:after{clear:both}
+@media only screen and (min-width:37.5rem){
+  .post-content p,.post-content h1,.post-content h2,.post-content h3,.post-content h4,.post-content ul,.post-content ol,.post-content .tags,.post-content iframe,.post-content .button-post{font-size:1.25rem}
+}
 .post-jekyll .title-category{color:#b31917}
 .post-jekyll .post-content h1,.post-jekyll .post-content h2,.post-jekyll .post-content h3,.post-jekyll .post-content h4{color:#b31917}
-.post-jekyll .post-content a{color:#b31917;border-bottom:2px dashed #b31917;}.post-jekyll .post-content a:hover{background-color:#b31917;color:#fff}.post-jekyll .post-content strong{color:#b31917}.post-jekyll .post-content p code,.post-jekyll .post-content li code{color:#b31917}.post-jekyll .post-content blockquote{border-left:.313rem solid #b31917}.post-jekyll .header-post,.post-jekyll .header-site{background-color:#b31917;}.post-jekyll .header-post h1,.post-jekyll .header-site h1{text-shadow:3px 3px #8f1412}.post-jekyll .bar-header .logo a{color:#b31917}.post-jekyll .author .email,.post-jekyll .author .github{color:#b31917}.post-jekyll .share a:hover svg{fill:#b31917}@media only screen and (max-width:37.5rem){.post-jekyll body.search-overlay:after{background-color:#b31917}}.post-jekyll .icon-menu{fill:#b31917}.post-jekyll .box-body h2{color:#b31917}.post-jekyll .box-body .tags a{color:#b31917;border:1px solid #b31917;}.post-jekyll .box-body .tags a:hover{color:#fff;background:#b31917}.post-jekyll aside{background-color:#b31917;}.post-jekyll aside nav li a:hover{color:#b31917}.post-jekyll .ribbon span{background-color:#b31917;}.post-jekyll .ribbon span:before{border-left:3px solid #7d1210;border-top:3px solid #7d1210}.post-jekyll .ribbon span:after{border-right:3px solid #7d1210;border-top:3px solid #7d1210}.post-jekyll footer{background-color:#b31917}.post-css .title-category{color:#2da0c3}.post-css .post-content h1,.post-css .post-content h2,.post-css .post-content h3,.post-css .post-content h4{color:#2da0c3}.post-css .post-content a{color:#2da0c3;border-bottom:2px dashed #2da0c3;}.post-css .post-content a:hover{background-color:#2da0c3;color:#fff}.post-css .post-content strong{color:#2da0c3}.post-css .post-content p code,.post-css .post-content li code{color:#2da0c3}.post-css .post-content blockquote{border-left:.313rem solid #2da0c3}.post-css .header-post,.post-css .header-site{background-color:#2da0c3;}.post-css .header-post h1,.post-css .header-site h1{text-shadow:3px 3px #24809c}.post-css .bar-header .logo a{color:#2da0c3}.post-css .author .email,.post-css .author .github{color:#2da0c3}.post-css .share a:hover svg{fill:#2da0c3}@media only screen and (max-width:37.5rem){.post-css body.search-overlay:after{background-color:#2da0c3}}.post-css .icon-menu{fill:#2da0c3}.post-css .box-body h2{color:#2da0c3}.post-css .box-body .tags a{color:#2da0c3;border:1px solid #2da0c3;}.post-css .box-body .tags a:hover{color:#fff;background:#2da0c3}.post-css aside{background-color:#2da0c3;}.post-css aside nav li a:hover{color:#2da0c3}.post-css .ribbon span{background-color:#2da0c3;}.post-css .ribbon span:before{border-left:3px solid #207088;border-top:3px solid #207088}.post-css .ribbon span:after{border-right:3px solid #207088;border-top:3px solid #207088}.post-css footer{background-color:#2da0c3}.post-js .title-category{color:#d6ba32}.post-js .post-content h1,.post-js .post-content h2,.post-js .post-content h3,.post-js .post-content h4{color:#d6ba32}.post-js .post-content a{color:#d6ba32;border-bottom:2px dashed #d6ba32;}.post-js .post-content a:hover{background-color:#d6ba32;color:#fff}.post-js .post-content strong{color:#d6ba32}.post-js .post-content p code,.post-js .post-content li code{color:#d6ba32}.post-js .post-content blockquote{border-left:.313rem solid #d6ba32}.post-js .header-post,.post-js .header-site{background-color:#d6ba32;}.post-js .header-post h1,.post-js .header-site h1{text-shadow:3px 3px #b09823}.post-js .bar-header .logo a{color:#d6ba32}.post-js .author .email,.post-js .author .github{color:#d6ba32}.post-js .share a:hover svg{fill:#d6ba32}@media only screen and (max-width:37.5rem){.post-js body.search-overlay:after{background-color:#d6ba32}}.post-js .icon-menu{fill:#d6ba32}.post-js .box-body h2{color:#d6ba32}.post-js .box-body .tags a{color:#d6ba32;border:1px solid #d6ba32;}.post-js .box-body .tags a:hover{color:#fff;background:#d6ba32}.post-js aside{background-color:#d6ba32;}.post-js aside nav li a:hover{color:#d6ba32}.post-js .ribbon span{background-color:#d6ba32;}.post-js .ribbon span:before{border-left:3px solid #9a851f;border-top:3px solid #9a851f}.post-js .ribbon span:after{border-right:3px solid #9a851f;border-top:3px solid #9a851f}.post-js footer{background-color:#d6ba32}.post-html .title-category{color:#eb7728}.post-html .post-content h1,.post-html .post-content h2,.post-html .post-content h3,.post-html .post-content h4{color:#eb7728}.post-html .post-content a{color:#eb7728;border-bottom:2px dashed #eb7728;}.post-html .post-content a:hover{background-color:#eb7728;color:#fff}.post-html .post-content strong{color:#eb7728}.post-html .post-content p code,.post-html .post-content li code{color:#eb7728}.post-html .post-content blockquote{border-left:.313rem solid #eb7728}.post-html .header-post,.post-html .header-site{background-color:#eb7728;}.post-html .header-post h1,.post-html .header-site h1{text-shadow:3px 3px #c95d13}.post-html .bar-header .logo a{color:#eb7728}.post-html .author .email,.post-html .author .github{color:#eb7728}.post-html .share a:hover svg{fill:#eb7728}@media only screen and (max-width:37.5rem){.post-html body.search-overlay:after{background-color:#eb7728}}.post-html .icon-menu{fill:#eb7728}.post-html .box-body h2{color:#eb7728}.post-html .box-body .tags a{color:#eb7728;border:1px solid #eb7728;}.post-html .box-body .tags a:hover{color:#fff;background:#eb7728}.post-html aside{background-color:#eb7728;}.post-html aside nav li a:hover{color:#eb7728}.post-html .ribbon span{background-color:#eb7728;}.post-html .ribbon span:before{border-left:3px solid #b05110;border-top:3px solid #b05110}.post-html .ribbon span:after{border-right:3px solid #b05110;border-top:3px solid #b05110}.post-html footer{background-color:#eb7728}.post-svg .title-category{color:#7d669e}.post-svg .post-content h1,.post-svg .post-content h2,.post-svg .post-content h3,.post-svg .post-content h4{color:#7d669e}.post-svg .post-content a{color:#7d669e;border-bottom:2px dashed #7d669e;}.post-svg .post-content a:hover{background-color:#7d669e;color:#fff}.post-svg .post-content strong{color:#7d669e}.post-svg .post-content p code,.post-svg .post-content li code{color:#7d669e}.post-svg .post-content blockquote{border-left:.313rem solid #7d669e}.post-svg .header-post,.post-svg .header-site{background-color:#7d669e;}.post-svg .header-post h1,.post-svg .header-site h1{text-shadow:3px 3px #64517f}.post-svg .bar-header .logo a{color:#7d669e}.post-svg .author .email,.post-svg .author .github{color:#7d669e}.post-svg .share a:hover svg{fill:#7d669e}@media only screen and (max-width:37.5rem){.post-svg body.search-overlay:after{background-color:#7d669e}}.post-svg .icon-menu{fill:#7d669e}.post-svg .box-body h2{color:#7d669e}.post-svg .box-body .tags a{color:#7d669e;border:1px solid #7d669e;}.post-svg .box-body .tags a:hover{color:#fff;background:#7d669e}.post-svg aside{background-color:#7d669e;}.post-svg aside nav li a:hover{color:#7d669e}.post-svg .ribbon span{background-color:#7d669e;}.post-svg .ribbon span:before{border-left:3px solid #57476f;border-top:3px solid #57476f}.post-svg .ribbon span:after{border-right:3px solid #57476f;border-top:3px solid #57476f}.post-svg footer{background-color:#7d669e}.post-dev .title-category{color:#637a91}.post-dev .post-content h1,.post-dev .post-content h2,.post-dev .post-content h3,.post-dev .post-content h4{color:#637a91}.post-dev .post-content a{color:#637a91;border-bottom:2px dashed #637a91;}.post-dev .post-content a:hover{background-color:#637a91;color:#fff}.post-dev .post-content strong{color:#637a91}.post-dev .post-content p code,.post-dev .post-content li code{color:#637a91}.post-dev .post-content blockquote{border-left:.313rem solid #637a91}.post-dev .header-post,.post-dev .header-site{background-color:#637a91;}.post-dev .header-post h1,.post-dev .header-site h1{text-shadow:3px 3px #4f6274}.post-dev .bar-header .logo a{color:#637a91}.post-dev .author .email,.post-dev .author .github{color:#637a91}.post-dev .share a:hover svg{fill:#637a91}@media only screen and (max-width:37.5rem){.post-dev body.search-overlay:after{background-color:#637a91}}.post-dev .icon-menu{fill:#637a91}.post-dev .box-body h2{color:#637a91}.post-dev .box-body .tags a{color:#637a91;border:1px solid #637a91;}.post-dev .box-body .tags a:hover{color:#fff;background:#637a91}.post-dev aside{background-color:#637a91;}.post-dev aside nav li a:hover{color:#637a91}.post-dev .ribbon span{background-color:#637a91;}.post-dev .ribbon span:before{border-left:3px solid #455565;border-top:3px solid #455565}.post-dev .ribbon span:after{border-right:3px solid #455565;border-top:3px solid #455565}.post-dev footer{background-color:#637a91}.post-misc .title-category{color:#7aab13}.post-misc .post-content h1,.post-misc .post-content h2,.post-misc .post-content h3,.post-misc .post-content h4{color:#7aab13}.post-misc .post-content a{color:#7aab13;border-bottom:2px dashed #7aab13;}.post-misc .post-content a:hover{background-color:#7aab13;color:#fff}.post-misc .post-content strong{color:#7aab13}.post-misc .post-content p code,.post-misc .post-content li code{color:#7aab13}.post-misc .post-content blockquote{border-left:.313rem solid #7aab13}.post-misc .header-post,.post-misc .header-site{background-color:#7aab13;}.post-misc .header-post h1,.post-misc .header-site h1{text-shadow:3px 3px #62890f}.post-misc .bar-header .logo a{color:#7aab13}.post-misc .author .email,.post-misc .author .github{color:#7aab13}.post-misc .share a:hover svg{fill:#7aab13}@media only screen and (max-width:37.5rem){.post-misc body.search-overlay:after{background-color:#7aab13}}.post-misc .icon-menu{fill:#7aab13}.post-misc .box-body h2{color:#7aab13}.post-misc .box-body .tags a{color:#7aab13;border:1px solid #7aab13;}.post-misc .box-body .tags a:hover{color:#fff;background:#7aab13}.post-misc aside{background-color:#7aab13;}.post-misc aside nav li a:hover{color:#7aab13}.post-misc .ribbon span{background-color:#7aab13;}.post-misc .ribbon span:before{border-left:3px solid #55780d;border-top:3px solid #55780d}.post-misc .ribbon span:after{border-right:3px solid #55780d;border-top:3px solid #55780d}.post-misc footer{background-color:#7aab13}
+.post-jekyll .post-content a{color:#b31917;border-bottom:2px dashed #b31917;}.post-jekyll .post-content a:hover{background-color:#b31917;color:#fff}.post-jekyll .post-content strong{color:#b31917}.post-jekyll .post-content p code,.post-jekyll .post-content li code{color:#b31917}.post-jekyll .post-content blockquote{border-left:.313rem solid #b31917}.post-jekyll .header-post,.post-jekyll .header-site{background-color:#b31917;}.post-jekyll .header-post h1,.post-jekyll .header-site h1{text-shadow:3px 3px #8f1412}.post-jekyll .bar-header .logo a{color:#b31917}.post-jekyll .author .email,.post-jekyll .author .github{color:#b31917}.post-jekyll .share a:hover svg{fill:#b31917}
+@media only screen and (max-width:37.5rem){.post-jekyll body.search-overlay:after{background-color:#b31917}}
+.post-jekyll .icon-menu{fill:#b31917}
+.post-jekyll .box-body h2{color:#b31917}
+.post-jekyll .box-body .tags a{color:#b31917;border:1px solid #b31917;}
+.post-jekyll .box-body .tags a:hover{color:#fff;background:#b31917}
+.post-jekyll aside{background-color:#b31917;}
+.post-jekyll aside nav li a:hover{color:#b31917}
+.post-jekyll .ribbon span{background-color:#b31917;}
+.post-jekyll .ribbon span:before{border-left:3px solid #7d1210;border-top:3px solid #7d1210}
+.post-jekyll .ribbon span:after{border-right:3px solid #7d1210;border-top:3px solid #7d1210}
+.post-jekyll footer{background-color:#b31917}
+.post-css .title-category{color:#2da0c3}
+.post-css .post-content h1,.post-css .post-content h2,.post-css .post-content h3,.post-css .post-content h4{color:#2da0c3}
+.post-css .post-content a{color:#2da0c3;border-bottom:2px dashed #2da0c3;}
+.post-css .post-content a:hover{background-color:#2da0c3;color:#fff}
+.post-css .post-content strong{color:#2da0c3}
+.post-css .post-content p code,.post-css .post-content li code{color:#2da0c3}
+.post-css .post-content blockquote{border-left:.313rem solid #2da0c3}
+.post-css .header-post,.post-css .header-site{background-color:#2da0c3;}
+.post-css .header-post h1,.post-css .header-site h1{text-shadow:3px 3px #24809c}
+.post-css .bar-header .logo a{color:#2da0c3}
+.post-css .author .email,.post-css .author .github{color:#2da0c3}
+.post-css .share a:hover svg{fill:#2da0c3}
+@media only screen and (max-width:37.5rem){.post-css body.search-overlay:after{background-color:#2da0c3}}
+.post-css .icon-menu{fill:#2da0c3}
+.post-css .box-body h2{color:#2da0c3}
+.post-css .box-body .tags a{color:#2da0c3;border:1px solid #2da0c3;}
+.post-css .box-body .tags a:hover{color:#fff;background:#2da0c3}
+.post-css aside{background-color:#2da0c3;}
+.post-css aside nav li a:hover{color:#2da0c3}
+.post-css .ribbon span{background-color:#2da0c3;}
+.post-css .ribbon span:before{border-left:3px solid #207088;border-top:3px solid #207088}
+.post-css .ribbon span:after{border-right:3px solid #207088;border-top:3px solid #207088}
+.post-css footer{background-color:#2da0c3}.post-js .title-category{color:#d6ba32}
+.post-js .post-content h1,.post-js .post-content h2,.post-js .post-content h3,.post-js .post-content h4{color:#d6ba32}
+.post-js .post-content a{color:#d6ba32;border-bottom:2px dashed #d6ba32;}
+.post-js .post-content a:hover{background-color:#d6ba32;color:#fff}
+.post-js .post-content strong{color:#d6ba32}
+.post-js .post-content p code,.post-js .post-content li code{color:#d6ba32}
+.post-js .post-content blockquote{border-left:.313rem solid #d6ba32}
+.post-js .header-post,.post-js .header-site{background-color:#d6ba32;}
+.post-js .header-post h1,.post-js .header-site h1{text-shadow:3px 3px #b09823}
+.post-js .bar-header .logo a{color:#d6ba32}
+.post-js .author .email,.post-js .author .github{color:#d6ba32}
+.post-js .share a:hover svg{fill:#d6ba32}
+@media only screen and (max-width:37.5rem){.post-js body.search-overlay:after{background-color:#d6ba32}}
+.post-js .icon-menu{fill:#d6ba32}.post-js .box-body h2{color:#d6ba32}
+.post-js .box-body .tags a{color:#d6ba32;border:1px solid #d6ba32;}
+.post-js .box-body .tags a:hover{color:#fff;background:#d6ba32}
+.post-js aside{background-color:#d6ba32;}.post-js aside nav li a:hover{color:#d6ba32}
+.post-js .ribbon span{background-color:#d6ba32;}
+.post-js .ribbon span:before{border-left:3px solid #9a851f;border-top:3px solid #9a851f}
+.post-js .ribbon span:after{border-right:3px solid #9a851f;border-top:3px solid #9a851f}
+.post-js footer{background-color:#d6ba32}
+.post-html .title-category{color:#eb7728}
+.post-html .post-content h1,.post-html .post-content h2,.post-html .post-content h3,.post-html .post-content h4{color:#eb7728}
+.post-html .post-content a{color:#eb7728;border-bottom:2px dashed #eb7728;}
+.post-html .post-content a:hover{background-color:#eb7728;color:#fff}
+.post-html .post-content strong{color:#eb7728}
+.post-html .post-content p code,.post-html .post-content li code{color:#eb7728}
+.post-html .post-content blockquote{border-left:.313rem solid #eb7728}
+.post-html .header-post,.post-html .header-site{background-color:#eb7728;}
+.post-html .header-post h1,.post-html .header-site h1{text-shadow:3px 3px #c95d13}
+.post-html .bar-header .logo a{color:#eb7728}
+.post-html .author .email,.post-html .author .github{color:#eb7728}
+.post-html .share a:hover svg{fill:#eb7728}
+@media only screen and (max-width:37.5rem){.post-html body.search-overlay:after{background-color:#eb7728}}
+.post-html .icon-menu{fill:#eb7728}
+.post-html .box-body h2{color:#eb7728}
+.post-html .box-body .tags a{color:#eb7728;border:1px solid #eb7728;}
+.post-html .box-body .tags a:hover{color:#fff;background:#eb7728}
+.post-html aside{background-color:#eb7728;}
+.post-html aside nav li a:hover{color:#eb7728}
+.post-html .ribbon span{background-color:#eb7728;}
+.post-html .ribbon span:before{border-left:3px solid #b05110;border-top:3px solid #b05110}
+.post-html .ribbon span:after{border-right:3px solid #b05110;border-top:3px solid #b05110}
+.post-html footer{background-color:#eb7728}.post-svg .title-category{color:#7d669e}
+.post-svg .post-content h1,.post-svg .post-content h2,.post-svg .post-content h3,.post-svg .post-content h4{color:#7d669e}
+.post-svg .post-content a{color:#7d669e;border-bottom:2px dashed #7d669e;}
+.post-svg .post-content a:hover{background-color:#7d669e;color:#fff}
+.post-svg .post-content strong{color:#7d669e}
+.post-svg .post-content p code,.post-svg .post-content li code{color:#7d669e}
+.post-svg .post-content blockquote{border-left:.313rem solid #7d669e}
+.post-svg .header-post,.post-svg .header-site{background-color:#7d669e;}
+.post-svg .header-post h1,.post-svg .header-site h1{text-shadow:3px 3px #64517f}
+.post-svg .bar-header .logo a{color:#7d669e}
+.post-svg .author .email,.post-svg .author .github{color:#7d669e}
+.post-svg .share a:hover svg{fill:#7d669e}
+@media only screen and (max-width:37.5rem){.post-svg body.search-overlay:after{background-color:#7d669e}}
+.post-svg .icon-menu{fill:#7d669e}.post-svg .box-body h2{color:#7d669e}
+.post-svg .box-body .tags a{color:#7d669e;border:1px solid #7d669e;}
+.post-svg .box-body .tags a:hover{color:#fff;background:#7d669e}
+.post-svg aside{background-color:#7d669e;}.post-svg aside nav li a:hover{color:#7d669e}
+.post-svg .ribbon span{background-color:#7d669e;}
+.post-svg .ribbon span:before{border-left:3px solid #57476f;border-top:3px solid #57476f}
+.post-svg .ribbon span:after{border-right:3px solid #57476f;border-top:3px solid #57476f}
+.post-svg footer{background-color:#7d669e}.post-dev .title-category{color:#637a91}
+.post-dev .post-content h1,.post-dev .post-content h2,.post-dev .post-content h3,.post-dev .post-content h4{color:#637a91}
+.post-dev .post-content a{color:#637a91;border-bottom:2px dashed #637a91;}
+.post-dev .post-content a:hover{background-color:#637a91;color:#fff}
+.post-dev .post-content strong{color:#637a91}
+.post-dev .post-content p code,.post-dev .post-content li code{color:#637a91}
+.post-dev .post-content blockquote{border-left:.313rem solid #637a91}.post-dev .header-post,.post-dev .header-site{background-color:#637a91;}
+.post-dev .header-post h1,.post-dev .header-site h1{text-shadow:3px 3px #4f6274}
+.post-dev .bar-header .logo a{color:#637a91}
+.post-dev .author .email,.post-dev .author .github{color:#637a91}
+.post-dev .share a:hover svg{fill:#637a91}
+@media only screen and (max-width:37.5rem){.post-dev body.search-overlay:after{background-color:#637a91}}
+.post-dev .icon-menu{fill:#637a91}.post-dev .box-body h2{color:#637a91}
+.post-dev .box-body .tags a{color:#637a91;border:1px solid #637a91;}
+.post-dev .box-body .tags a:hover{color:#fff;background:#637a91}
+.post-dev aside{background-color:#637a91;}.post-dev aside nav li a:hover{color:#637a91}
+.post-dev .ribbon span{background-color:#637a91;}.post-dev .ribbon span:before{border-left:3px solid #455565;border-top:3px solid #455565}
+.post-dev .ribbon span:after{border-right:3px solid #455565;border-top:3px solid #455565}.post-dev footer{background-color:#637a91}
+.post-misc .title-category{color:#7aab13}
+.post-misc .post-content h1,.post-misc .post-content h2,.post-misc .post-content h3,.post-misc .post-content h4{color:#7aab13}
+.post-misc .post-content a{color:#7aab13;border-bottom:2px dashed #7aab13;}
+.post-misc .post-content a:hover{background-color:#7aab13;color:#fff}
+.post-misc .post-content strong{color:#7aab13}
+.post-misc .post-content p code,.post-misc .post-content li code{color:#7aab13}
+.post-misc .post-content blockquote{border-left:.313rem solid #7aab13}.post-misc .header-post,.post-misc .header-site{background-color:#7aab13;}
+.post-misc .header-post h1,.post-misc .header-site h1{text-shadow:3px 3px #62890f}
+.post-misc .bar-header .logo a{color:#7aab13}
+.post-misc .author .email,.post-misc .author .github{color:#7aab13}
+.post-misc .share a:hover svg{fill:#7aab13}@
+media only screen and (max-width:37.5rem){.post-misc body.search-overlay:after{background-color:#7aab13}}
+.post-misc .icon-menu{fill:#7aab13}.post-misc .box-body h2{color:#7aab13}
+.post-misc .box-body .tags a{color:#7aab13;border:1px solid #7aab13;}
+.post-misc .box-body .tags a:hover{color:#fff;background:#7aab13}
+.post-misc aside{background-color:#7aab13;}.post-misc aside nav li a:hover{color:#7aab13}
+.post-misc .ribbon span{background-color:#7aab13;}
+.post-misc .ribbon span:before{border-left:3px solid #55780d;border-top:3px solid #55780d}
+.post-misc .ribbon span:after{border-right:3px solid #55780d;border-top:3px solid #55780d}.
+post-misc footer{background-color:#7aab13}
+
 
 .tile-hotel {
   background-image: URL("/assets/images/scenarios/pms/tile.png");
