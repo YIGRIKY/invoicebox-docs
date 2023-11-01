@@ -41,6 +41,24 @@
     padding: 8px 10px 8px 10px;
 }
 
+.site-logo {
+  width: 314px;
+  height: 60px;
+  padding: 14px 0px 0px 10px;
+  line-height: 60px;
+  background-image: none;
+  float:right;
+}
+
+.site-title {
+  display: inline;
+}
+
+.site-button:hover {
+  background-image: none;
+}
+
+
 @media only screen and (max-width: 792px) {
   .img-right, .img-left, .imgt-right, .imgt-left, .img, .imgt {
     margin: 0px auto;
@@ -85,23 +103,6 @@
   background-color: #a8bbbf;
 }
 
-
-.site-logo {
-  width: 314px;
-  height: 60px;
-  padding: 14px 0px 0px 10px;
-  line-height: 60px;
-  background-image: none;
-  float:right;
-}
-
-.site-title {
-  display: inline;
-}
-
-.site-button:hover {
-  background-image: none;
-}
 
 .nav-list .nav-list-item {
   margin: 2px 10px 0px 0px;
