@@ -4,7 +4,7 @@ nav_order: 15
 title: "Сценарии и бизнес-кейсы"
 has_children: true
 permalink: /docs/scenarios
-date: 2023-10-25 00:00:00 +0300
+date: 2023-11-01 00:00:00 +0300
 ---
 
 # Сценарии и бизнес-кейсы
