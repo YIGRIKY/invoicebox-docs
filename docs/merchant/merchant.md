@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Приём платежей"
-description: "Настройте приём платежей с помощью Инвойсбокс"
+description: "Настройте приём платежей с помощью Инвойсбокс с помощью API или готовых модулей"
 nav_order: 60
 has_children: true
 tile: true
