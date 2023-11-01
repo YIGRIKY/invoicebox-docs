@@ -602,11 +602,13 @@ a.site-title:hover {
 .box-item .box-body p{margin:0 0 1.25rem;color:#576366;font-size:.875rem;line-height:1.375rem}
 .box-item .box-body .tags a{color:#005f97;padding:.313rem .625rem;border-radius:3px;display:inline-block;margin:0 0 .313rem;z-index:50}
 
-.post-link {white-space: normal}
-.box-body a.btn{margin-bottom: 20px;
+.box-item .box-body a.post-link {white-space: normal}
+.box-item .box-body a.btn{margin-bottom: 20px;
     float: right;
     position: absolute;
     bottom: 0;
+    right: 0;
+    margin-right: 20px;
 }
 
 .ribbon{position:absolute;right:-5px;top:-5px;z-index:1;overflow:hidden;width:75px;height:75px;text-align:right;}
