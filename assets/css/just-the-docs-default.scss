@@ -53,6 +53,16 @@
   .site-footer {
     position: absolute;
   }
+  .site-logo {
+    width: 200px;
+  }
+}
+
+.breadcrumb-nav-list-item {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
 }
 
 /* custom scrollbar */
@@ -87,6 +97,10 @@
 
 .site-title {
   display: inline;
+}
+
+.site-button:hover {
+  background-image: none;
 }
 
 .nav-list .nav-list-item {
