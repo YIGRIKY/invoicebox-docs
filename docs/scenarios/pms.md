@@ -4,7 +4,7 @@ nav_order: 10
 title: "Управление средствами размещения (PMS)"
 parent: "Сценарии и бизнес-кейсы"
 permalink: /docs/scenarios/pms
-date: 2023-11-01 00:00:00 +0300
+date: 2023-11-02 00:00:00 +0300
 ---
 
 {: .tile-hotel }
