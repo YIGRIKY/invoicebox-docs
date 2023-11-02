@@ -13,7 +13,7 @@ date: 2023-10-25 00:00:00 +0300
 
 2. Авторизуйтесь или зарегистрируйте новый аккаунт. Это нужно для скачивания плагина.
 
-![Opencart 2](/assets/images/cms/opencart2v/1.png)
+![Opencart 2](/assets/images/cms/opencart2v/1.png){: .img }
 
 {: .important }
 > В случае, если у вас возникнут сложности при самостоятельной установке модуля и его корректной настройке,
@@ -22,49 +22,49 @@ date: 2023-10-25 00:00:00 +0300
 
 3. Скачайте архив с плагином.
 
-![Opencart 2](/assets/images/cms/opencart2v/2.png)
+![Opencart 2](/assets/images/cms/opencart2v/2.png){: .img }
 
 **Важно: название архива с модулем должно заканчиваться на .ocmod.zip.**
 **Важно: сайт должен работать на версии php не менее 7.3.**
 4. В административной панели зайдите в раздел Настройки - Управление магазином - FTP и заполните данные для ftp-доступа к сайту. 
 
-![Opencart 2](/assets/images/cms/opencart2v/3.png)
+![Opencart 2](/assets/images/cms/opencart2v/3.png){: .img }
 
 5. В административной панели зайдите в раздел Модули/Расширения → Установка расширений и загрузите файл install.ocmod.zip. 
 
-![Opencart 2](/assets/images/cms/opencart2v/4.png)
+![Opencart 2](/assets/images/cms/opencart2v/4.png){: .img }
 
 6. Перейдите в раздел Модули/Расширения → Модификаторы. Очистите и обновите кэш модификаторов, нажав на соответствующие кнопки в правом верхнем углу экрана. 
 
-![Opencart 2](/assets/images/cms/opencart2v/5.png)
+![Opencart 2](/assets/images/cms/opencart2v/5.png){: .img }
 
-![Opencart 2](/assets/images/cms/opencart2v/6.png)
+![Opencart 2](/assets/images/cms/opencart2v/6.png){: .img }
 
 7. Заходим в раздел Модули/расширения → Модули/расширения. 
 
-![Opencart 2](/assets/images/cms/opencart2v/7.png)
+![Opencart 2](/assets/images/cms/opencart2v/7.png){: .img }
 
 8. Открываем селект и выбираем Оплата. 
 
-![Opencart 2](/assets/images/cms/opencart2v/8.png)
+![Opencart 2](/assets/images/cms/opencart2v/8.png){: .img }
 
 9. Находим Инвойсбокс и нажимаем на кнопку “активировать”. 
 
-![Opencart 2](/assets/images/cms/opencart2v/9.png)
+![Opencart 2](/assets/images/cms/opencart2v/9.png){: .img }
 
 ## Настройка модуля
 
 1. Зайдите в раздел Модули/расширения → Модули/расширения.
 
-![Opencart 2](/assets/images/cms/opencart2v/10.png)
+![Opencart 2](/assets/images/cms/opencart2v/10.png){: .img }
 
 2. В выпадающем списке выберете "Оплата".
 
-![Opencart 2](/assets/images/cms/opencart2v/11.png)
+![Opencart 2](/assets/images/cms/opencart2v/11.png){: .img }
 
 3. Найдите модуль “Инвойсбокс” и перейдите в редактирование. 
 
-![Opencart 2](/assets/images/cms/opencart2v/11.png)
+![Opencart 2](/assets/images/cms/opencart2v/11.png){: .img }
 
 4. Перейдите в раздел "настройка платежей". Выберите версию API, заполните необходимые данные:
 - идентификатор магазина (v2, v3 новая и v3 текущая)
@@ -78,34 +78,34 @@ date: 2023-10-25 00:00:00 +0300
 
 5. Доступы для 2й версии API:
 - Поле “Магазин” - вставьте нужное или тестовое значение “207” (если включен тестовый режим)
-  ![Opencart 2](/assets/images/cms/opencart2v/12.png)
+  ![Opencart 2](/assets/images/cms/opencart2v/12.png){: .img }
 - Поле “Региональный код магазина” - введите нужное или тестовое значение “78054” (если включен тестовый режим)
-  ![Opencart 2](/assets/images/cms/opencart2v/13.png)
+  ![Opencart 2](/assets/images/cms/opencart2v/13.png){: .img }
 - Заполните поля “Имя пользователя” и “Пароль”. Данные для теста: логин “78054-API” и пароль “LM936s#3jz0“.
-  ![Opencart 2](/assets/images/cms/opencart2v/14.png)
+  ![Opencart 2](/assets/images/cms/opencart2v/14.png){: .img }
 - Поле “Ключ”. Значение для теста: LdjmgMS1WMS0nAIklbDkvuKT7WxaJIoC.
-  ![Opencart 2](/assets/images/cms/opencart2v/15.png)
+  ![Opencart 2](/assets/images/cms/opencart2v/15.png){: .img }
 - Нажмите кнопку “Сохранить” в правом верхнем углу экрана
-- ![Opencart 2](/assets/images/cms/opencart2v/16.png)
+- ![Opencart 2](/assets/images/cms/opencart2v/16.png){: .img }
 6. Доступы для 3й версии API:
 - Поле “Идентификатор магазина”. Тестовое значение: ffffffff-ffff-ffff-ffff-ffffffffffff
-  ![Opencart 2](/assets/images/cms/opencart2v/17.png)
+  ![Opencart 2](/assets/images/cms/opencart2v/17.png){: .img }
 - Поля “Токен” и “API Ключ”.Тестовые значения “b37c4c689295904ed21eee5d9a48d42e” и “098f6bcd4621d373cade4e832627b4f6”
-  ![Opencart 2](/assets/images/cms/opencart2v/18.png)
+  ![Opencart 2](/assets/images/cms/opencart2v/18.png){: .img }
 - Нажмите кнопку “Сохранить” в правом верхнем углу экрана
-  ![Opencart 2](/assets/images/cms/opencart2v/19.png)
+  ![Opencart 2](/assets/images/cms/opencart2v/19.png){: .img }
 7. Выберите налоговый режим, в котором работает магазин. См. раздел “настройка налогового режима”.
 8. Убедитесь, что заполнены значения полей “Единица измерения” и “Код единицы измерения”. Стандартные значения “шт” и “796”. Индивидуальные значения для каждого товара задаются в атрибутах товара.
-   ![Opencart 2](/assets/images/cms/opencart2v/20.png)
+   ![Opencart 2](/assets/images/cms/opencart2v/20.png){: .img }
 9. Если нужно допускать заказ к оплате только после проверки модератором, выберите режим отложенной оплаты и статус, при переводе заказ в который, пользователю будет посылаться ссылка на оплату. Подробнее - в разделе “Специфические настройки”.
-   ![Opencart 2](/assets/images/cms/opencart2v/21.png)
+   ![Opencart 2](/assets/images/cms/opencart2v/21.png){: .img }
 10. Заполните значения полей SKU  в товарах. Если они будут не заполнены, оплату за товар нельзя будет вернуть. Для этого:
     1. Зайдите в раздел Каталог → Товары и нажмите на редактирование товара.
-       ![Opencart 2](/assets/images/cms/opencart2v/22.png)
+       ![Opencart 2](/assets/images/cms/opencart2v/22.png){: .img }
     2. Далее зайдите в раздел “Данные” и нажмите кнопку справа “двойная стрелка”.
-       ![Opencart 2](/assets/images/cms/opencart2v/23.png)
+       ![Opencart 2](/assets/images/cms/opencart2v/23.png){: .img }
     3. Найдите поле “Артикул” и при отсутствии актуальных артикулов заполните строку любыми числами. Главное, чтобы у каждого товара был свой уникальный артикул.
-       ![Opencart 2](/assets/images/cms/opencart2v/24.png)
+       ![Opencart 2](/assets/images/cms/opencart2v/24.png){: .img }
 11. Значения остальных полей описано в разделе “Специфические настройки”.
 12. Не забудьте в настройках модуля поставить статус “включено”.
 
@@ -122,33 +122,33 @@ date: 2023-10-25 00:00:00 +0300
 
 Формат цен задается в “Система - Локализация - Валюта”. Для каждой валюты проставьте в поле “количество знаков после запятой” значение 2.
 
-![Opencart 2](/assets/images/cms/opencart2v/25.png)
+![Opencart 2](/assets/images/cms/opencart2v/25.png){: .img }
 
 Ставка НДС задаётся в меню “Система - Локализация - Налоги - Налоговые ставки”.
 
-![Opencart 2](/assets/images/cms/opencart2v/26.png)
+![Opencart 2](/assets/images/cms/opencart2v/26.png){: .img }
 
 Допускаются ставки НДС 0%, 10%, 20%. В типе нужно выставить “процент”, а в “ставке” - нужное число. 
 
-![Opencart 2](/assets/images/cms/opencart2v/27.png)
+![Opencart 2](/assets/images/cms/opencart2v/27.png){: .img }
 
 Показ налогов настраивается в 3х местах: в модуле “Инвойсбокс”, в настройках, в модуле “Учитывать в заказе”.
 Корректными являются такие варианты:
 1. Налоги уже учтены в стоимости и не показываются клиенту.
 - Модуль  “Инвойсбокс”:
-   ![Opencart 2](/assets/images/cms/opencart2v/28.png)
+   ![Opencart 2](/assets/images/cms/opencart2v/28.png){: .img }
 - “Система - Настройки - Опции”:
-  ![Opencart 2](/assets/images/cms/opencart2v/29.png)
+  ![Opencart 2](/assets/images/cms/opencart2v/29.png){: .img }
 - Модули/расширения - Учитывать в заказе/Всего заказов-Отчеты - Налоги / Налоговый отчет:
-  ![Opencart 2](/assets/images/cms/opencart2v/30.png)
+  ![Opencart 2](/assets/images/cms/opencart2v/30.png){: .img }
 
 2. Налоги считаются поверх указанной стоимости товара и показываются клиенту:
 - Модуль  “Инвойсбокс”:
-  ![Opencart 2](/assets/images/cms/opencart2v/31.png)
+  ![Opencart 2](/assets/images/cms/opencart2v/31.png){: .img }
 - Система - Настройки - Опции:
-  ![Opencart 2](/assets/images/cms/opencart2v/32.png)
+  ![Opencart 2](/assets/images/cms/opencart2v/32.png){: .img }
 - Модули/расширения - Учитывать в заказе - Налоги:
-  ![Opencart 2](/assets/images/cms/opencart2v/33.png)
+  ![Opencart 2](/assets/images/cms/opencart2v/33.png){: .img }
 
 ### Специфические настройки
 

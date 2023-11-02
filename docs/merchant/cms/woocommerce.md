@@ -24,14 +24,14 @@ date: 2023-10-25 00:00:00 +0300
 1. Зайдите в административную часть вашего сайта, перейдите на страницу «Плагины» → «Добавить новый»;
 2. В списке доступных решений найдите модуль «InvoiceBox: Payment module for WooCommerce» ([InvoiceBox, invoicebox payment](https://ru.wordpress.org/plugins/invoicebox-payment-gateway/)), установите и активируйте его.
 
-![WordPress](/assets/images/cms/wordpress/1.jpg)
-![WordPress](/assets/images/cms/wordpress/2.png)
+![WordPress](/assets/images/cms/wordpress/1.jpg){: .img }
+![WordPress](/assets/images/cms/wordpress/2.png){: .img }
 
 ## Настройка модуля
 
 В административном разделе сайта перейдите на страницу «Woocommerce» → «Настройки» → «Платежи» и нажмите на кнопку «Управление» у метода Invoicebox Payment для физ.лиц и Invoicebox Legal Payment для юр.лиц.
 
-![WordPress](/assets/images/cms/wordpress/3.png)
+![WordPress](/assets/images/cms/wordpress/3.png){: .img }
 
 В настройках платёжной системы настройте следующие параметры:
 
@@ -64,21 +64,21 @@ date: 2023-10-25 00:00:00 +0300
 
 ## Доступы для 2й версии API
 - Поле “Идентификатор магазина” - вписываем нужное значение или тестовое значение “207”, если включен тестовый режим
-  ![WordPress](/assets/images/cms/wordpress/5.png)
+  ![WordPress](/assets/images/cms/wordpress/5.png){: .img }
 - Поле “Региональный код магазина” - вводим нужное значение в поле или тестовое значение “78054”, если включен тестовый режим
-  ![WordPress](/assets/images/cms/wordpress/6.png)
+  ![WordPress](/assets/images/cms/wordpress/6.png){: .img }
 - Поля “Имя пользователя” и “Пароль API”. Данные для теста: логин “78054-API” и пароль “LM936s#3jz0“
-  ![WordPress](/assets/images/cms/wordpress/7.png)
+  ![WordPress](/assets/images/cms/wordpress/7.png){: .img }
 - Поле “Ключ API”. Значение для теста: LdjmgMS1WMS0nAIklbDkvuKT7WxaJIoC
 - Нажимаем “Сохранить изменения”
-  ![WordPress](/assets/images/cms/wordpress/8.png)
+  ![WordPress](/assets/images/cms/wordpress/8.png){: .img }
 
 ## Доступы для 3й версии API:
 - Поле “Идентификатор магазина”. Тестовое значение: ffffffff-ffff-ffff-ffff-ffffffffffff
 - Поля “Токен” и “Ключ API”.Тестовые значения “b37c4c689295904ed21eee5d9a48d42e” и “098f6bcd4621d373cade4e832627b4f6” соответственно
-  ![WordPress](/assets/images/cms/wordpress/9.png)
+  ![WordPress](/assets/images/cms/wordpress/9.png){: .img }
 - Нажимаем “Сохранить изменения”
-  ![WordPress](/assets/images/cms/wordpress/8.png)
+  ![WordPress](/assets/images/cms/wordpress/8.png){: .img }
 
 **Вы сможете отслеживать ошибки, включив функцию логирования. Данные об операциях и ошибках вносятся в логи WooCommerce (меню - WooCommerce - Статус - Журналы)**
 
@@ -97,25 +97,25 @@ date: 2023-10-25 00:00:00 +0300
 Далее в инструкции показано, как настроить рекомендуемые к заполнению поля. Обо всех остальных возможностях плагина вы можете прочесть в документации по ссылке [advanced custom fields](https://www.advancedcustomfields.com/resources/)
 
 1. Установите и активируйте плагин Advanced Custom Fields [advanced custom fields](https://ru.wordpress.org/plugins/advanced-custom-fields/)
-   ![WordPress](/assets/images/cms/wordpress/10.png)
+   ![WordPress](/assets/images/cms/wordpress/10.png){: .img }
 2. В меню выберите пункт “Добавить группу полей”
-   ![WordPress](/assets/images/cms/wordpress/11.png)
+   ![WordPress](/assets/images/cms/wordpress/11.png){: .img }
 3. Добавьте новое поле
-   ![WordPress](/assets/images/cms/wordpress/13.png)
+   ![WordPress](/assets/images/cms/wordpress/13.png){: .img }
 4. Произвольно назовите группу полей, а в условиях отображения выберите “Тип записи - равно - Товар”
-   ![WordPress](/assets/images/cms/wordpress/12.png)
+   ![WordPress](/assets/images/cms/wordpress/12.png){: .img }
    В строке "Имя поля" - введите значение предыдущей строки латиницей (обязательно!). В строке "Тип поля" в выпадающем списке выберите "Текст"
 5. Чтобы создать мета-поле "Тип товара", добавьте новое поле, заполните ярлык и имя, а в типе поля выберите “Выбор (select)”..
-   ![WordPress](/assets/images/cms/wordpress/14.png)
+   ![WordPress](/assets/images/cms/wordpress/14.png){: .img }
     - Далее скопируйте и вставьте в пункт “Варианты” следующий текст:
        - commodity : товар
        - service : услуга
 6. Сохраните группу полей.
-   ![WordPress](/assets/images/cms/wordpress/15.png)
+   ![WordPress](/assets/images/cms/wordpress/15.png){: .img }
 7. Перейдите в любой товар в административной панели и убедитесь, что на странице товара появилась вкладка с новыми полями.
-   ![WordPress](/assets/images/cms/wordpress/16.png)
+   ![WordPress](/assets/images/cms/wordpress/16.png){: .img }
 8. Впишите идентификаторы, которые вы задавали в “имени поля” на странице настроек плагина и сохраните настройки.
-   ![WordPress](/assets/images/cms/wordpress/17.png)
+   ![WordPress](/assets/images/cms/wordpress/17.png){: .img }
 
 
 ## Частые вопросы
@@ -125,7 +125,7 @@ date: 2023-10-25 00:00:00 +0300
    Да. Для работы требуется плагин [WooCommerce](https://ru.wordpress.org/plugins/woocommerce/). Так же для настройки передачи дополнительных данных в платёжную систему может понадобиться плагин [advanced custom fields](https://ru.wordpress.org/plugins/advanced-custom-fields/)/ (см. подробности в пункте “Настройка мета-полей”).
 3. Можно ли изменить время на оплату счёта?
     Да. В настройках платёжной системы есть параметры для изменения времени на оплату
-    ![Wordpress](/assets/images/cms/wordpress/18.png)
+    ![Wordpress](/assets/images/cms/wordpress/18.png){: .img }
 
 ---
 
