@@ -633,8 +633,8 @@ a.site-title:hover {
 
 .ribbon{position:absolute;right:-5px;top:-5px;z-index:1;overflow:hidden;width:75px;height:75px;text-align:right;}
 .ribbon span{font-size:.75rem;font-weight:bold;color:#fff;text-transform:uppercase;text-align:center;line-height:20px;-webkit-transform:rotate(45deg);transform:rotate(45deg);-webkit-transform:rotate(45deg);width:100px;display:block;background:#b31917;position:absolute;top:19px;right:-21px;}
-.ribbon span:before{content:"";position:absolute;left:0;top:100%;z-index:-1;border-left:3px solid #005f97;border-right:3px solid transparent;border-bottom:3px solid transparent;border-top:3px solid #005f97}
-.ribbon span:after{content:"";position:absolute;right:0;top:100%;z-index:-1;border-left:3px solid transparent;border-right:3px solid #005f97;border-bottom:3px solid transparent;border-top:3px solid #005f97}
+.ribbon span:before{content:"";position:absolute;left:0;top:100%;z-index:-1;border-left:3px solid #353F47;border-right:3px solid transparent;border-bottom:3px solid transparent;border-top:3px solid #353F47}
+.ribbon span:after{content:"";position:absolute;right:0;top:100%;z-index:-1;border-left:3px solid transparent;border-right:3px solid #353F47;border-bottom:3px solid transparent;border-top:3px solid #353F47}
 .post-content h1:before,
 .post-content h2:before,
 .post-content h3:before,
