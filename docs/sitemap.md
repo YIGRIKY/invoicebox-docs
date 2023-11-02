@@ -2,6 +2,7 @@
 layout: archive
 permalink: /sitemap/
 author_profile: false
+date: 2023-10-25 00:00:00 +0300
 ---
 
 Перечень страниц и публикаций может быть найден на этой странице. Для вас, роботы, у нас есть [XML версия]({{ "sitemap.xml" | relative_url }}) :)

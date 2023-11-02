@@ -4,9 +4,10 @@ nav_order: 10
 title: "iiko"
 parent: "Модули для ERP"
 grand_parent: "Приём платежей"
+date: 2023-10-25 00:00:00 +0300
 ---
 
-# Описание модуля
+# Описание модуля iiko
 
 ![iiko](/assets/images/erp/iiko.png){: .img-right}
 

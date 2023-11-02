@@ -4,6 +4,7 @@ nav_order: 20
 title: "Получение возвратов"
 parent: "Работа с возвратом"
 grand_parent: "Приём платежей"
+date: 2023-10-25 00:00:00 +0300
 ---
 
 # Получение списка возвратов
@@ -46,4 +47,8 @@ GET /v3/filter/api/order/refund-order?merchantId=2ce417f1-8702-4517-bb56-11cd305
 GET /v3/filter/api/order/refund-order?merchantOrderId=ORD123456
 ```
 
+
+---
+
+[Читать далее &raquo;](/docs/merchant/refund/correction/){: .btn .btn-primary .mb-4 .mb-md-0 .mr-2 }
 

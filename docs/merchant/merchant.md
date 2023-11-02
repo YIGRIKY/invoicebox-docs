@@ -1,9 +1,12 @@
 ---
 layout: default
 title: "Приём платежей"
+description: "Настройте приём платежей через систему Инвойсбокс с помощью API или готовых модулей для CMS и ERP-систем"
 nav_order: 60
 has_children: true
+tile: true
 permalink: /docs/merchant
+date: 2023-10-29 00:00:00 +0300
 ---
 
 # Методы для организации приёма платежей
@@ -21,7 +24,9 @@ permalink: /docs/merchant
 
 ### Готовые библиотеки и компоненты
 
-Описываемые методы реализованы в [SDK](/docs/merchant/sdk) и готовых [модулях для CMS](/docs/merchant/cms).
+Описываемые методы реализованы в [SDK](/docs/merchant/sdk), готовых [модулях для CMS](/docs/merchant/cms) и
+[модулях для ERP](/docs/merchant/erp). Для быстрого старта, вы также можете воспользоваться
+[платёжными виджетами](/docs/merchant/widget).
 
 
 ### Перед началом работы

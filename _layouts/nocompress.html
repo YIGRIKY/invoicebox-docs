@@ -42,7 +42,7 @@ layout: table_wrappers_nc
 
   <div class="side-bar">
     <div class="site-header">
-      <a href="{{ '/' | absolute_url }}" class="site-title lh-tight">{% include title.html %}</a>
+      <a href="{{ '/' | absolute_url }}">{% include title.html %}</a> <!-- class="site-title lh-tight" -->
       <a href="#" id="menu-button" class="site-button">
         <svg viewBox="0 0 24 24" class="icon"><use xlink:href="#svg-menu"></use></svg>
       </a>
@@ -75,7 +75,7 @@ layout: table_wrappers_nc
       {% if site.search_enabled != false %}
         <div class="search">
           <div class="search-input-wrap">
-            <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Искать в {{ site.title }}" aria-label="Искать в {{ site.title }}" autocomplete="off">
+            <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Поиск по документации..." aria-label="Искать в {{ site.title }}" autocomplete="off">
             <label for="search-input" class="search-label"><svg viewBox="0 0 24 24" class="search-icon"><use xlink:href="#svg-search"></use></svg></label>
           </div>
           <div id="search-results" class="search-results"></div>
@@ -199,6 +199,7 @@ layout: table_wrappers_nc
       <div class="search-overlay"></div>
     {% endif %}
   </div>
+<script src="/assets/js/tabs.min.js"></script>
 <script src="/assets/js/mermaid.min.js"></script>
 <script src="/assets/js/modified-date.min.js"></script>
 <script>

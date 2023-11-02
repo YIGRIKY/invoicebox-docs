@@ -2,7 +2,8 @@
 layout: default
 nav_order: 30
 title: "Подтверждение оплаты счёта"
-parent: "Платёжные инструменты"
+parent: "Платёжные инструменты и банки"
+date: 2023-10-25 00:00:00 +0300
 ---
 
 # Подтверждение оплаты заказа
@@ -22,6 +23,7 @@ parent: "Платёжные инструменты"
 POST /v3/payment/api/invoice/confirm
 Authorization: Bearer b37c4c689295904ed21eee5d9a48d42e
 Content-Type: application/json
+User-Agent: MyApp 1.0
 Accept: application/json
 {
     "paymentOperationId" : "117a58b0-7dc9-424c-8f07-b8a865e8bcc7",
@@ -107,6 +109,6 @@ Accept: application/json
 
 
 ---
-[Читать далее &raquo;](/docs/dictionary){: .btn .btn-primary .mb-4 .mb-md-0 .mr-2 }
+[Читать далее &raquo;](/docs/payment/auth-id){: .btn .btn-primary .mb-4 .mb-md-0 .mr-2 }
 
 {: .fs-6 .fw-300 }

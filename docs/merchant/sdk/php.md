@@ -4,6 +4,7 @@ nav_order: 10
 title: "PHP SDK"
 parent: "SDK"
 grand_parent: "Приём платежей"
+date: 2023-10-25 00:00:00 +0300
 ---
 
 # Описание SDK
@@ -126,4 +127,4 @@ $orderResponseData = $ibClient->createOrder($createOrderRequest);
 
 ---
 
-[Проект на github](https://github.com/invoicebox/sdk-php)
+[Проект на github](https://github.com/invoicebox/sdk-php){: .btn .mb-4 .mb-md-0 } [Проект на packagist](https://packagist.org/packages/invoicebox/sdk-php){: .btn .mb-4 .mb-md-0 }

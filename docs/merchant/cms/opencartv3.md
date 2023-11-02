@@ -1,37 +1,43 @@
 ---
 layout: default
 nav_order: 40
-title: "Opencart 3.X"
+title: "OpenCart 3.x"
 parent: "Модули для CMS"
 grand_parent: "Приём платежей"
+date: 2023-10-25 00:00:00 +0300
 ---
 
 # OpenCart 3.x
 
+![OpenCart](/assets/images/cms/opencart.svg){: .img-right}
 1. Пройдите по ссылке к плагину на сайте OpenCart [OpenCart - Платежный модуль Invoicebox](https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=43891)
-   ![Opencart 3](/assets/images/cms/opencart3v/1.png)
+   ![Opencart 3](/assets/images/cms/opencart3v/1.png){: .img }
 2. Авторизуйтесь или зарегистрируйте новый аккаунт. Это нужно для скачивания плагина.
-   ![Opencart 3](/assets/images/cms/opencart3v/2.png)
+   ![Opencart 3](/assets/images/cms/opencart3v/2.png){: .img }
 3. Скачайте архив с плагином.
-   ![Opencart 3](/assets/images/cms/opencart3v/3.png)
+   ![Opencart 3](/assets/images/cms/opencart3v/3.png){: .img }
 4. В административной панели зайдите в раздел Модули/Расширения → Установка расширений и загрузите файл с расширением ".ocmod.zip."
-   ![Opencart 3](/assets/images/cms/opencart3v/4.png)
+   ![Opencart 3](/assets/images/cms/opencart3v/4.png){: .img }
 5. Перейдите в раздел Модули/Расширения → Модификаторы. Очистите и обновите кэш модификаторов, нажав на соответствующие кнопки в правом верхнем углу экрана.
-   ![Opencart 3](/assets/images/cms/opencart3v/5.png)
-   ![Opencart 3](/assets/images/cms/opencart3v/6.png)
+   ![Opencart 3](/assets/images/cms/opencart3v/5.png){: .img }
+   ![Opencart 3](/assets/images/cms/opencart3v/6.png){: .img }
 6. Перейдите на главную страницу административной панели и сбросьте кэш.
-   ![Opencart 3](/assets/images/cms/opencart3v/7.png)
-   ![Opencart 3](/assets/images/cms/opencart3v/8.png)
-   ![Opencart 3](/assets/images/cms/opencart3v/9.png)
+   ![Opencart 3](/assets/images/cms/opencart3v/7.png){: .img }
+   ![Opencart 3](/assets/images/cms/opencart3v/8.png){: .img }
+   ![Opencart 3](/assets/images/cms/opencart3v/9.png){: .img }
+
+{: .important }
+> В случае, если у вас возникнут сложности при самостоятельной установке модуля и его корректной настройке,
+пожалуйста, обратитесь к специалистам [службы поддержки](https://www.invoicebox.ru/ru/contacts/feedback.html).
 
 ## Настройка модуля
 
 1. Зайдите в раздел Модули/расширения → Модули/расширения.
-   ![Opencart 3](/assets/images/cms/opencart3v/10.png)
+   ![Opencart 3](/assets/images/cms/opencart3v/10.png){: .img }
 2. В выпадающем списке выберете "Оплата".
-   ![Opencart 3](/assets/images/cms/opencart3v/11.png)
+   ![Opencart 3](/assets/images/cms/opencart3v/11.png){: .img }
 3. Найдите модуль “Инвойсбокс” и перейдите в редактирование.
-   ![Opencart 3](/assets/images/cms/opencart3v/11.png)
+   ![Opencart 3](/assets/images/cms/opencart3v/11.png){: .img }
 4. Перейдите в раздел "настройка платежей". Выберите версию API, заполните необходимые данные:
 - идентификатор магазина (v2 и v3 старый и новый)
 - региональный код магазина (v2)
@@ -40,25 +46,25 @@ grand_parent: "Приём платежей"
 - ключ API (v2 и v3 старый и новый)
 - токен (v3 старый и новый)
 В пункте 5 будут даны тестовые данные для 2й версии API, а в пункте 6 - для 3й (новой), для получения доступов для 3й версии текущей необходимо обратиться на почту [c-support@invoicebox.ru](mailto:c-support@invoicebox.ru)
-  ![Opencart 3](/assets/images/cms/opencart3v/12.png)
+  ![Opencart 3](/assets/images/cms/opencart3v/12.png){: .img }
 5. Доступы для 2й версии API:
    1. Поле “Магазин” - вставьте нужное или тестовое значение “207” (если включен тестовый режим)
-      ![Opencart 3](/assets/images/cms/opencart3v/13.png)
+      ![Opencart 3](/assets/images/cms/opencart3v/13.png){: .img }
    2. Поле “Региональный код магазина” - введите нужное или тестовое значение “78054” (если включен тестовый режим)
-      ![Opencart 3](/assets/images/cms/opencart3v/14.png)
+      ![Opencart 3](/assets/images/cms/opencart3v/14.png){: .img }
    3. Заполните поля “Имя пользователя” и “Пароль”. Данные для теста: логин “78054-API” и пароль “LM936s#3jz0“
-      ![Opencart 3](/assets/images/cms/opencart3v/15.png)
+      ![Opencart 3](/assets/images/cms/opencart3v/15.png){: .img }
    4. Поле “Ключ”. Значение для теста: LdjmgMS1WMS0nAIklbDkvuKT7WxaJIoC
-      ![Opencart 3](/assets/images/cms/opencart3v/16.png)
+      ![Opencart 3](/assets/images/cms/opencart3v/16.png){: .img }
    5. Нажмите кнопку “Сохранить” в правом верхнем углу экрана
-      ![Opencart 3](/assets/images/cms/opencart3v/17.png)
+      ![Opencart 3](/assets/images/cms/opencart3v/17.png){: .img }
 6. Доступы для 3й версии API (новой) :
    1. Поле “Идентификатор магазина”. Тестовое значение: ffffffff-ffff-ffff-ffff-ffffffffffff
-      ![Opencart 3](/assets/images/cms/opencart3v/18.png)
+      ![Opencart 3](/assets/images/cms/opencart3v/18.png){: .img }
    2. Поля “Токен” и “API Ключ”.Тестовые значения “b37c4c689295904ed21eee5d9a48d42e” и “098f6bcd4621d373cade4e832627b4f6”
-      ![Opencart 3](/assets/images/cms/opencart3v/19.png)
+      ![Opencart 3](/assets/images/cms/opencart3v/19.png){: .img }
    3. Нажмите кнопку “Сохранить” в правом верхнем углу экрана
-      ![Opencart 3](/assets/images/cms/opencart3v/20.png)
+      ![Opencart 3](/assets/images/cms/opencart3v/20.png){: .img }
 7. Выберите налоговый режим, в котором работает магазин.
    Настройка налогового режима
    В налогах важны три пункта:
@@ -67,37 +73,37 @@ grand_parent: "Приём платежей"
 - формат цен
 
 Формат цен задается в  “Система - Локализация - Валюта”. Для каждой валюты проставьте в поле “количество знаков после запятой” значение 2.
-![Opencart 3](/assets/images/cms/opencart3v/21.png)
+![Opencart 3](/assets/images/cms/opencart3v/21.png){: .img }
 
 Ставка НДС задаётся в меню “Система - Локализация - Налоги - Налоговые ставки”.
 
-![Opencart 3](/assets/images/cms/opencart3v/22.png)
+![Opencart 3](/assets/images/cms/opencart3v/22.png){: .img }
 
 Допускаются ставки НДС 0%, 10%, 20%. В типе нужно выставить “процент”, а в “ставке” - нужное число.
-![Opencart 3](/assets/images/cms/opencart3v/23.png)
+![Opencart 3](/assets/images/cms/opencart3v/23.png){: .img }
 
 Показ налогов настраивается в 3х местах: в модуле “Инвойсбокс”, в настройках, в модуле “Учитывать в заказе”.
 Корректными являются такие варианты:
 1. Налоги уже учтены в стоимости и не показываются клиенту.
-   ![Opencart 3](/assets/images/cms/opencart3v/24.png)
+   ![Opencart 3](/assets/images/cms/opencart3v/24.png){: .img }
    “Система - Настройки - Опции”:
-   ![Opencart 3](/assets/images/cms/opencart3v/25.png)
+   ![Opencart 3](/assets/images/cms/opencart3v/25.png){: .img }
    Модули/расширения - Учитывать в заказе-Отчеты - Налоги / Налоговый отчет:
-   ![Opencart 3](/assets/images/cms/opencart3v/26.png)
+   ![Opencart 3](/assets/images/cms/opencart3v/26.png){: .img }
 2. Налоги считаются поверх указанной стоимости товара и показываются клиенту:
    Модуль  “Инвойсбокс”:
-   ![Opencart 3](/assets/images/cms/opencart3v/27.png)
+   ![Opencart 3](/assets/images/cms/opencart3v/27.png){: .img }
    Система - Настройки - Опции:
-   ![Opencart 3](/assets/images/cms/opencart3v/28.png)
+   ![Opencart 3](/assets/images/cms/opencart3v/28.png){: .img }
    Модули/расширения - Учитывать в заказе - Налоги:
-   ![Opencart 3](/assets/images/cms/opencart3v/29.png)
+   ![Opencart 3](/assets/images/cms/opencart3v/29.png){: .img }
 
 **Убедитесь, что заполнены значения полей “Единица измерения” и “Код единицы измерения”. Стандартные значения “шт” и “796”. Индивидуальные значения для каждого товара задаются в атрибутах товара.**
-![Opencart 3](/assets/images/cms/opencart3v/30.png)
+![Opencart 3](/assets/images/cms/opencart3v/30.png){: .img }
 
 
 Если нужно допускать заказ к оплате только после проверки модератором, выберите режим отложенной оплаты и статус, при переводе заказ в который, пользователю будет посылаться ссылка на оплату.
-![Opencart 3](/assets/images/cms/opencart3v/31.png)
+![Opencart 3](/assets/images/cms/opencart3v/31.png){: .img }
 
 
 Режим отсроченной оплаты - при включённом режиме отсроченной (отложенной) оплаты покупатель сможет оплатить заказ только после проверки заказа менеджером магазина. Если вам необходимо, чтобы у покупателя была возможность произвести оплату сразу после оформления заказа без подтверждения менеджером - не включайте эту опцию.
@@ -108,11 +114,11 @@ grand_parent: "Приём платежей"
 
 Заполните значения полей SKU  в товарах. Если они будут не заполнены, оплату за товар нельзя будет вернуть. Для этого: 
    1. Зайдите в раздел Каталог → Товары и нажмите на редактирование товара.
-      ![Opencart 3](/assets/images/cms/opencart3v/32.png)
+      ![Opencart 3](/assets/images/cms/opencart3v/32.png){: .img }
    2. Далее зайдите в раздел “Данные” и нажмите кнопку справа “двойная стрелка”.
-      ![Opencart 3](/assets/images/cms/opencart3v/33.png)
+      ![Opencart 3](/assets/images/cms/opencart3v/33.png){: .img }
    3. Найдите поле “Артикул” и при отсутствии актуальных артикулов заполните строку любыми числами. Главное, чтобы у каждого товара был свой уникальный артикул.
-      ![Opencart 3](/assets/images/cms/opencart3v/34.png)
+      ![Opencart 3](/assets/images/cms/opencart3v/34.png){: .img }
 **Значения остальных полей:**
    4. 
 Тестовый режим - включите его для проведения тестовых платежей, при включении этого режима, вы пройдете все шаги в платежном терминале «Инвойсбокс», но деньги с вашей карты списаны не будут.

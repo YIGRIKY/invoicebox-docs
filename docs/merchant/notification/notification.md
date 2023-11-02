@@ -5,6 +5,7 @@ nav_order: 50
 has_children: true
 parent: "Приём платежей"
 permalink: /docs/merchant/notification
+date: 2023-10-25 00:00:00 +0300
 ---
 
 # Обработка уведомлений

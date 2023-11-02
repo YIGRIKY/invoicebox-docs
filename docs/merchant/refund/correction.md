@@ -4,6 +4,7 @@ nav_order: 30
 title: "Возврат с комиссией/штрафом"
 parent: "Работа с возвратом"
 grand_parent: "Приём платежей"
+date: 2023-10-25 00:00:00 +0300
 ---
 
 # Возврат с комиссией/штрафом
@@ -64,4 +65,8 @@ sequenceDiagram
 - тело запроса - объект [CreateOrderRequest](/docs/merchant/order/create/#createorderrequest)
 - тело ответа - объект [OrderResponse](/docs/merchant/order/create/#orderresponse)
 - Возможные [ошибки](/docs/dictionary/error/)
+
+---
+
+[Читать далее &raquo;](/docs/merchant/notification){: .btn .btn-primary .mb-4 .mb-md-0 .mr-2 }
 

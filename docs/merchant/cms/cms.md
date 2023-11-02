@@ -1,10 +1,11 @@
 ---
 layout: default
-nav_order: 70
+nav_order: 80
 title: "Модули для CMS"
 parent: "Приём платежей"
 has_children: true
 permalink: /docs/merchant/cms
+date: 2023-10-25 00:00:00 +0300
 ---
 
 # Готовые модули для CMS
