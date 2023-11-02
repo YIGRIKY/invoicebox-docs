@@ -1,7 +1,7 @@
 ---
 layout: default
 nav_order: 30
-title: "Open cart 2.X"
+title: "Opencart 2.X"
 parent: "Модули для CMS"
 grand_parent: "Приём платежей"
 ---
