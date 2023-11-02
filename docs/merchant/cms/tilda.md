@@ -8,7 +8,7 @@ grand_parent: "Приём платежей"
 
 # Tilda
 
-![OpenCart](/assets/images/cms/tilda.svg){: .img-right}
+![Tilda](/assets/images/cms/tilda.png){: .img-right}
 Для установки платёжного модуля системы «Инвойсбокс» в сервисе Tilda на тарифах Personal или Business:
 
 1. Зайдите в административную часть интернет-магазина в Tilda. Перейдите в раздел «Мои сайты» → «Редактировать сайт» → «Настройки сайта» → «Платёжные системы»;
