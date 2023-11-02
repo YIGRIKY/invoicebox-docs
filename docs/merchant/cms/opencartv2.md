@@ -9,6 +9,7 @@ date: 2023-10-25 00:00:00 +0300
 
 # OpenCart 2.x
 
+![OpenCart](/assets/images/cms/opencart.svg){: .img-right}
 1. Пройдите по ссылке к плагину на сайте OpenCart. [OpenCart - Платежный модуль Invoicebox](https://www.opencart.com/index.php?route=marketplace/extension/info&member_token=5a2149467743eb9a98246d974109dc4c&extension_id=43952)
 
 2. Авторизуйтесь или зарегистрируйте новый аккаунт. Это нужно для скачивания плагина.
