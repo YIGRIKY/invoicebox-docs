@@ -548,7 +548,9 @@ a.site-title:hover {
   margin: 10px;
 }
 
-.box-body a.btn,
+.main-content .box-body a.btn,
+.main-content .box-body a.btn:visited,
+.main-content .box-body a.btn:hover,
 .main-content a.btn:hover,
 .main-content .btn:hover,
 .main-content .btn-primary:hover {
