@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Платёжные инструменты"
+title: "Платёжные инструменты и банки"
 description: "Интегрируйте ваш платёжный инструмент в систему Инвойсбокс"
 nav_order: 80
 has_children: true
