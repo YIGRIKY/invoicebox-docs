@@ -7,7 +7,7 @@ grand_parent: "Приём платежей"
 date: 2023-11-03 00:00:00 +0300
 ---
 
-# Описание модуля
+# Описание модуля Аспро
 
 ![Aspro](/assets/images/cms/aspro.png){: .img-right}
 

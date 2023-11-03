@@ -7,7 +7,7 @@ grand_parent: "Приём платежей"
 date: 2023-10-25 00:00:00 +0300
 ---
 
-# Описание модуля
+# Описание модуля WooCommerce
 
 ![WordPress](/assets/images/cms/wordpress.svg){: .img-right}
 

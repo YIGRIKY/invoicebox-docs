@@ -7,18 +7,24 @@ grand_parent: "Приём платежей"
 date: 2023-10-25 00:00:00 +0300
 ---
 
-# OpenCart 2.x
+# Описание модуля OpenCart 2.x
 
 ![OpenCart](/assets/images/cms/opencart.svg){: .img-right}
-1. Пройдите по ссылке к плагину на сайте OpenCart. [OpenCart - Платежный модуль Invoicebox](https://www.opencart.com/index.php?route=marketplace/extension/info&member_token=5a2149467743eb9a98246d974109dc4c&extension_id=43952)
 
-2. Авторизуйтесь или зарегистрируйте новый аккаунт. Это нужно для скачивания плагина.
-
-![Opencart 2](/assets/images/cms/opencart2v/1.png){: .img }
+[OpenCart](https://www.opencart.com/)  — платформа электронной коммерции, ориентированная на создание интернет-магазинов.
+Является бесплатным свободным программным обеспечением, поддерживаются дополнения - модули и шаблоны.
 
 {: .important }
 > В случае, если у вас возникнут сложности при самостоятельной установке модуля и его корректной настройке,
 пожалуйста, обратитесь к специалистам [службы поддержки](https://www.invoicebox.ru/ru/contacts/feedback.html).
+
+Для установки и настройки платёжного модуля Инвойсбокс:
+
+1. Пройдите по ссылке к плагину на сайте OpenCart. [OpenCart - Платёжный модуль Инвойсбокс](https://www.opencart.com/index.php?route=marketplace/extension/info&member_token=5a2149467743eb9a98246d974109dc4c&extension_id=43952)
+
+2. Авторизуйтесь или зарегистрируйте новый аккаунт. Это нужно для скачивания плагина.
+
+![Opencart 2](/assets/images/cms/opencart2v/1.png){: .img }
 
 
 3. Скачайте архив с плагином.
