@@ -4,7 +4,7 @@ nav_order: 30
 title: "OpenCart 2.x"
 parent: "Модули для CMS"
 grand_parent: "Приём платежей"
-date: 2023-10-25 00:00:00 +0300
+date: 2023-11-03 00:00:00 +0300
 ---
 
 # Описание модуля OpenCart 2.x

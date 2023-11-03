@@ -4,6 +4,7 @@ nav_order: 50
 title: "Tilda"
 parent: "Модули для CMS"
 grand_parent: "Приём платежей"
+date: 2023-11-03 00:00:00 +0300
 ---
 
 # Описание модуля Tilda

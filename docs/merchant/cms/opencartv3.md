@@ -4,10 +4,12 @@ nav_order: 40
 title: "OpenCart 3.x"
 parent: "Модули для CMS"
 grand_parent: "Приём платежей"
-date: 2023-10-25 00:00:00 +0300
+date: 2023-11-03 00:00:00 +0300
 ---
 
 # Описание модуля OpenCart 3.x
+
+![OpenCart](/assets/images/cms/opencart.svg){: .img-right}
 
 [OpenCart](https://www.opencart.com/)  — платформа электронной коммерции, ориентированная на создание интернет-магазинов.
 Является бесплатным свободным программным обеспечением, поддерживаются дополнения - модули и шаблоны.
@@ -18,7 +20,6 @@ date: 2023-10-25 00:00:00 +0300
 
 Для установки и настройки платёжного модуля Инвойсбокс:
 
-![OpenCart](/assets/images/cms/opencart.svg){: .img-right}
 1. Пройдите по ссылке к плагину на сайте OpenCart [OpenCart - Платежный модуль Invoicebox](https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=43891)
    ![Opencart 3](/assets/images/cms/opencart3v/1.png){: .img }
 2. Авторизуйтесь или зарегистрируйте новый аккаунт. Это нужно для скачивания плагина.
