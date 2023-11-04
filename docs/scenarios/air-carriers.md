@@ -1,7 +1,7 @@
 ---
 layout: default
 nav_order: 30
-title: "Продажа авиабилетов  юр. лицам и ИП"
+title: "✈️ B2B продажи авиабилетов"
 parent: "Сценарии и бизнес-кейсы"
 permalink: /docs/scenarios/air-carriers
 date: 2023-11-04 00:00:00 +0300
