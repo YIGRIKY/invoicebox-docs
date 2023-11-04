@@ -1,6 +1,6 @@
 ---
 layout: default
-nav_order: 25
+nav_order: 26
 title: "Документооборот"
 parent: "Приём платежей"
 date: 2023-11-04 00:00:00 +0300
