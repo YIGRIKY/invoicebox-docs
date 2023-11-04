@@ -2,7 +2,7 @@
 layout: default
 nav_order: 20
 title: "ТАИС (TravelShop)"
-parent: "Модули для ERP"
+parent: "Интеграции с PSS/GDS"
 grand_parent: "Приём платежей"
 date: 2023-10-25 00:00:00 +0300
 ---
