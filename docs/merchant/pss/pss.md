@@ -14,9 +14,9 @@ date: 2023-11-04 00:00:00 +0300
 исчерпывающим и содержит только наиболее актуальные варианты.
 
 | PSS/GDS                             | Детали
-| ------------------------------------| ---------------------------------------------
-| ![МПС](/assets/images/pss/mps.png)  | [Смотреть &raquo;](/docs/merchant/pss/mps/)
-| ![ТАИС](/assets/images/pss/ors.svg) | [Смотреть &raquo;](/docs/merchant/pss/tais/)
+| ------------------------------------| ---------------------------| --------------------------------------------
+| ![МПС](/assets/images/pss/mps.png)  | Сирена-Тревел/МПС (EgoPay) | [Смотреть &raquo;](/docs/merchant/pss/mps/)
+| ![ТАИС](/assets/images/pss/ors.svg) | ТАИС TravelShop            | [Смотреть &raquo;](/docs/merchant/pss/tais/)
 
 Если вы не нашли подходящую интеграцию, [напишите нам](https://www.invoicebox.ru/ru/contacts/feedback.html) и мы
 поможем вам соориентироваться.
