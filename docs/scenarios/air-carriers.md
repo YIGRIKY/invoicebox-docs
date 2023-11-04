@@ -71,7 +71,7 @@ date: 2023-11-04 00:00:00 +0300
 
 ### Проработанные интеграции
 
-Решение Инвойсбокс отработано с такими системами как [Сирена-Тревел (МПС)](/docs/merchant/pss/mps/), [ТАИС TravelShop](/docs/merchant/pss/tais/), SITA, Amadeus, Sabre.
+Интеграция Инвойсбокс отработана с решениями таких лидеров отрасли как как [Сирена-Тревел (МПС)](/docs/merchant/pss/mps/), [ТАИС TravelShop](/docs/merchant/pss/tais/), SITA, Amadeus, Sabre.
 
 Для настройки интеграции, пожалуйста, [напишите нам](https://www.invoicebox.ru/ru/contacts/feedback.html).
 
