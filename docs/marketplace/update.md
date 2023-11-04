@@ -57,8 +57,8 @@ Accept: application/json
 | lat                 | нет          | float            | Широта нахождения магазина                                                                                | 59.931228                                                                             |
 | lon                 | нет          | float            | Долгота нахождения магазина                                                                               | 30.345557                                                                             |
 | brandId             | нет          | int              | Идентификатор магазина с типом brand                                                                      | 123                                                                                   |
-| merchantId          | нет          | string(36)       | Идентификатор магазина Invoicebox, работает только в связвке с полем externalUpdate                       | `01771534-1a57-f184-dee3-ebeb91dded76`                                                |
-| externalUpdate      | нет          | bool             | Флаг, необходимо ли запросить данные из магазина Invoicebox, работает только в связвке с полем merchantId | true - получить данные из магазина по идентификатору merchantId, по-умолчанию - false |
+| merchantId          | нет          | string(36)       | Идентификатор магазина Инвойсбокс, работает только в связвке с полем externalUpdate                       | `01771534-1a57-f184-dee3-ebeb91dded76`                                                |
+| externalUpdate      | нет          | bool             | Флаг, необходимо ли запросить данные из магазина Инвойсбокс, работает только в связвке с полем merchantId | true - получить данные из магазина по идентификатору merchantId, по-умолчанию - false |
 
 
 ## ShopResponse
