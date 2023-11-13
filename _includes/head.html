@@ -52,6 +52,17 @@
     <script type="text/javascript" src="{{ '/assets/js/vendor/lunr.multi.js' | relative_url }}"></script>
   {% endif %}
   <script type="text/javascript" src="{{ '/assets/js/just-the-docs.js' | relative_url }}"></script>
+  <script type="text/javascript" src="{{ '/assets/js/jquery.min.js' | relative_url }}"></script>
+  <script type="text/javascript" src="{{ '/assets/js/jquery.tinycarousel.min.js' | relative_url }}"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function()
+    {
+      $('.carousel').each(function() {
+          $(this).tinycarousel();
+      });
+    });
+  </script>
 
   {% seo %}
 

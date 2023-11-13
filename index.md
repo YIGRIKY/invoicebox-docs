@@ -44,10 +44,43 @@ date: 2023-11-01 00:00:00 +0300
     </div>
 </main>
 
+## Готовые модули и интеграции
+
+<div class="carousel">
+  <a class="buttons prev" href="#">&#60;</a>
+    <div class="viewport">
+      <ul class="overview">
+        <li><a href="/docs/merchant/crm"><img border="0" src="/assets/images/crm/amocrm.svg" /></a></li>
+        <li><a href="/docs/merchant/erp"><img border="0" src="/assets/images/erp/bnovo.png" /></a></li>
+        <li><a href="/docs/merchant/erp"><img border="0" src="/assets/images/erp/iiko.png" /></a></li>
+        <li><a href="/docs/merchant/cms"><img border="0" src="/assets/images/cms/1c-umi.svg" /></a></li>
+        <li><a href="/docs/merchant/cms"><img border="0" src="/assets/images/cms/1s_bitrix.svg" /></a></li>
+        <li><a href="/docs/merchant/cms"><img border="0" src="/assets/images/cms/advantshop.svg" /></a></li>
+        <li><a href="/docs/merchant/cms"><img border="0" src="/assets/images/cms/amirocms.png" /></a></li>
+        <li><a href="/docs/merchant/cms"><img border="0" src="/assets/images/cms/aspro.png" /></a></li>
+        <li><a href="/docs/merchant/cms"><img border="0" src="/assets/images/cms/autoweboffice.png" /></a></li>
+        <li><a href="/docs/merchant/cms"><img border="0" src="/assets/images/cms/cscart.svg" /></a></li>
+        <li><a href="/docs/merchant/cms"><img border="0" src="/assets/images/cms/drupal.svg" /></a></li>
+        <li><a href="/docs/merchant/cms"><img border="0" src="/assets/images/cms/joomla.svg" /></a></li>
+        <li><a href="/docs/merchant/cms"><img border="0" src="/assets/images/cms/magento.svg" /></a></li>
+        <li><a href="/docs/merchant/cms"><img border="0" src="/assets/images/cms/modx.svg" /></a></li>
+        <li><a href="/docs/merchant/cms"><img border="0" src="/assets/images/cms/opencart.svg" /></a></li>
+        <li><a href="/docs/merchant/cms"><img border="0" src="/assets/images/cms/oscommerce.svg" /></a></li>
+        <li><a href="/docs/merchant/cms"><img border="0" src="/assets/images/cms/prestashop.svg" /></a></li>
+        <li><a href="/docs/merchant/cms"><img border="0" src="/assets/images/cms/tilda.png" /></a></li>
+        <li><a href="/docs/merchant/cms"><img border="0" src="/assets/images/cms/webasyst.svg" /></a></li>
+        <li><a href="/docs/merchant/cms"><img border="0" src="/assets/images/cms/wordpress.svg" /></a></li>
+      </ul>
+    </div>
+  <a class="buttons next" href="#">&#62;</a>
+</div>
+
+
 ## Присоединяйтесь к сообществу Инвойсбокс
 
 Не забывайте следить за обновлениями! [Подпишитесь](https://t.me/invoicebox) на наш Телеграм-канал — там
 можно получить информацию об обновлениях и задать вопросы сотрудникам сервиса.
+
 
 ---
 
