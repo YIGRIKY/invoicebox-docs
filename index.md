@@ -47,7 +47,6 @@ date: 2023-11-01 00:00:00 +0300
 ## Готовые модули и интеграции
 
 <div class="carousel">
-  <a class="buttons prev" href="#">&#60;</a>
     <div class="viewport">
       <ul class="overview">
         <li><a href="/docs/merchant/crm"><img border="0" src="/assets/images/crm/amocrm.svg" /></a></li>
@@ -72,7 +71,6 @@ date: 2023-11-01 00:00:00 +0300
         <li><a href="/docs/merchant/cms"><img border="0" src="/assets/images/cms/wordpress.svg" /></a></li>
       </ul>
     </div>
-  <a class="buttons next" href="#">&#62;</a>
 </div>
 
 

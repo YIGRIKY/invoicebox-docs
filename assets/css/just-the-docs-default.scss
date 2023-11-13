@@ -817,10 +817,12 @@ a.site-title:hover {
     overflow: hidden;
     position: relative;
 }
+.main-content .carousel .viewport ul>li::before {
+    content: "";
+}
 
-.main-content .carousel .buttons,
-.main-content .carousel .buttons:link {
-    background: #C01313;
+.main-content .carousel .buttons {
+    background: #f2cc45;
     border-radius: 35px;
     display: block;
     position: absolute;
