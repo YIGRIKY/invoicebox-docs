@@ -804,7 +804,7 @@ a.site-title:hover {
 
 
 
-.carousel {
+.main-content .carousel {
     height: 1%;
     margin: 30px 0 0;
     overflow: hidden;
@@ -812,13 +812,14 @@ a.site-title:hover {
     padding: 0 50px 10px;
 }
 
-.carousel .viewport {
+.main-content .carousel .viewport {
     height: 125px;
     overflow: hidden;
     position: relative;
 }
 
-.carousel .buttons {
+.main-content .carousel .buttons,
+.main-content .carousel .buttons:link {
     background: #C01313;
     border-radius: 35px;
     display: block;
@@ -832,25 +833,24 @@ a.site-title:hover {
     text-align: center;
     line-height: 35px;
     text-decoration: none;
-    font-size: 22px;
 }
 
-.carousel .next {
+.main-content .carousel .next {
     right: 0;
     left: auto;
     top: 50%;
 }
 
-.carousel .buttons:hover {
+.main-content .carousel .buttons:hover {
     color: #C01313;
     background: #fff;
 }
 
-.carousel .disable {
+.main-content .carousel .disable {
     visibility: hidden;
 }
 
-.carousel .overview {
+.main-content .carousel .overview {
     list-style: none;
     position: absolute;
     padding: 0;
@@ -860,11 +860,10 @@ a.site-title:hover {
     top: 0;
 }
 
-.carousel .overview li {
+.main-content .carousel .overview li {
     float: left;
     margin: 0 20px 0 0;
     padding: 1px;
     height: 121px;
-    border: 1px solid #dcdcdc;
-    width: 236px;
+    border: 0px;
  }
