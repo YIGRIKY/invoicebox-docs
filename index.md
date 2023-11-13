@@ -49,7 +49,7 @@ date: 2023-11-01 00:00:00 +0300
 <div class="carousel">
     <div class="viewport">
       <ul class="overview">
-        <li><a href="/docs/merchant/crm"><img border="0" src="/assets/images/crm/amocrm.svg" /></a></li>
+        <li><a href="/docs/merchant/crm"><img border="0" src="/assets/images/crm/amocrm.png" /></a></li>
         <li><a href="/docs/merchant/erp"><img border="0" src="/assets/images/erp/bnovo.png" /></a></li>
         <li><a href="/docs/merchant/erp"><img border="0" src="/assets/images/erp/iiko.png" /></a></li>
         <li><a href="/docs/merchant/cms"><img border="0" src="/assets/images/cms/1c-umi.svg" /></a></li>
