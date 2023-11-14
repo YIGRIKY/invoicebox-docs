@@ -25,6 +25,7 @@ Authorization: Bearer b37c4c689295904ed21eee5d9a48d42e
 Content-Type: application/json
 User-Agent: MyApp 1.0
 Accept: application/json
+
 {
     "partnerOperationId" : "117a58b0-7dc9-424c-8f07-b8a865e8bcc7"
 }
