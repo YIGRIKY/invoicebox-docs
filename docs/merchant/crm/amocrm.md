@@ -9,7 +9,7 @@ date: 2023-11-10 00:00:00 +0300
 
 # Описание модуля amoCRM
 
-![amoCRM](/assets/images/crm/amocrm.svg){: .img-right}
+![amoCRM](/assets/images/crm/amocrm.png){: .img-right}
 
 Модуль amoCRM предоставляет простую возможность подключить вашу CRM систему к «Инвойсбокс» для оформления счетов
 клиентам.

@@ -3,7 +3,7 @@ layout: default
 nav_order: 30
 title: "Подтверждение оплаты счёта"
 parent: "Инвойсбокс.Бизнес"
-date: 2023-10-25 00:00:00 +0300
+date: 2023-11-14 00:00:00 +0300
 ---
 
 # Подтверждение оплаты заказа
@@ -25,6 +25,7 @@ Authorization: Bearer b37c4c689295904ed21eee5d9a48d42e
 Content-Type: application/json
 User-Agent: MyApp 1.0
 Accept: application/json
+
 {
     "partnerOperationId" : "117a58b0-7dc9-424c-8f07-b8a865e8bcc7"
 }
