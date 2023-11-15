@@ -5,7 +5,7 @@ title: "Модули для CMS"
 parent: "Приём платежей"
 has_children: true
 permalink: /docs/merchant/cms
-date: 2023-10-25 00:00:00 +0300
+date: 2023-11-15 00:00:00 +0300
 ---
 
 # Готовые модули для CMS
@@ -19,7 +19,7 @@ date: 2023-10-25 00:00:00 +0300
 | ![Aspro](/assets/images/cms/aspro.png)                  | > 1.2.x    | Платная                       | [Смотреть &raquo;](/docs/merchant/cms/aspro/)
 | ![WordPress](/assets/images/cms/wordpress.svg)          | > 6.1.x    | Бесплатный                    | [Смотреть &raquo;](/docs/merchant/cms/woocommerce/)
 | ![Tilda](/assets/images/cms/tilda.png)                  | Все        | Условно-бесплатный/Бесплатный | [Смотреть &raquo;](/docs/merchant/cms/tilda/)
-| ![InSales](/assets/images/cms/insales.png)              | InSales    | Платная/Бесплатный            |[Смотреть &raquo;](/docs/merchant/cms/insales/)
+| ![InSales](/assets/images/cms/insales.png)              | InSales    | Платная/Бесплатный            | [Смотреть &raquo;](/docs/merchant/cms/insales/)
 | ![UMI.CMS](/assets/images/cms/1c-umi.svg)               | ---        | ---                           |
 | ![AdvantShop](/assets/images/cms/advantshop.svg)        | ---        | ---                           |
 | ![AmiroCMS](/assets/images/cms/amirocms.png)            | ---        | ---                           |
