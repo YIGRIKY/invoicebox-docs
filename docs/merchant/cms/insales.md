@@ -8,11 +8,13 @@ date: 2023-11-14 00:00:00 +0300
 ---
 
 
-# Расширение invoicebox для Insales
+# Расширение Инвойсбокс для Insales
+
+Расширение доступно на тарифах Омни и Премиум.
 
 ![Insales](/assets/images/cms/insales.png){: .img-right}
 
-1. Для подключения расширения Invoicebox, необходимо написать на [почту](mailto:c-support@invbox.ru) и указать в письме номер личного кабинета Insales
+1. Для подключения расширения Инвойсбокс, необходимо написать на [почту](mailto:c-support@invbox.ru) и указать в письме номер личного кабинета Insales
 
 ![Insales](/assets/images/cms/insales/1.jpg){: .img }
 
