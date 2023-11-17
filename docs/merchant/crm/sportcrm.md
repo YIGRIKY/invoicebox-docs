@@ -1,7 +1,7 @@
 ---
 layout: default
 nav_order: 20
-title: "amoCRM"
+title: "sportCRM"
 parent: "Модули для CRM"
 grand_parent: "Приём платежей"
 date: 2023-11-10 00:00:00 +0300
