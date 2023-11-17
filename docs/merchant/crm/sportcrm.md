@@ -19,17 +19,17 @@ SportCRM — это облачная система для организаци�
 
 Зайдите в SportCRM в раздел Управление > Настройки > Филиалы.
 
-![sportCRM](/assets/images/crm/amocrm/1.jpg){: .img}
+![sportCRM](/assets/images/crm/sportcrm/1.jpg){: .img}
 
 В выпадающем окне выберите Инвойсбокс
 
-![sportCRM](/assets/images/crm/amocrm/2.jpg){: .img}
+![sportCRM](/assets/images/crm/sportcrm/2.jpg){: .img}
 
 Пропишите в настройках Идентификатор Магазина, Региональный код, API ключ, которые можно взять в [личном кабинете Инвойсбокс](https://business.invoicebox.ru).
 
-![sportCRM](/assets/images/crm/amocrm/3.jpg){: .img}
+![sportCRM](/assets/images/crm/sportcrm/3.jpg){: .img}
 
 Также пропишите URL уведомления, которые сгенерирует SportCRM. Тип уведомления надо выбрать Оплата/HTTP/Post (HTTP POST запрос с данными оплаты в переменных).
 
-![sportCRM](/assets/images/crm/amocrm/4.jpg){: .img}
+![sportCRM](/assets/images/crm/sportcrm/4.jpg){: .img}
 
