@@ -4,7 +4,7 @@ nav_order: 2
 title: "Получение заказа"
 parent: "Работа с заказом"
 grand_parent: "Приём платежей"
-date: 2023-10-25 00:00:00 +0300
+date: 2023-11-17 00:00:00 +0300
 ---
 
 # Получение заказа
@@ -13,7 +13,7 @@ date: 2023-10-25 00:00:00 +0300
 
 - метод: `GET`
 - ресурс: `/v3/filter/api/order/order`
-- тело ответа - array of [OrderResponse](/docs/order/create/#orderresponse)
+- тело ответа - array of [OrderResponse](/docs/merchant/order/create/#orderresponse)
 
 В запросе возможно применения фильтров и сортировок.
 
@@ -21,7 +21,7 @@ date: 2023-10-25 00:00:00 +0300
 ```
 GET /v3/filter/api/order/order?id=01771534-196a-1105-839a-82422289d6d9
 ```
-Пример запроса с фильтром по [статусу](/docs/order)
+Пример запроса с фильтром по [статусу](/docs/merchant/order)
 ```
 GET /v3/filter/api/order/order?status=completed
 ```
