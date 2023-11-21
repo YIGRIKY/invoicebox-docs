@@ -4,7 +4,7 @@ title: "🚀 Начало"
 nav_order: 1
 description: "Вся информация для интеграции Инвойсбокс с вашими сервисами — в одном месте"
 permalink: /
-date: 2023-11-01 00:00:00 +0300
+date: 2023-11-21 00:00:00 +0300
 ---
 
 # Документация Инвойсбокс API
@@ -69,6 +69,7 @@ date: 2023-11-01 00:00:00 +0300
         <li><a href="/docs/merchant/cms"><img border="0" src="/assets/images/cms/tilda.png" /></a></li>
         <li><a href="/docs/merchant/cms"><img border="0" src="/assets/images/cms/webasyst.svg" /></a></li>
         <li><a href="/docs/merchant/cms"><img border="0" src="/assets/images/cms/wordpress.svg" /></a></li>
+        <li><a href="/docs/merchant/crm"><img border="0" src="/assets/images/crm/sportcrm.png" /></a></li>
       </ul>
     </div>
 </div>
