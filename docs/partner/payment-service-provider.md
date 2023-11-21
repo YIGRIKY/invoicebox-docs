@@ -1,9 +1,9 @@
 ---
 layout: nocompress
-nav_order: 50
+nav_order: 20
 title: "🧾 Банки и агрегаторы приема платежей"
-parent: "Сценарии и бизнес-кейсы"
-permalink: /docs/scenarios/payment-service-provider
+parent: "Партнёрское API"
+permalink: /docs/partner/payment-service-provider
 date: 2023-11-21 00:00:00 +0300
 ---
 
