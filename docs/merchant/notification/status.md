@@ -137,6 +137,38 @@ if ($xSignature != $calcSignature) {
 ```
 </section>
 </details>
+<details>
+  <summary>Пример проверки подписи на языке Python</summary>
+<section markdown="1">
+```python
+import hashlib
+import hmac
+import json
+
+# Проверьте правильность пути и метода в декораторе @app.route() - его нужно подстроить под ваше веб-приложение.
+@app.route("/invoicebox_callback", methods=['POST'])
+async def invoicebox_callback():
+    x_signature = request.headers.get('x-signature')
+    if not x_signature:
+        # Ошибка, подпись запроса не получена
+        response = jsonify({'status': 'error', 'code': 'out_of_service'})
+        response.headers["Content-Type"] = "application/json"
+        return response, 400
+    
+    # Согласованный ключ для подписи
+    api_key = ""
+    payload = request.data
+    calc_signature = hmac.new(api_key.encode(), payload, hashlib.sha1).hexdigest()
+    
+    if x_signature != calc_signature:
+        # Ошибка, подпись запроса неверная
+        response = jsonify({'status': 'error', 'code': 'signature_error'})
+        response.headers["Content-Type"] = "application/json"
+        return response, 400
+```
+</section>
+</details>
+
 
 [Для удобства, смотрите также PHP SDK](/docs/merchant/sdk/php/)
 
