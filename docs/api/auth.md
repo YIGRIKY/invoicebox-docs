@@ -55,8 +55,9 @@ curl -L -X GET '{baseUrl}/v3/security/api/auth/auth' \
 **{baseUrl}**{: .badge .badge-primary} - [базовый URL](/docs/api)
 
 
+Если передан корректный токен, то ответ будет содержать HTTP код `200 OK` и идентификатор пользователя
 <details>
-  <summary>Если передан корректный токен, то ответ будет содержать HTTP код 200 OK и идентификатор пользователя</summary>
+  <summary>Пример ответа</summary>
 <section markdown="1">
 ```json
 {
@@ -70,8 +71,10 @@ curl -L -X GET '{baseUrl}/v3/security/api/auth/auth' \
 ```
 </section>
 </details>
+
+Если передан некорректный токен, то ответ будет содержать HTTP код `401 Unauthorized` и ошибку
 <details>
-  <summary>Если передан некорректный токен, то ответ будет содержать HTTP код `401 Unauthorized` и ошибку</summary>
+  <summary>Пример ответа</summary>
 <section markdown="1">
 ```json
 {
@@ -83,8 +86,10 @@ curl -L -X GET '{baseUrl}/v3/security/api/auth/auth' \
 ```
 </section>
 </details>
+
+Если токен не передан, то ответ будет содержать HTTP код `200 OK` и информацию об анонимном пользователе
 <details>
-  <summary>Если токен не передан, то ответ будет содержать HTTP код `200 OK` и информацию об анонимном пользователе</summary>
+  <summary>Пример ответа</summary>
 <section markdown="1">
 ```json
 {
