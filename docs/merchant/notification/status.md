@@ -4,7 +4,7 @@ nav_order: 1
 title: "По умолчанию"
 parent: "Обработка уведомлений"
 grand_parent: "Приём платежей"
-date: 2023-11-02 00:00:00 +0300
+date: 2023-11-23 00:00:00 +0300
 ---
 
 # Уведомление по умолчанию
@@ -145,8 +145,10 @@ import hashlib
 import hmac
 import json
 
-# Проверьте правильность пути и метода в декораторе @app.route() - его нужно подстроить под ваше веб-приложение.
+# Проверьте правильность пути и метода в декораторе @app.route()
+# - его нужно подстроить под ваше веб-приложение.
 @app.route("/invoicebox_callback", methods=['POST'])
+
 async def invoicebox_callback():
     x_signature = request.headers.get('x-signature')
     if not x_signature:
