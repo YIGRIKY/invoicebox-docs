@@ -161,6 +161,8 @@ window.addEventListener('load', function () {
 
     for(let i = 0; i < tabGroups.length; i++) {
         var id = tabGroups[i];
+        console.log('Found tab: ' + id);
+
         var nodes = document.querySelectorAll('p.tab-title.tabgroup-'+id);
         var first = nodes[0];
 
@@ -178,7 +180,7 @@ window.addEventListener('load', function () {
             if (j == 0) {
                 tabTitlesLi.classList.add('active');
             }
-            tabTitlesLi.setHTML('<a href="#" title="' + titleElement.innerHTML + '">' + titleElement.innerHTML + '</a>');
+            tabTitlesLi.innerHTML = '<a href="#" title="' + titleElement.innerHTML + '">' + titleElement.innerHTML + '</a>';
             tabTitlesUl.append(tabTitlesLi);
         }
         tabGroup.append(tabTitlesUl);
@@ -193,12 +195,14 @@ window.addEventListener('load', function () {
             if (j == 0) {
                 contentTitlesLi.classList.add('active');
             }
-            contentTitlesLi.setHTML(contentElement.innerHTML);
+            contentTitlesLi.innerHTML = contentElement.innerHTML;
             tabContentUl.append(contentTitlesLi);
         }
         tabGroup.append(tabContentUl);
 
         first.parentNode.insertBefore(tabGroup, first);
+
+        console.log('Tab created: ' + id);
     } //
 
     for(let i = 0; i < tabGroups.length; i++) {
