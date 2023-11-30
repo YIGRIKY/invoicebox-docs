@@ -33,7 +33,7 @@ date: 2023-11-15 00:00:00 +0300
 | ![OpenCart](/assets/images/cms/opencart.svg){: .img }            | 2.X        | Бесплатный                    |[Смотреть &raquo;](/docs/merchant/cms/opencartv2/)
 | ![OpenCart](/assets/images/cms/opencart.svg){: .img }            | 3.X        | Бесплатный                    |[Смотреть &raquo;](/docs/merchant/cms/opencartv3/)
 | ![OSCommerce](/assets/images/cms/oscommerce.svg){: .img }        | ---        | ---                           |
-| ![PrestaShop](/assets/images/cms/prestashop.svg){: .img }        | ---        | ---                           |
+| ![PrestaShop](/assets/images/cms/prestashop.svg){: .img }        | 8.X        | Бесплатный                    |[Смотреть &raquo;](/docs/merchant/prestashop/)
 | ![WebAsyst/ShopScript](/assets/images/cms/webasyst.svg){: .img } | ---        | ---                           |
 
 
