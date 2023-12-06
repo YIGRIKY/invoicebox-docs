@@ -176,7 +176,8 @@ Accept: application/json
 | type              | да           | string(10) или int | Тип позиции, [в соответствии со справочником](/docs/dictionary/tag1212) или service - Услуга, commodity - Товар                                   |
 | serviceDate       | нет          | date               | Дата оказания услуги, если тип позиции = Услуга, например, 2023-11-16                                                                             |
 | paymentType       | да           | string(20) enum    | Тип оплаты, допустимые значения: `full_prepayment`, `prepayment`, `advance`, `full_payment`                                                       |
-| hsGroup           | нет          | string(20) enum    | Товарная группа в системе Честный знак: `milk`, `water` и т.д.                                                                                    |
+| category          | нет          | string(20) enum    | Категория товаров: merchantHonestSignMap (Справочник категорий магазина) и honestSign ([Честный знак](/docs/merchant/honest-sign/))               |
+| categoryType      | нет          | string(20)         | Товарная группа в справочнике категорий товаров магазина или системы [Честный знак](/docs/merchant/honest-sign/): `milk`, `water` и т.д.          |
 | metaData          | нет          | object             | [Дополнительные данные элемента корзины](/docs/merchant/order/metadata/)                                                                          |
 
 ---
