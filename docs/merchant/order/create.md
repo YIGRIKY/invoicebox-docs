@@ -4,7 +4,7 @@ nav_order: 1
 title: Создание заказа
 parent: "Работа с заказом"
 grand_parent: "Приём платежей"
-date: 2023-11-05 00:00:00 +0300
+date: 2023-12-06 00:00:00 +0300
 ---
 
 # Создание заказа
@@ -176,6 +176,7 @@ Accept: application/json
 | type              | да           | string(10) или int | Тип позиции, [в соответствии со справочником](/docs/dictionary/tag1212) или service - Услуга, commodity - Товар                                   |
 | serviceDate       | нет          | date               | Дата оказания услуги, если тип позиции = Услуга, например, 2023-11-16                                                                             |
 | paymentType       | да           | string(20) enum    | Тип оплаты, допустимые значения: `full_prepayment`, `prepayment`, `advance`, `full_payment`                                                       |
+| hsGroup           | нет          | string(20) enum    | Товарная группа в системе Честный знак: `milk`, `water` и т.д.                                                                                    |
 | metaData          | нет          | object             | [Дополнительные данные элемента корзины](/docs/merchant/order/metadata/)                                                                          |
 
 ---
