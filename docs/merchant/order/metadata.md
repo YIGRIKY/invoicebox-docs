@@ -18,7 +18,85 @@ date: 2023-11-02 00:00:00 +0300
 
 Для передачи данных бронирования авиаперелётов, в поле заказа `metaData`
 необходимо передать объект [ReservationPackage](https://schema.org/ReservationPackage) с перечнем
-дочерних объектов [FlightReservation](https://schema.org/FlightReservation).
+дочерних объектов [FlightReservation](https://schema.org/FlightReservation). Для каждого из сегментов полёта,
+а также для каждого из пассажиров передаётся отдельный объект [FlightReservation](https://schema.org/FlightReservation).
+
+<details>
+  <summary>Пример объекта ReservationPackage</summary>
+<section markdown="1">
+``` json
+{
+  "@type": "ReservationPackage",
+  "subReservation": [
+  {
+    "@type": "FlightReservation",
+    "reservationId": "YQVM18",
+    "reservationStatus": "https://schema.org/ReservationConfirmed",
+    "underName": {
+      "@type": "Person",
+      "name": "Андрей Макаров"
+    },
+    "reservationFor": {
+      "@type": "Flight",
+      "flightNumber": "NDJ37S",
+      "provider": {
+        "@type": "Airline",
+        "name": "Aeroflot",
+        "iataCode": "SU"
+      },
+      "seller": {
+        "@type": "Airline",
+        "name": "Aeroflot",
+        "iataCode": "SU"
+      },
+      "departureAirport": {
+        "@type": "Airport",
+        "name": "Москва (Шерементьево)",
+        "iataCode": "SVO"
+      },
+      "departureTime": "2022-03-04T20:15:00+03:00",
+      "departureGate": "11",
+      "departureTerminal": "C",
+      "arrivalAirport": {
+        "@type": "Airport",
+        "name": "Санкт-Петербург (Пулково)",
+        "iataCode": "LED"
+      },
+      "arrivalTime": "2022-03-05T21:30:00+03:00",
+      "arrivalGate": "11",
+      "arrivalTerminal": "1"
+    },
+    "airplaneSeat": "1A",
+    "airplaneSeatClass": {
+      "@type": "AirplaneSeatClass",
+      "name": "Business"
+    },
+    "ticketNumber": "111-1231231239",
+    "ticketToken": "qrCode:AB34",
+    "checkinUrl": "https://checkmytrip.ru/onlinecheckin.html",
+    "reservedTicket": {
+      "@type": "flightTicket",
+      "underName": {
+        "@type": "Person",
+        "name": "MAKAROV ANDREY"
+      },
+      "fareBase": 57.00,
+      "fareReservation": 66.40,
+      "vatValue": [{
+          "vatCode": "RUS_VAT0",
+          "totalVatAmount": 0.00
+      },
+      {
+          "vatCode": "RUS_VAT20",
+          "totalVatAmount": 10.00
+      }],
+      "paymentType": "Безналичный расчёт"
+    }
+  }]
+}
+```
+</section>
+</details>
 
 
 ## Данные бронирования железнодорожных билетов
