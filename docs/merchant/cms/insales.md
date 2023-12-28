@@ -4,7 +4,7 @@ nav_order: 110
 title: "InSales"
 parent: "Модули для CMS"
 grand_parent: "Приём платежей"
-date: 2023-11-14 00:00:00 +0300
+date: 2023-12-28 14:00:00 +0300
 ---
 
 
