@@ -23,7 +23,7 @@ date: 2024-01-24 00:00:00 +0300
 ### Обработка уведомления об оплате заказа
 
 После поступления оплаты по заказу, при условии наличия активного WebSocket соединения с системой Инвойсбокс,
-система Инвойсбокс вызовет метод onOrderStatusChange() с аргументом в виде объекта [OrderNotification](/docs/merchant/notification/status/#ordernotification)
+система Инвойсбокс вызовет метод `onOrderStatusChange` с аргументом в виде объекта [OrderNotification](/docs/merchant/notification/status/#ordernotification)
 
 <details>
   <summary>Пример уведомления</summary>
@@ -64,7 +64,7 @@ date: 2024-01-24 00:00:00 +0300
 ### Обработка диагностической информации
 
 Для контроля корректности подключения устройств к сервису, а также их правильной настройки, система Инвойсбокс
-может вызывать метод getStatus().
+может вызывать метод `getStatus`.
 
 <details>
   <summary>Пример запроса</summary>
