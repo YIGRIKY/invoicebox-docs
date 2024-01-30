@@ -3,7 +3,7 @@ layout: default
 nav_order: 20
 title: "Получение счёта"
 parent: "Инвойсбокс.Бизнес"
-date: 2023-10-25 00:00:00 +0300
+date: 2024-01-30 00:00:00 +0300
 ---
 
 # Получение счёта
@@ -25,6 +25,18 @@ GET /v3/business/api/invoice/01771534-196a-1105-839a-82422289d6d9
 ```
 GET /v3/business/api/invoice?id=01771534-196a-1105-839a-82422289d6d9
 ```
+
+Пример запроса с фильтром по идентификатору заказа Магазина
+```
+GET /v3/business/api/invoice?merchantOrderId=ABCDE
+```
+
+или по номеру заказа, который видит плательщик
+
+```
+GET /v3/business/api/invoice?merchantOrderIdVisible=ABCDE
+```
+
 Пример запроса с фильтром по статусу
 ```
 GET /v3/business/api/invoice?status=paid
