@@ -3,6 +3,7 @@ layout: default
 nav_order: 10
 title: "MiniApp SDK"
 parent: "Мини-приложения"
+grand_parent: "Маркетплейс"
 date: 2024-02-01 00:00:00 +0300
 ---
 
