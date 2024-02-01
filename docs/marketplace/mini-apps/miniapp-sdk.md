@@ -3,7 +3,6 @@ layout: default
 nav_order: 10
 title: "MiniApp SDK"
 parent: "Мини-приложения"
-permalink: /docs/marketplace/mini-apps/miniapp-sdk
 date: 2024-02-01 00:00:00 +0300
 ---
 
