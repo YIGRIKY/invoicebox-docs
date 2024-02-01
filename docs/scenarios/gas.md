@@ -26,7 +26,7 @@ date: 2024-02-01 00:00:00 +0300
 
 ### Реализация мини-приложения
 
-![Маркетплейс](/assets/images/scenarios/ras/marketplace.png){: .imgt}
+![Маркетплейс](/assets/images/scenarios/ras/marketplace.png){: .imgt-right}
 
 На стороне системы АЗС формируется [мини-приложение](/docs/marketplace/mini-apps/). Мини-приложение
 реализует следующие функции (экраны):
