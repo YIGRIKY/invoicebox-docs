@@ -219,5 +219,6 @@ onLink(href: string): void
 invoiceboxMinapp.onLink('https://www.google.ru`);
 ```
 
+---
 
 [Читать далее &raquo;](/docs/marketplace/create/){: .btn .btn-primary .mb-4 .mb-md-0 .mr-2 }
