@@ -26,14 +26,15 @@ date: 2024-02-01 00:00:00 +0300
 1. Создайте проект мини-приложения.
 2. Подключите MiniApp SDK.
 3. Вызовите событие MiniApp SDK.
-   - Метод invoiceboxMinapp.connect.
-4. Обработайте события:
-   - Событие invoiceboxMinapp.onHeightChange.
-   - Событие invoiceboxMinapp.onDone.
-   - Событие invoiceboxMinapp.onError.
-   - Событие invoiceboxMinapp.onLink.
-5. Используйте методы:
-   - Метод invoiceboxMinapp.getInitialData.
+   - Метод [invoiceboxMinapp.connect](/docs/marketplace/mini-apps/miniapp-sdk/#%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B-connect--disconnect). Начать слушать сообщения от родительского окна.
+   - Метод [invoiceboxMinapp.disconnect](/docs/marketplace/mini-apps/miniapp-sdk/#%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B-connect--disconnect). Завершить слушать сообщения от родительского окна.
+4. Используйте методы:
+   - Метод [invoiceboxMinapp.getInitialData](/docs/marketplace/mini-apps/miniapp-sdk/#%D0%BC%D0%B5%D1%82%D0%BE%D0%B4-getinitialdata). Получить данные покупателя от родительского окна.
+5. Обработайте события:
+   - Событие [invoiceboxMinapp.onHeightChange](/docs/marketplace/mini-apps/miniapp-sdk/#%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D0%B5-onheightchange). Сообщите родительскому окну параметры высоты мини-приложения.
+   - Событие [invoiceboxMinapp.onDone](/docs/marketplace/mini-apps/miniapp-sdk/#%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D0%B5-ondone). Сообщите родительскому окну о готовности заказа к оплате.
+   - Событие [invoiceboxMinapp.onError](/docs/marketplace/mini-apps/miniapp-sdk/#%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D0%B5-onerror). Сообщите родительскому окну об ошибке в мини-приложении.
+   - Событие [invoiceboxMinapp.onLink](/docs/marketplace/mini-apps/miniapp-sdk/#%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D0%B5-onlink). Сообщите родительскому окну о необходимости открыть страницу.
 
 Инструкция ниже актуальна для любой операционной системы. Для первых шагов потребуется знание языка JavaScript и умение работать с командной строкой.
 
@@ -121,7 +122,7 @@ useEffect(() => {
 ```js
 getInitialData(): Promise<{
     orderContainerId?: string;
-    shopId?: int;
+    shopId?: number;
     userEmail: string;
     userName: string;
     userPhone: string;
