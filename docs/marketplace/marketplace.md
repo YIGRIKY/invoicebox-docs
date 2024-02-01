@@ -33,4 +33,4 @@ date: 2023-11-04 00:00:00 +0300
 
 ---
 
-[Читать далее &raquo;](/docs/marketplace/mini-apps/schema){: .btn .btn-primary .mb-4 .mb-md-0 .mr-2 }
+[Читать далее &raquo;](/docs/marketplace/mini-apps){: .btn .btn-primary .mb-4 .mb-md-0 .mr-2 }
