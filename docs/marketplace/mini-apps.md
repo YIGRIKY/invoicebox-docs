@@ -3,7 +3,9 @@ layout: default
 nav_order: 20
 title: "Мини-приложения"
 parent: "Маркетплейс"
-date: 2023-11-17 00:00:00 +0300
+has_children: true
+permalink: /docs/marketplace/mini-apps
+date: 2024-02-01 00:00:00 +0300
 ---
 
 # Мини-приложения
