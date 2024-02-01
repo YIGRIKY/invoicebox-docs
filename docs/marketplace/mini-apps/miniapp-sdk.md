@@ -70,17 +70,17 @@ invoiceboxMinapp.connect();
 на сервисе unpkg.com. В этом случае вы автоматически будете получать последнюю версию библиотеки и вам не нужно будет самостоятельно
 следить за выходом её обновлений.
 
-```
-// Если требуется зафиксировать версию, например, 3.0.1
+```html
+<!-- Если требуется зафиксировать версию, например, 3.0.1 -->
 <script src="https://unpkg.com/@invoicebox/minapp-sdk@3.0.1/cjs/index.min.js"></script>
 
-// Крайняя версия (следует использовать аккуратно, так как крайние изменения могут быть не совместимы)
+<!-- Крайняя версия (следует использовать аккуратно, так как крайние изменения могут быть не совместимы) -->
 <script src="https://unpkg.com/@invoicebox/minapp-sdk/cjs/index.min.js"></script>
 ```
 
 **В коде каждой HTML-страницы, где вы будете вызывать библиотеку, инициализируйте MiniApp SDK**
 
-```
+```html
 <script>
   const Miniapp = new InvoiceboxMinapp()
   Minapp.connect();
@@ -94,14 +94,14 @@ invoiceboxMinapp.connect();
 Чтобы начать слушать сообщения от родительского окна, следует вызвать метод `invoiceboxMinapp.connect()`,
 чтобы перестать слушать, следует вызвать метод `invoiceboxMinapp.disconnect()`.
 
-```
+```js
 connect(): void;
 disconnect(): void;
 ```
 
 Пример использования
 
-```
+```js
 useEffect(() => {
     invoiceboxMinapp.connect();
     return () => {
@@ -114,7 +114,7 @@ useEffect(() => {
 
 Для того, чтобы получить данные покупателя для оформления заказа, воспользуйтесь методом `getInitialData`.
 
-```
+```js
 getInitialData(): Promise<{
     orderContainerId?: string;
     shopId?: int;
@@ -132,7 +132,7 @@ getInitialData(): Promise<{
 
 Пример использования
 
-```
+```js
 invoiceboxMinapp.getInitialData().then(console.log);
 
 /*
@@ -152,13 +152,13 @@ invoiceboxMinapp.getInitialData().then(console.log);
 Мини-приложение может задать высоту, которая требуется для корректного отображения мини-приложения
 на платёжной странице.
 
-```
+```js
 onHeightChange(height: number): void;
 ```
 
 Пример использования
 
-```
+```js
 const Conatiner = ({ isConnected, children }: { isConnected: boolean, children: ReactNode }) => {
     const [elRef, setElRef] = useState<HTMLDivElement | null>(null);
 
@@ -181,13 +181,13 @@ const Conatiner = ({ isConnected, children }: { isConnected: boolean, children: 
 После того, как мини-приложение успешно добавило новый заказ в существующий `orderContainer` или создало новый,
 необходимо вызвать метод `onDone`. `paymentUrl` приходит от сервера в момент создания заказа.
 
-```
+```js
 onDone(paymentUrl: string): void
 ```
 
 Пример использования
 
-```
+```js
  createOrderRequest(someData)
     .then((response) => {
         invoiceboxMinapp.onDone(response.data.url);
@@ -201,13 +201,13 @@ onDone(paymentUrl: string): void
 строковый аргумент - пользовательское сообщение. Если сообщение есть, то оно отобразится. Если нет, то отобразится сообщение
 по умолчанию `Что-то пошло не так`.
 
-```
+```js
 onError(message?: string): void
 ```
 
 Пример использования
 
-```
+```js
 // Пользователь увидит "Ошибка создания заказа"
 invoiceboxMinapp.onError('Ошибка создания заказа');
 
@@ -220,13 +220,13 @@ invoiceboxMinapp.onError();
 Метод `onLink` позволяет произвести переадресацию пользователя по ссылке в родительском окне, как будто переадресация была
 вызвана не в контексте `iframe`/`webview`, а в контексте родительской страницы.
 
-```
+```js
 onLink(href: string): void
 ```
 
 Пример использования
 
-```
+```js
 // На платёжной странице будет открыта новая вкладка с Google страницей, это никак не повлияет на работу мини-приложения
 invoiceboxMinapp.onLink('https://www.google.ru`);
 ```
