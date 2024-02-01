@@ -1,6 +1,6 @@
 ---
 layout: default
-nav_order: 10
+nav_order: 20
 title: "MiniApp SDK"
 parent: "Мини-приложения"
 grand_parent: "Маркетплейс"
@@ -14,8 +14,8 @@ date: 2024-02-01 00:00:00 +0300
 сервиса, мобильной версией платёжного сервиса или мобильным приложением). Именно они обмениваются данными с серверами Инвойсбокс, а библиотека
 работает как посредник на стороне пользователя.
 
-NPM: [minapp-sdk](https://www.npmjs.com/package/@invoicebox/minapp-sdk)
-GitHub: [minapp-sdk](https://github.com/InvoiceBox/invoicebox-minapp-sdk)
+- NPM: [minapp-sdk](https://www.npmjs.com/package/@invoicebox/minapp-sdk)
+- GitHub: [minapp-sdk](https://github.com/InvoiceBox/invoicebox-minapp-sdk)
 
 ## Как использовать библиотеку MiniApp SDK
 
@@ -25,12 +25,13 @@ GitHub: [minapp-sdk](https://github.com/InvoiceBox/invoicebox-minapp-sdk)
 2. Подключите MiniApp SDK.
 3. Вызовите событие MiniApp SDK.
    - Метод invoiceboxMinapp.connect.
-4. Обработайте вернувшийся результат:
-   - Метод invoiceboxMinapp.onHeightChange.
+4. Обработайте события:
+   - Событие invoiceboxMinapp.onHeightChange.
+   - Событие invoiceboxMinapp.onDone.
+   - Событие invoiceboxMinapp.onError.
+   - Событие invoiceboxMinapp.onLink.
+5. Используйте методы:
    - Метод invoiceboxMinapp.getInitialData.
-   - Метод invoiceboxMinapp.onDone.
-   - Метод invoiceboxMinapp.onError.
-   - Метод invoiceboxMinapp.onLink.
 
 Инструкция ниже актуальна для любой операционной системы. Для первых шагов потребуется знание языка JavaScript и умение работать с командной строкой.
 
@@ -40,19 +41,19 @@ GitHub: [minapp-sdk](https://github.com/InvoiceBox/invoicebox-minapp-sdk)
 
 1. Перейдите в созданный проект мини-приложения:
 
-``` Shell
+```
 cd <ПУТЬ_К_МИНИ_ПРИЛОЖЕНИЮ>
 ```
 
 2. Установите библиотеку:
 
-``` Shell
+```
 npm install @invoicebox/minapp-sdk || yarn add @invoicebox/minapp-sdk
 ```
 
 3. Инициализируйте MiniApp SDK в файле index.js:
 
-``` JavaScript
+```
 import { invoiceboxMinapp } from '@invoicebox/minapp-sdk';
 
 invoiceboxMinapp.connect(); 
@@ -69,31 +70,32 @@ invoiceboxMinapp.connect();
 на сервисе unpkg.com. В этом случае вы автоматически будете получать последнюю версию библиотеки и вам не нужно будет самостоятельно
 следить за выходом её обновлений.
 
-``` HTML
+```
 <script src="https://unpkg.com/@invoicebox/minapp-sdk/cjs/index.min.js"></script>
-``` 
+```
 
 2. В коде каждой HTML-страницы, где вы будете вызывать библиотеку, инициализируйте MiniApp SDK:
 
-``` HTML
+```
 <script>
   const Miniapp = new InvoiceboxMinapp()
   Minapp.connect();
 </script>
-``` 
-
+```
 
 ## События и методы
 
-### connect & disconnect
+### Методы connect & disconnect
+
+Чтобы начать слушать сообщения от родительского окна, следует вызвать метод `invoiceboxMinapp.connect()`,
+чтобы перестать слушать, следует вызвать метод `invoiceboxMinapp.disconnect()`.
 
 ```
 connect(): void;
 disconnect(): void;
-
 ```
 
-Общение между родительской страницей и миниприложением осуществляется через `window.postMessage()`. Чтобы начать слушать сообщения нужно вызвать `invoiceboxMinapp.connect()`, чтобы перестать слушать `invoiceboxMinapp.disconnect()`.
+Пример использования
 
 ```
 useEffect(() => {
@@ -104,14 +106,45 @@ useEffect(() => {
 }, [invoiceboxMinapp]);
 ```
 
-### onHeightChange
+### Метод getInitialData
+
+Для того, чтобы получить данные покупателя для оформления заказа, воспользуйтесь методом `getInitialData`.
+
+```
+getInitialData(): Promise<{
+    orderContainerId?: string;
+    userEmail: string;
+    userName: string;
+    userPhone: string;
+}>
+```
+
+Пример использования
+
+```
+invoiceboxMinapp.getInitialData().then(console.log);
+
+/*
+{
+    orderContainerId: 'asd';
+    userEmail: 'email@example.com';
+    userName: 'Иван Иванов';
+    userPhone: '+12345678910';
+}
+*/
+```
+
+### Событие onHeightChange
+
+Для управления высотой мини-приложения на платёжной странице используется метод `onHeightChange`.
+Мини-приложение может задать высоту, которая требуется для корректного отображения мини-приложения
+на платёжной странице.
 
 ```
 onHeightChange(height: number): void;
 ```
 
-Для управления высотой миниприложения на платежной странице используется метод `onHeightChange`.
-Миниприложение может задать высоту, которая требуется для корректного отображения миниприложения на платежной странице.
+Пример использования
 
 ```
 const Conatiner = ({ isConnected, children }: { isConnected: boolean, children: ReactNode }) => {
@@ -131,39 +164,15 @@ const Conatiner = ({ isConnected, children }: { isConnected: boolean, children: 
 }
 ```
 
-### getInitialData
+### Событие onDone
 
-```
-getInitialData(): Promise<{
-    orderContainerId?: string;
-    userEmail: string;
-    userName: string;
-    userPhone: string;
-}>
-```
-
-Чтобы получить данные, необходимые для создания заказа, существует метод `getInitialData`.
-
-```
-invoiceboxMinapp.getInitialData().then(console.log);
-
-/*
-{
-    orderContainerId: 'asd';
-    userEmail: 'email@example.com';
-    userName: 'Иван Иванов';
-    userPhone: '+12345678910';
-}
-*/
-```
-
-### onDone
+После того, как мини-приложение успешно добавило новый заказ в существующий `orderContainer` или создало новый, необходимо вызвать метод `onDone`. `paymentUrl` приходит от сервера в момент создания заказа.
 
 ```
 onDone(paymentUrl: string): void
 ```
 
-После того, как миниприложение успешно добавило новый заказ в существующий `orderContainer` или создало новый, необходимо вызвать метод `onDone`. `paymentUrl` приходит от сервера в момент создания заказа.
+Пример использования
 
 ```
  createOrderRequest(someData)
@@ -172,20 +181,20 @@ onDone(paymentUrl: string): void
     })
 ```
 
-### onError
+### Событие onError
 
 ```
 onError(message?: string): void
 ```
 
-В случае возникновения ошибки в миниприложении, можно вызвать метод `onError`. Тогда родительская страница уведомит пользователя, что произошла ошибка. Функция принимает один опциональный строковый аргумент - пользовательское сообщение. Если сообщение есть, то оно отобразится. Если нет, то отобразится сообщение по умолчанию `Что-то пошло не так`.
+В случае возникновения ошибки в мини-приложении, можно вызвать метод `onError`. Тогда родительская страница уведомит пользователя, что произошла ошибка. Функция принимает один опциональный строковый аргумент - пользовательское сообщение. Если сообщение есть, то оно отобразится. Если нет, то отобразится сообщение по умолчанию `Что-то пошло не так`.
 
 ```
 invoiceboxMinapp.onError('Ошибка создания заказа'); // пользователь увидит "Ошибка создания заказа"
 invoiceboxMinapp.onError(); // пользователь увидит "Что-то пошло не так"
 ```
 
-### onLink
+### Событие onLink
 
 ```
 onLink(href: string): void
@@ -194,5 +203,9 @@ onLink(href: string): void
 Метод `onLink` позволяет окрыть ссылку, как будто ссылка нажата не в контексте `iframe`/`webview`, а в контексте родительской страницы.
 
 ```
-invoiceboxMinapp.onLink('https://www.google.com`); // на платежной странице будет открыта новая вкладка с googlе страницей, это никак не повлияет на миниприложение
+// На платёжной странице будет открыта новая вкладка с Google страницей, это никак не повлияет на мини-приложение.
+invoiceboxMinapp.onLink('https://www.google.ru`);
 ```
+
+
+[Читать далее &raquo;](/docs/marketplace/create/){: .btn .btn-primary .mb-4 .mb-md-0 .mr-2 }
