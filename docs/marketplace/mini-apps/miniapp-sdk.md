@@ -234,7 +234,7 @@ onLink(href: string): void
 ```js
 // На платёжной странице будет открыта новая вкладка с Google страницей
 // это никак не повлияет на работу мини-приложения
-invoiceboxMinapp.onLink('https://www.google.ru`);
+invoiceboxMinapp.onLink('https://www.google.ru');
 ```
 
 ---
