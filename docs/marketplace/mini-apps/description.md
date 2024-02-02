@@ -1,7 +1,7 @@
 ---
 layout: nocompress
 nav_order: 5
-title: "Схема взаимодействия"
+title: "Общая информация"
 parent: "Мини-приложения"
 grand_parent: "Маркетплейс"
 date: 2024-02-01 00:00:00 +0300
