@@ -1,6 +1,6 @@
 ---
 layout: default
-nav_order: 20
+nav_order: 30
 title: "MiniApp SDK"
 parent: "Мини-приложения"
 grand_parent: "Маркетплейс"
@@ -91,11 +91,6 @@ invoiceboxMinapp.connect();
   Minapp.connect();
 </script>
 ```
-
-{: .warning }
-> Обратите внимание, сервер, на котором расположено мини-приложение, должен отправлять заголовки (origin), которые разрешают
-запускать контент мини-приложения на сторонних ресурсах в iframe и webview.
-
 
 ## События и методы
 

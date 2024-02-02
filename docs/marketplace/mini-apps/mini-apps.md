@@ -20,4 +20,4 @@ date: 2024-02-01 00:00:00 +0300
 
 ---
 
-[Читать далее &raquo;](/docs/marketplace/mini-apps/miniapp-sdk/){: .btn .btn-primary .mb-4 .mb-md-0 .mr-2 }
+[Читать далее &raquo;](/docs/marketplace/mini-apps/description/){: .btn .btn-primary .mb-4 .mb-md-0 .mr-2 }
