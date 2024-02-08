@@ -58,7 +58,7 @@ date: 2024-02-08 13:00:00 +0300
 
 ![amoCRM](/assets/images/crm/amocrm/7.jpg){: .img}
 
-5. Сначала идёт переход на страницу Amocrm, а оттуда на платёжную страницу invoicebox
+5. Сначала идёт переход на страницу Amocrm, а оттуда на платёжную страницу Инвойсбокс
 
 ![amoCRM](/assets/images/crm/amocrm/8.jpg){: .img}
 
