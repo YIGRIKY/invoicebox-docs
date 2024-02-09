@@ -22,7 +22,7 @@ date: 2024-02-08 00:00:00 +0300
 
 ### Реализация мини-приложения
 
-![Маркетплейс](/assets/images/scenarios/ras/marketplace.png){: .imgt-left}
+![Маркетплейс](/assets/images/scenarios/taxi/marketplace.png){: .imgt-left}
 
 На стороне системы бронирования услуг такси или трансфера формируется [мини-приложение](/docs/marketplace/mini-apps).
 В мини-приложении реализуются следующие функции (экраны):
