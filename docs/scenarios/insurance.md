@@ -16,13 +16,13 @@ date: 2024-02-08 00:00:00 +0300
 Инвойсбокс поможет подтвердить оплату онлайн или на месте, а также предоставит отчётные документы
 клиенту через ЭДО или в бумажном виде курьером или почтой.
 
-![Подключить](/assets/images/scenarios/gas/frame1.png){: .imgt}
+![Подключить](/assets/images/scenarios/insurance/frame1.png){: .imgt}
 
 ## Базовая схема взаимодействия
 
 ### Реализация мини-приложения
 
-![Маркетплейс](/assets/images/scenarios/ras/marketplace.png){: .imgt-left}
+![Маркетплейс](/assets/images/scenarios/insurance/marketplace.png){: .imgt-left}
 
 На стороне учётной системы страховых услуг формируется [мини-приложение](/docs/marketplace/mini-apps).
 В мини-приложении реализуются следующие функции (экраны):
