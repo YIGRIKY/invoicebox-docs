@@ -22,6 +22,3 @@ Action Sheet улучшает пользовательский опыт, пре�
 
 ![Action Sheet](/assets/images/design/action-sheet/frame2.png)
 
----
-
-![Action Sheet](/assets/images/design/action-sheet/frame3.png)
