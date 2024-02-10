@@ -18,11 +18,11 @@ Navigation Bar может содержать ссылки, кнопки или �
 Этот элемент является постоянным на всех экранах приложения, обеспечивая постоянную навигацию
 и удобство перемещения между разделами. 
 
-![Navigation Bar](/assets/images/design/action-sheet/frame1.png)
+![Navigation Bar](/assets/images/design/navigation-bar/frame1.png)
 
 ## Примеры использования
 
-![Navigation Bar](/assets/images/design/action-sheet/frame2.png)
+![Navigation Bar](/assets/images/design/navigation-bar/frame2.png)
 
-![Navigation Bar](/assets/images/design/action-sheet/frame3.png)
+![Navigation Bar](/assets/images/design/navigation-bar/frame3.png)
 
