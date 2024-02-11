@@ -2,7 +2,7 @@
 layout: default
 nav_order: 10
 title: "Title"
-parent: "typography"
+parent: "Typography"
 grand_parent: "Дизайн-система"
 date: 2024-02-11 00:00:00 +0300
 ---
