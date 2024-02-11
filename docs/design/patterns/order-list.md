@@ -11,7 +11,7 @@ date: 2024-02-11 00:00:00 +0300
 
 Состоит из компонентов cell и divider, используется для отображения состава заказа.
 
-![OrderList](/assets/images/design/forms/patterns/order-list/frame1.png)
+![OrderList](/assets/images/design/patterns/order-list/frame1.png)
 
 ## Примеры использования
 
@@ -19,5 +19,5 @@ date: 2024-02-11 00:00:00 +0300
 Токен цвета фона компонента – tertiary. Отступов у самого компонента нет – они есть у компонента «cell»,
 который используется внутри OrderList.
 
-![OrderList](/assets/images/design/froms/patterns/order-list/frame2.png)
+![OrderList](/assets/images/design/patterns/order-list/frame2.png)
 

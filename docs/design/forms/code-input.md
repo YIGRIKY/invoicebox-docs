@@ -20,5 +20,5 @@ date: 2024-02-11 00:00:00 +0300
 
 6 цифр. Можно заполнить автоматически при появлении на экране соответствующего элемента с цифрами из SMS.
 
-![Code Input](/assets/images/design/froms/code-input/frame2.png)
+![Code Input](/assets/images/design/forms/code-input/frame2.png)
 

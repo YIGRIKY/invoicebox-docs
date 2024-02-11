@@ -26,7 +26,7 @@ date: 2024-02-11 00:00:00 +0300
 Для краткой информации используйте однострочное текстовое поле. Если же нужно вводить большой
 объём текста, более 5 слов, предпочтительнее использовать [Textarea](/docs/design/forms/textarea).
 
-![Input](/assets/images/design/froms/input/frame2.png)
+![Input](/assets/images/design/forms/input/frame2.png)
 
 Там, где это возможно, рекомендуется использовать автозаполнение, если у вас есть представление
 о данных, которые запрашивает пользователь, и есть большая вероятность, что он введёт именно эти
@@ -37,7 +37,7 @@ date: 2024-02-11 00:00:00 +0300
 
 Если название слишком длинное и не помещается целиком в поле ввода, то оно обрезается многоточием (…).
 
-![Input](/assets/images/design/froms/input/frame3.png)
+![Input](/assets/images/design/forms/input/frame3.png)
 
 ### Два инпута в одну строку
 
@@ -49,9 +49,9 @@ date: 2024-02-11 00:00:00 +0300
 самого компонента, чтобы не использовать многоточие, а сами компоненты должны быть одинакового размера и
 растянуты по ширине экрана (свойство в horizontal resizing в figma – fill)
 
-![Input](/assets/images/design/froms/input/frame4.png)
+![Input](/assets/images/design/forms/input/frame4.png)
 
-![Input](/assets/images/design/froms/input/frame5.png)
+![Input](/assets/images/design/forms/input/frame5.png)
 
-![Input](/assets/images/design/froms/input/frame6.png)
+![Input](/assets/images/design/forms/input/frame6.png)
 

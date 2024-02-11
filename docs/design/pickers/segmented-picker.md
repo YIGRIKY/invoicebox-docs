@@ -21,14 +21,14 @@ date: 2024-02-11 00:00:00 +0300
 списка, что делает его полезным элементом для облегчения навигации и управления данными в приложениях
 и веб-сайтах.
 
-![Segmented Picker](/assets/images/design/forms/pickers/segmented-picker/frame1.png)
+![Segmented Picker](/assets/images/design/pickers/segmented-picker/frame1.png)
 
 ## Примеры использования
 
-![Segmented Picker](/assets/images/design/froms/pickers/segmented-picker/frame2.png)
+![Segmented Picker](/assets/images/design/pickers/segmented-picker/frame2.png)
 
 Необходимо называть вкладки максимально лаконично и ясно, так, чтобы пользователю было понятно,
 что скрывается внутри раздела.
 
-![Segmented Picker](/assets/images/design/froms/pickers/segmented-picker/frame3.png)
+![Segmented Picker](/assets/images/design/pickers/segmented-picker/frame3.png)
 

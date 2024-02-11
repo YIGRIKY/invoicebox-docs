@@ -23,5 +23,5 @@ date: 2024-02-11 00:00:00 +0300
 при вводе номера. Префикс «+7» добавлен изначально. Если же поле пустое, и если в нём ввести «8», «7»
 или «+», автоматически добавляется префикс «+7».
 
-![Phone Number Input](/assets/images/design/froms/phone-input/frame2.png)
+![Phone Number Input](/assets/images/design/forms/phone-input/frame2.png)
 
