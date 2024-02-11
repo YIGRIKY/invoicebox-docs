@@ -24,11 +24,11 @@ date: 2024-02-11 00:00:00 +0300
 3. Caption
  - размер шрифта для Title – 12, начертание Regular
 
-![Title](/assets/images/design/forms/typography/title/frame1.png)
+![Title](/assets/images/design/typography/title/frame1.png)
 
 ## Примеры использования
 
-![Title](/assets/images/design/froms/typography/title/frame2.png)
+![Title](/assets/images/design/typography/title/frame2.png)
 
-![Title](/assets/images/design/froms/typography/title/frame3.png)
+![Title](/assets/images/design/typography/title/frame3.png)
 
