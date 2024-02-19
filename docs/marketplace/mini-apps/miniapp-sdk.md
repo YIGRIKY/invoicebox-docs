@@ -4,7 +4,7 @@ nav_order: 30
 title: "MiniApp SDK"
 parent: "Мини-приложения"
 grand_parent: "Маркетплейс"
-date: 2024-02-01 00:00:00 +0300
+date: 2024-02-19 00:00:00 +0300
 ---
 
 # Инвосбокс MiniApp SDK
@@ -25,12 +25,9 @@ date: 2024-02-01 00:00:00 +0300
 
 1. Создайте проект мини-приложения
 2. [Подключите MiniApp SDK](/docs/marketplace/mini-apps/miniapp-sdk/#%D0%BF%D0%BE%D0%B4%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-miniapp-sdk)
-3. Вызовите событие MiniApp SDK
-   - Метод [invoiceboxMinapp.connect](/docs/marketplace/mini-apps/miniapp-sdk/#%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B-connect--disconnect). Начать слушать сообщения от родительского окна.
-   - Метод [invoiceboxMinapp.disconnect](/docs/marketplace/mini-apps/miniapp-sdk/#%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B-connect--disconnect). Завершить слушать сообщения от родительского окна.
-4. Используйте методы:
+3. Используйте методы:
    - Метод [invoiceboxMinapp.getInitialData](/docs/marketplace/mini-apps/miniapp-sdk/#%D0%BC%D0%B5%D1%82%D0%BE%D0%B4-getinitialdata). Получить данные покупателя от родительского окна.
-5. Обработайте события:
+4. Обработайте события:
    - Событие [invoiceboxMinapp.onHeightChange](/docs/marketplace/mini-apps/miniapp-sdk/#%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D0%B5-onheightchange). Сообщить родительскому окну параметры высоты мини-приложения.
    - Событие [invoiceboxMinapp.onDone](/docs/marketplace/mini-apps/miniapp-sdk/#%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D0%B5-ondone). Сообщить родительскому окну о готовности заказа к оплате.
    - Событие [invoiceboxMinapp.onError](/docs/marketplace/mini-apps/miniapp-sdk/#%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D0%B5-onerror). Сообщить родительскому окну об ошибке в мини-приложении.
@@ -60,8 +57,6 @@ npm install @invoicebox/minapp-sdk || yarn add @invoicebox/minapp-sdk
 
 ```
 import { invoiceboxMinapp } from '@invoicebox/minapp-sdk';
-
-invoiceboxMinapp.connect(); 
 ```
 
 
@@ -88,32 +83,10 @@ invoiceboxMinapp.connect();
 ```html
 <script>
   const Miniapp = new InvoiceboxMinapp()
-  Minapp.connect();
 </script>
 ```
 
 ## События и методы
-
-### Методы connect & disconnect
-
-Чтобы начать слушать сообщения от родительского окна, следует вызвать метод `invoiceboxMinapp.connect()`,
-чтобы перестать слушать, следует вызвать метод `invoiceboxMinapp.disconnect()`.
-
-```js
-connect(): void;
-disconnect(): void;
-```
-
-Пример использования
-
-```js
-useEffect(() => {
-    invoiceboxMinapp.connect();
-    return () => {
-        invoiceboxMinapp.disconnect();
-    };
-}, [invoiceboxMinapp]);
-```
 
 ### Метод getInitialData
 
@@ -121,6 +94,7 @@ useEffect(() => {
 
 ```js
 getInitialData(): Promise<{
+    orderType: enum;
     orderContainerId?: string;
     shopId?: number;
     userEmail: string;
@@ -129,6 +103,7 @@ getInitialData(): Promise<{
 }>
 ```
 
+- orderType - тип формируемого заказа `order` (основной заказ) или `suborder` (дополнительная услуга)
 - orderContainerId - опционально, идентификатор родительского заказа в случае, если заказ является дополнительной услугой
 - shopId - опционально, идентификатор точки продаж, если мини-приложение работает с множеством точек продаж
 - userEmail - адрес электронной почты покупателя
