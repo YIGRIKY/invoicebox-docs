@@ -15,7 +15,7 @@ date: 2024-02-19 00:00:00 +0300
 - **Скелетон.** Скелетон должен отображаться сразу при навигации по ссылке мини-приложения и до тех пор, пока оно
 не будет полностью инициализировано (загружены необходимые данные, изображения, стили и прочие ресурсы)
 
-См. также: [Storybook](https://ui.invoicebox.ru/?path=/docs/common-skeleton--docs) | [GutHub](https://github.com/InvoiceBox/invoicebox-ui/tree/main/src/components/common/Skeleton)
+См. также: | [Storybook](https://ui.invoicebox.ru/?path=/docs/common-skeleton--docs) | [GutHub](https://github.com/InvoiceBox/invoicebox-ui/tree/main/src/components/common/Skeleton)
 
 - **Экран(ы) выбора и оформления услуги.** Мы рекомендуем реализовать процесс с использванием не более 3х-4х экранов
 для выбора и оформления покупки. В противном случае возврастает вероятность того, что покупатель запутается и
@@ -26,6 +26,8 @@ date: 2024-02-19 00:00:00 +0300
 мини-приложение оформляется основной заказ (тип мини-приложения `order`). В связи с тем, что информация от системы
 Инвойсбокс об оплате заказа поступает асинхронно, мы рекомендуем на таком экране покупателю отображать загрузчик до
 момента получения статуса оплаты или отобразить дополнительную информацию по истечению срока ожидания.
+
+См. также: | [Storybook](https://ui.invoicebox.ru/?path=/docs/common-invoiceboxloader--docs) | [GutHub](https://github.com/InvoiceBox/invoicebox-ui/tree/main/src/components/common/InvoiceboxLoader)
 
 ---
 
