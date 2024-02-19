@@ -1,6 +1,6 @@
 ---
 layout: default
-nav_order: 30
+nav_order: 90
 title: "MiniApp SDK"
 parent: "Мини-приложения"
 grand_parent: "Маркетплейс"
