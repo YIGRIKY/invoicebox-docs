@@ -117,6 +117,7 @@ invoiceboxMinapp.getInitialData().then(console.log);
 
 /*
 {
+    orderType: 'suborder';
     orderContainerId: '3c15a3d1-3da8-4ba8-87e5-2dba828299fa';
     shopId: 123;
     userEmail: 'email@example.com';
