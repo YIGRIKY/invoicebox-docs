@@ -1,10 +1,10 @@
 ---
 layout: default
-nav_order: 30
+nav_order: 90
 title: "MiniApp SDK"
 parent: "Мини-приложения"
 grand_parent: "Маркетплейс"
-date: 2024-02-01 00:00:00 +0300
+date: 2024-02-19 00:00:00 +0300
 ---
 
 # Инвосбокс MiniApp SDK
@@ -25,16 +25,14 @@ date: 2024-02-01 00:00:00 +0300
 
 1. Создайте проект мини-приложения
 2. [Подключите MiniApp SDK](/docs/marketplace/mini-apps/miniapp-sdk/#%D0%BF%D0%BE%D0%B4%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-miniapp-sdk)
-3. Вызовите событие MiniApp SDK
-   - Метод [invoiceboxMinapp.connect](/docs/marketplace/mini-apps/miniapp-sdk/#%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B-connect--disconnect). Начать слушать сообщения от родительского окна.
-   - Метод [invoiceboxMinapp.disconnect](/docs/marketplace/mini-apps/miniapp-sdk/#%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B-connect--disconnect). Завершить слушать сообщения от родительского окна.
-4. Используйте методы:
+3. Используйте методы:
    - Метод [invoiceboxMinapp.getInitialData](/docs/marketplace/mini-apps/miniapp-sdk/#%D0%BC%D0%B5%D1%82%D0%BE%D0%B4-getinitialdata). Получить данные покупателя от родительского окна.
-5. Обработайте события:
+4. Обработайте события:
    - Событие [invoiceboxMinapp.onHeightChange](/docs/marketplace/mini-apps/miniapp-sdk/#%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D0%B5-onheightchange). Сообщить родительскому окну параметры высоты мини-приложения.
    - Событие [invoiceboxMinapp.onDone](/docs/marketplace/mini-apps/miniapp-sdk/#%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D0%B5-ondone). Сообщить родительскому окну о готовности заказа к оплате.
    - Событие [invoiceboxMinapp.onError](/docs/marketplace/mini-apps/miniapp-sdk/#%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D0%B5-onerror). Сообщить родительскому окну об ошибке в мини-приложении.
    - Событие [invoiceboxMinapp.onLink](/docs/marketplace/mini-apps/miniapp-sdk/#%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D0%B5-onlink). Сообщить родительскому окну о необходимости открыть страницу.
+   - Событие [invoiceboxMinapp.onUnavailable](/docs/marketplace/mini-apps/miniapp-sdk/#%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D0%B5-onunavailable). Сообщить родительскому окну, что мини-приложение недоступно.
 
 Инструкция ниже актуальна для любой операционной системы. Для первых шагов потребуется знание языка JavaScript и умение работать с командной строкой.
 
@@ -59,11 +57,10 @@ npm install @invoicebox/minapp-sdk || yarn add @invoicebox/minapp-sdk
 Инициализируйте MiniApp SDK в файле index.js:
 
 ```
-import { invoiceboxMinapp } from '@invoicebox/minapp-sdk';
+import { InvoiceboxMinapp } from '@invoicebox/minapp-sdk';
 
-invoiceboxMinapp.connect(); 
+const invoiceboxMinapp = new InvoiceboxMinapp();
 ```
-
 
 ### Включение скрипта в HTML-код страницы
 
@@ -87,49 +84,36 @@ invoiceboxMinapp.connect();
 
 ```html
 <script>
-  const Miniapp = new InvoiceboxMinapp()
-  Minapp.connect();
+  const invoiceboxMinapp = new InvoiceboxMinapp();
 </script>
 ```
 
 ## События и методы
 
-### Методы connect & disconnect
-
-Чтобы начать слушать сообщения от родительского окна, следует вызвать метод `invoiceboxMinapp.connect()`,
-чтобы перестать слушать, следует вызвать метод `invoiceboxMinapp.disconnect()`.
-
-```js
-connect(): void;
-disconnect(): void;
-```
-
-Пример использования
-
-```js
-useEffect(() => {
-    invoiceboxMinapp.connect();
-    return () => {
-        invoiceboxMinapp.disconnect();
-    };
-}, [invoiceboxMinapp]);
-```
-
 ### Метод getInitialData
 
 Для того, чтобы получить данные покупателя для оформления заказа, воспользуйтесь методом `getInitialData`.
 
-```js
+```ts
 getInitialData(): Promise<{
-    orderContainerId?: string;
     shopId?: number;
     userEmail: string;
     userName: string;
     userPhone: string;
-}>
+} & (
+    | {
+          orderContainerId?: never;
+          minappType: 'order';
+      }
+    | {
+          orderContainerId: string;
+          minappType: 'suborder';
+      }
+)>
 ```
 
-- orderContainerId - опционально, идентификатор родительского заказа в случае, если заказ является дополнительной услугой
+- minappType - значение `order` указывает, что мини-приложение работает в режиме основного заказа, значение `suborder` - в режиме дополнительной услуги
+- orderContainerId - обязательно, если `minappType: 'suborder'`, отсутствует, если `minappType: 'order'`, идентификатор родительского заказа в случае, если заказ является дополнительной услугой
 - shopId - опционально, идентификатор точки продаж, если мини-приложение работает с множеством точек продаж
 - userEmail - адрес электронной почты покупателя
 - userName - имя покупателя
@@ -137,16 +121,17 @@ getInitialData(): Promise<{
 
 Пример использования
 
-```js
+```ts
 invoiceboxMinapp.getInitialData().then(console.log);
 
 /*
 {
-    orderContainerId: '3c15a3d1-3da8-4ba8-87e5-2dba828299fa';
-    shopId: 123;
-    userEmail: 'email@example.com';
-    userName: 'Иван Иванов';
-    userPhone: '+71231234567';
+    minappType: 'suborder',
+    orderContainerId: '3c15a3d1-3da8-4ba8-87e5-2dba828299fa',
+    shopId: 123,
+    userEmail: 'email@example.com',
+    userName: 'Иван Иванов',
+    userPhone: '+71231234567'
 }
 */
 ```
@@ -157,28 +142,27 @@ invoiceboxMinapp.getInitialData().then(console.log);
 Мини-приложение может задать высоту, которая требуется для корректного отображения мини-приложения
 на платёжной странице.
 
-```js
+```ts
 onHeightChange(height: number): void;
 ```
 
 Пример использования
 
-```js
-const Conatiner = ({ isConnected, children }: { isConnected: boolean, children: ReactNode }) => {
-    const [elRef, setElRef] = useState<HTMLDivElement | null>(null);
+```ts
+const Conatiner = ({ children }: { children: ReactNode }) => {
+  const [elRef, setElRef] = useState<HTMLDivElement | null>(null);
 
-    useEffect(() => {
-        if (!elRef) return;
-        if (!isConnected) return;
-        const observer = new ResizeObserver(() => {
-            invoiceboxMinapp.onHeightChange(elRef.offsetHeight);
-        });
-        observer.observe(elRef);
-        return () => observer.disconnect();
-    }, [elRef, child, isConnected]);
+  useEffect(() => {
+    if (!elRef) return;
+    const observer = new ResizeObserver(() => {
+      invoiceboxMinapp.onHeightChange(elRef.offsetHeight);
+    });
+    observer.observe(elRef);
+    return () => observer.disconnect();
+  }, [elRef, child]);
 
-    return <div ref={elRef}>{children}</div>;
-}
+  return <div ref={elRef}>{children}</div>;
+};
 ```
 
 ### Событие onDone
@@ -186,17 +170,16 @@ const Conatiner = ({ isConnected, children }: { isConnected: boolean, children: 
 После того, как мини-приложение успешно добавило новый заказ в существующий `orderContainer` или создало новый,
 необходимо вызвать метод `onDone`. `paymentUrl` приходит от сервера в момент создания заказа.
 
-```js
+```ts
 onDone(paymentUrl: string): void
 ```
 
 Пример использования
 
-```js
- createOrderRequest(someData)
-    .then((response) => {
-        invoiceboxMinapp.onDone(response.data.url);
-    })
+```ts
+createOrderRequest(someData).then((response) => {
+  invoiceboxMinapp.onDone(response.data.url);
+});
 ```
 
 ### Событие onError
@@ -206,15 +189,15 @@ onDone(paymentUrl: string): void
 строковый аргумент - пользовательское сообщение. Если сообщение есть, то оно отобразится. Если нет, то отобразится сообщение
 по умолчанию `Что-то пошло не так`.
 
-```js
+```ts
 onError(message?: string): void
 ```
 
 Пример использования
 
-```js
+```ts
 // Пользователь увидит "Ошибка создания заказа"
-invoiceboxMinapp.onError('Ошибка создания заказа');
+invoiceboxMinapp.onError("Ошибка создания заказа");
 
 // Пользователь увидит "Что-то пошло не так"
 invoiceboxMinapp.onError();
@@ -225,16 +208,30 @@ invoiceboxMinapp.onError();
 Метод `onLink` позволяет произвести переадресацию пользователя по ссылке в родительском окне, как будто переадресация была
 вызвана не в контексте `iframe`/`webview`, а в контексте родительской страницы.
 
-```js
+```ts
 onLink(href: string): void
 ```
 
 Пример использования
 
-```js
+```ts
 // На платёжной странице будет открыта новая вкладка с Google страницей
 // это никак не повлияет на работу мини-приложения
-invoiceboxMinapp.onLink('https://www.google.ru');
+invoiceboxMinapp.onLink("https://www.google.ru");
+```
+
+### Событие onUnavailable
+
+Метод `onUnavailable` позволяет сообщить родительскому окну, что мини-приложение недоступно. Мини-приложение будет закрыто. Пользователь увидит соответствующее сообщение.
+
+```ts
+onUnavailable(): void
+```
+
+Пример использования
+
+```ts
+invoiceboxMinapp.onUnavailable();
 ```
 
 ---

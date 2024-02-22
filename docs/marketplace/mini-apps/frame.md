@@ -34,4 +34,4 @@ Header always set Content-Security-Policy frame-ancestors 'self' *.invoicebox.ru
 
 ---
 
-[Читать далее &raquo;](/docs/marketplace/mini-apps/miniapp-sdk/){: .btn .btn-primary .mb-4 .mb-md-0 .mr-2 }
+[Читать далее &raquo;](/docs/marketplace/mini-apps/structure/){: .btn .btn-primary .mb-4 .mb-md-0 .mr-2 }
