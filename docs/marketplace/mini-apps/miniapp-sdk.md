@@ -27,7 +27,7 @@ date: 2024-02-19 00:00:00 +0300
 2. [Подключите MiniApp SDK](/docs/marketplace/mini-apps/miniapp-sdk/#%D0%BF%D0%BE%D0%B4%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-miniapp-sdk)
 3. Используйте методы:
    - Метод [invoiceboxMinapp.getInitialData](/docs/marketplace/mini-apps/miniapp-sdk/#%D0%BC%D0%B5%D1%82%D0%BE%D0%B4-getinitialdata). Получить данные покупателя от родительского окна.
-   - Метод [invoiceboxMinapp.matchSomeMetaData](/docs/marketplace/mini-apps/miniapp-sdk/#%D0%BC%D0%B5%D1%82%D0%BE%D0%B4-matchSomeMetaData). Узнать, есть ли в метаданных нужная информация.
+   - Метод [invoiceboxMinapp.matchSomeMetaData](/docs/marketplace/mini-apps/miniapp-sdk/#%D0%BC%D0%B5%D1%82%D0%BE%D0%B4-matchsomemetadata). Узнать, есть ли в метаданных нужная информация.
 4. Обработайте события:
    - Событие [invoiceboxMinapp.onHeightChange](/docs/marketplace/mini-apps/miniapp-sdk/#%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D0%B5-onheightchange). Сообщить родительскому окну параметры высоты мини-приложения.
    - Событие [invoiceboxMinapp.onDone](/docs/marketplace/mini-apps/miniapp-sdk/#%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D0%B5-ondone). Сообщить родительскому окну о готовности заказа к оплате.
