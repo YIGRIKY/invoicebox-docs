@@ -143,7 +143,7 @@ invoiceboxMinapp.getInitialData().then(console.log);
 Для того, чтобы узнать есть ли нужная информация в метаданных, воспользуйтесь методом `matchSomeMetaData`.
 
 ```ts
-matchSomeMetaData(targetKey: string, targetValues: unknown[]): boolean
+matchSomeMetaData(targetKey: string, targetValues: unknown[]): Promise<boolean>
 ```
 
 - targetKey - ключ (название свойства) по которому будет осуществлен поиск
@@ -152,10 +152,16 @@ matchSomeMetaData(targetKey: string, targetValues: unknown[]): boolean
 Пример использования
 
 ```ts
-/* 
+/*
   если метаданные содержат поле iataCode: "SU" или iataCode: "LED", метод вернет true
 */
-invoiceboxMinapp.matchSomeMetaData("iataCode", ["SU", "LED"]);
+invoiceboxMinapp
+  .matchSomeMetaData("iataCode", ["SU", "LED"])
+  .then((isMatch) => {
+    if (isMatch) {
+      // do something
+    }
+  });
 ```
 
 ### Событие onHeightChange
