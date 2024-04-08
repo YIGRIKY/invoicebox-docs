@@ -26,6 +26,9 @@ date: 2024-02-19 00:00:00 +0300
 1. Создайте проект мини-приложения
 2. [Подключите MiniApp SDK](/docs/marketplace/mini-apps/miniapp-sdk/#%D0%BF%D0%BE%D0%B4%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-miniapp-sdk)
 3. Используйте методы:
+   - Метод [invoiceboxMinapp.connect](/docs/marketplace/mini-apps/miniapp-sdk/#%D0%BC%D0%B5%D1%82%D0%BE%D0%B4-connect). Установить соединение с родительским окном.
+   - Метод [invoiceboxMinapp.disconnect](/docs/marketplace/mini-apps/miniapp-sdk/#%D0%BC%D0%B5%D1%82%D0%BE%D0%B4-connect). Разорвать соединение с родительским окном.
+   - Метод [invoiceboxMinapp.isConnected](/docs/marketplace/mini-apps/miniapp-sdk/#%D0%BC%D0%B5%D1%82%D0%BE%D0%B4-isсonnected). Узнать, установлено ли соединение с родительским окном.
    - Метод [invoiceboxMinapp.getInitialData](/docs/marketplace/mini-apps/miniapp-sdk/#%D0%BC%D0%B5%D1%82%D0%BE%D0%B4-getinitialdata). Получить данные покупателя от родительского окна.
    - Метод [invoiceboxMinapp.matchSomeMetaData](/docs/marketplace/mini-apps/miniapp-sdk/#%D0%BC%D0%B5%D1%82%D0%BE%D0%B4-matchsomemetadata). Узнать, есть ли в метаданных нужная информация.
 4. Обработайте события:
@@ -58,9 +61,9 @@ npm install @invoicebox/minapp-sdk || yarn add @invoicebox/minapp-sdk
 Инициализируйте MiniApp SDK в файле index.js:
 
 ```
-import { InvoiceboxMinapp } from '@invoicebox/minapp-sdk';
+import { invoiceboxMinapp } from '@invoicebox/minapp-sdk';
 
-const invoiceboxMinapp = new InvoiceboxMinapp();
+invoiceboxMinapp.connect();
 ```
 
 ### Включение скрипта в HTML-код страницы
@@ -85,11 +88,35 @@ const invoiceboxMinapp = new InvoiceboxMinapp();
 
 ```html
 <script>
-  const invoiceboxMinapp = new InvoiceboxMinapp();
+  invoiceboxMinapp.connect();
 </script>
 ```
 
 ## События и методы
+
+### Метод connect
+
+Для того, чтобы установить соединение с родительским окном, воспользуйтесь методом `connect`.
+
+```ts
+connect(): void;
+```
+
+### Метод disconnect
+
+Чтобы разорвать соединение с родительским окном, воспользуйтесь методом `disconnect`.
+
+```ts
+disconnect(): void;
+```
+
+### Метод isConnected
+
+Чтобы узнать установлено ли соединение с родительским окном, воспользуйтесь методом `isConnected`.
+
+```ts
+isConnected(): boolean;
+```
 
 ### Метод getInitialData
 
