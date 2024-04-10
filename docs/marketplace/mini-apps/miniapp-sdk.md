@@ -128,6 +128,7 @@ getInitialData(): Promise<{
     userEmail: string;
     userName: string;
     userPhone: string;
+    fullHeight: boolean;
 } & (
     | {
           orderContainerId?: never;
@@ -146,6 +147,7 @@ getInitialData(): Promise<{
 - userEmail - адрес электронной почты покупателя
 - userName - имя покупателя
 - userPhone - номер мобильного телефона покупателя
+- fullHeight - флаг сообщающий, что мини-приложение должно занять всю высоту контейнера, в котором располагается
 
 Пример использования
 
@@ -159,7 +161,8 @@ invoiceboxMinapp.getInitialData().then(console.log);
     shopId: 123,
     userEmail: 'email@example.com',
     userName: 'Иван Иванов',
-    userPhone: '+71231234567'
+    userPhone: '+71231234567',
+    fullHeight: false
 }
 */
 ```
