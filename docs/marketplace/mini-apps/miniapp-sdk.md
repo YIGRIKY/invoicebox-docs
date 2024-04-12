@@ -30,7 +30,8 @@ date: 2024-02-19 00:00:00 +0300
    - Метод [invoiceboxMinapp.disconnect](/docs/marketplace/mini-apps/miniapp-sdk/#%D0%BC%D0%B5%D1%82%D0%BE%D0%B4-disconnect). Разорвать соединение с родительским окном.
    - Метод [invoiceboxMinapp.isConnected](/docs/marketplace/mini-apps/miniapp-sdk/#%D0%BC%D0%B5%D1%82%D0%BE%D0%B4-isconnected). Узнать, установлено ли соединение с родительским окном.
    - Метод [invoiceboxMinapp.getInitialData](/docs/marketplace/mini-apps/miniapp-sdk/#%D0%BC%D0%B5%D1%82%D0%BE%D0%B4-getinitialdata). Получить данные покупателя от родительского окна.
-   - Метод [invoiceboxMinapp.matchSomeMetaData](/docs/marketplace/mini-apps/miniapp-sdk/#%D0%BC%D0%B5%D1%82%D0%BE%D0%B4-matchsomemetadata). Узнать, есть ли в метаданных нужная информация.
+   - Метод [invoiceboxMinapp.matchMetaDataValues](/docs/marketplace/mini-apps/miniapp-sdk/#%D0%BC%D0%B5%D1%82%D0%BE%D0%B4-matchmetadatavalues). Узнать, есть ли в метаданных нужная информация.
+   - Метод [invoiceboxMinapp.getMetaDataValues](/docs/marketplace/mini-apps/miniapp-sdk/#%D0%BC%D0%B5%D1%82%D0%BE%D0%B4-getmetadatavalues). Получить, из метаданных нужную информацию.
 4. Обработайте события:
    - Событие [invoiceboxMinapp.onHeightChange](/docs/marketplace/mini-apps/miniapp-sdk/#%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D0%B5-onheightchange). Сообщить родительскому окну параметры высоты мини-приложения.
    - Событие [invoiceboxMinapp.onDone](/docs/marketplace/mini-apps/miniapp-sdk/#%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D0%B5-ondone). Сообщить родительскому окну о готовности заказа к оплате.
@@ -170,13 +171,13 @@ invoiceboxMinapp.getInitialData().then(console.log);
 */
 ```
 
-### Метод matchSomeMetaData
+### Метод matchMetaDataValues
 
 Общая информация по наличию метаданных в заказах описана в [документации](/docs/merchant/order/metadata/).
-Для того, чтобы узнать есть ли нужная информация в метаданных, воспользуйтесь методом `matchSomeMetaData`.
+Для того, чтобы узнать есть ли нужная информация в метаданных, воспользуйтесь методом `matchMetaDataValues`.
 
 ```ts
-matchSomeMetaData(targetKey: string, targetValues: unknown[]): Promise<boolean>
+matchMetaDataValues(targetKey: string, targetValues: unknown[]): Promise<boolean>
 ```
 
 - targetKey - ключ (название свойства) по которому будет осуществлен поиск
@@ -189,12 +190,34 @@ matchSomeMetaData(targetKey: string, targetValues: unknown[]): Promise<boolean>
   если метаданные содержат поле iataCode: "SU" или iataCode: "LED", метод вернет true
 */
 invoiceboxMinapp
-  .matchSomeMetaData("iataCode", ["SU", "LED"])
+  .matchMetaDataValues("iataCode", ["SU", "LED"])
   .then((isMatch) => {
     if (isMatch) {
       // do something
     }
   });
+```
+
+### Метод getMetaDataValues
+
+Для того, чтобы получить нужную информацию из метаданных, воспользуйтесь методом `getMetaDataValues`.
+
+```ts
+getMetaDataValues(targetKey: string | string[]): Promise<unknown[]>
+```
+
+- targetKey - ключ (название свойства) или массив ключей по котороым будет осуществлен поиск
+
+Пример использования
+
+```ts
+invoiceboxMinapp
+  .getMetaDataValues(["flightNumber", "departureTime"])
+  .then(console.log);
+
+/*
+  ['NDJ37S', '2022-03-04T20:15:00+03:00']
+*/
 ```
 
 ### Событие onHeightChange
