@@ -70,7 +70,7 @@ date: 2023-11-17 00:00:00 +0300
       ![Opencart 3](/assets/images/cms/opencart3v/17.png){: .img }
 6. Доступы для 3й версии API (новой) :
    1. Поле “Идентификатор магазина”. Тестовое значение: ffffffff-ffff-ffff-ffff-ffffffffffff
-      ![Opencart 3](/assets/images/cms/opencart3v/18.png){: .img }
+      ![Opencart 3](/assets/images/cms/opencart3v/18.jpg){: .img }
    2. Поля “Токен” и “API Ключ”.Тестовые значения “b37c4c689295904ed21eee5d9a48d42e” и “098f6bcd4621d373cade4e832627b4f6”
       ![Opencart 3](/assets/images/cms/opencart3v/19.png){: .img }
    3. Нажмите кнопку “Сохранить” в правом верхнем углу экрана

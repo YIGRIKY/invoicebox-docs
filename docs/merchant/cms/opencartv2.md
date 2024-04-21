@@ -98,7 +98,7 @@ date: 2023-11-17 00:00:00 +0300
 - Поле “Идентификатор магазина”. Тестовое значение: ffffffff-ffff-ffff-ffff-ffffffffffff
   ![Opencart 2](/assets/images/cms/opencart2v/17.png){: .img }
 - Поля “Токен” и “API Ключ”.Тестовые значения “b37c4c689295904ed21eee5d9a48d42e” и “098f6bcd4621d373cade4e832627b4f6”
-  ![Opencart 2](/assets/images/cms/opencart2v/18.png){: .img }
+  ![Opencart 2](/assets/images/cms/opencart2v/18.jpg){: .img }
 - Нажмите кнопку “Сохранить” в правом верхнем углу экрана
   ![Opencart 2](/assets/images/cms/opencart2v/19.png){: .img }
 7. Выберите налоговый режим, в котором работает магазин. См. раздел “настройка налогового режима”.
