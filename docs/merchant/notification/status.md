@@ -4,7 +4,7 @@ nav_order: 1
 title: "По умолчанию"
 parent: "Обработка уведомлений"
 grand_parent: "Приём платежей"
-date: 2023-11-02 00:00:00 +0300
+date: 2024-04-02 00:00:00 +0300
 ---
 
 # Уведомление по умолчанию
@@ -80,7 +80,7 @@ HTTP код в обоих случаях должен быть равен 200. �
 | `order_wrong_amount`   | Сумма заказа в Магазине не соответствует сумме заказа в уведомлении                                                                                                                                       |
 | `order_already_paid`   | Заказ уже оплачен другим инструментом оплаты :warning:                                                                                                                                                    |
 | `order_not_found`      | Заказ не найден в учётной системе Магазина                                                                                                                                                                |
-| `shipping_unavailable` | Услуга не может быть оказана или товар не может быть доставлен                                                                                                                                            |
+| `shipping_unavailable` | [Услуга не может быть оказана или товар не может быть доставлен](/docs/merchant/notification/shipping-unavailable/)                                                                                       |
 | `signature_error`      | Ошибка проверки подписи запроса                                                                                                                                                                           |
 
 {: .important }
@@ -137,6 +137,40 @@ if ($xSignature != $calcSignature) {
 ```
 </section>
 </details>
+<details>
+  <summary>Пример проверки подписи на языке Python</summary>
+<section markdown="1">
+```python
+import hashlib
+import hmac
+import json
+
+# Проверьте правильность пути и метода в декораторе @app.route()
+# - его нужно подстроить под ваше веб-приложение.
+@app.route("/invoicebox_callback", methods=['POST'])
+
+async def invoicebox_callback():
+    x_signature = request.headers.get('x-signature')
+    if not x_signature:
+        # Ошибка, подпись запроса не получена
+        response = jsonify({'status': 'error', 'code': 'out_of_service'})
+        response.headers["Content-Type"] = "application/json"
+        return response, 400
+    
+    # Согласованный ключ для подписи
+    api_key = ""
+    payload = request.data
+    calc_signature = hmac.new(api_key.encode(), payload, hashlib.sha1).hexdigest()
+    
+    if x_signature != calc_signature:
+        # Ошибка, подпись запроса неверная
+        response = jsonify({'status': 'error', 'code': 'signature_error'})
+        response.headers["Content-Type"] = "application/json"
+        return response, 400
+```
+</section>
+</details>
+
 
 [Для удобства, смотрите также PHP SDK](/docs/merchant/sdk/php/)
 

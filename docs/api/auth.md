@@ -3,7 +3,7 @@ layout: default
 title: "Авторизация"
 nav_order: 10
 parent: "Подключение к API"
-date: 2023-10-29 00:00:00 +0300
+date: 2023-11-23 00:00:00 +0300
 ---
 
 # Авторизация
@@ -55,7 +55,10 @@ curl -L -X GET '{baseUrl}/v3/security/api/auth/auth' \
 **{baseUrl}**{: .badge .badge-primary} - [базовый URL](/docs/api)
 
 
-Если передан корректный токен, то ответ будет содержать HTTP код `200 OK` и идентификатор пользователя:
+Если передан корректный токен, то ответ будет содержать HTTP код `200 OK` и идентификатор пользователя
+<details>
+  <summary>Пример ответа</summary>
+<section markdown="1">
 ```json
 {
   "data": {
@@ -66,8 +69,13 @@ curl -L -X GET '{baseUrl}/v3/security/api/auth/auth' \
   "extendedData": []
 }
 ```
+</section>
+</details>
 
-Если передан некорректный токен, то ответ будет содержать HTTP код `401 Unauthorized` и ошибку:
+Если передан некорректный токен, то ответ будет содержать HTTP код `401 Unauthorized` и ошибку
+<details>
+  <summary>Пример ответа</summary>
+<section markdown="1">
 ```json
 {
   "error": {
@@ -76,8 +84,13 @@ curl -L -X GET '{baseUrl}/v3/security/api/auth/auth' \
   }
 }
 ```
+</section>
+</details>
 
-Если токен не передан, то ответ будет содержать HTTP код `200 OK` и информацию об анонимном пользователе:
+Если токен не передан, то ответ будет содержать HTTP код `200 OK` и информацию об анонимном пользователе
+<details>
+  <summary>Пример ответа</summary>
+<section markdown="1">
 ```json
 {
   "data": {
@@ -88,6 +101,8 @@ curl -L -X GET '{baseUrl}/v3/security/api/auth/auth' \
   "extendedData": []
 }
 ```
+</section>
+</details>
 
 
 ---
