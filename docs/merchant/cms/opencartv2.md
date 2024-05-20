@@ -4,7 +4,7 @@ nav_order: 30
 title: "OpenCart 2.x"
 parent: "Модули для CMS"
 grand_parent: "Приём платежей"
-date: 2023-11-17 00:00:00 +0300
+date: 2024-05-14 13:40:00 +0300
 ---
 
 # Описание модуля OpenCart 2.x
@@ -156,6 +156,16 @@ date: 2023-11-17 00:00:00 +0300
   ![Opencart 2](/assets/images/cms/opencart2v/32.png){: .img }
 - Модули/расширения - Учитывать в заказе - Налоги:
   ![Opencart 2](/assets/images/cms/opencart2v/33.png){: .img }
+
+### Обновление модуля
+
+При обновлении модуля необходимо в начале удалить модификатор модуля
+![Opencart 2](/assets/images/cms/opencart2v/34.jpg){: .img }
+
+И очистить кеш
+![Opencart 2](/assets/images/cms/opencart2v/35.jpg){: .img }
+
+После этого провести ту же процедуру, что и при первой установке модуля
 
 ### Специфические настройки
 
