@@ -45,7 +45,7 @@ date: 2024-05-14 13:40:00 +0300
 
 ![Opencart 2](/assets/images/cms/opencart2v/5.png){: .img }
 
-![Opencart 2](/assets/images/cms/opencart2v/6.png){: .img }
+![Opencart 2](/assets/images/cms/opencart2v/6.jpg){: .img }
 
 7. Заходим в раздел Модули/расширения → Модули/расширения. 
 
