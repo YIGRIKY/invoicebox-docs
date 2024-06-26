@@ -1,8 +1,9 @@
 ---
 layout: default
-nav_order: 1
+nav_order: 10
 title: "Коды ОКЕИ"
 parent: "Справочники"
+date: 2023-10-25 00:00:00 +0300
 ---
 
 # Коды ОКЕИ
@@ -86,4 +87,4 @@ parent: "Справочники"
 
 ---
 
-[Читать далее &raquo;](/docs/dictionary/iso4217){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Читать далее &raquo;](/docs/dictionary/counterparty-detail){: .btn .btn-primary .mb-4 .mb-md-0 .mr-2 }

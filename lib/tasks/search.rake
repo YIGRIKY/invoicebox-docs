@@ -10,6 +10,7 @@ namespace :search do
     File.open('assets/js/zzzz-search-data.json', 'w') do |f|
       f.puts '---
 permalink: /assets/js/search-data.json
+date: 2023-10-25 00:00:00 +0300
 ---
 {
 {%- assign i = 0 -%}

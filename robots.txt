@@ -1,0 +1,3 @@
+# docs.invoicebox.ru robots.txt - crawl it secure, easy and reliable.
+User-agent: *
+Allow: /
